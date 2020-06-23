@@ -1,12 +1,12 @@
-<span id="module">CS2103</span>
+<span id="module">TIC2002</span>
 
-<span id="module_pair">CS2103/T</span>
+<span id="module_pair">TIC2002</span>
 
-<span id="module_name">Software Engineering</span>
+<span id="module_name">Introduction to Software Engineering</span>
 
-<span id="semester">AY1920S1</span>
+<span id="semester">2019</span>
 
-<span id="period">2019 Aug-Dec</span>
+<span id="period">2019</span>
 
 <span id="edition_badge"><small><small><small><span class='badge badge-pill badge-success'>{{ module_pair }} edition - {{ period }}</span></small></small></small></span>
 
@@ -22,15 +22,15 @@
 
 <span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true</span>
 
-<span id="participation_marks_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml</span>
+<span id="ivle_files">https://luminus.nus.edu.sg/modules/3c3b6256-7c08-4044-8a3d-ba9efa1dd652/files</span>
 
-<span id="ivle_files">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files</span>
+<span id="ivle_announcements">https://luminus.nus.edu.sg/modules/3c3b6256-7c08-4044-8a3d-ba9efa1dd652/announcements/active</span>
 
-<span id="ivle_announcements">https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active</span>
+<span id="bugs_link">https://luminus.nus.edu.sg/modules/3c3b6256-7c08-4044-8a3d-ba9efa1dd652/forum/categories/03d11539-b980-45da-922e-fcb8f47e0b2c</span>
 
-<span id="bugs_link">{{ module_org | safe }}/forum/issues</span>
+<span id="forum_link">https://luminus.nus.edu.sg/modules/3c3b6256-7c08-4044-8a3d-ba9efa1dd652/forum/categories/03d11539-b980-45da-922e-fcb8f47e0b2c</span>
 
-<span id="forum_link">{{ module_org | safe }}/forum/issues</span>
+<span id="repl_link">https://repl.it/classroom/invite/ciQ3DQs</span>
 
 <span id="admin_link"><md>[Admin Info page]({{baseUrl}}/admin/index.html)</md></span>
 
@@ -38,7 +38,7 @@
 
 <span id="slack_team">https://nus-{{ module | lower }}-{{ semester | lower }}.slack.com</span>
 
-<span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/intermediate.html</span>
+<span id="java_coding_standard">{{ baseUrl }}/coding-standards/java/basic.html</span>
 
 <span id="ip_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors</span>
 <span id="tp_dashboard">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/tp-dashboard</span>
