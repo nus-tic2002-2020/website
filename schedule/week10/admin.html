@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.14.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TIC2002 - Week 10 - Tasks</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/website/book/css/textbook.css">
+  <link rel="stylesheet" href="/website/css/main.css">
+  <link rel="stylesheet" href="/website/css/schedule.css">
+  <link rel="icon" href="/website/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header fixed>
+      <navbar placement="top" type="dark" class="temp-navbar">
+        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
+        <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Schedule</strong></template>
+          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
+          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Mon, Aug 10th] </span></a></li>
+          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Mon, Aug 17th] </span></a></li>
+          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Mon, Aug 24th] </span></a></li>
+          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Mon, Aug 31st] </span></a></li>
+          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Mon, Sep 7th] </span></a></li>
+          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mon, Sep 14th] </span></a></li>
+          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mon, Sep 28th] </span></a></li>
+          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mon, Oct 5th] </span></a></li>
+          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mon, Oct 12th] </span></a></li>
+          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mon, Oct 19th] </span></a></li>
+          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Mon, Oct 26th] </span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Mon, Nov 2nd] </span></a></li>
+        </dropdown>
+        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <div class="nav-link temp-dropdown-placeholder">**Links**</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Links</strong></template>
+          <li><a href="https://github.com/nus-tic2002-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+          <li><a href="https://github.com/nus-tic2002-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="https://gitter.im/nus-tic2002-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
+          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
+          <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+          <li tags="m--cs2113 m--tic2002 m--te3201"><a href target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
+          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+
+          <li><a href="https://github.com/nus-tic2002-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke repo</span></a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+
+      <div id="content-wrapper">
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/website/schedule/week9"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week10/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week10/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> Topics</a></li>
+              <li class="page-item active"><a class="page-link" href="/website/schedule/week10/admin.html"><span><span><span aria-hidden="true" class="glyphicon glyphicon-check"></span></span></span> Tasks</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week11"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+            </ul>
+          </nav>
+          <p></p>
+          <h1 id="week-10-mon-oct-12th-tasks">Week 10 <small><small><span class="dimmed">[Mon, Oct 12th]</span> - Tasks</small></small><span id="week-10-mon-oct-12th-tasks" class="anchor"></span><a class="fa fa-anchor" href="#week-10-mon-oct-12th-tasks" onclick="event.stopPropagation()"></a></h1>
+          <div>
+            <div id="summary" class="lead border-bottom border-left ml-3 mb-3 pl-2" style="color: purple;">
+              <p><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> <strong>Project:</strong></p>
+              <ol>
+                <li>Add individual feature 1</li>
+                <li>Implement increments <code v-pre>Level-9</code>, <code v-pre>A-CodingStandard</code>, <code v-pre>A-CodeQuality</code>, <code v-pre>A-Libraries</code> <span class="badge badge-pill badge-secondary">optional</span></li>
+              </ol>
+            </div>
+
+            <h3 class="bg-dark text-white p-2 mb-4 mt-4" id="fas-drafting-compass-project"><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project<span id="fas-drafting-compass-project" class="anchor"></span><a class="fa fa-anchor" href="#fas-drafting-compass-project" onclick="event.stopPropagation()"></a></h3>
+            <div id="project">
+              <h4 id="1-add-individual-feature-1"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Add individual feature 1<span id="1-add-individual-feature-1" class="anchor"></span><a class="fa fa-anchor" href="#1-add-individual-feature-1" onclick="event.stopPropagation()"></a></h4>
+              <ul>
+                <li>Note that <mark>a very minimal implementation of the feature is good enough</mark>.</li>
+                <li>Steps to find the feature you should implement:
+                  <ul>
+                    <li>First take the last digit of your student number. For example, if your student number is <code v-pre>A0123456H</code>, the last digit is <code v-pre>6</code>.</li>
+                    <li>Then, find the matching row in the table below. That row gives you three options.</li>
+                    <li>You may implement any one of the three options. Click on the link to find details of the feature.</li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="indented-level2" id="feature-allocation">
+                <div class="table-responsive">
+                  <table class="markbind-table table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>digit</th>
+                        <th>option 1</th>
+                        <th>option 2</th>
+                        <th>option 3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0</td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-tentativescheduling"><code v-pre>B-TentativeScheduling</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-detectduplicates"><code v-pre>C-DetectDuplicates</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-statistics"><code v-pre>C-Statistics</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-snooze"><code v-pre>B-Snooze</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-flexibledatasource"><code v-pre>C-FlexibleDataSource</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-undo"><code v-pre>C-Undo</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-recurringtasks"><code v-pre>B-RecurringTasks</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-sort"><code v-pre>C-Sort</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-help"><code v-pre>C-Help</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-doaftertasks"><code v-pre>B-DoAfterTasks</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-naturaldates"><code v-pre>C-NaturalDates</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-friendliersyntax"><code v-pre>C-FriendlierSyntax</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-dowithinperiodtasks"><code v-pre>B-DoWithinPeriodTasks</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-bettersearch"><code v-pre>C-BetterSearch</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-snooze"><code v-pre>B-Snooze</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-fixeddurationtasks"><code v-pre>B-FixedDurationTasks</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-update"><code v-pre>C-Update</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-recurringtasks"><code v-pre>B-RecurringTasks</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-reminders"><code v-pre>B-Reminders</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-tagging"><code v-pre>C-Tagging</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-doaftertasks"><code v-pre>B-DoAfterTasks</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-findfreetimes"><code v-pre>B-FindFreeTimes</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-priority"><code v-pre>C-Priority</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-dowithinperiodtasks"><code v-pre>B-DoWithinPeriodTasks</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-viewschedules"><code v-pre>B-ViewSchedules</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-archive"><code v-pre>C-Archive</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-fixeddurationtasks"><code v-pre>B-FixedDurationTasks</code></a></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-detectanomalies"><code v-pre>B-DetectAnomalies</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#c-massops"><code v-pre>C-MassOps</code></a></td>
+                        <td><a href="/website/se-book-adapted/projectDuke/index.html#b-viewschedules"><code v-pre>B-ViewSchedules</code></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <h4 id="2-implement-increments-level-9-a-codingstandard-a-codequality-a-libraries-optional"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Implement increments <code v-pre>Level-9</code>, <code v-pre>A-CodingStandard</code>, <code v-pre>A-CodeQuality</code>, <code v-pre>A-Libraries</code> <span class="badge badge-pill badge-secondary">optional</span><span id="2-implement-increments-level-9-a-codingstandard-a-codequality-a-libraries-optional" class="anchor"></span><a class="fa fa-anchor" href="#2-implement-increments-level-9-a-codingstandard-a-codequality-a-libraries-optional" onclick="event.stopPropagation()"></a></h4>
+              <div class="indented">
+                <div>
+                  <div class="indented">
+                    <div class="indented border">
+                      <panel type="seamless" no-close>
+                        <div></div>
+                        <div slot="header"><span><strong>Duke</strong> <span class="dimmed"><strong><code v-pre>Level-9</code>: Find</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
+                        <div></div>
+                        <div>
+                          <p><span>
+                              <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-search"></span></thumbnail>
+                            </span></p>
+                          <h3 id="level-9-find">Level 9. Find<span id="level-9-find" class="anchor"></span><a class="fa fa-anchor" href="#level-9-find" onclick="event.stopPropagation()"></a></h3>
+                          <p>Give users a way to find a task by searching for a keyword.
+                            <br>
+                            <br></p>
+                          <p>Example:</p>
+                          <pre><code class="no-line-numbers hljs" v-pre><span>find book<br></span><span>    ____________________________________________________________<br></span><span>     Here are the matching tasks in your list:<br></span><span>     1.[T][✓] read book<br></span><span>     2.[D][✓] return book (by: June 6th)<br></span><span>    ____________________________________________________________<br></span></code></pre>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="indented">
+                    <div class="indented border">
+                      <panel type="seamless" no-close>
+                        <div></div>
+                        <div slot="header"><span><strong>Duke</strong> <span class="dimmed"><strong><code v-pre>A-CodingStandard</code>: Coding Standard</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
+                        <div></div>
+                        <div>
+                          <div>
+                            <div></div>
+                            <h3 id="a-codingstandard"><span class="badge badge-pill badge-primary">A-CodingStandard</span><span id="a-codingstandard" class="anchor"></span><a class="fa fa-anchor" href="#a-codingstandard" onclick="event.stopPropagation()"></a></h3>
+                            <p>     <big>↳</big> <strong>Tweak the code to comply with a coding standard</strong></p>
+                          </div>
+                          <p>Tweak the code to comply with a chosen coding standard. From this point onward, ensure any new code added are compliant with the coding standard.</p>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+                <div class="indented-level4">
+                  <p>↳ The coding standard to follow is given <a href="https://se-education.org/guides/conventions/java/basic.html">here</a> -- also given under the <code v-pre>Links</code> menu at the top of the module website.</p>
+                </div>
+                <div>
+                  <div class="indented">
+                    <div class="indented border">
+                      <panel type="seamless" no-close>
+                        <div></div>
+                        <div slot="header"><span><strong>Duke</strong> <span class="dimmed"><strong><code v-pre>A-CodeQuality</code>: Increase Code Quality</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
+                        <div></div>
+                        <div>
+                          <div>
+                            <div></div>
+                            <h3 id="a-codequality"><span class="badge badge-pill badge-primary">A-CodeQuality</span><span id="a-codequality" class="anchor"></span><a class="fa fa-anchor" href="#a-codequality" onclick="event.stopPropagation()"></a></h3>
+                            <p>     <big>↳</big> <strong>Improve code quality</strong></p>
+                          </div>
+                          <p>Critically examines the code and refactor to improve the code quality where necessary.</p>
+                          <p>
+                            <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> When adding this increment, follow closely the 'Code Quality' topics you have learned so far, rather than merely follow your own intuition about code quality.
+                          </p>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+                <div class="indented-level4">
+                  <p>↳ The code quality guidelines to follow are given <a href="/website/se-book-adapted/chapters/codeQuality.html">here</a>.</p>
+                </div>
+                <div>
+                  <div class="indented">
+                    <div class="indented border">
+                      <panel type="seamless" no-close>
+                        <div></div>
+                        <div slot="header"><span><strong>Duke</strong> <span class="dimmed"><strong><code v-pre>A-Libraries</code>: Libraries</strong></span> <span class="badge badge-pill badge-secondary">optional</span></span></div>
+                        <div></div>
+                        <div>
+                          <div>
+                            <div></div>
+                            <h3 id="a-libraries"><span class="badge badge-pill badge-primary">A-Libraries</span><span id="a-libraries" class="anchor"></span><a class="fa fa-anchor" href="#a-libraries" onclick="event.stopPropagation()"></a></h3>
+                            <p>     <big>↳</big> <strong>Use external libraries</strong></p>
+                          </div>
+                          <p>Use third-party libraries in your project. For example, you can use the Natty library to parse strings into meaningful dates.</p>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#week-10-mon-oct-12th-tasks">Week 10 [Mon, Oct 12th] - Tasks&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#fas-drafting-compass-project"> Project&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#1-add-individual-feature-1">1 Add individual feature 1&#x200E;</a>
+                <a class="nav-link py-1" href="#2-implement-increments-level-9-a-codingstandard-a-codequality-a-libraries-optional">2 Implement increments Level-9, A-CodingStandard, A-CodeQuality, A-Libraries optional&#x200E;</a>
+              </nav>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <footer>
+
+      <div class="text-center">
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Tue, 21 Jul 2020, 22:38:00 GMT+8]</small></div>
+    </footer>
+  </div>
+</body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/components.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/website'
+  const enableSearch = true
+</script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
+
+</html>
