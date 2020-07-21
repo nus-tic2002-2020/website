@@ -27,7 +27,6 @@
       "searchable": "no"},
     {"glob": "schedule/**/topics.md",
       "searchable": "no"},
-    {"glob": "coding-standards/**/*.mbd"},
     {"glob": "book/about/acknowledgements.md"},
     {"glob": "se-book-adapted/index.md"},
     {"glob": "se-book-adapted/chapters/*.md"},

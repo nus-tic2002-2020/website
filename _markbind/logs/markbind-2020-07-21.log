@@ -800,3 +800,308 @@ fatal: index-pack failed
 2020-07-21T14:37:25.144Z - info: Site data built
 2020-07-21T14:37:47.663Z - info: Website generation started at 10:37:45 PM
 2020-07-21T14:37:54.853Z - info: Building assets...
+2020-07-21T14:38:00.042Z - info: Assets built
+2020-07-21T14:38:00.043Z - info: Generating pages...
+2020-07-21T14:38:15.308Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:15.309Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:16.951Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:16.951Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:16.952Z - debug:  
+2020-07-21T14:38:16.952Z - debug:  
+2020-07-21T14:38:16.952Z - debug:  
+2020-07-21T14:38:16.952Z - debug:  
+2020-07-21T14:38:17.274Z - debug:  
+2020-07-21T14:38:22.352Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:22.352Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:22.352Z - debug:  
+2020-07-21T14:38:22.353Z - debug:  
+2020-07-21T14:38:23.984Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:23.985Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:24.267Z - debug:  
+2020-07-21T14:38:24.267Z - debug:  
+2020-07-21T14:38:24.756Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:24.757Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:28.288Z - debug:  
+2020-07-21T14:38:28.331Z - debug:  
+2020-07-21T14:38:52.317Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:52.321Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:53.859Z - debug:  
+2020-07-21T14:38:53.981Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:54.179Z - debug:  
+2020-07-21T14:38:55.831Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:38:55.832Z - debug:  
+2020-07-21T14:38:57.256Z - debug:  
+2020-07-21T14:39:04.297Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:39:06.103Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:39:06.325Z - debug:  
+2020-07-21T14:39:31.195Z - debug:  
+2020-07-21T14:39:31.196Z - debug:  
+2020-07-21T14:39:31.196Z - debug:  
+2020-07-21T14:39:31.198Z - debug:  
+2020-07-21T14:39:35.375Z - debug:  
+2020-07-21T14:39:35.589Z - debug:  
+2020-07-21T14:39:43.964Z - debug:  
+2020-07-21T14:39:43.964Z - debug:  
+2020-07-21T14:39:43.964Z - debug:  
+2020-07-21T14:39:43.964Z - debug:  
+2020-07-21T14:39:43.965Z - debug:  
+2020-07-21T14:39:51.312Z - debug:  
+2020-07-21T14:39:51.313Z - debug:  
+2020-07-21T14:39:55.963Z - debug:  
+2020-07-21T14:40:13.572Z - debug:  
+2020-07-21T14:40:13.573Z - debug:  
+2020-07-21T14:40:18.712Z - info: Pages built
+2020-07-21T14:40:41.406Z - info: Website generation complete! Total build time: 176.287s
+2020-07-21T14:40:41.407Z - info: Build success!
+2020-07-21T14:40:41.410Z - info: Site data built
+2020-07-21T14:42:12.554Z - info: Deployed!
+2020-07-21T14:46:42.116Z - info: Website generation (lazy) started at 10:46:32 PM
+2020-07-21T14:46:52.049Z - info: Building assets...
+2020-07-21T14:46:59.473Z - info: Assets built
+2020-07-21T14:46:59.473Z - info: Generating landing page...
+2020-07-21T14:47:00.199Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-07-21T14:47:00.292Z - info: Website generation (lazy) complete! Total build time: 27.762s
+2020-07-21T14:47:01.343Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-07-21T14:47:01.343Z - info: Press CTRL+C to stop ...
+2020-07-21T14:47:01.395Z - info: Site data built
+2020-07-21T14:48:08.138Z - info: Website generation started at 10:48:03 PM
+2020-07-21T14:48:23.416Z - info: Building assets...
+2020-07-21T14:48:31.792Z - info: Assets built
+2020-07-21T14:48:31.793Z - info: Generating pages...
+2020-07-21T14:48:43.023Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:48:43.023Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:48:45.376Z - debug:  
+2020-07-21T14:48:45.376Z - debug:  
+2020-07-21T14:48:45.376Z - debug:  
+2020-07-21T14:48:45.377Z - debug:  
+2020-07-21T14:48:47.645Z - debug:  
+2020-07-21T14:48:51.394Z - debug:  
+2020-07-21T14:48:51.394Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:48:51.395Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:48:51.395Z - debug:  
+2020-07-21T14:48:51.755Z - debug:  
+2020-07-21T14:48:53.110Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:48:53.110Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:48:53.287Z - debug:  
+2020-07-21T14:48:53.440Z - debug:  
+2020-07-21T14:48:53.737Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:48:53.737Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:48:56.936Z - debug:  
+2020-07-21T14:48:56.936Z - debug:  
+2020-07-21T14:49:18.899Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:49:18.903Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:49:20.245Z - debug:  
+2020-07-21T14:49:20.376Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:49:22.557Z - debug:  
+2020-07-21T14:49:22.559Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:49:23.111Z - debug:  
+2020-07-21T14:49:24.385Z - debug:  
+2020-07-21T14:49:30.688Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:49:32.863Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-21T14:49:33.181Z - debug:  
+2020-07-21T14:49:56.610Z - debug:  
+2020-07-21T14:49:57.055Z - debug:  
+2020-07-21T14:49:57.055Z - debug:  
+2020-07-21T14:49:57.055Z - debug:  
+2020-07-21T14:50:00.611Z - debug:  
+2020-07-21T14:50:00.614Z - debug:  
+2020-07-21T14:50:11.217Z - debug:  
+2020-07-21T14:50:11.218Z - debug:  
+2020-07-21T14:50:11.218Z - debug:  
+2020-07-21T14:50:11.218Z - debug:  
+2020-07-21T14:50:11.343Z - debug:  
+2020-07-21T14:50:18.005Z - debug:  
+2020-07-21T14:50:18.005Z - debug:  
+2020-07-21T14:50:22.579Z - debug:  
+2020-07-21T14:50:31.072Z - debug:  
+2020-07-21T14:50:43.376Z - debug:  
+2020-07-21T14:50:43.377Z - debug:  
+2020-07-21T14:51:08.052Z - debug:  
+2020-07-21T14:51:19.059Z - debug:  
+2020-07-21T14:51:19.059Z - debug:  
+2020-07-21T14:51:27.542Z - info: Pages built
+2020-07-21T14:51:57.015Z - info: Website generation complete! Total build time: 233.678s
+2020-07-21T14:51:57.016Z - info: Build success!
+2020-07-21T14:51:57.016Z - debug:  
+2020-07-21T14:51:57.025Z - info: Site data built
+2020-07-21T14:52:57.857Z - info: Deployed!
+2020-07-21T14:55:29.146Z - info: Website generation (lazy) started at 10:55:21 PM
+2020-07-21T14:55:45.316Z - info: Building assets...
+2020-07-21T14:55:54.840Z - info: Assets built
+2020-07-21T14:55:54.841Z - info: Generating landing page...
+2020-07-21T14:55:57.058Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-07-21T14:55:57.160Z - info: Website generation (lazy) complete! Total build time: 35.975s
+2020-07-21T14:55:58.025Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-07-21T14:55:58.026Z - info: Press CTRL+C to stop ...
+2020-07-21T14:55:58.084Z - info: Site data built
+2020-07-21T14:59:01.752Z - info: [10:59:01 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_markbind\headers\header.md
+2020-07-21T14:59:02.768Z - info: Rebuilding 1 pages
+2020-07-21T14:59:04.830Z - info: Pages rebuilt
+2020-07-21T14:59:04.830Z - info: Website regeneration complete! Total build time: 2.065s
+2020-07-21T14:59:04.856Z - info: Site data built
+2020-07-21T14:59:27.616Z - info: [10:59:27 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_markbind\headers\header.md
+2020-07-21T14:59:28.630Z - info: Rebuilding 1 pages
+2020-07-21T14:59:30.530Z - info: Pages rebuilt
+2020-07-21T14:59:30.530Z - info: Website regeneration complete! Total build time: 1.906s
+2020-07-21T14:59:30.542Z - info: Site data built
+2020-07-21T14:59:35.524Z - info: [10:59:35 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_markbind\headers\header.md
+2020-07-21T14:59:36.531Z - info: Rebuilding 1 pages
+2020-07-21T14:59:38.295Z - info: Pages rebuilt
+2020-07-21T14:59:38.295Z - info: Website regeneration complete! Total build time: 1.767s
+2020-07-21T14:59:38.306Z - info: Site data built
+2020-07-21T15:02:46.355Z - info: [11:02:46 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-notices.mbdf
+2020-07-21T15:02:46.364Z - info: [11:02:46 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\notices-cs2103.mbdf
+2020-07-21T15:02:46.381Z - info: [11:02:46 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\notices-tic2002.mbdf
+2020-07-21T15:02:46.385Z - info: [11:02:46 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\weeklySchedule.md
+2020-07-21T15:02:46.408Z - info: [11:02:46 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\moduleOverview.md
+2020-07-21T15:02:46.413Z - info: [11:02:46 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\index-tic2002.mbdf
+2020-07-21T15:02:47.366Z - info: Rebuilding 1 pages
+2020-07-21T15:02:49.080Z - info: Pages rebuilt
+2020-07-21T15:02:49.080Z - info: Website regeneration complete! Total build time: 1.717s
+2020-07-21T15:02:49.093Z - info: Site data built
+2020-07-21T15:02:59.358Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\se-book-adapted\index as some of its dependencies were changed since the last visit
+2020-07-21T15:02:59.903Z - info: Site data built
+2020-07-21T15:02:59.904Z - info: Lazy website regeneration complete! Total build time: 0.547s
+2020-07-21T15:03:06.961Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\index as some of its dependencies were changed since the last visit
+2020-07-21T15:03:07.525Z - info: Site data built
+2020-07-21T15:03:07.526Z - info: Lazy website regeneration complete! Total build time: 0.565s
+2020-07-21T15:05:33.121Z - info: [11:05:33 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_markbind\headers\header.md
+2020-07-21T15:05:34.134Z - info: Rebuilding 1 pages
+2020-07-21T15:05:35.331Z - info: Pages rebuilt
+2020-07-21T15:05:35.331Z - info: Website regeneration complete! Total build time: 1.202s
+2020-07-21T15:05:35.352Z - info: Site data built
+2020-07-21T15:06:03.431Z - info: [11:06:03 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_markbind\headers\header.md
+2020-07-21T15:06:04.434Z - info: Rebuilding 1 pages
+2020-07-21T15:06:05.086Z - info: Pages rebuilt
+2020-07-21T15:06:05.086Z - info: Website regeneration complete! Total build time: 0.655s
+2020-07-21T15:06:05.093Z - info: Site data built
+2020-07-21T15:06:10.413Z - info: [11:06:10 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_markbind\headers\header.md
+2020-07-21T15:06:11.423Z - info: Rebuilding 1 pages
+2020-07-21T15:06:11.976Z - info: Pages rebuilt
+2020-07-21T15:06:11.977Z - info: Website regeneration complete! Total build time: 0.558s
+2020-07-21T15:06:11.980Z - info: Site data built
+2020-07-21T15:09:49.603Z - info: Website generation (lazy) started at 11:09:46 PM
+2020-07-21T15:10:00.479Z - info: Building assets...
+2020-07-21T15:10:08.160Z - info: Assets built
+2020-07-21T15:10:08.161Z - info: Generating landing page...
+2020-07-21T15:10:10.366Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-07-21T15:10:10.457Z - info: Website generation (lazy) complete! Total build time: 23.526s
+2020-07-21T15:10:11.358Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-07-21T15:10:11.359Z - info: Press CTRL+C to stop ...
+2020-07-21T15:10:11.477Z - info: Site data built
+2020-07-21T15:11:59.355Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\timeline as some of its dependencies were changed since the last visit
+2020-07-21T15:12:02.840Z - info: Site data built
+2020-07-21T15:12:02.841Z - info: Lazy website regeneration complete! Total build time: 3.486s
+2020-07-21T15:12:50.627Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\index as some of its dependencies were changed since the last visit
+2020-07-21T15:12:51.326Z - info: Site data built
+2020-07-21T15:12:51.327Z - info: Lazy website regeneration complete! Total build time: 0.701s
+2020-07-21T15:37:17.336Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\topics as some of its dependencies were changed since the last visit
+2020-07-21T15:37:19.414Z - info: Site data built
+2020-07-21T15:37:19.414Z - info: Lazy website regeneration complete! Total build time: 2.081s
+2020-07-21T15:39:01.314Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin as some of its dependencies were changed since the last visit
+2020-07-21T15:39:02.786Z - info: Site data built
+2020-07-21T15:39:02.788Z - info: Lazy website regeneration complete! Total build time: 1.475s
+2020-07-21T15:40:13.792Z - info: [11:40:13 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin-tic2002.mbdf
+2020-07-21T15:40:14.805Z - info: Rebuilding 1 pages
+2020-07-21T15:40:15.938Z - info: Pages rebuilt
+2020-07-21T15:40:15.938Z - info: Website regeneration complete! Total build time: 1.138s
+2020-07-21T15:40:15.992Z - info: Site data built
+2020-07-21T15:41:42.438Z - info: [11:41:42 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin-tic2002.mbdf
+2020-07-21T15:41:43.458Z - info: Rebuilding 1 pages
+2020-07-21T15:41:44.301Z - info: Pages rebuilt
+2020-07-21T15:41:44.301Z - info: Website regeneration complete! Total build time: 0.844s
+2020-07-21T15:41:44.350Z - info: Site data built
+2020-07-21T15:42:33.539Z - info: [11:42:33 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin-tic2002.mbdf
+2020-07-21T15:42:34.558Z - info: Rebuilding 1 pages
+2020-07-21T15:42:35.414Z - info: Pages rebuilt
+2020-07-21T15:42:35.415Z - info: Website regeneration complete! Total build time: 0.861s
+2020-07-21T15:42:35.459Z - info: Site data built
+2020-07-21T15:42:45.044Z - info: [11:42:45 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin-tic2002.mbdf
+2020-07-21T15:42:46.056Z - info: Rebuilding 1 pages
+2020-07-21T15:42:46.849Z - info: Pages rebuilt
+2020-07-21T15:42:46.849Z - info: Website regeneration complete! Total build time: 0.796s
+2020-07-21T15:42:46.890Z - info: Site data built
+2020-07-21T15:44:25.603Z - info: [11:44:25 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_markbind\variables.md
+2020-07-21T15:44:25.618Z - info: [11:44:25 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin-tic2002.mbdf
+2020-07-21T15:44:26.810Z - warn: Rebuilding all pages as variables file was changed, or the --force-reload flag was set
+2020-07-21T15:44:26.813Z - info: Rebuilding 1 pages
+2020-07-21T15:44:27.703Z - info: Pages rebuilt
+2020-07-21T15:44:27.703Z - info: Website regeneration complete! Total build time: 1.094s
+2020-07-21T15:44:27.711Z - info: Site data built
+2020-07-21T15:46:29.898Z - info: [11:46:29 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\index-tic2002.mbdf
+2020-07-21T15:46:30.911Z - info: Rebuilding 1 pages
+2020-07-21T15:46:31.989Z - info: Pages rebuilt
+2020-07-21T15:46:31.989Z - info: Website regeneration complete! Total build time: 1.08s
+2020-07-21T15:46:32.037Z - info: Site data built
+2020-07-21T15:49:20.426Z - info: [11:49:20 PM] Reload for file deletion: C:\repos\nus-cs2103-AY2021S1\cs2103-website\coding-standards\java\basic.mbd
+2020-07-21T15:49:20.427Z - info: [11:49:20 PM] Reload for file deletion: C:\repos\nus-cs2103-AY2021S1\cs2103-website\coding-standards\java\intermediate.mbd
+2020-07-21T15:49:20.427Z - info: [11:49:20 PM] Reload for file deletion: C:\repos\nus-cs2103-AY2021S1\cs2103-website\coding-standards\java\index.mbd
+2020-07-21T15:49:20.427Z - info: [11:49:20 PM] Reload for file deletion: C:\repos\nus-cs2103-AY2021S1\cs2103-website\coding-standards\java\rules.mbdf
+2020-07-21T15:49:21.435Z - info: File added or removed, updating list of site's pages...
+2020-07-21T15:49:27.846Z - info: Assets removed
+2020-07-21T15:49:28.985Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin as some of its dependencies were changed since the last visit
+2020-07-21T15:49:30.025Z - info: Site data built
+2020-07-21T15:49:30.027Z - info: Lazy website regeneration complete! Total build time: 1.042s
+2020-07-21T15:50:11.878Z - info: [11:50:11 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\site.json
+2020-07-21T15:50:12.930Z - info: Assets built
+2020-07-21T15:51:27.852Z - info: [11:51:27 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_markbind\variables.md
+2020-07-21T15:51:28.948Z - warn: Rebuilding all pages as variables file was changed, or the --force-reload flag was set
+2020-07-21T15:51:28.952Z - info: Rebuilding 1 pages
+2020-07-21T15:51:29.616Z - info: Pages rebuilt
+2020-07-21T15:51:29.617Z - info: Website regeneration complete! Total build time: 0.76s
+2020-07-21T15:51:29.637Z - info: Site data built
+2020-07-21T15:52:03.580Z - info: [11:52:03 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_markbind\variables.md
+2020-07-21T15:52:03.596Z - info: [11:52:03 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\common\macros.njk
+2020-07-21T15:52:03.611Z - info: [11:52:03 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_module-CS2103\weeklyAdminTasks.mbdf
+2020-07-21T15:52:04.765Z - warn: Rebuilding all pages as variables file was changed, or the --force-reload flag was set
+2020-07-21T15:52:04.769Z - info: Rebuilding 1 pages
+2020-07-21T15:52:05.470Z - info: Assets built
+2020-07-21T15:52:05.485Z - info: Pages rebuilt
+2020-07-21T15:52:05.486Z - info: Website regeneration complete! Total build time: 0.894s
+2020-07-21T15:52:05.502Z - info: Site data built
+2020-07-21T15:53:24.422Z - info: [11:53:24 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin-tic2002.mbdf
+2020-07-21T15:53:25.429Z - info: Rebuilding 1 pages
+2020-07-21T15:53:26.046Z - info: Pages rebuilt
+2020-07-21T15:53:26.047Z - info: Website regeneration complete! Total build time: 0.62s
+2020-07-21T15:53:26.056Z - info: Site data built
+2020-07-21T15:54:59.048Z - info: [11:54:59 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin-tic2002.mbdf
+2020-07-21T15:55:00.061Z - info: Rebuilding 1 pages
+2020-07-21T15:55:00.951Z - info: Pages rebuilt
+2020-07-21T15:55:00.952Z - info: Website regeneration complete! Total build time: 0.895s
+2020-07-21T15:55:00.961Z - info: Site data built
+2020-07-21T15:55:13.447Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week2\index as some of its dependencies were changed since the last visit
+2020-07-21T15:55:14.390Z - info: Site data built
+2020-07-21T15:55:14.390Z - info: Lazy website regeneration complete! Total build time: 0.944s
+2020-07-21T15:55:22.739Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week2\topics as some of its dependencies were changed since the last visit
+2020-07-21T15:55:25.372Z - info: Site data built
+2020-07-21T15:55:25.372Z - info: Lazy website regeneration complete! Total build time: 2.634s

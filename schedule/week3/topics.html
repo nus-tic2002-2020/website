@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header fixed>
+      <div class="w-100 p-1 bg-success text-center text-white"><span>This module will be <strong>fully online</strong> this semester. There is no need for on-campus presence.</span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -38,7 +39,7 @@
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Mon, Aug 24th] </span></a></li>
           <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Mon, Aug 31st] </span></a></li>
           <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Mon, Sep 7th] </span></a></li>
-          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mon, Sep 14th] </span></a></li>
+          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mon, Sep 21st] </span></a></li>
           <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mon, Sep 28th] </span></a></li>
           <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mon, Oct 5th] </span></a></li>
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mon, Oct 12th] </span></a></li>
@@ -50,17 +51,17 @@
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">**Links**</div>
         <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Links</strong></template>
-          <li><a href="https://github.com/nus-tic2002-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
-          <li><a href="https://github.com/nus-tic2002-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
-          <li><a href="https://gitter.im/nus-tic2002-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
-          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
-          <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+
+          <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/forum/categories/31c136fe-0976-4368-9f4c-a10c08f7bbf3" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+
+          <li><a href="/website/admin/index.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+
           <li tags="m--cs2113 m--tic2002 m--te3201"><a href target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
 
-          <li><a href="https://github.com/nus-tic2002-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke repo</span></a></li>
+          <li><a href="https://github.com/nus-tic2002-2020/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke repo</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -120,7 +121,7 @@
                 </small></div>
               <p></p>
               <ul>
-                <li>[<a href="/website/schedule/week3/topics.html#W3-2">W3.2</a>] <strong>Git: Remote Repos</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                <li>[<a href="/website/schedule/week3/topics.html#W3-2">W3.2</a>] <strong>RCS: Remote Repos</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
               <div class="indented-level2">
                 <small>
@@ -149,7 +150,7 @@
                 </small></div>
               <p></p>
               <ul>
-                <li>[<a href="/website/schedule/week3/topics.html#W3-3">W3.3</a>] <strong>IDE: Basic Features</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                <li>[<a href="/website/schedule/week3/topics.html#W3-3">W3.3</a>] <strong>IDEs: Basic Features</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
               <div class="indented-level2">
                 <small>
@@ -172,7 +173,18 @@
             </span></panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W3-1"></span></p>
-          <div></div>
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>While you <em>can</em> (and will be) defining your own classes, Java comes with a whole bunch of built-in classes that you can use right-away. Let's learn about some of the most useful such built-in classes next.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <panel type="seamless" no-close expandable="true" expanded id="w3-1-java-useful-classes">
             <span slot="header" class="card-title">
               <div>
@@ -731,11 +743,22 @@
           </div>
           <p></p>
           <p><span id="W3-2"></span></p>
-          <div></div>
-          <panel type="seamless" no-close expandable="true" expanded id="w3-2-git-remote-repos">
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>Having learned how to use Git in your own computer, let's also learn a bit about working with remote code repositories too. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w3-2-rcs-remote-repos">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="w3-2-git-remote-repos"><span class="dimmed">[W3.2]</span> <strong>Git: Remote Repos</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w3-2-git-remote-repos" class="anchor"></span><a class="fa fa-anchor" href="#w3-2-git-remote-repos" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="w3-2-rcs-remote-repos"><span class="dimmed">[W3.2]</span> <strong>RCS: Remote Repos</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w3-2-rcs-remote-repos" class="anchor"></span><a class="fa fa-anchor" href="#w3-2-rcs-remote-repos" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
             <div class="indented-level1">
@@ -1307,11 +1330,22 @@
           </div>
           <p></p>
           <p><span id="W3-3"></span></p>
-          <div></div>
-          <panel type="seamless" no-close expandable="true" expanded id="w3-3-ide-basic-features">
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>As you are likely to be using an IDE for the project, let's learn at least enough about IDEs to get you started using one.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w3-3-ides-basic-features">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="w3-3-ide-basic-features"><span class="dimmed">[W3.3]</span> <strong>IDE: Basic Features</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w3-3-ide-basic-features" class="anchor"></span><a class="fa fa-anchor" href="#w3-3-ide-basic-features" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="w3-3-ides-basic-features"><span class="dimmed">[W3.3]</span> <strong>IDEs: Basic Features</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w3-3-ides-basic-features" class="anchor"></span><a class="fa fa-anchor" href="#w3-3-ides-basic-features" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
             <div class="indented-level1">
@@ -1495,8 +1529,8 @@
                 <a class="nav-link py-1" href="#key-exercise-filteremails-method"> [Key Exercise] filterEmails method&#x200E;</a>
                 <a class="nav-link py-1" href="#key-exercise-find-total-expenditure"> [Key Exercise] find total expenditure&#x200E;</a>
               </nav>
-              <a class="nav-link py-1" href="#w3-2-git-remote-repos">[W3.2] Git: Remote Repos &#x200E;</a>
-              <a class="nav-link py-1" href="#w3-3-ide-basic-features">[W3.3] IDE: Basic Features &#x200E;</a>
+              <a class="nav-link py-1" href="#w3-2-rcs-remote-repos">[W3.2] RCS: Remote Repos &#x200E;</a>
+              <a class="nav-link py-1" href="#w3-3-ides-basic-features">[W3.3] IDEs: Basic Features &#x200E;</a>
             </nav>
 
           </nav>
@@ -1506,7 +1540,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Tue, 21 Jul 2020, 22:38:00 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Wed, 22 Jul 2020, 2:02:08 GMT+8]</small></div>
     </footer>
   </div>
 </body>

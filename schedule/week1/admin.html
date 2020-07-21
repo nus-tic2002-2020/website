@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header fixed>
+      <div class="w-100 p-1 bg-success text-center text-white"><span>This module will be <strong>fully online</strong> this semester. There is no need for on-campus presence.</span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -38,7 +39,7 @@
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Mon, Aug 24th] </span></a></li>
           <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Mon, Aug 31st] </span></a></li>
           <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Mon, Sep 7th] </span></a></li>
-          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mon, Sep 14th] </span></a></li>
+          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mon, Sep 21st] </span></a></li>
           <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mon, Sep 28th] </span></a></li>
           <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mon, Oct 5th] </span></a></li>
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mon, Oct 12th] </span></a></li>
@@ -50,17 +51,17 @@
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">**Links**</div>
         <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Links</strong></template>
-          <li><a href="https://github.com/nus-tic2002-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
-          <li><a href="https://github.com/nus-tic2002-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
-          <li><a href="https://gitter.im/nus-tic2002-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
-          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
-          <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+
+          <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/forum/categories/31c136fe-0976-4368-9f4c-a10c08f7bbf3" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+
+          <li><a href="/website/admin/index.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+
           <li tags="m--cs2113 m--tic2002 m--te3201"><a href target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
 
-          <li><a href="https://github.com/nus-tic2002-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke repo</span></a></li>
+          <li><a href="https://github.com/nus-tic2002-2020/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke repo</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -92,16 +93,11 @@
           </box>
           <p></p>
           <div>
-            <box type="info" dismissible>
-              <p>Tasks you need to do in the week will appear in this tab.
-              </p>
-            </box>
-            <p></p>
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3 pl-2" style="color: purple;">
               <ol>
                 <li>Install Java <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the lecture</span></span></li>
                 <li>Create a GitHub account</li>
-                <li>Submit the pre-module survey <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Saturday 2359</span></span></li>
+                <li>Submit the pre-module survey <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Sat, Aug 15th 2359</span></span></li>
                 <li>Attend the lecture</li>
                 <li>Submit weekly exercises</li>
               </ol>
@@ -306,7 +302,7 @@
                           ⏰ : deadline<br></p>
                       </div>
                       <h3 id="searching-for-keywords">Searching for keywords<span id="searching-for-keywords" class="anchor"></span><a class="fa fa-anchor" href="#searching-for-keywords" onclick="event.stopPropagation()"></a></h3>
-                      <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://github.com/nus-tic2002-AY2021S1/forum/issues">in the forum</a> so that we can add the missing keyword to our search index.</p>
+                      <p>Use the search box in the top navigation bar to search for keywords in the website pages. If you cannot find the content related to a keyword, let us know by posting <a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/forum/categories/31c136fe-0976-4368-9f4c-a10c08f7bbf3">in the forum</a> so that we can add the missing keyword to our search index.</p>
                       <div>
                         <h3 id="saving-as-pdf-files">Saving as PDF files<span id="saving-as-pdf-files" class="anchor"></span><a class="fa fa-anchor" href="#saving-as-pdf-files" onclick="event.stopPropagation()"></a></h3>
                         <p>Follow <a href="https://se-education.org/guides/tutorials/savingPdf.html">this guide @SE-EDU/guides</a>.</p>
@@ -314,7 +310,7 @@
                       <h3 id="printing-textbook-content">Printing Textbook Content<span id="printing-textbook-content" class="anchor"></span><a class="fa fa-anchor" href="#printing-textbook-content" onclick="event.stopPropagation()"></a></h3>
                       <p>Printer-friendly version <span class="dimmed">(indicated by <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span> icon)</span> have been provided for each chapter and the whole book. You can use them for saving as pdf files or printing.</p>
                       <h3 id="making-this-website-better">Making this Website Better<span id="making-this-website-better" class="anchor"></span><a class="fa fa-anchor" href="#making-this-website-better" onclick="event.stopPropagation()"></a></h3>
-                      <p>This website was generated using the <a href="https://markbind.org/">MarkBind</a> software developed at NUS. <strong>We welcome bug reports, suggestions, and contributions</strong>, to be submitted <a href="https://github.com/nus-tic2002-AY2021S1/website/issues">at the website issue tracker</a>.</p>
+                      <p>This website was generated using the <a href="https://markbind.org/">MarkBind</a> software developed at NUS. <strong>We welcome bug reports, suggestions, and contributions</strong>, to be submitted <a href="https://github.com/nus-tic2002-2020/website/issues">at the website issue tracker</a>.</p>
                     </div>
                   </div>
                 </div>
@@ -356,7 +352,7 @@
               </panel>
             </div>
             <p></p>
-            <h4 id="3-submit-the-pre-module-survey-by-saturday-2359"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Submit the pre-module survey <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Saturday 2359</span></span><span id="3-submit-the-pre-module-survey-by-saturday-2359" class="anchor"></span><a class="fa fa-anchor" href="#3-submit-the-pre-module-survey-by-saturday-2359" onclick="event.stopPropagation()"></a></h4>
+            <h4 id="3-submit-the-pre-module-survey-by-sat-aug-15th-2359"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Submit the pre-module survey <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Sat, Aug 15th 2359</span></span><span id="3-submit-the-pre-module-survey-by-sat-aug-15th-2359" class="anchor"></span><a class="fa fa-anchor" href="#3-submit-the-pre-module-survey-by-sat-aug-15th-2359" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>Submit the pre-module survey, available on LumiNUS</li>
             </ul>
@@ -407,7 +403,7 @@
                     <li>
                       <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Create an account on <a href="https://repl.it">https://repl.it</a>.
                     </li>
-                    <li>In your <code v-pre>repl.it</code> user profile set the <em>first name</em> to match your GitHub username exactly (so that the prof can trace your <code v-pre>repl.it</code> submissions to you). No restrictions on the last name.</li>
+                    <li>In your <code v-pre>repl.it</code> <mark>user profile set the <em>first name</em> to match your GitHub username exactly</mark> (so that the prof can trace your <code v-pre>repl.it</code> submissions to you). No restrictions on the last name.</li>
                     <li>Join the <code v-pre>repl.it</code> classroom <code v-pre>tic2002-2020</code> using the link <a href="https://repl.it/classroom/invite/szXDJN4">https://repl.it/classroom/invite/szXDJN4</a>.</li>
                   </ul>
                 </div>
@@ -421,7 +417,7 @@
                 <div>
                   <p>If you face difficulties/doubts while learning the weekly topics, doing weekly exercises/tasks, you can</p>
                   <ul>
-                    <li>post in the <a href="https://github.com/nus-tic2002-AY2021S1/forum/issues">module forum</a></li>
+                    <li>post in the <a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/forum/categories/31c136fe-0976-4368-9f4c-a10c08f7bbf3">module forum</a></li>
                     <li>ask for prof's help during next week’s tutorial hour</li>
                     <li>email prof at <code v-pre>tic2002</code>[at]<code v-pre>comp.nus.edu.sg</code></li>
                   </ul>
@@ -442,7 +438,7 @@
               <a class="nav-link py-1" href="#0-learn-about-the-module-and-the-website">0 Learn about the module and the website&#x200E;</a>
               <a class="nav-link py-1" href="#1-install-java-before-the-lecture">1 Install Java before the lecture&#x200E;</a>
               <a class="nav-link py-1" href="#2-create-a-github-account">2 Create a GitHub account&#x200E;</a>
-              <a class="nav-link py-1" href="#3-submit-the-pre-module-survey-by-saturday-2359">3 Submit the pre-module survey by Saturday 2359&#x200E;</a>
+              <a class="nav-link py-1" href="#3-submit-the-pre-module-survey-by-sat-aug-15th-2359">3 Submit the pre-module survey by Sat, Aug 15th 2359&#x200E;</a>
               <a class="nav-link py-1" href="#4-attend-the-lecture">4 Attend the lecture&#x200E;</a>
               <a class="nav-link py-1" href="#5-submit-weekly-exercises">5 Submit weekly exercises&#x200E;</a>
             </nav>
@@ -454,7 +450,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Tue, 21 Jul 2020, 22:38:00 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Wed, 22 Jul 2020, 2:02:08 GMT+8]</small></div>
     </footer>
   </div>
 </body>

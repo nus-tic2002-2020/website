@@ -27,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header fixed>
+      <div class="w-100 p-1 bg-success text-center text-white"><span>This module will be <strong>fully online</strong> this semester. There is no need for on-campus presence.</span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
@@ -38,7 +39,7 @@
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Mon, Aug 24th] </span></a></li>
           <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Mon, Aug 31st] </span></a></li>
           <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Mon, Sep 7th] </span></a></li>
-          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mon, Sep 14th] </span></a></li>
+          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mon, Sep 21st] </span></a></li>
           <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mon, Sep 28th] </span></a></li>
           <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mon, Oct 5th] </span></a></li>
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mon, Oct 12th] </span></a></li>
@@ -50,17 +51,17 @@
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">**Links**</div>
         <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Links</strong></template>
-          <li><a href="https://github.com/nus-tic2002-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
-          <li><a href="https://github.com/nus-tic2002-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
-          <li><a href="https://gitter.im/nus-tic2002-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
-          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
-          <li><a href="/website/admin/tutorials.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+
+          <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/forum/categories/31c136fe-0976-4368-9f4c-a10c08f7bbf3" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+
+          <li><a href="/website/admin/index.html#instructors" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+
           <li tags="m--cs2113 m--tic2002 m--te3201"><a href target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
 
-          <li><a href="https://github.com/nus-tic2002-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke repo</span></a></li>
+          <li><a href="https://github.com/nus-tic2002-2020/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke repo</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
@@ -169,7 +170,7 @@
                 </small></div>
               <p></p>
               <ul>
-                <li>[<a href="/website/schedule/week2/topics.html#W2-4">W2.4</a>] <strong>Git: Saving History</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                <li>[<a href="/website/schedule/week2/topics.html#W2-4">W2.4</a>] <strong>RCS: Saving History</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
               <div class="indented-level2">
                 <small>
@@ -201,7 +202,7 @@
                   </ul>
                 </small></div>
               <ul>
-                <li>[<a href="/website/schedule/week2/topics.html#W2-5">W2.5</a>] <strong>Git: Traversing History</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                <li>[<a href="/website/schedule/week2/topics.html#W2-5">W2.5</a>] <strong>RCS: Using History</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
               <div class="indented-level2">
                 <small>
@@ -232,7 +233,20 @@
             </span></panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W2-1"></span></p>
-          <div></div>
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <div id="oop-classes-and-objects">
+                      As you know, OOP is a core part of this module. Let's start learning the OOP paradigm this week.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <panel type="seamless" no-close expandable="true" expanded id="w2-1-oop-intro">
             <span slot="header" class="card-title">
               <div>
@@ -651,7 +665,25 @@
                 <div></div>
               </div>
               <p><span id="W2-1c"></span></p>
-              <div></div>
+              <div>
+                <div>
+                  <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                    <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                    <div class="indented">
+                      <div>
+                        <p><strong>OOP is built upon four core concepts.</strong> The firs two are:</p>
+                        <ol>
+                          <li><em>abstraction</em></li>
+                          <li><em>encapsulation</em></li>
+                          <li>...</li>
+                          <li>...</li>
+                        </ol>
+                        <p>They are explained in the sections below.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <panel type="seamless" expanded popup-url="/website/book/oop/objects/abstraction" id="paradigms-oop-objects-objects-as-abstractions">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W2.1c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -949,7 +981,18 @@
           </div>
           <p></p>
           <p><span id="W2-2"></span></p>
-          <div></div>
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>Now that you know what <em>objects</em> are, let's see how they are used in Java, which happens to be an OOP language.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <panel type="seamless" no-close expandable="true" expanded id="w2-2-java-objects">
             <span slot="header" class="card-title">
               <div>
@@ -1264,7 +1307,18 @@
             <div></div>
           </div>
           <p><span id="W2-3"></span></p>
-          <div></div>
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>Having seen how to use objects in Java, the next step is learn how to define new <em>kinds</em> of objects (aka <em>classes</em>) in Java.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <panel type="seamless" no-close expandable="true" expanded id="w2-3-java-classes">
             <span slot="header" class="card-title">
               <div>
@@ -1558,16 +1612,43 @@
           </div>
           <p></p>
           <p><span id="W2-4"></span></p>
-          <div></div>
-          <panel type="seamless" no-close expandable="true" expanded id="w2-4-git-saving-history">
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+
+
+                    <span tags="m--tic2002">
+                      You are going to start your project pretty soon. As you are adding feature increments to your project, you'll need a way to keep track of all those changes too. The tool we are going to use for that is called Git.
+                      <p>Let's jump in and learn how to get started using Git in your own computer.</p>
+                      <p></p>
+                    </span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w2-4-rcs-saving-history">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="w2-4-git-saving-history"><span class="dimmed">[W2.4]</span> <strong>Git: Saving History</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w2-4-git-saving-history" class="anchor"></span><a class="fa fa-anchor" href="#w2-4-git-saving-history" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="w2-4-rcs-saving-history"><span class="dimmed">[W2.4]</span> <strong>RCS: Saving History</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w2-4-rcs-saving-history" class="anchor"></span><a class="fa fa-anchor" href="#w2-4-rcs-saving-history" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
             <div class="indented-level1">
               <p><span id="W2-4a"></span></p>
-              <div></div>
+              <div>
+                <div>
+                  <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                    <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                    <div class="indented">
+                      <div>
+                        <p>First, let's learn a bit about <em>tracking the change history of a project</em> in general, at a higher level.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <panel type="seamless" expanded popup-url="/website/book/revisionControl/what" id="project-management-revision-control-what">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W2.4a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -1737,7 +1818,20 @@
                 <div></div>
               </div>
               <p><span id="W2-4c"></span></p>
-              <div></div>
+              <div>
+                <div>
+                  <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                    <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                    <div class="indented">
+                      <div>
+                        <p>Now that we know what RCS is in general, we can try to practice it ourselves using a specific tool i.e., Git.</p>
+                        <p>The following section gives a specific scenario that includes the steps of initializing a Git repository.</p>
+                        <p><strong>If you are new to Git</strong>, you are highly recommended to <mark>follow those steps in your own computer</mark> to get some hands-on practice as you learn Git usage.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/init" id="tools-git-and-github-init-getting-started">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W2.4c</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -1815,7 +1909,18 @@
                 <div></div>
               </div>
               <p><span id="W2-4d"></span></p>
-              <div></div>
+              <div>
+                <div>
+                  <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                    <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                    <div class="indented">
+                      <div>
+                        <p>For the next few sections, the drill is the same: first learn the high-level explanation of a revision control concept, and then follow the given scenarios yourself to learn how to apply that concept using Git.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <panel type="seamless" expanded popup-url="/website/book/revisionControl/savingHistory" id="project-management-revision-control-saving-history">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W2.4d</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -2072,11 +2177,22 @@
             <div></div>
           </div>
           <p><span id="W2-5"></span></p>
-          <div></div>
-          <panel type="seamless" no-close expandable="true" expanded id="w2-5-git-traversing-history">
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>Previously, you learned how to <em>save</em> revision history in your local repository, in the form of <em>commits</em>. Next, let us use how to make use of that history.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w2-5-rcs-using-history">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="w2-5-git-traversing-history"><span class="dimmed">[W2.5]</span> <strong>Git: Traversing History</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w2-5-git-traversing-history" class="anchor"></span><a class="fa fa-anchor" href="#w2-5-git-traversing-history" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="w2-5-rcs-using-history"><span class="dimmed">[W2.5]</span> <strong>RCS: Using History</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w2-5-rcs-using-history" class="anchor"></span><a class="fa fa-anchor" href="#w2-5-rcs-using-history" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
             <div class="indented-level1">
@@ -2403,8 +2519,8 @@
                 <a class="nav-link py-1" href="#key-exercise-add-getters-setters-to-the-circle-class"> [Key Exercise] add getters/setters to the Circle class&#x200E;</a>
                 <a class="nav-link py-1" href="#key-exercise-add-getmaxradius-to-the-circle-class"> [Key Exercise] add getMaxRadius to the Circle class&#x200E;</a>
               </nav>
-              <a class="nav-link py-1" href="#w2-4-git-saving-history">[W2.4] Git: Saving History &#x200E;</a>
-              <a class="nav-link py-1" href="#w2-5-git-traversing-history">[W2.5] Git: Traversing History &#x200E;</a>
+              <a class="nav-link py-1" href="#w2-4-rcs-saving-history">[W2.4] RCS: Saving History &#x200E;</a>
+              <a class="nav-link py-1" href="#w2-5-rcs-using-history">[W2.5] RCS: Using History &#x200E;</a>
             </nav>
 
           </nav>
@@ -2414,7 +2530,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Tue, 21 Jul 2020, 22:38:00 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Wed, 22 Jul 2020, 2:02:08 GMT+8]</small></div>
     </footer>
   </div>
 </body>
