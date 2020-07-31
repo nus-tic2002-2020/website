@@ -63,12 +63,12 @@
                       <p><a href="http://hgbook.red-bean.com/"><em><strong>Mercurial: The Definitive Guide</strong></em></a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
                     </div>
                   </b-modal>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>RCS</strong>: <strong>Revision control software</strong> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</p>
                     </div>
                   </box>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Revision</strong>: A <em>revision</em> (some seem to use it interchangeably with <em>version</em> while others seem to distinguish the two -- here, let us treat them as the same, for simplicity) is a state of a piece of information at a specific time that is a result of some changes to it <span class="dimmed">e.g., if you modify the code and save the file, you have a new revision (or a version) of that file</span>.</p>
                     </div>
@@ -83,7 +83,7 @@
                     </small></small></span><a class="fa fa-anchor" href="#repositories" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Repository</strong> (<em>repo</em> for short): The database of the history of a directory being tracked by an RCS software (e.g. Git).</p>
                     </div>
@@ -118,9 +118,6 @@
                       <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/7exFDGHgQcw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                     </tab>
                   </tabs>
-                  <h5 id="identifying-points-in-history">Identifying points in history<a class="fa fa-anchor" href="#identifying-points-in-history" onclick="event.stopPropagation()"></a></h5>
-                  <p><strong>Each commit in a repo is a recorded point in the history of the project that is uniquely identified by an auto-generated <mark>hash</mark></strong> e.g. <code v-pre>a16043703f28e5b3dab95915f5c5e5bf4fdc5fc1</code>.</p>
-                  <p><strong>You can <mark>tag</mark> a specific commit with a more easily identifiable name</strong> e.g. <code v-pre>v1.0.2</code></p>
                 </div>
               </div>
             </div>
@@ -131,6 +128,8 @@
               <div class="indented-less">
                 <div>
                   <p><strong><span for="pop:rcs" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:rcs'].show()" class="trigger">RCS</span> tools store the history of the working directory as a series of commits.</strong> This means you should commit after each change that you want the RCS to 'remember' for us.</p>
+                  <p><strong>Each commit in a repo is a recorded point in the history of the project that is uniquely identified by an auto-generated <mark>hash</mark></strong> e.g. <code v-pre>a16043703f28e5b3dab95915f5c5e5bf4fdc5fc1</code>.</p>
+                  <p><strong>You can <mark>tag</mark> a specific commit with a more easily identifiable name</strong> e.g. <code v-pre>v1.0.2</code></p>
                   <p><strong>To see what changed between two points of the history, you can ask the RCS tool to <mark><em>diff</em></mark> the two commits in concern.</strong></p>
                   <p><strong>To restore the state of the working directory at a point in the past, you can <mark><em>checkout</em></mark> the commit in concern.</strong> i.e., you can traverse the history of the working directory simply by checking out the commits you are interested in.</p>
                   <div>
@@ -201,7 +200,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Wed, 22 Jul 2020, 2:02:08 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sat, 1 Aug 2020, 0:30:08 GMT+8]</small></div>
     </footer>
   </div>
 </body>

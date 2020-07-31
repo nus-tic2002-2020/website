@@ -60,6 +60,7 @@
           <li tags="m--cs2113 m--tic2002 m--te3201"><a href target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
 
+
           <li><a href="https://github.com/nus-tic2002-2020/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke repo</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
@@ -318,10 +319,10 @@
                   <p><strong>In this model, each of the iterations produces a new version of the product.</strong> Feedback on the version can then be fed to the next iteration. Taking the Minesweeper game as an example, the iterative model will deliver a fully playable version from the early iterations. However, the first iteration will have primitive functionality, for example, a clumsy text based UI, fixed board size, limited randomization etc. These functionalities will then be improved in later releases.</p>
                   <p><strong>The iterative model can take a <em>breadth-first</em> or a <em>depth-first</em> approach to iteration planning.</strong></p>
                   <ul>
-                    <li><strong>breadth-first</strong>: an iteration evolves all major components in parallel.</li>
-                    <li><strong>depth-first</strong>: an iteration focuses on fleshing out only some components.</li>
+                    <li><strong>breadth-first</strong>: an iteration evolves all major components in parallel <span class="dimmed">e.g., add a new feature fully, or enhance an existing feature</span>.</li>
+                    <li><strong>depth-first</strong>: an iteration focuses on fleshing out only some components <span class="dimmed">e.g., update the backend to support a new feature that will be added in a future iteration</span>.</li>
                   </ul>
-                  <p><strong>Most project use a mixture of breadth-first and depth-first iterations.</strong> Hence, the common phrase ‘an iterative and incremental process’.</p>
+                  <p><strong>Most project use a mixture of breadth-first and depth-first iterations</strong> <span class="dimmed">i.e., an iteration can contain some breadth-first work as well as some depth-first work</span>.</p>
                 </div>
                 <div></div>
               </div>
@@ -606,7 +607,7 @@
                 <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain CMMI</span></span></span></span>
                 <p></p>
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <p>CMMI (Capability Maturity Model Integration) is a process improvement approach defined by Software Engineering Institute at Carnegie Melon University. CMMI provides organizations with the essential elements of effective processes, which will improve their performance. <sub>-- adapted from <a href="http://www.sei.cmu.edu/cmmi/">http://www.sei.cmu.edu/cmmi/</a></sub></p>
                   </box>
                   <p><strong>CMMI defines five maturity levels for a process and provides criteria to determine if the process of an organization is at a certain maturity level.</strong> The diagram below [taken from Wikipedia] gives an overview of the five levels.</p>
@@ -851,7 +852,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Wed, 22 Jul 2020, 2:02:08 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sat, 1 Aug 2020, 0:30:08 GMT+8]</small></div>
     </footer>
   </div>
 </body>

@@ -61,6 +61,7 @@
           <li tags="m--cs2113 m--tic2002 m--te3201"><a href target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
 
+
           <li><a href="https://github.com/nus-tic2002-2020/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke repo</span></a></li>
         </dropdown>
         <li slot="right" class="nav-link">
@@ -87,6 +88,7 @@
           </nav>
           <p></p>
           <h1 id="week-11-mon-oct-19th-topics">Week 11 <small><small><span class="dimmed">[Mon, Oct 19th]</span> - Topics</small></small><span id="week-11-mon-oct-19th-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-11-mon-oct-19th-topics" onclick="event.stopPropagation()"></a></h1>
+          <div></div>
           <panel type="seamless"><template slot="_header">
               <p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p>
             </template>
@@ -521,7 +523,7 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <box type="definition">
+                      <box type="definition" seamless>
                         <div>
                           <p><strong>Unit testing</strong>: testing individual units (methods, classes, subsystems, ...) to ensure each piece works correctly</p>
                         </div>
@@ -591,7 +593,7 @@
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code v-pre>Logic</code> class depends on a <code v-pre>Storage</code> class, unit testing the <code v-pre>Logic</code> class requires isolating the <code v-pre>Logic</code> class from the <code v-pre>Storage</code> class.</p>
                       </box>
                       <p><strong><em>Stubs</em> can isolate the <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">Software Under Test (in this case, the <em>unit</em> being tested)</span>SUT</span> from its dependencies</strong>.</p>
-                      <box type="definition">
+                      <box type="definition" seamless>
                         <div>
                           <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
                         </div>
@@ -757,7 +759,7 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <box type="definition">
+                      <box type="definition" seamless>
                         <div>
                           <p><strong><em>System testing</em>: take the <em>whole system</em> and test it <em>against the system specification</em>.</strong></p>
                         </div>
@@ -806,7 +808,7 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <box type="definition">
+                      <box type="definition" seamless>
                         <div>
                           <p><strong><em>Acceptance testing</em> (aka <em>User Acceptance Testing (UAT)</em>: test the system to ensure it meets the user requirements.</strong></p>
                         </div>
@@ -1009,7 +1011,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Wed, 22 Jul 2020, 2:02:08 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sat, 1 Aug 2020, 0:30:08 GMT+8]</small></div>
     </footer>
   </div>
 </body>

@@ -99,12 +99,12 @@
               <div class="indented-less">
                 <div>
                   <p><strong>After initializing a repository, Git can help you with revision controlling files inside the <em>working directory</em>. However, it is not automatic.</strong> It is up to you to tell Git which of your changes (aka <em>revisions</em>) should be <em>committed</em> to its memory for later use. Saving changes into Git's memory in that way is often called <em>committing</em> and a change saved to the revision history is called a <em>commit</em>.</p>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Working directory</strong>: the root directory revision-controlled by Git (e.g., the directory in which the repo was initialized).</p>
                     </div>
                   </box>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Commit</strong> (noun): a change (aka a <em>revision</em>) saved in the Git revision history.<br>
                         (verb): the act of creating a commit i.e., saving a change in the working directory into the Git revision history.</p>
@@ -131,7 +131,7 @@
                     </tab>
                   </tabs>
                   <p><strong>3. Stage the changes to commit</strong>: Although Git has detected the file in the working directory, it will not do anything with the file unless you tell it to. Suppose you want to commit the current changes to the file. First, you should <em>stage</em> the file.</p>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Stage</strong> (verb): Instructing Git to prepare a file for committing.</p>
                     </div>
@@ -185,7 +185,7 @@
                       <p></p>
                     </li>
                     <li>
-                      <p>Add more Next, add two more files <code v-pre>colors.txt</code> and <code v-pre>shapes.txt</code> to the same working directory. Add a third commit to record the current state of the working directory.</p>
+                      <p>Next, add two more files <code v-pre>colors.txt</code> and <code v-pre>shapes.txt</code> to the same working directory. Add a third commit to record the current state of the working directory.</p>
                       <img src="/website/book/gitAndGithub/commit/images/sourcetree_7.png" height="150">
                       <p></p>
                     </li>
@@ -314,7 +314,7 @@
                   <tabs>
                     <tab><template slot="_header">SourceTree</template>
                       <div>
-                        <p>Select the two points you want to compare using <kbd>Ctrl</kbd>+<code v-pre>Click</code>.</p>
+                        <p>Select the two points you want to compare using <kbd>Ctrl</kbd>+<code v-pre>Click</code>. The differences between the two selected versions will show up in the bottom half of SourceTree, as shown in the screenshot below.</p>
                         <img src="/website/book/gitAndGithub/diff/images/sourcetree_2.png" height="200">
                         <p></p>
                         <p>The same method can be used to compare the current state of the working directory (which might have uncommitted changes) to a point in the history.</p>
@@ -554,13 +554,13 @@
                           <p><strong>A repo can work with any number of other repositories as long as they have a shared history</strong> e.g., <code v-pre>repo1</code> can pull from (or push to) <code v-pre>repo2</code> and <code v-pre>repo3</code> if they have a shared history between them.</p>
                         </div>
                       </b-modal>
-                      <p><strong>To communicate with another remote repo, you can first add it as a <em>remote</em> of your repo</strong>. Here are the steps:</p>
+                      <p><strong>To communicate with another remote repo, you can first add it as a <em>remote</em> of your repo</strong>. Here is an example scenario you can follow to learn how to pull from another repo:</p>
                       <tabs>
                         <tab><template slot="_header">SourceTree</template>
                           <div>
                             <ol>
                               <li>
-                                <p>Open the local repo in SourceTree.</p>
+                                <p>Open the local repo in SourceTree. Suggested: Use your local clone of the <code v-pre>samplerepo-things</code> repo.</p>
                               </li>
                               <li>
                                 <p>Choose <code v-pre>Repository</code> → <code v-pre>Repository Settings</code> menu option.</p>
@@ -569,15 +569,23 @@
                                 <p>Add a new <em>remote</em> to the repo with the following values.</p>
                                 <img src="/website/book/gitAndGithub/pull/images/fillRemoteInfoForSourceTree.png" width="450">
                                 <ul>
-                                  <li><code v-pre>Remote name</code>: the name you want to assign to the remote repo. E.g., <code v-pre>upstream1</code></li>
-                                  <li><code v-pre>URL/path</code>: the URL of your repo (ending in <code v-pre>.git</code>) that you collected earlier.</li>
+                                  <li><code v-pre>Remote name</code>: the name you want to assign to the remote repo e.g., <code v-pre>upstream1</code></li>
+                                  <li><code v-pre>URL/path</code>: the URL of your repo (ending in <code v-pre>.git</code>) that. Suggested: <code v-pre>https://github.com/se-edu/samplerepo-things-2.git</code> (<a href="https://github.com/se-edu/samplerepo-things-2"><code v-pre>samplerepo-things-2</code></a> is another repo that has a shared history with <code v-pre>samplerepo-things</code>)</li>
                                   <li><code v-pre>Username</code>: your GitHub username<br><br></li>
                                 </ul>
                               </li>
                               <li>
-                                <p>Now, you can pull from the added repo as you did before <mark>but choose the remote name of the repo you want to pull from</mark> (instead of <code v-pre>origin</code>)<br>
+                                <p>Now, you can pull from the added repo as you did before <mark>but choose the remote name of the repo you want to pull from</mark> (instead of <code v-pre>origin</code>):<br>
                                   <img src="/website/book/gitAndGithub/pull/images/sourcetree_3.png" height="160"></p>
                                 <p></p>
+                                <box type="tip" seamless>
+                                  <p>If the <code v-pre>Remote branch to pull</code> dropdown is empty, click the <code v-pre>Refresh</code> button on its right.
+                                  </p>
+                                </box>
+                                <p></p>
+                              </li>
+                              <li>
+                                <p>If the pull from the <code v-pre>samplerepo-things-2</code> was successful, you should have received one more commit into your local repo.</p>
                               </li>
                             </ol>
                           </div>
@@ -681,13 +689,13 @@
                           <p><strong>A repo can work with any number of other repositories as long as they have a shared history</strong> e.g., <code v-pre>repo1</code> can pull from (or push to) <code v-pre>repo2</code> and <code v-pre>repo3</code> if they have a shared history between them.</p>
                         </div>
                       </b-modal>
-                      <p><strong>To communicate with another remote repo, you can first add it as a <em>remote</em> of your repo</strong>. Here are the steps:</p>
+                      <p><strong>To communicate with another remote repo, you can first add it as a <em>remote</em> of your repo</strong>. Here is an example scenario you can follow to learn how to pull from another repo:</p>
                       <tabs>
                         <tab><template slot="_header">SourceTree</template>
                           <div>
                             <ol>
                               <li>
-                                <p>Open the local repo in SourceTree.</p>
+                                <p>Open the local repo in SourceTree. Suggested: Use your local clone of the <code v-pre>samplerepo-things</code> repo.</p>
                               </li>
                               <li>
                                 <p>Choose <code v-pre>Repository</code> → <code v-pre>Repository Settings</code> menu option.</p>
@@ -696,15 +704,23 @@
                                 <p>Add a new <em>remote</em> to the repo with the following values.</p>
                                 <img src="/website/book/gitAndGithub/pull/images/fillRemoteInfoForSourceTree.png" width="450">
                                 <ul>
-                                  <li><code v-pre>Remote name</code>: the name you want to assign to the remote repo. E.g., <code v-pre>upstream1</code></li>
-                                  <li><code v-pre>URL/path</code>: the URL of your repo (ending in <code v-pre>.git</code>) that you collected earlier.</li>
+                                  <li><code v-pre>Remote name</code>: the name you want to assign to the remote repo e.g., <code v-pre>upstream1</code></li>
+                                  <li><code v-pre>URL/path</code>: the URL of your repo (ending in <code v-pre>.git</code>) that. Suggested: <code v-pre>https://github.com/se-edu/samplerepo-things-2.git</code> (<a href="https://github.com/se-edu/samplerepo-things-2"><code v-pre>samplerepo-things-2</code></a> is another repo that has a shared history with <code v-pre>samplerepo-things</code>)</li>
                                   <li><code v-pre>Username</code>: your GitHub username<br><br></li>
                                 </ul>
                               </li>
                               <li>
-                                <p>Now, you can pull from the added repo as you did before <mark>but choose the remote name of the repo you want to pull from</mark> (instead of <code v-pre>origin</code>)<br>
+                                <p>Now, you can pull from the added repo as you did before <mark>but choose the remote name of the repo you want to pull from</mark> (instead of <code v-pre>origin</code>):<br>
                                   <img src="/website/book/gitAndGithub/pull/images/sourcetree_3.png" height="160"></p>
                                 <p></p>
+                                <box type="tip" seamless>
+                                  <p>If the <code v-pre>Remote branch to pull</code> dropdown is empty, click the <code v-pre>Refresh</code> button on its right.
+                                  </p>
+                                </box>
+                                <p></p>
+                              </li>
+                              <li>
+                                <p>If the pull from the <code v-pre>samplerepo-things-2</code> was successful, you should have received one more commit into your local repo.</p>
                               </li>
                             </ol>
                           </div>
@@ -732,7 +748,7 @@
                   </b-modal>
                   <tabs>
                     <tab><template slot="_header">SourceTree</template>
-                      <p>Push your repo to the new remote the usual way, but select the name of target remote instead of <code v-pre>origin</code>.<br>
+                      <p>Push your repo to the new remote the usual way, but select the name of target remote instead of <code v-pre>origin</code> and remember to select the <code v-pre>Track</code> checkbox.<br>
                         <img src="/website/book/gitAndGithub/push/images/pushToRemote.png" width="470"></p>
                     </tab>
                     <tab><template slot="_header">CLI</template>
@@ -767,13 +783,13 @@
                           <p><strong>A repo can work with any number of other repositories as long as they have a shared history</strong> e.g., <code v-pre>repo1</code> can pull from (or push to) <code v-pre>repo2</code> and <code v-pre>repo3</code> if they have a shared history between them.</p>
                         </div>
                       </b-modal>
-                      <p><strong>To communicate with another remote repo, you can first add it as a <em>remote</em> of your repo</strong>. Here are the steps:</p>
+                      <p><strong>To communicate with another remote repo, you can first add it as a <em>remote</em> of your repo</strong>. Here is an example scenario you can follow to learn how to pull from another repo:</p>
                       <tabs>
                         <tab><template slot="_header">SourceTree</template>
                           <div>
                             <ol>
                               <li>
-                                <p>Open the local repo in SourceTree.</p>
+                                <p>Open the local repo in SourceTree. Suggested: Use your local clone of the <code v-pre>samplerepo-things</code> repo.</p>
                               </li>
                               <li>
                                 <p>Choose <code v-pre>Repository</code> → <code v-pre>Repository Settings</code> menu option.</p>
@@ -782,15 +798,23 @@
                                 <p>Add a new <em>remote</em> to the repo with the following values.</p>
                                 <img src="/website/book/gitAndGithub/pull/images/fillRemoteInfoForSourceTree.png" width="450">
                                 <ul>
-                                  <li><code v-pre>Remote name</code>: the name you want to assign to the remote repo. E.g., <code v-pre>upstream1</code></li>
-                                  <li><code v-pre>URL/path</code>: the URL of your repo (ending in <code v-pre>.git</code>) that you collected earlier.</li>
+                                  <li><code v-pre>Remote name</code>: the name you want to assign to the remote repo e.g., <code v-pre>upstream1</code></li>
+                                  <li><code v-pre>URL/path</code>: the URL of your repo (ending in <code v-pre>.git</code>) that. Suggested: <code v-pre>https://github.com/se-edu/samplerepo-things-2.git</code> (<a href="https://github.com/se-edu/samplerepo-things-2"><code v-pre>samplerepo-things-2</code></a> is another repo that has a shared history with <code v-pre>samplerepo-things</code>)</li>
                                   <li><code v-pre>Username</code>: your GitHub username<br><br></li>
                                 </ul>
                               </li>
                               <li>
-                                <p>Now, you can pull from the added repo as you did before <mark>but choose the remote name of the repo you want to pull from</mark> (instead of <code v-pre>origin</code>)<br>
+                                <p>Now, you can pull from the added repo as you did before <mark>but choose the remote name of the repo you want to pull from</mark> (instead of <code v-pre>origin</code>):<br>
                                   <img src="/website/book/gitAndGithub/pull/images/sourcetree_3.png" height="160"></p>
                                 <p></p>
+                                <box type="tip" seamless>
+                                  <p>If the <code v-pre>Remote branch to pull</code> dropdown is empty, click the <code v-pre>Refresh</code> button on its right.
+                                  </p>
+                                </box>
+                                <p></p>
+                              </li>
+                              <li>
+                                <p>If the pull from the <code v-pre>samplerepo-things-2</code> was successful, you should have received one more commit into your local repo.</p>
                               </li>
                             </ol>
                           </div>
@@ -982,7 +1006,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Wed, 22 Jul 2020, 2:02:08 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sat, 1 Aug 2020, 0:30:08 GMT+8]</small></div>
     </footer>
   </div>
 </body>
