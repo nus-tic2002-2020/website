@@ -1,0 +1,38 @@
+2020-08-04T16:08:20.501Z - info: Website generation (lazy) started at 12:08:17 AM
+2020-08-04T16:08:30.328Z - info: Building assets...
+2020-08-04T16:08:36.612Z - info: Assets built
+2020-08-04T16:08:36.614Z - info: Generating landing page...
+2020-08-04T16:08:38.793Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-08-04T16:08:38.900Z - info: Website generation (lazy) complete! Total build time: 21.283s
+2020-08-04T16:08:39.774Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-08-04T16:08:39.775Z - info: Press CTRL+C to stop ...
+2020-08-04T16:08:39.838Z - info: Site data built
+2020-08-04T16:11:52.740Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\se-book-adapted\index as some of its dependencies were changed since the last visit
+2020-08-04T16:11:53.128Z - info: Site data built
+2020-08-04T16:11:53.129Z - info: Lazy website regeneration complete! Total build time: 0.39s
+2020-08-04T16:11:56.998Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\index as some of its dependencies were changed since the last visit
+2020-08-04T16:11:57.639Z - info: Site data built
+2020-08-04T16:11:57.640Z - info: Lazy website regeneration complete! Total build time: 0.642s
+2020-08-04T16:12:02.036Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\topics as some of its dependencies were changed since the last visit
+2020-08-04T16:12:04.187Z - info: Site data built
+2020-08-04T16:12:04.192Z - info: Lazy website regeneration complete! Total build time: 2.156s
+2020-08-04T16:13:35.481Z - info: [12:13:35 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-08-04T16:13:36.485Z - info: Rebuilding 1 pages
+2020-08-04T16:13:38.918Z - info: Pages rebuilt
+2020-08-04T16:13:38.918Z - info: Website regeneration complete! Total build time: 2.434s
+2020-08-04T16:13:38.960Z - info: Site data built
+2020-08-04T16:14:32.698Z - info: [12:14:32 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-08-04T16:14:33.702Z - info: Rebuilding 1 pages
+2020-08-04T16:14:36.274Z - info: Pages rebuilt
+2020-08-04T16:14:36.274Z - info: Website regeneration complete! Total build time: 2.574s
+2020-08-04T16:14:36.328Z - info: Site data built
+2020-08-04T16:17:05.650Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin as some of its dependencies were changed since the last visit
+2020-08-04T16:17:06.536Z - info: Site data built
+2020-08-04T16:17:06.536Z - info: Lazy website regeneration complete! Total build time: 0.886s
+2020-08-04T16:32:20.518Z - info: [12:32:20 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin-tic2002.mbdf
+2020-08-04T16:32:21.573Z - info: Rebuilding 1 pages
+2020-08-04T16:32:22.331Z - info: Pages rebuilt
+2020-08-04T16:32:22.332Z - info: Website regeneration complete! Total build time: 0.79s
+2020-08-04T16:32:22.335Z - info: Site data built
+2020-08-04T16:39:32.484Z - info: Website generation started at 12:39:29 AM
+2020-08-04T16:39:41.944Z - info: Building assets...

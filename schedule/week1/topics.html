@@ -663,6 +663,11 @@
                 <h2 id="w1-3-java-helloworld"><span class="dimmed">[W1.3]</span> <strong>Java: HelloWorld</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w1-3-java-helloworld" class="anchor"></span><a class="fa fa-anchor" href="#w1-3-java-helloworld" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
+            <panel type="seamless">
+              <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
+              <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=5e45eb04-317d-4ff2-83fb-ac0d01085120&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+            </panel>
+            <p></p>
             <div class="indented-level1">
               <p><span id="W1-3a"></span></p>
               <div></div>
@@ -791,7 +796,41 @@
                 <div></div>
               </div>
               <p><span id="W1-3d"></span></p>
-              <div></div>
+              <div>
+                <div>
+                  <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                    <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                    <div class="indented">
+                      <div>
+                        <span tags="m--tic2002">
+                          <p>At the end of the next section, there is an exercise (<em>[Key Exercise] ByeWorld</em>) that you need to submit on <a href="http://repl.it">repl.it</a>. From this point onwards, programming exercises marked as <span class="bg-dark text-white p-1">[Key Exercise]</span> need to be submitted on repl.</p>
+                          <panel type class="embedding" minimized><template slot="_header">
+                              <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → <a href="http://Repl.it">Repl.it</a> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                            </template>
+                            <div>
+                              <h3 id="repl-it"><code v-pre>repl.it</code><span id="repl-it" class="anchor"></span><a class="fa fa-anchor" href="#repl-it" onclick="event.stopPropagation()"></a></h3>
+                              <p>We'll be using <code v-pre>Repl.it</code> for coding exercises (compulsory).</p>
+                              <ul>
+                                <li>
+                                  <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Create an account on <a href="https://repl.it">https://repl.it</a>.
+                                </li>
+                                <li>In your <code v-pre>repl.it</code> <mark>user profile set the <em>first name</em> to match your GitHub username exactly</mark> (so that the prof can trace your <code v-pre>repl.it</code> submissions to you). No restrictions on the last name.</li>
+                                <li>Join the <code v-pre>repl.it</code> classroom <code v-pre>tic2002-2020</code> using the link <a href="https://repl.it/classroom/invite/szXDJN4">https://repl.it/classroom/invite/szXDJN4</a>.</li>
+                              </ul>
+                            </div>
+                          </panel>
+                          <p></p>
+                          <p>The process of submitting exercises to repl is explained in this video:</p>
+                          <panel type="seamless">
+                            <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
+                            <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=5e45eb04-317d-4ff2-83fb-ac0d01085120&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                          </panel>
+                          <p></p>
+                        </span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <panel type="seamless" expanded popup-url="/website/book/cppToJava/gettingStarted/running" id="c-to-java-getting-started-running-a-program">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W1.3d</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -837,8 +876,8 @@
                           </template>
                           <div>
                             <div>
-                              <panel type="dark" expanded id="key-exercise-run-helloworld"><template slot="_header">
-                                  <h3 id="key-exercise-run-helloworld"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] Run HelloWorld</small></small><span id="key-exercise-run-helloworld" class="anchor"></span><a class="fa fa-anchor" href="#key-exercise-run-helloworld" onclick="event.stopPropagation()"></a></h3>
+                              <panel type="secondary" expanded id="exercise-run-helloworld"><template slot="_header">
+                                  <h3 id="exercise-run-helloworld"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Exercise] Run HelloWorld</small></small><span id="exercise-run-helloworld" class="anchor"></span><a class="fa fa-anchor" href="#exercise-run-helloworld" onclick="event.stopPropagation()"></a></h3>
                                 </template>
                                 <question>
                                   <ul>
@@ -846,6 +885,16 @@
                                     <li>Write, compile and run a small Java program <span class="dimmed">(e.g., a HelloWorld program)</span> in your computer. You can use any code editor to write the program but use the command prompt to compile and run the program.</li>
                                     <li>Modify the code to print something else, save, compile, and run the program again.</li>
                                   </ul>
+                                </question>
+                              </panel>
+                            </div>
+                            <div>
+                              <panel type="dark" expanded id="key-exercise-byeworld"><template slot="_header">
+                                  <h3 id="key-exercise-byeworld"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] ByeWorld</small></small><span id="key-exercise-byeworld" class="anchor"></span><a class="fa fa-anchor" href="#key-exercise-byeworld" onclick="event.stopPropagation()"></a></h3>
+                                </template>
+                                <question>
+                                  <p>Modify the code below to print &quot;Bye World!&quot;.</p>
+                                  <pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span>  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span class="highlighted">    <span class="hljs-comment">// add code here</span><br></span><span>  }<br></span><span>}<br></span></code></pre>
                                 </question>
                               </panel>
                             </div>
@@ -1787,7 +1836,8 @@
               <a class="nav-link py-1" href="#w1-2-java-intro">[W1.2] Java: Intro &#x200E;</a>
               <a class="nav-link py-1" href="#w1-3-java-helloworld">[W1.3] Java: HelloWorld &#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-                <a class="nav-link py-1" href="#key-exercise-run-helloworld"> [Key Exercise] Run HelloWorld&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-run-helloworld"> [Exercise] Run HelloWorld&#x200E;</a>
+                <a class="nav-link py-1" href="#key-exercise-byeworld"> [Key Exercise] ByeWorld&#x200E;</a>
               </nav>
               <a class="nav-link py-1" href="#w1-4-java-data-types">[W1.4] Java: Data Types &#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
@@ -1808,7 +1858,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sun, 2 Aug 2020, 21:47:05 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Wed, 5 Aug 2020, 0:39:47 GMT+8]</small></div>
     </footer>
   </div>
 </body>
