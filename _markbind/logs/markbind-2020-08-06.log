@@ -1,0 +1,56 @@
+2020-08-05T16:11:50.015Z - info: Website generation (lazy) started at 12:11:43 AM
+2020-08-05T16:12:00.797Z - info: Building assets...
+2020-08-05T16:12:08.125Z - info: Assets built
+2020-08-05T16:12:08.126Z - info: Generating landing page...
+2020-08-05T16:12:12.439Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-08-05T16:12:12.661Z - info: Website generation (lazy) complete! Total build time: 29.536s
+2020-08-05T16:12:13.880Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-08-05T16:12:13.881Z - info: Press CTRL+C to stop ...
+2020-08-05T16:12:13.958Z - info: Site data built
+2020-08-05T16:12:57.374Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\index as some of its dependencies were changed since the last visit
+2020-08-05T16:12:58.049Z - info: Site data built
+2020-08-05T16:12:58.050Z - info: Lazy website regeneration complete! Total build time: 0.677s
+2020-08-05T16:13:02.295Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\topics as some of its dependencies were changed since the last visit
+2020-08-05T16:13:04.601Z - info: Site data built
+2020-08-05T16:13:04.602Z - info: Lazy website regeneration complete! Total build time: 2.307s
+2020-08-05T16:15:20.970Z - info: [12:15:20 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\controlFlow\methods\q-getGradeCapMethod.md
+2020-08-05T16:15:21.983Z - info: Rebuilding 1 pages
+2020-08-05T16:15:24.625Z - info: Pages rebuilt
+2020-08-05T16:15:24.626Z - info: Website regeneration complete! Total build time: 2.647s
+2020-08-05T16:15:24.674Z - info: Site data built
+2020-08-05T16:15:31.105Z - info: [12:15:31 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\controlFlow\methods\q-getGradeCapMethod.md
+2020-08-05T16:15:32.109Z - info: Rebuilding 1 pages
+2020-08-05T16:15:34.380Z - info: Pages rebuilt
+2020-08-05T16:15:34.380Z - info: Website regeneration complete! Total build time: 2.274s
+2020-08-05T16:15:34.394Z - info: Site data built
+2020-08-05T16:15:47.414Z - info: [12:15:47 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\controlFlow\loops\q-getMultipleGradeCapsMethod.md
+2020-08-05T16:15:48.431Z - info: Rebuilding 1 pages
+2020-08-05T16:15:50.261Z - info: Pages rebuilt
+2020-08-05T16:15:50.262Z - info: Website regeneration complete! Total build time: 1.84s
+2020-08-05T16:15:50.273Z - info: Site data built
+2020-08-05T16:16:01.898Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week2\topics as some of its dependencies were changed since the last visit
+2020-08-05T16:16:05.379Z - info: Site data built
+2020-08-05T16:16:05.383Z - info: Lazy website regeneration complete! Total build time: 3.485s
+2020-08-05T16:19:18.572Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin as some of its dependencies were changed since the last visit
+2020-08-05T16:19:19.713Z - info: Site data built
+2020-08-05T16:19:19.714Z - info: Lazy website regeneration complete! Total build time: 1.157s
+2020-08-05T16:23:04.542Z - info: [12:23:04 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\index-tic2002.mbdf
+2020-08-05T16:23:04.600Z - info: [12:23:04 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\index-tic2002.mbdf
+2020-08-05T16:23:05.557Z - info: No pages needed to be rebuilt
+2020-08-05T16:26:16.692Z - info: [12:26:16 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\index-tic2002.mbdf
+2020-08-05T16:26:16.716Z - info: [12:26:16 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-08-05T16:26:17.705Z - info: Rebuilding 1 pages
+2020-08-05T16:26:21.132Z - info: Pages rebuilt
+2020-08-05T16:26:21.133Z - info: Website regeneration complete! Total build time: 3.431s
+2020-08-05T16:26:21.134Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin as some of its dependencies were changed since the last visit
+2020-08-05T16:26:21.522Z - info: Site data built
+2020-08-05T16:26:21.607Z - info: Site data built
+2020-08-05T16:26:21.612Z - info: Lazy website regeneration complete! Total build time: 0.478s
+2020-08-05T16:26:47.716Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\topics as some of its dependencies were changed since the last visit
+2020-08-05T16:26:50.225Z - info: Site data built
+2020-08-05T16:26:50.226Z - info: Lazy website regeneration complete! Total build time: 2.51s
+2020-08-05T16:27:12.510Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week2\index as some of its dependencies were changed since the last visit
+2020-08-05T16:27:13.208Z - info: Site data built
+2020-08-05T16:27:13.209Z - info: Lazy website regeneration complete! Total build time: 0.7s
+2020-08-05T16:35:21.128Z - info: Website generation started at 12:35:17 AM
+2020-08-05T16:35:37.586Z - info: Building assets...
