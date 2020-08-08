@@ -1,0 +1,111 @@
+2020-08-08T02:29:11.683Z - info: Website generation started at 10:29:00 AM
+2020-08-08T02:29:24.746Z - info: Building assets...
+2020-08-08T02:29:35.528Z - info: Assets built
+2020-08-08T02:29:35.529Z - info: Generating pages...
+2020-08-08T02:29:49.265Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:29:49.266Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:29:53.162Z - debug:  
+2020-08-08T02:29:53.162Z - debug:  
+2020-08-08T02:29:53.162Z - debug:  
+2020-08-08T02:29:53.163Z - debug:  
+2020-08-08T02:29:54.650Z - debug:  
+2020-08-08T02:29:54.651Z - debug:  
+2020-08-08T02:29:54.651Z - debug:  
+2020-08-08T02:29:59.337Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:29:59.337Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:29:59.338Z - debug:  
+2020-08-08T02:29:59.338Z - debug:  
+2020-08-08T02:30:00.701Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:30:00.702Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:30:00.855Z - debug:  
+2020-08-08T02:30:00.891Z - debug:  
+2020-08-08T02:30:01.263Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:30:01.263Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:30:04.984Z - debug:  
+2020-08-08T02:30:04.984Z - debug:  
+2020-08-08T02:30:31.213Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:30:31.218Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:30:32.445Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:30:32.446Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:30:32.605Z - debug:  
+2020-08-08T02:30:32.608Z - debug:  
+2020-08-08T02:30:36.945Z - debug:  
+2020-08-08T02:30:37.013Z - debug:  
+2020-08-08T02:30:44.832Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:30:46.735Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-08T02:30:46.936Z - debug:  
+2020-08-08T02:31:11.413Z - debug:  
+2020-08-08T02:31:11.702Z - debug:  
+2020-08-08T02:31:11.703Z - debug:  
+2020-08-08T02:31:11.703Z - debug:  
+2020-08-08T02:31:16.577Z - debug:  
+2020-08-08T02:31:17.067Z - debug:  
+2020-08-08T02:31:27.261Z - debug:  
+2020-08-08T02:31:28.244Z - debug:  
+2020-08-08T02:31:28.244Z - debug:  
+2020-08-08T02:31:28.244Z - debug:  
+2020-08-08T02:31:28.245Z - debug:  
+2020-08-08T02:31:37.859Z - debug:  
+2020-08-08T02:31:37.860Z - debug:  
+2020-08-08T02:31:43.792Z - debug:  
+2020-08-08T02:31:58.468Z - debug:  
+2020-08-08T02:31:58.468Z - debug:  
+2020-08-08T02:32:07.199Z - debug:  
+2020-08-08T02:32:07.199Z - debug:  
+2020-08-08T02:32:24.504Z - debug:  
+2020-08-08T02:32:55.619Z - debug:  
+2020-08-08T02:33:10.278Z - debug:  
+2020-08-08T02:33:10.278Z - debug:  
+2020-08-08T02:33:21.196Z - info: Pages built
+2020-08-08T02:33:53.288Z - info: Website generation complete! Total build time: 293.169s
+2020-08-08T02:33:53.291Z - info: Build success!
+2020-08-08T02:33:53.292Z - debug:  
+2020-08-08T02:33:53.296Z - info: Site data built
+2020-08-08T02:34:40.576Z - info: Deployed!
+2020-08-08T04:10:48.370Z - info: Website generation (lazy) started at 12:10:42 PM
+2020-08-08T04:10:58.180Z - info: Building assets...
+2020-08-08T04:11:03.939Z - info: Assets built
+2020-08-08T04:11:03.941Z - info: Generating landing page...
+2020-08-08T04:11:05.947Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-08-08T04:11:06.044Z - info: Website generation (lazy) complete! Total build time: 23.796s
+2020-08-08T04:11:06.859Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-08-08T04:11:06.859Z - info: Press CTRL+C to stop ...
+2020-08-08T04:11:06.920Z - info: Site data built
+2020-08-08T04:17:40.752Z - info: [12:17:40 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\index-tic2002.mbdf
+2020-08-08T04:17:41.755Z - info: Rebuilding 1 pages
+2020-08-08T04:17:43.725Z - info: Pages rebuilt
+2020-08-08T04:17:43.725Z - info: Website regeneration complete! Total build time: 1.971s
+2020-08-08T04:17:43.732Z - info: Site data built
+2020-08-08T04:18:26.102Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\index as some of its dependencies were changed since the last visit
+2020-08-08T04:18:26.816Z - info: Site data built
+2020-08-08T04:18:26.817Z - info: Lazy website regeneration complete! Total build time: 0.716s
+2020-08-08T04:19:11.819Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\topics as some of its dependencies were changed since the last visit
+2020-08-08T04:19:13.928Z - info: Site data built
+2020-08-08T04:19:13.928Z - info: Lazy website regeneration complete! Total build time: 2.109s
+2020-08-08T04:20:16.971Z - info: [12:20:16 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-08-08T04:20:17.973Z - info: Rebuilding 1 pages
+2020-08-08T04:20:20.078Z - info: Pages rebuilt
+2020-08-08T04:20:20.078Z - info: Website regeneration complete! Total build time: 2.107s
+2020-08-08T04:20:20.126Z - info: Site data built
+2020-08-08T04:20:45.705Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\admin as some of its dependencies were changed since the last visit
+2020-08-08T04:20:46.485Z - info: Site data built
+2020-08-08T04:20:46.486Z - info: Lazy website regeneration complete! Total build time: 0.781s
+2020-08-08T04:21:58.028Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week2\index as some of its dependencies were changed since the last visit
+2020-08-08T04:21:58.651Z - info: Site data built
+2020-08-08T04:21:58.651Z - info: Lazy website regeneration complete! Total build time: 0.624s
+2020-08-08T04:23:23.945Z - info: Website generation started at 12:23:21 PM
+2020-08-08T04:23:33.762Z - info: Building assets...
