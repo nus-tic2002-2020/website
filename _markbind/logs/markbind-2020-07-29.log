@@ -1,0 +1,129 @@
+2020-07-29T09:29:47.990Z - info: Website generation (lazy) started at 5:29:47 PM
+2020-07-29T09:29:50.456Z - info: Building assets...
+2020-07-29T09:29:52.408Z - info: Assets built
+2020-07-29T09:29:52.409Z - info: Generating landing page...
+2020-07-29T09:29:53.080Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-07-29T09:29:53.243Z - info: Website generation (lazy) complete! Total build time: 5.262s
+2020-07-29T09:29:53.566Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-07-29T09:29:53.567Z - info: Press CTRL+C to stop ...
+2020-07-29T09:29:53.663Z - info: Site data built
+2020-07-29T09:30:19.130Z - info: [5:30:19 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\cs2103-Aug20-website.iml
+2020-07-29T09:30:20.141Z - info: Assets built
+2020-07-29T09:30:30.663Z - info: [5:30:30 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\cs2103-Aug20-website.iml
+2020-07-29T09:30:31.672Z - info: Assets built
+2020-07-29T09:30:43.011Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\se-book-adapted\index as some of its dependencies were changed since the last visit
+2020-07-29T09:30:43.303Z - info: Site data built
+2020-07-29T09:30:43.304Z - info: Lazy website regeneration complete! Total build time: 0.294s
+2020-07-29T09:30:59.538Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\se-book-adapted\chapters\cppToJava as some of its dependencies were changed since the last visit
+2020-07-29T09:31:02.525Z - info: Site data built
+2020-07-29T09:31:02.527Z - info: Lazy website regeneration complete! Total build time: 2.988s
+2020-07-29T09:34:19.383Z - info: [5:34:19 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_markbind\navigation\se-book-adapted-sitenav.md
+2020-07-29T09:34:20.390Z - info: Rebuilding 1 pages
+2020-07-29T09:34:22.954Z - info: Pages rebuilt
+2020-07-29T09:34:22.954Z - info: Website regeneration complete! Total build time: 2.569s
+2020-07-29T09:34:22.962Z - info: Site data built
+2020-07-29T09:36:57.082Z - info: [5:36:57 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\primitiveTypes\text.md
+2020-07-29T09:36:58.085Z - info: Rebuilding 1 pages
+2020-07-29T09:37:00.527Z - info: Pages rebuilt
+2020-07-29T09:37:00.527Z - info: Website regeneration complete! Total build time: 2.443s
+2020-07-29T09:37:00.533Z - info: Site data built
+2020-07-29T09:38:10.681Z - info: [5:38:10 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\primitiveTypes\text.md
+2020-07-29T09:38:11.685Z - info: Rebuilding 1 pages
+2020-07-29T09:38:14.065Z - info: Pages rebuilt
+2020-07-29T09:38:14.065Z - info: Website regeneration complete! Total build time: 2.382s
+2020-07-29T09:38:14.071Z - info: Site data built
+2020-07-29T09:39:05.520Z - info: [5:39:05 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\primitiveTypes\text.md
+2020-07-29T09:39:06.523Z - info: Rebuilding 1 pages
+2020-07-29T09:39:08.962Z - info: Pages rebuilt
+2020-07-29T09:39:08.962Z - info: Website regeneration complete! Total build time: 2.44s
+2020-07-29T09:39:08.968Z - info: Site data built
+2020-07-29T09:40:21.987Z - info: [5:40:21 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\variables\text.md
+2020-07-29T09:40:22.991Z - info: Rebuilding 1 pages
+2020-07-29T09:40:25.564Z - info: Pages rebuilt
+2020-07-29T09:40:25.564Z - info: Website regeneration complete! Total build time: 2.577s
+2020-07-29T09:40:25.570Z - info: Site data built
+2020-07-29T09:41:21.524Z - info: [5:41:21 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\variables\text.md
+2020-07-29T09:41:22.537Z - info: Rebuilding 1 pages
+2020-07-29T09:41:24.961Z - info: Pages rebuilt
+2020-07-29T09:41:24.962Z - info: Website regeneration complete! Total build time: 2.429s
+2020-07-29T09:41:24.968Z - info: Site data built
+2020-07-29T09:41:37.973Z - info: [5:41:37 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\variables\text.md
+2020-07-29T09:41:38.982Z - info: Rebuilding 1 pages
+2020-07-29T09:41:41.310Z - info: Pages rebuilt
+2020-07-29T09:41:41.310Z - info: Website regeneration complete! Total build time: 2.33s
+2020-07-29T09:41:41.316Z - info: Site data built
+2020-07-29T09:42:10.033Z - info: [5:42:10 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\variables\text.md
+2020-07-29T09:42:11.037Z - info: Rebuilding 1 pages
+2020-07-29T09:42:13.455Z - info: Pages rebuilt
+2020-07-29T09:42:13.455Z - info: Website regeneration complete! Total build time: 2.421s
+2020-07-29T09:42:13.461Z - info: Site data built
+2020-07-29T09:42:31.049Z - info: [5:42:31 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\variables\text.md
+2020-07-29T09:42:32.055Z - info: Rebuilding 1 pages
+2020-07-29T09:42:34.467Z - info: Pages rebuilt
+2020-07-29T09:42:34.468Z - info: Website regeneration complete! Total build time: 2.416s
+2020-07-29T09:42:34.473Z - info: Site data built
+2020-07-29T09:43:37.206Z - info: [5:43:37 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\primitiveTypes\text.md
+2020-07-29T09:43:38.210Z - info: Rebuilding 1 pages
+2020-07-29T09:43:40.638Z - info: Pages rebuilt
+2020-07-29T09:43:40.638Z - info: Website regeneration complete! Total build time: 2.43s
+2020-07-29T09:43:40.644Z - info: Site data built
+2020-07-29T09:44:19.378Z - info: [5:44:19 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\primitiveTypes\text.md
+2020-07-29T09:44:20.384Z - info: Rebuilding 1 pages
+2020-07-29T09:44:22.772Z - info: Pages rebuilt
+2020-07-29T09:44:22.772Z - info: Website regeneration complete! Total build time: 2.393s
+2020-07-29T09:44:22.779Z - info: Site data built
+2020-07-29T09:44:35.367Z - info: [5:44:35 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\primitiveTypes\text.md
+2020-07-29T09:44:36.371Z - info: Rebuilding 1 pages
+2020-07-29T09:44:38.849Z - info: Pages rebuilt
+2020-07-29T09:44:38.849Z - info: Website regeneration complete! Total build time: 2.481s
+2020-07-29T09:44:38.855Z - info: Site data built
+2020-07-29T09:44:49.273Z - info: [5:44:49 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\primitiveTypes\text.md
+2020-07-29T09:44:50.277Z - info: Rebuilding 1 pages
+2020-07-29T09:44:52.656Z - info: Pages rebuilt
+2020-07-29T09:44:52.656Z - info: Website regeneration complete! Total build time: 2.381s
+2020-07-29T09:44:52.662Z - info: Site data built
+2020-07-29T09:46:15.972Z - info: [5:46:15 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\operators\text.md
+2020-07-29T09:46:16.976Z - info: Rebuilding 1 pages
+2020-07-29T09:46:19.363Z - info: Pages rebuilt
+2020-07-29T09:46:19.363Z - info: Website regeneration complete! Total build time: 2.388s
+2020-07-29T09:46:19.369Z - info: Site data built
+2020-07-29T09:47:13.230Z - info: [5:47:13 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\operators\text.md
+2020-07-29T09:47:14.233Z - info: Rebuilding 1 pages
+2020-07-29T09:47:16.736Z - info: Pages rebuilt
+2020-07-29T09:47:16.736Z - info: Website regeneration complete! Total build time: 2.505s
+2020-07-29T09:47:16.742Z - info: Site data built
+2020-07-29T09:47:51.325Z - info: [5:47:51 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\operators\text.md
+2020-07-29T09:47:52.330Z - info: Rebuilding 1 pages
+2020-07-29T09:47:54.716Z - info: Pages rebuilt
+2020-07-29T09:47:54.716Z - info: Website regeneration complete! Total build time: 2.389s
+2020-07-29T09:47:54.723Z - info: Site data built
+2020-07-29T09:49:00.267Z - info: [5:49:00 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\dataTypes\operators\text.md
+2020-07-29T09:49:01.271Z - info: Rebuilding 1 pages
+2020-07-29T09:49:03.643Z - info: Pages rebuilt
+2020-07-29T09:49:03.643Z - info: Website regeneration complete! Total build time: 2.374s
+2020-07-29T09:49:03.650Z - info: Site data built
+2020-07-29T10:03:09.062Z - info: [6:03:09 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\controlFlow\loops\text.md
+2020-07-29T10:03:10.063Z - info: Rebuilding 1 pages
+2020-07-29T10:03:12.513Z - info: Pages rebuilt
+2020-07-29T10:03:12.513Z - info: Website regeneration complete! Total build time: 2.452s
+2020-07-29T10:03:12.520Z - info: Site data built
+2020-07-29T10:11:07.794Z - info: [6:11:07 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\controlFlow\methods\text.md
+2020-07-29T10:11:08.798Z - info: Rebuilding 1 pages
+2020-07-29T10:11:11.229Z - info: Pages rebuilt
+2020-07-29T10:11:11.229Z - info: Website regeneration complete! Total build time: 2.433s
+2020-07-29T10:11:11.235Z - info: Site data built
+2020-07-29T10:16:25.981Z - info: [6:16:25 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\controlFlow\methods\text.md
+2020-07-29T10:16:26.986Z - info: Rebuilding 1 pages
+2020-07-29T10:16:29.407Z - info: Pages rebuilt
+2020-07-29T10:16:29.407Z - info: Website regeneration complete! Total build time: 2.423s
+2020-07-29T10:16:29.413Z - info: Site data built
+2020-07-29T10:18:52.376Z - info: [6:18:52 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\controlFlow\methods\text.md
+2020-07-29T10:18:53.378Z - info: Rebuilding 1 pages
+2020-07-29T10:18:55.769Z - info: Pages rebuilt
+2020-07-29T10:18:55.770Z - info: Website regeneration complete! Total build time: 2.392s
+2020-07-29T10:18:55.777Z - info: Site data built
+2020-07-29T10:23:01.130Z - info: [6:23:01 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\cppToJava\controlFlow\methods\text.md
+2020-07-29T10:23:02.133Z - info: Rebuilding 1 pages
+2020-07-29T10:23:04.608Z - info: Pages rebuilt
+2020-07-29T10:23:04.608Z - info: Website regeneration complete! Total build time: 2.476s
+2020-07-29T10:23:04.615Z - info: Site data built

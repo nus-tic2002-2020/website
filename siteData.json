@@ -33,6 +33,8 @@
         "policies": "Policies",
         "deadlines": "Deadlines",
         "tools": "Tools",
+        "zoom": "Zoom",
+        "microsoft-teams-mst": "Microsoft Teams (MST)",
         "git-sourcetree": "Git, SourceTree",
         "github": "GitHub",
         "repl-it": "repl.it",
