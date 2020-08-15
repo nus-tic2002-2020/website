@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -31,7 +32,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Schedule</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Mon, Aug 10th] </span></a></li>
@@ -50,7 +51,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">**Links**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Links</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
 
           <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/forum/categories/31c136fe-0976-4368-9f4c-a10c08f7bbf3" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
 
@@ -66,7 +67,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -90,7 +91,7 @@
           <h1 id="week-3-mon-aug-17th-topics">Week 3 <small><small><span class="dimmed">[Mon, Aug 17th]</span> - Topics</small></small><span id="week-3-mon-aug-17th-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-3-mon-aug-17th-topics" onclick="event.stopPropagation()"></a></h1>
           <div>
           </div>
-          <panel type="seamless"><template slot="_header">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header">
               <p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p>
             </template>
             <span id="toc">
@@ -242,7 +243,7 @@
                     <p></p>
                     <div>
                       <p>String is a built-in Java class that you <span trigger="click" for="modal:stringClass-javaLang" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:stringClass-javaLang'].show()" class="trigger-click">can use without importing</span>. Given below are some useful String methods:</p>
-                      <b-modal id="modal:stringClass-javaLang" placement="top" hide-footer size modal-class="mb-zoom" ref="modal:stringClass-javaLang"><template slot="modal-title">💡 <code v-pre>java.lang</code> classes can be used without importing</template>
+                      <b-modal id="modal:stringClass-javaLang" placement="top" hide-footer size modal-class="mb-zoom" ref="modal:stringClass-javaLang" class="algolia-no-index"><template slot="modal-title">💡 <code v-pre>java.lang</code> classes can be used without importing</template>
                         <p>Any class in the <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/package-summary.html"><code v-pre>java.lang</code></a> package can be used without importing.
                         </p>
                       </b-modal>
@@ -435,7 +436,7 @@
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printPrice</span><span class="hljs-params">(String item)</span> </span>{<br></span><span>        <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span><br></span><span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        printPrice(<span class="hljs-string">"sandwich  --$4/50"</span>);<br></span><span>        printPrice(<span class="hljs-string">"  soda --$10/00"</span>);<br></span><span>        printPrice(<span class="hljs-string">"  fries --$0/50"</span>);<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>SANDWICH: 4.50<br></span><span>SODA: 10.00<br></span><span>FRIES: 0.50<br></span></code></pre>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>Partial solution:</p>
                                     <pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printPrice</span><span class="hljs-params">(String item)</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> dividerPosition = item.indexOf(<span class="hljs-string">"--"</span>);<br></span><span>    String itemName = item.substring(<span class="hljs-number">0</span>, dividerPosition);<br></span><span>    <span class="hljs-comment">//...</span><br></span><span>    System.out.println(itemName.trim().toUpperCase() + ...);<br></span><span><br></span><span>}<br></span></code></pre>
                                   </div>
@@ -556,7 +557,7 @@
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTotalScore</span><span class="hljs-params">(String[] values)</span></span>{<br></span><span>        <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        printTotalScore(<span class="hljs-keyword">new</span> String[]{});<br></span><span>        printTotalScore(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"0"</span>, <span class="hljs-string">"124"</span>, <span class="hljs-string">"-15"</span>});<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>0<br></span><span>109<br></span></code></pre>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the <a href="https://www.tutorialspoint.com/java/number_parseint.htm"><code v-pre>Integer.parseInt()</code></a> method to convert a <code v-pre>String</code> to the equivalent <code v-pre>int</code> value.</p>
                                     <p>Partial solution:</p>
                                     <pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTotalScore</span><span class="hljs-params">(String[] values)</span></span>{<br></span><span>    <span class="hljs-keyword">int</span> total = <span class="hljs-number">0</span>;<br></span><span>    <span class="hljs-keyword">for</span> (String value: values){<br></span><span>        <span class="hljs-comment">// convert the value to an int and add to the total</span><br></span><span>    }<br></span><span>    System.out.println(total);<br></span><span>}<br></span></code></pre>
@@ -628,7 +629,7 @@
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.util.Arrays;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){<br></span><span>        <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printItems</span><span class="hljs-params">(String[] items)</span></span>{<br></span><span>        <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> add your code here</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        printItems(filterEmails(<span class="hljs-keyword">new</span> String[]{}));<br></span><span>        printItems(filterEmails(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"abc"</span>}));<br></span><span>        printItems(filterEmails(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"adam@example.com"</span>, <span class="hljs-string">"aab"</span>, <span class="hljs-string">"john@example.com"</span>, <span class="hljs-string">"some@"</span>}));<br></span><span>        printItems(filterEmails(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"xyz"</span>, <span class="hljs-string">"@bee.com"</span>, <span class="hljs-string">"aab"</span>}));<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>[]<br></span><span>[]<br></span><span>[adam@example.com, john@example.com, some@]<br></span><span>[@bee.com]<br></span><span><br></span></code></pre>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <ul>
                                       <li><strong><code v-pre>filterEmailsfilterEmails(String[] items): String[]</code></strong>
                                         <ol>
@@ -643,7 +644,7 @@
                                         </ul>
                                       </li>
                                     </ul>
-                                    <panel type="seamless"><template slot="_header">
+                                    <panel type="seamless" class="algolia-no-index"><template slot="_header">
                                         <p>Partial solution</p>
                                       </template>
                                       <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){<br></span><span>    String[] results = <span class="hljs-keyword">new</span> String[items.length];<br></span><span>    <span class="hljs-keyword">int</span> matchCount = <span class="hljs-number">0</span>;<br></span><span>    <span class="hljs-keyword">for</span>(String item: items){<br></span><span>        <span class="hljs-keyword">if</span> (item.contains(<span class="hljs-string">"@"</span>)){<br></span><span>           <span class="hljs-comment">//...</span><br></span><span>        }<br></span><span>    }<br></span><span>    <span class="hljs-keyword">return</span> Arrays.copyOf(results, matchCount);<br></span><span>}<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printItems</span><span class="hljs-params">(String[] items)</span></span>{<br></span><span>    System.out.println(Arrays.toString(items));<br></span><span>}<br></span></code></pre>
@@ -715,10 +716,10 @@
                                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the <code v-pre>split</code> method of the <code v-pre>String</code> class to convert a sentence into an array of words. e.g.,<br></p>
                                   <pre><code class="hljs java" v-pre><span>String sentence = <span class="hljs-string">"hello my dear"</span>;<br></span><span>String[] words = sentence.split(<span class="hljs-string">" "</span>); <span class="hljs-comment">// split using the space as the delimiter</span><br></span><span>System.out.println(Arrays.toString(words));<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code v-pre>[hello, my, dear]</code></p>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <code v-pre>String.format(&quot;%.2f&quot;, doubleValue)</code> to format <code v-pre>doubleValue</code> to two decimal points.<br>
                                       e.g., <code v-pre>String.format(&quot;%.2f&quot;, 1.3334)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code v-pre>1.33</code></p>
-                                    <panel type="seamless"><template slot="_header">
+                                    <panel type="seamless" class="algolia-no-index"><template slot="_header">
                                         <p>Partial solution</p>
                                       </template>
                                       <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.util.Arrays;<br></span><span><span class="hljs-keyword">import</span> java.util.Scanner;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterAmounts(String sentence) {<br></span><span>        String[] words = sentence.split(<span class="hljs-string">" "</span>);<br></span><span>        String[] result = <span class="hljs-keyword">new</span> String[words.length];<br></span><span>        <span class="hljs-keyword">int</span> wordCount = <span class="hljs-number">0</span>;<br></span><span>        <span class="hljs-keyword">for</span> (String word : words) {<br></span><span>            <span class="hljs-keyword">if</span> (word.startsWith(<span class="hljs-string">"$"</span>)) {<br></span><span>                result[wordCount] = word;<br></span><span>                wordCount++;<br></span><span>            }<br></span><span>        }<br></span><span>        <span class="hljs-keyword">return</span> Arrays.copyOf(result, wordCount);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        String line;<br></span><span>        Scanner in = <span class="hljs-keyword">new</span> Scanner(System.in);<br></span><span><br></span><span>        System.out.print(<span class="hljs-string">"Your expenses while overseas?"</span>);<br></span><span>        line = in.nextLine();<br></span><span><br></span><span>        String[] amounts = filterAmounts(line);<br></span><span>        System.out.println(<span class="hljs-string">"Expenses in overseas currency:"</span> + Arrays.toString(amounts));<br></span><span>        <span class="hljs-keyword">double</span> total = <span class="hljs-number">0</span>;<br></span><span>        <span class="hljs-keyword">for</span> (String amount : amounts) {<br></span><span>            <span class="hljs-comment">// convert amount to double, multiply by currency conversion rate, and add to total</span><br></span><span>        }<br></span><span>        System.out.println(<span class="hljs-string">"Total in local currency: $"</span> + String.format(<span class="hljs-string">"%.2f"</span>, total));<br></span><span><br></span><span>    }<br></span><span>}<br></span></code></pre>
@@ -827,7 +828,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/revisionControl/remoteRepositories/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/remoteRepositories"><template slot="_header">
+                        <panel src="/website/book/revisionControl/remoteRepositories/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/remoteRepositories" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Remote Respositories</span></p>
                           </template></panel>
                       </p>
@@ -839,7 +840,7 @@
                     <p></p>
                     <div>
                       <p>Given below is an example scenario you can try yourself to learn Git <span trigger="click" for="modal:gitCloning-rcsCloning" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:gitCloning-rcsCloning'].show()" class="trigger-click">cloning</span>.</p>
-                      <b-modal id="modal:gitCloning-rcsCloning" hide-footer size="lg" modal-class="mb-zoom" ref="modal:gitCloning-rcsCloning"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
+                      <b-modal id="modal:gitCloning-rcsCloning" hide-footer size="lg" modal-class="mb-zoom" ref="modal:gitCloning-rcsCloning" class="algolia-no-index"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
                         <div>
                           <p><strong>You can <mark><em>clone</em></mark> a repo</strong> to create a copy of that repo on another location in your computer. The copy will have even the revision history of the original repo i.e., identical to the original repo. For example, you can clone a remote repo onto your computer to create a local copy of the remote repo.<br></p>
                         </div>
@@ -857,7 +858,7 @@
                             <p><code v-pre>File</code> → <code v-pre>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                           </div>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <p>You can use the <code v-pre>clone</code> command to clone a repo.</p>
                             <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
@@ -884,7 +885,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/gitAndGithub/clone/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/clone"><template slot="_header">
+                        <panel src="/website/book/gitAndGithub/clone/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/clone" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Clone</span></p>
                           </template></panel>
                       </p>
@@ -896,14 +897,14 @@
                     <p></p>
                     <div>
                       <p>Here's a scenario you can try in order to learn how to <span trigger="click" for="modal:githubPull-rcsPulling" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:githubPull-rcsPulling'].show()" class="trigger-click">pull</span> commits from another repo to yours.</p>
-                      <b-modal id="modal:githubPull-rcsPulling" hide-footer size="lg" modal-class="mb-zoom" ref="modal:githubPull-rcsPulling"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
+                      <b-modal id="modal:githubPull-rcsPulling" hide-footer size="lg" modal-class="mb-zoom" ref="modal:githubPull-rcsPulling" class="algolia-no-index"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
                         <div>
                           <p><strong>You can <mark><em>pull</em></mark> from a repo to another, to receive new commits in the second repo</strong>, if the repos have a shared history. Let's say some new commits were added to the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><em>upstream</em> repo is a term used to refer to the repo you cloned from</span>upstream repo</span> after you cloned it and you would like to copy over those new commits to your own clone i.e., <mark>sync</mark> your clone with the upstream repo. In that case you pull from the upstream repo to your clone.</p>
                         </div>
                       </b-modal>
                       <p><strong>1.Clone a repo</strong> (e.g., the repo used in <span for="modal:clone-repository" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:clone-repository'].show()" class="trigger-click">[Git &amp; GitHub → Clone]</span>) to be used for this activity.</p>
                       <p><strong>2. Delete the last few commits to simulate cloning the repo a few commits ago.</strong></p>
-                      <b-modal id="modal:clone-repository" hide-footer size="lg" modal-class="mb-zoom" ref="modal:clone-repository"><template slot="modal-title"><strong>Clone Repository</strong></template>
+                      <b-modal id="modal:clone-repository" hide-footer size="lg" modal-class="mb-zoom" ref="modal:clone-repository" class="algolia-no-index"><template slot="modal-title"><strong>Clone Repository</strong></template>
                         <div>
                           <panel type="seamless" expanded>
                             <span slot="header" class="card-title">
@@ -917,7 +918,7 @@
                             <p></p>
                             <div>
                               <p>Given below is an example scenario you can try yourself to learn Git <span trigger="click" for="modal:gitCloning-rcsCloning" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:gitCloning-rcsCloning'].show()" class="trigger-click">cloning</span>.</p>
-                              <b-modal id="modal:gitCloning-rcsCloning" hide-footer size="lg" modal-class="mb-zoom" ref="modal:gitCloning-rcsCloning"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
+                              <b-modal id="modal:gitCloning-rcsCloning" hide-footer size="lg" modal-class="mb-zoom" ref="modal:gitCloning-rcsCloning" class="algolia-no-index"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
                                 <div>
                                   <p><strong>You can <mark><em>clone</em></mark> a repo</strong> to create a copy of that repo on another location in your computer. The copy will have even the revision history of the original repo i.e., identical to the original repo. For example, you can clone a remote repo onto your computer to create a local copy of the remote repo.<br></p>
                                 </div>
@@ -935,7 +936,7 @@
                                     <p><code v-pre>File</code> → <code v-pre>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                                   </div>
                                 </tab>
-                                <tab><template slot="_header">CLI</template>
+                                <tab class="algolia-no-index"><template slot="_header">CLI</template>
                                   <div>
                                     <p>You can use the <code v-pre>clone</code> command to clone a repo.</p>
                                     <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
@@ -964,7 +965,7 @@
                               Arrow marked as <code v-pre>b</code>: <code v-pre>origin/master</code> label shows what is the latest commit in the <code v-pre>master</code> branch in the remote repo.</p>
                           </div>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <p>Use the <code v-pre>reset</code> command to delete commits at the tip of the revision history.</p>
                             <pre><code class="hljs" v-pre><span>git reset --hard HEAD~2<br></span></code></pre>
@@ -984,7 +985,7 @@
                             <p></p>
                           </div>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <p><code v-pre>git pull origin</code></p>
                           </div>
@@ -996,7 +997,7 @@
                         <div id="section-working-with-multiple-remotes">
                           <h5 id="working-with-multiple-remotes">Working with multiple remotes<span id="working-with-multiple-remotes" class="anchor"></span><a class="fa fa-anchor" href="#working-with-multiple-remotes" onclick="event.stopPropagation()"></a></h5>
                           <p><strong>When you clone a repo, Git automatically adds a <em>remote</em> repo named <code v-pre>origin</code></strong> to your repo configuration. As you know, you can pull commits from that repo. As you know, <span trigger="click" for="modal:gitPull-rcsMultipleRepos" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:gitPull-rcsMultipleRepos'].show()" class="trigger-click">a Git repo can work with remote repos other than the one it was cloned from</span>.</p>
-                          <b-modal id="modal:gitPull-rcsMultipleRepos" hide-footer size="lg" modal-class="mb-zoom" ref="modal:gitPull-rcsMultipleRepos"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
+                          <b-modal id="modal:gitPull-rcsMultipleRepos" hide-footer size="lg" modal-class="mb-zoom" ref="modal:gitPull-rcsMultipleRepos" class="algolia-no-index"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
                             <div>
                               <p><strong>A repo can work with any number of other repositories as long as they have a shared history</strong> e.g., <code v-pre>repo1</code> can pull from (or push to) <code v-pre>repo2</code> and <code v-pre>repo3</code> if they have a shared history between them.</p>
                             </div>
@@ -1037,7 +1038,7 @@
                                 </ol>
                               </div>
                             </tab>
-                            <tab><template slot="_header">CLI</template>
+                            <tab class="algolia-no-index"><template slot="_header">CLI</template>
                               <div>
                                 <ol>
                                   <li>
@@ -1078,7 +1079,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/gitAndGithub/pull/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/pull"><template slot="_header">
+                        <panel src="/website/book/gitAndGithub/pull/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/pull" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Pull</span></p>
                           </template></panel>
                       </p>
@@ -1090,7 +1091,7 @@
                     <p></p>
                     <div>
                       <p>Given below is a scenario you can try in order to learn how to <span trigger="click" for="modal:githubForking-rcsForking" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:githubForking-rcsForking'].show()" class="trigger-click">fork</span> a repo:.</p>
-                      <b-modal id="modal:githubForking-rcsForking" hide-footer size="lg" modal-class="mb-zoom" ref="modal:githubForking-rcsForking"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
+                      <b-modal id="modal:githubForking-rcsForking" hide-footer size="lg" modal-class="mb-zoom" ref="modal:githubForking-rcsForking" class="algolia-no-index"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
                         <div>
                           <p><strong>A <mark><em>fork</em></mark> is a remote copy of a remote repo</strong>. As you know, cloning creates a local copy of a repo. In contrast, Forking creates a remote copy of a Git repo hosted on GitHub. This is particularly useful if you want to play around with a GitHub repo but you don't have write permissions to it; you can simply fork the repo and do whatever you want with the fork as you are the owner of the fork.</p>
                         </div>
@@ -1119,7 +1120,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/gitAndGithub/pull/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/pull"><template slot="_header">
+                        <panel src="/website/book/gitAndGithub/pull/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/pull" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Pull</span></p>
                           </template></panel>
                       </p>
@@ -1132,7 +1133,7 @@
                     <div>
                       <div id="simple-push">
                         <p>Given below is a scenario you can try in order to learn how to <span trigger="click" for="modal:githubPushing-rcsPushing" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:githubPushing-rcsPushing'].show()" class="trigger-click">push</span> commits to a remote repo hosted on GitHub:</p>
-                        <b-modal id="modal:githubPushing-rcsPushing" hide-footer size="lg" modal-class="mb-zoom" ref="modal:githubPushing-rcsPushing"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
+                        <b-modal id="modal:githubPushing-rcsPushing" hide-footer size="lg" modal-class="mb-zoom" ref="modal:githubPushing-rcsPushing" class="algolia-no-index"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
                           <div>
                             <p><strong>You can <mark><em>push</em></mark> new commits in one repo to another repo</strong> which will copy the new commits onto the destination repo. Note that pushing to a repo requires you to have write-access to it. Furthermore, you can push between repos only if those repos have a shared history among them (i.e, one was created by copying the other at some point in the past).</p>
                           </div>
@@ -1154,7 +1155,7 @@
                               <p></p>
                             </div>
                           </tab>
-                          <tab><template slot="_header">CLI</template>
+                          <tab class="algolia-no-index"><template slot="_header">CLI</template>
                             <div>
                               <p>Use the command <code v-pre>git push origin master</code>. Enter Github username and password when prompted.</p>
                               <box type="warning">
@@ -1171,11 +1172,11 @@
                         <li><span trigger="click" for="modal:push-addRemoteForNormalPushing" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:push-addRemoteForNormalPushing'].show()" class="trigger-click">Add the GitHub repo URL as a remote</span>, if you haven't done so already.</li>
                         <li>Push to the target repo.</li>
                       </ol>
-                      <b-modal id="modal:push-addRemoteForNormalPushing" hide-footer size="lg" modal-class="mb-zoom" ref="modal:push-addRemoteForNormalPushing"><template slot="modal-title">Git &amp; GitHub → Pull →</template>
+                      <b-modal id="modal:push-addRemoteForNormalPushing" hide-footer size="lg" modal-class="mb-zoom" ref="modal:push-addRemoteForNormalPushing" class="algolia-no-index"><template slot="modal-title">Git &amp; GitHub → Pull →</template>
                         <div>
                           <h5 id="working-with-multiple-remotes-2">Working with multiple remotes<span id="working-with-multiple-remotes-2" class="anchor"></span><a class="fa fa-anchor" href="#working-with-multiple-remotes-2" onclick="event.stopPropagation()"></a></h5>
                           <p><strong>When you clone a repo, Git automatically adds a <em>remote</em> repo named <code v-pre>origin</code></strong> to your repo configuration. As you know, you can pull commits from that repo. As you know, <span trigger="click" for="modal:gitPull-rcsMultipleRepos" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:gitPull-rcsMultipleRepos'].show()" class="trigger-click">a Git repo can work with remote repos other than the one it was cloned from</span>.</p>
-                          <b-modal id="modal:gitPull-rcsMultipleRepos" hide-footer size="lg" modal-class="mb-zoom" ref="modal:gitPull-rcsMultipleRepos"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
+                          <b-modal id="modal:gitPull-rcsMultipleRepos" hide-footer size="lg" modal-class="mb-zoom" ref="modal:gitPull-rcsMultipleRepos" class="algolia-no-index"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
                             <div>
                               <p><strong>A repo can work with any number of other repositories as long as they have a shared history</strong> e.g., <code v-pre>repo1</code> can pull from (or push to) <code v-pre>repo2</code> and <code v-pre>repo3</code> if they have a shared history between them.</p>
                             </div>
@@ -1216,7 +1217,7 @@
                                 </ol>
                               </div>
                             </tab>
-                            <tab><template slot="_header">CLI</template>
+                            <tab class="algolia-no-index"><template slot="_header">CLI</template>
                               <div>
                                 <ol>
                                   <li>
@@ -1242,7 +1243,7 @@
                           <p>Push your repo to the new remote the usual way, but select the name of target remote instead of <code v-pre>origin</code> and remember to select the <code v-pre>Track</code> checkbox.<br>
                             <img src="/website/book/gitAndGithub/push/images/pushToRemote.png" width="470"></p>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <p>Push to the new remote the usual way e.g., <code v-pre>git push upstream1 master</code> (assuming the you gave the name <code v-pre>upstream1</code> to the remote).</p>
                         </tab>
                       </tabs>
@@ -1265,11 +1266,11 @@
                         </li>
                       </ol>
                       <p><strong>2. <span trigger="click" for="modal:push-addRemote" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:push-addRemote'].show()" class="trigger-click">Add the GitHub repo URL as a remote</span></strong> of the local repo. You can give it the name <code v-pre>origin</code> (or any other name).</p>
-                      <b-modal id="modal:push-addRemote" hide-footer size="lg" modal-class="mb-zoom" ref="modal:push-addRemote"><template slot="modal-title">Git &amp; GitHub → Pull →</template>
+                      <b-modal id="modal:push-addRemote" hide-footer size="lg" modal-class="mb-zoom" ref="modal:push-addRemote" class="algolia-no-index"><template slot="modal-title">Git &amp; GitHub → Pull →</template>
                         <div>
                           <h5 id="working-with-multiple-remotes-3">Working with multiple remotes<span id="working-with-multiple-remotes-3" class="anchor"></span><a class="fa fa-anchor" href="#working-with-multiple-remotes-3" onclick="event.stopPropagation()"></a></h5>
                           <p><strong>When you clone a repo, Git automatically adds a <em>remote</em> repo named <code v-pre>origin</code></strong> to your repo configuration. As you know, you can pull commits from that repo. As you know, <span trigger="click" for="modal:gitPull-rcsMultipleRepos" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:gitPull-rcsMultipleRepos'].show()" class="trigger-click">a Git repo can work with remote repos other than the one it was cloned from</span>.</p>
-                          <b-modal id="modal:gitPull-rcsMultipleRepos" hide-footer size="lg" modal-class="mb-zoom" ref="modal:gitPull-rcsMultipleRepos"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
+                          <b-modal id="modal:gitPull-rcsMultipleRepos" hide-footer size="lg" modal-class="mb-zoom" ref="modal:gitPull-rcsMultipleRepos" class="algolia-no-index"><template slot="modal-title">Project Management → Revision Control → Remote Repositories →</template>
                             <div>
                               <p><strong>A repo can work with any number of other repositories as long as they have a shared history</strong> e.g., <code v-pre>repo1</code> can pull from (or push to) <code v-pre>repo2</code> and <code v-pre>repo3</code> if they have a shared history between them.</p>
                             </div>
@@ -1310,7 +1311,7 @@
                                 </ol>
                               </div>
                             </tab>
-                            <tab><template slot="_header">CLI</template>
+                            <tab class="algolia-no-index"><template slot="_header">CLI</template>
                               <div>
                                 <ol>
                                   <li>
@@ -1335,7 +1336,7 @@
                       <tabs>
                         <tab><template slot="_header">SourceTree</template>
                           <img src="/website/book/gitAndGithub/push/images/pushToRemote.png" width="470"></tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <p>Push each branch to the new remote the usual way <mark>but use the <code v-pre>-u</code> flag</mark> to inform Git that you wish to <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., remember which branch in the remote repo corresponds to which branch in the local repo</span>track</span> the branch.<br>
                             e.g., <code v-pre>git push -u origin master</code></p>
                         </tab>
@@ -1412,11 +1413,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these are features available in IDEs?</p>
                               </template>
                               <question>
@@ -1433,7 +1434,7 @@
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> j. Code generation <span class="dimmed">e.g., to generate the code required by simply specifying which component/structure you want to implement</span></li>
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> k. Extension <span class="dimmed">i.e., ability add more functionality to the IDE using plugins</span></li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>All.</p>
                                   <p>Explanation: While all of these features may not be present in some IDEs, most do have these features in some form or other.</p>
                                 </div>
@@ -1475,7 +1476,7 @@
                             </li>
                           </ul>
                         </tab>
-                        <tab><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
+                        <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
 
 
                           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
@@ -1567,7 +1568,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, Aug 10, 2020, 9:06:34 PM GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 15 Aug 2020, 19:51:17 GMT+8]</small></div>
     </footer>
   </div>
 </body>
@@ -1581,6 +1582,21 @@
   const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "7143a5096ae3b1d19f8dfa7c3ed76066",
+      indexName: "nus-tic2002-2020",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

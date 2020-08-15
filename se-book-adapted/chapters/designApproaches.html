@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/site-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Schedule</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Mon, Aug 10th] </span></a></li>
@@ -49,7 +50,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">**Links**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Links</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
 
           <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/forum/categories/31c136fe-0976-4368-9f4c-a10c08f7bbf3" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
 
@@ -65,7 +66,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -271,9 +272,9 @@
                       <tabs>
                         <tab><template slot="_header">UI</template>
                           <img src="https://se-edu.github.io/addressbook-level3/images/UiClassDiagram.png" width="700"></tab>
-                        <tab><template slot="_header">Logic</template>
+                        <tab class="algolia-no-index"><template slot="_header">Logic</template>
                           <img src="https://se-edu.github.io/addressbook-level3/images/LogicClassDiagram.png" width="800"></tab>
-                        <tab><template slot="_header">Storage</template>
+                        <tab class="algolia-no-index"><template slot="_header">Storage</template>
                           <img src="https://se-edu.github.io/addressbook-level3/images/StorageClassDiagram.png" width="700"></tab>
                       </tabs>
                     </box>
@@ -309,11 +310,11 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable><template slot="_header">
+                    <panel expandable class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
-                        <panel><template slot="_header">
+                        <panel class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which is better?</p>
                           </template>
                           <question>
@@ -322,7 +323,7 @@
                               <li class="radio-list-item"><label><input class="radio-list-input" name="81698" type="radio"> True</label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="81698" type="radio"> False</label></li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>False</p>
                               <p>Explanation: Not necessarily. It depends on the situation. Bottom-up design may be preferable when there are lot of existing components we want to reuse.</p>
                             </div>
@@ -359,11 +360,11 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable><template slot="_header">
+                    <panel expandable class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
-                        <panel><template slot="_header">
+                        <panel class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statement about agile design</p>
                           </template>
                           <question>
@@ -372,7 +373,7 @@
                               <li class="radio-list-item"><label><input class="radio-list-input" name="07214" type="radio"> True</label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="07214" type="radio"> False</label></li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>True</p>
                               <p>Explanation: Yes, that is why they do not believe in spending too much time creating a detailed and full design at the very beginning. However, the architecture is expected to remain relatively stable even in the agile design approach.</p>
                             </div>
@@ -415,7 +416,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, Aug 10, 2020, 9:06:34 PM GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 15 Aug 2020, 19:51:17 GMT+8]</small></div>
     </footer>
   </div>
 </body>
@@ -429,6 +430,21 @@
   const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "7143a5096ae3b1d19f8dfa7c3ed76066",
+      indexName: "nus-tic2002-2020",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

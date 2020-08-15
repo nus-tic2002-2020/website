@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -31,7 +32,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Schedule</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Mon, Aug 10th] </span></a></li>
@@ -50,7 +51,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">**Links**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Links</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
 
           <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/forum/categories/31c136fe-0976-4368-9f4c-a10c08f7bbf3" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
 
@@ -66,7 +67,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -89,7 +90,7 @@
           <p></p>
           <h1 id="week-10-mon-oct-12th-topics">Week 10 <small><small><span class="dimmed">[Mon, Oct 12th]</span> - Topics</small></small><span id="week-10-mon-oct-12th-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-10-mon-oct-12th-topics" onclick="event.stopPropagation()"></a></h1>
           <div></div>
-          <panel type="seamless"><template slot="_header">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header">
               <p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p>
             </template>
             <span id="toc">
@@ -288,33 +289,33 @@
                     <p></p>
                     <div>
                       <p>
-                        <panel type="seamless" src="/website/book/uml/sequenceDiagrams/introduction/unit-inElsewhere-asFlat._include_.html#main" fragment="main"><template slot="_header">
+                        <panel type="seamless" src="/website/book/uml/sequenceDiagrams/introduction/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Introduction</p>
                           </template><template slot="_alt">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SequenceDiagrams</p>
                           </template></panel>
                       </p>
                       <p>
-                        <panel type="seamless" src="/website/book/uml/sequenceDiagrams/basic/unit-inElsewhere-asFlat._include_.html#main" fragment="main"><template slot="_header">
+                        <panel type="seamless" src="/website/book/uml/sequenceDiagrams/basic/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Basic Notation</p>
                           </template><template slot="_alt">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Basic</p>
                           </template></panel>
                       </p>
                       <p>
-                        <panel type="seamless" src="/website/book/uml/sequenceDiagrams/loops/unit-inElsewhere-asFlat._include_.html#main" fragment="main"><template slot="_header">
+                        <panel type="seamless" src="/website/book/uml/sequenceDiagrams/loops/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Loops</p>
                           </template><template slot="_alt">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Loops</p>
                           </template></panel>
-                        <panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectCreation/unit-inElsewhere-asFlat._include_.html#main" fragment="main"><template slot="_header">
+                        <panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectCreation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Object Creation</p>
                           </template><template slot="_alt">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Creation</p>
                           </template></panel>
                       </p>
                       <p>
-                        <panel type="seamless" src="/website/book/uml/sequenceDiagrams/minimalNotation/unit-inElsewhere-asFlat._include_.html#main" fragment="main"><template slot="_header">
+                        <panel type="seamless" src="/website/book/uml/sequenceDiagrams/minimalNotation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Minimal Notation</p>
                           </template><template slot="_alt">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Minimal</p>
@@ -328,7 +329,7 @@
                           </template>
                           <div>
                             <div>
-                              <panel><template slot="_header">
+                              <panel class="algolia-no-index"><template slot="_header">
                                   <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram about Machine</p>
                                 </template>
                                 <question>
@@ -338,7 +339,7 @@
                               </panel>
                             </div>
                             <div>
-                              <panel><template slot="_header">
+                              <panel class="algolia-no-index"><template slot="_header">
                                   <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Sequence Diagram for the code (<code v-pre>PersonList</code>, <code v-pre>Person</code>, <code v-pre>Tag</code>)</p>
                                 </template>
                                 <question>
@@ -357,7 +358,7 @@
                               </panel>
                             </div>
                             <div>
-                              <panel><template slot="_header">
+                              <panel class="algolia-no-index"><template slot="_header">
                                   <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Find notation errors in sequence diagram</p>
                                 </template>
                                 <question>
@@ -455,11 +456,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What is the recommended approach regarding coding standards?</p>
                               </template>
                               <question>
@@ -470,14 +471,14 @@
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>c</p>
                                 </div>
                               </question>
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is the aim? What is the value?</p>
                               </template>
                               <question has-input>
@@ -525,14 +526,14 @@
                           </template>
                           <div>
                             <div>
-                              <panel><template slot="_header">
+                              <panel class="algolia-no-index"><template slot="_header">
                                   <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Find basic coding standard violations</p>
                                 </template>
                                 <question>
                                   <p>Consider the code given below:</p>
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.util.*;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String descriptionPrefix = <span class="hljs-string">"description: "</span>;<br></span><span>    <span class="hljs-keyword">private</span> String description;<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> important;<br></span><span>    List&lt;String&gt; pastDescription = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(); <span class="hljs-comment">// a list of past descriptions</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String d)</span> </span>{<br></span><span>      <span class="hljs-keyword">this</span>.description = d;<br></span><span>      <span class="hljs-keyword">if</span> (!d.isEmpty())<br></span><span>          <span class="hljs-keyword">this</span>.important = <span class="hljs-keyword">true</span>;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getAsXML</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;task&gt;"</span>+description+<span class="hljs-string">"&lt;/task&gt;"</span>; }<br></span><span><br></span><span>    <span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment">     * Print the description as a string.</span><br></span><span><span class="hljs-comment">     */</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printingDescription</span><span class="hljs-params">()</span></span>{ System.out.println(<span class="hljs-keyword">this</span>); }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> descriptionPrefix + description; }<br></span><span>}<br></span></code></pre>
                                   <p>In what ways the code violate the coding standard you are expected to follow?</p>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>Here are three:</p>
                                     <ul>
                                       <li><code v-pre>descriptionPrefix</code> is a constant and should be named <code v-pre>DESCRIPTION_PREFIX</code></li>
@@ -557,7 +558,7 @@
               </div>
               <p><span id="W10-2d"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/codeQuality/followStandard/intermediate" id="implementation-code-quality-style-intermediate">
+              <panel type="seamless" popup-url="/website/book/codeQuality/followStandard/intermediate" id="implementation-code-quality-style-intermediate" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W10.2d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="implementation-code-quality-style-intermediate"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Style →</span></span></small> <strong><span>Intermediate</span></strong><span id="implementation-code-quality-style-intermediate" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-style-intermediate" onclick="event.stopPropagation()"></a></h4>
@@ -580,7 +581,7 @@
                           </template>
                           <div>
                             <div>
-                              <panel><template slot="_header">
+                              <panel class="algolia-no-index"><template slot="_header">
                                   <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Unsuitable variable name</p>
                                 </template>
                                 <question>
@@ -592,7 +593,7 @@
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="d008b" type="radio"> d. method name (returns boolean): <code v-pre>isValidAddress</code></label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="d008b" type="radio"> e. String variable name: <code v-pre>description</code></label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>b</p>
                                     <p>Explanation: <code v-pre>checkWeight</code> is an action. Naming variables as actions makes the code harder to follow. <code v-pre>isWeightValid</code> may be a better name.</p>
                                   </div>
@@ -600,20 +601,20 @@
                               </panel>
                             </div>
                             <div>
-                              <panel><template slot="_header">
+                              <panel class="algolia-no-index"><template slot="_header">
                                   <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Find intermediate coding standard violations</p>
                                 </template>
                                 <question>
                                   <p>Repeat the exercise in the panel below but also find violations of <em>intermediate</em> level guidelines.</p>
                                   <div>
-                                    <panel><template slot="_header">
+                                    <panel class="algolia-no-index"><template slot="_header">
                                         <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Find basic coding standard violations</p>
                                       </template>
                                       <question>
                                         <p>Consider the code given below:</p>
                                         <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.util.*;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String descriptionPrefix = <span class="hljs-string">"description: "</span>;<br></span><span>    <span class="hljs-keyword">private</span> String description;<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> important;<br></span><span>    List&lt;String&gt; pastDescription = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(); <span class="hljs-comment">// a list of past descriptions</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String d)</span> </span>{<br></span><span>      <span class="hljs-keyword">this</span>.description = d;<br></span><span>      <span class="hljs-keyword">if</span> (!d.isEmpty())<br></span><span>          <span class="hljs-keyword">this</span>.important = <span class="hljs-keyword">true</span>;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getAsXML</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;task&gt;"</span>+description+<span class="hljs-string">"&lt;/task&gt;"</span>; }<br></span><span><br></span><span>    <span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment">     * Print the description as a string.</span><br></span><span><span class="hljs-comment">     */</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printingDescription</span><span class="hljs-params">()</span></span>{ System.out.println(<span class="hljs-keyword">this</span>); }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> descriptionPrefix + description; }<br></span><span>}<br></span></code></pre>
                                         <p>In what ways the code violate the coding standard you are expected to follow?</p>
-                                        <div slot="hint">
+                                        <div slot="hint" class="algolia-no-index">
                                           <p>Here are three:</p>
                                           <ul>
                                             <li><code v-pre>descriptionPrefix</code> is a constant and should be named <code v-pre>DESCRIPTION_PREFIX</code></li>
@@ -625,7 +626,7 @@
                                       </question>
                                     </panel>
                                   </div>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>Here's one you are more likely to miss:</p>
                                     <ul>
                                       <li><code v-pre>* Print the description as a string.</code> → <code v-pre>* Prints the description as a string.</code></li>
@@ -991,7 +992,7 @@
                         <li>[<code v-pre>Java</code>, <code v-pre>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
                         <li>[<code v-pre>Java</code>, <code v-pre>Python</code>] Use <span trigger="click" for="modal:obviousCode-enums" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:obviousCode-enums'].show()" class="trigger-click">enumerations</span> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and 'disabled' respectively, declare 'state' as type <code v-pre>SystemState</code> and define an enumeration <code v-pre>SystemState</code> that has values <code v-pre>'STARTING'</code>, <code v-pre>'ENABLED'</code>, and <code v-pre>'DISABLED'</code>.</li>
                       </ul>
-                      <b-modal id="modal:obviousCode-enums" hide-footer size modal-class="mb-zoom" ref="modal:obviousCode-enums"><template slot="modal-title">More about enumerations</template>
+                      <b-modal id="modal:obviousCode-enums" hide-footer size modal-class="mb-zoom" ref="modal:obviousCode-enums" class="algolia-no-index"><template slot="modal-title">More about enumerations</template>
                         <ul>
                           <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
                           <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
@@ -1035,7 +1036,7 @@
               </div>
               <p><span id="W10-2l"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/codeQuality/maximiseReadability/intermediate/dontTripReader" id="implementation-code-quality-readability-intermediate-do-not-trip-up-reader">
+              <panel type="seamless" popup-url="/website/book/codeQuality/maximiseReadability/intermediate/dontTripReader" id="implementation-code-quality-readability-intermediate-do-not-trip-up-reader" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W10.2l</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="implementation-code-quality-readability-intermediate-do-not-trip-up-reader"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Readability → Intermediate →</span></span></small> <strong><span>Do not 'Trip Up' reader</span></strong><span id="implementation-code-quality-readability-intermediate-do-not-trip-up-reader" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-readability-intermediate-do-not-trip-up-reader" onclick="event.stopPropagation()"></a></h4>
@@ -1068,7 +1069,7 @@
               </div>
               <p><span id="W10-2m"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/codeQuality/maximiseReadability/intermediate/practiceKISSing" id="implementation-code-quality-readability-intermediate-practice-kissing">
+              <panel type="seamless" popup-url="/website/book/codeQuality/maximiseReadability/intermediate/practiceKISSing" id="implementation-code-quality-readability-intermediate-practice-kissing" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W10.2m</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="implementation-code-quality-readability-intermediate-practice-kissing"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Readability → Intermediate →</span></span></small> <strong><span>Practice KISSing</span></strong><span id="implementation-code-quality-readability-intermediate-practice-kissing" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-readability-intermediate-practice-kissing" onclick="event.stopPropagation()"></a></h4>
@@ -1100,7 +1101,7 @@
               </div>
               <p><span id="W10-2n"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/codeQuality/maximiseReadability/intermediate/avoidPrematureOptimizations" id="implementation-code-quality-readability-intermediate-avoid-premature-optimizations">
+              <panel type="seamless" popup-url="/website/book/codeQuality/maximiseReadability/intermediate/avoidPrematureOptimizations" id="implementation-code-quality-readability-intermediate-avoid-premature-optimizations" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W10.2n</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="implementation-code-quality-readability-intermediate-avoid-premature-optimizations"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Readability → Intermediate →</span></span></small> <strong><span>Avoid premature optimizations</span></strong><span id="implementation-code-quality-readability-intermediate-avoid-premature-optimizations" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-readability-intermediate-avoid-premature-optimizations" onclick="event.stopPropagation()"></a></h4>
@@ -1136,7 +1137,7 @@
               </div>
               <p><span id="W10-2o"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/codeQuality/maximiseReadability/intermediate/slapHard" id="implementation-code-quality-readability-intermediate-slap-hard">
+              <panel type="seamless" popup-url="/website/book/codeQuality/maximiseReadability/intermediate/slapHard" id="implementation-code-quality-readability-intermediate-slap-hard" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W10.2o</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="implementation-code-quality-readability-intermediate-slap-hard"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Readability → Intermediate →</span></span></small> <strong><span>SLAP hard</span></strong><span id="implementation-code-quality-readability-intermediate-slap-hard" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-readability-intermediate-slap-hard" onclick="event.stopPropagation()"></a></h4>
@@ -1163,7 +1164,7 @@
                         </p>
                         <pre><code class="hljs java" v-pre><span>readData();<br></span><span>processData();<br></span><span>displayResult();<br></span></code></pre>
                       </box>
-                      <b-modal id="modal:slap-abstraction" hide-footer size modal-class="mb-zoom" ref="modal:slap-abstraction"><template slot="modal-title"></template>
+                      <b-modal id="modal:slap-abstraction" hide-footer size modal-class="mb-zoom" ref="modal:slap-abstraction" class="algolia-no-index"><template slot="modal-title"></template>
                         <div>
                           <div></div>
                           <p></p>
@@ -1220,7 +1221,7 @@
               </div>
               <p><span id="W10-2p"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/codeQuality/maximiseReadability/advanced/makeHappyPathProminent" id="implementation-code-quality-readability-advanced-make-the-happy-path-prominent">
+              <panel type="seamless" popup-url="/website/book/codeQuality/maximiseReadability/advanced/makeHappyPathProminent" id="implementation-code-quality-readability-advanced-make-the-happy-path-prominent" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W10.2p</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="implementation-code-quality-readability-advanced-make-the-happy-path-prominent"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Readability → Advanced →</span></span></small> <strong><span>Make the happy path prominent</span></strong><span id="implementation-code-quality-readability-advanced-make-the-happy-path-prominent" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-readability-advanced-make-the-happy-path-prominent" onclick="event.stopPropagation()"></a></h4>
@@ -1400,7 +1401,7 @@
               </div>
               <p><span id="W10-2t"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/codeQuality/nameWell/intermediate/useNameExplain" id="implementation-code-quality-naming-intermediate-use-name-to-explain">
+              <panel type="seamless" popup-url="/website/book/codeQuality/nameWell/intermediate/useNameExplain" id="implementation-code-quality-naming-intermediate-use-name-to-explain" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W10.2t</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="implementation-code-quality-naming-intermediate-use-name-to-explain"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Naming → Intermediate →</span></span></small> <strong><span>Use name to explain</span></strong><span id="implementation-code-quality-naming-intermediate-use-name-to-explain" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-naming-intermediate-use-name-to-explain" onclick="event.stopPropagation()"></a></h4>
@@ -1509,7 +1510,7 @@
               </div>
               <p><span id="W10-2u"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/codeQuality/nameWell/intermediate/notTooLongNorShort" id="implementation-code-quality-naming-intermediate-not-too-long-not-too-short">
+              <panel type="seamless" popup-url="/website/book/codeQuality/nameWell/intermediate/notTooLongNorShort" id="implementation-code-quality-naming-intermediate-not-too-long-not-too-short" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W10.2u</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="implementation-code-quality-naming-intermediate-not-too-long-not-too-short"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Naming → Intermediate →</span></span></small> <strong><span>Not too long, not too short</span></strong><span id="implementation-code-quality-naming-intermediate-not-too-long-not-too-short" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-naming-intermediate-not-too-long-not-too-short" onclick="event.stopPropagation()"></a></h4>
@@ -1535,7 +1536,7 @@
               </div>
               <p><span id="W10-2v"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/codeQuality/nameWell/intermediate/avoidMisleadingNames" id="implementation-code-quality-naming-intermediate-avoid-misleading-names">
+              <panel type="seamless" popup-url="/website/book/codeQuality/nameWell/intermediate/avoidMisleadingNames" id="implementation-code-quality-naming-intermediate-avoid-misleading-names" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W10.2v</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="implementation-code-quality-naming-intermediate-avoid-misleading-names"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Naming → Intermediate →</span></span></small> <strong><span>Avoid misleading names</span></strong><span id="implementation-code-quality-naming-intermediate-avoid-misleading-names" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-naming-intermediate-avoid-misleading-names" onclick="event.stopPropagation()"></a></h4>
@@ -1744,7 +1745,7 @@
               </div>
               <p><span id="W10-2z"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/codeQuality/commentMinimally/intermediate/explainWhatWhyNotHow" id="implementation-code-quality-comments-intermediate-explain-what-and-why-not-how">
+              <panel type="seamless" popup-url="/website/book/codeQuality/commentMinimally/intermediate/explainWhatWhyNotHow" id="implementation-code-quality-comments-intermediate-explain-what-and-why-not-how" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W10.2z</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="implementation-code-quality-comments-intermediate-explain-what-and-why-not-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Comments → Intermediate →</span></span></small> <strong><span>Explain WHAT and WHY, not HOW</span></strong><span id="implementation-code-quality-comments-intermediate-explain-what-and-why-not-how" class="anchor"></span><a class="fa fa-anchor" href="#implementation-code-quality-comments-intermediate-explain-what-and-why-not-how" onclick="event.stopPropagation()"></a></h4>
@@ -1838,11 +1839,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Logging vs blackbox</p>
                               </template>
                               <question>
@@ -1853,7 +1854,7 @@
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="6f5b0" type="radio"> c. Because they both can be in hardcopy form or digital form.</label></li>
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="6f5b0" type="radio"> d. Because they are hard to open by normal users.</label></li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>(a)</p>
                                 </div>
                               </question>
@@ -1871,7 +1872,7 @@
               </div>
               <p><span id="W10-3b"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/errorHandling/logging/how" id="implementation-error-handling-logging-how">
+              <panel type="seamless" popup-url="/website/book/errorHandling/logging/how" id="implementation-error-handling-logging-how" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W10.3b</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="implementation-error-handling-logging-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Error Handling → Logging →</span></span></small> <strong><span>How</span></strong><span id="implementation-error-handling-logging-how" class="anchor"></span><a class="fa fa-anchor" href="#implementation-error-handling-logging-how" onclick="event.stopPropagation()"></a></h4>
@@ -2051,11 +2052,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Assertions failure in Calculator</p>
                               </template>
                               <question>
@@ -2066,7 +2067,7 @@
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> c. The program has a bug.</label></li>
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="f7dad" type="radio"> d. All statements above are incorrect.</label></li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>(c)</p>
                                   <p>Explanation: An assertion failure indicates a bug in the code. (b) is not acceptable because of the word &quot;terminated&quot;. The application should not fail at all for this input. But it could have used an exception to handle the situation internally.</p>
                                 </div>
@@ -2074,7 +2075,7 @@
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statement about exceptions and assertions</p>
                               </template>
                               <question>
@@ -2083,7 +2084,7 @@
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. Use assertions to indicate the programmer messed up; Use exceptions to indicate the user or the environment messed up.</li>
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. Use exceptions to indicate the programmer messed up; Use assertions to indicate the user or the environment messed up.</li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>(a)</p>
                                 </div>
                               </question>
@@ -2138,7 +2139,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, Aug 10, 2020, 9:06:34 PM GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 15 Aug 2020, 19:51:17 GMT+8]</small></div>
     </footer>
   </div>
 </body>
@@ -2152,6 +2153,21 @@
   const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "7143a5096ae3b1d19f8dfa7c3ed76066",
+      indexName: "nus-tic2002-2020",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

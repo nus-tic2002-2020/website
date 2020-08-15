@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -31,7 +32,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Schedule</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Mon, Aug 10th] </span></a></li>
@@ -50,7 +51,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">**Links**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Links</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
 
           <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/forum/categories/31c136fe-0976-4368-9f4c-a10c08f7bbf3" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
 
@@ -66,7 +67,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -94,7 +95,7 @@
           </box>
           <p></p>
           <div></div>
-          <panel type="seamless"><template slot="_header">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header">
               <p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p>
             </template>
             <span id="toc">
@@ -298,7 +299,7 @@
                         <p>This then is programming, both a tar pit in which many efforts have floundered and a creative activity with joys
                           and woes all its own. For many, the joys far outweigh the woes....</p>
                       </blockquote>
-                      <b-modal id="modal:mmm" hide-footer size modal-class="mb-zoom" ref="modal:mmm"><template slot="modal-title"><strong>📖 The Mythical Man-Month: Essays on Software Engineering</strong></template>
+                      <b-modal id="modal:mmm" hide-footer size modal-class="mb-zoom" ref="modal:mmm" class="algolia-no-index"><template slot="modal-title"><strong>📖 The Mythical Man-Month: Essays on Software Engineering</strong></template>
                         <table>
                           <tr>
                             <td>
@@ -320,16 +321,16 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> SE vs Civil Engineering</p>
                               </template>
                               <question has-input="true">
                                 <p>Compare Software Engineering with Civil Engineering in terms of how work products in CE (i.e. buildings) differ from those of SE (i.e. software).</p>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <div class="table-responsive">
                                     <table class="markbind-table table table-bordered table-striped">
                                       <thead>
@@ -395,24 +396,24 @@
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Software vs Bridges</p>
                               </template>
                               <question has-input="true">
                                 <p>Comment on this statement: Building software is cheaper and easier than building bridges (all we need is a PC!).</p>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>Depends on the size of the software. Manpower required for software is very costly. On the other hand, we can create a very valuable software (e.g. an iPhone application that can make million dollars in a month) with a just a PC and a few days of work!</p>
                                 </div>
                               </question>
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coding as a manufacturing activity</p>
                               </template>
                               <question has-input="true">
                                 <p>Justify this statement: Coding is still a ‘design’ activity, not a ‘manufacturing’ activity. You may use a comparison (or an analogy) of Software engineering versus Civil Engineering to argue this point.</p>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>Arguments to support this statement:</p>
                                   <ul>
                                     <li>If coding is a manufacturing activity, we should be able to do it using robotic machines (just like in the car industry) or low-skilled laborers (like in the construction industry).</li>
@@ -425,7 +426,7 @@
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> List pros and cons of SE</p>
                               </template>
                               <question has-input="true">
@@ -434,7 +435,7 @@
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which one of these is not included in Brook’s list of ‘Woes of the Craft’?</p>
                               </template>
                               <question>
@@ -446,7 +447,7 @@
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> e. Seemingly never ending effort required for testing and debugging software</li>
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> f. Fast moving industry making our work obsolete quickly</li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>(c)</p>
                                 </div>
                               </question>
@@ -595,7 +596,7 @@
                   <span class="badge badge-pill badge-light text-mute">W1.2c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="c-to-java-the-java-world-how-java-works"><small><span class="font-weight-bold text-muted"><span>C++ to Java → The Java World →</span></span></small> <strong><span>How Java works</span></strong><span id="c-to-java-the-java-world-how-java-works" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-the-java-world-how-java-works" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=eb1fbc9c-25bf-4f71-aa2e-ac0700d2eab6&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -624,7 +625,7 @@
               </div>
               <p><span id="W1-2d"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/cppToJava/javaWorld/editions" id="c-to-java-the-java-world-java-editions">
+              <panel type="seamless" popup-url="/website/book/cppToJava/javaWorld/editions" id="c-to-java-the-java-world-java-editions" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W1.2d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="c-to-java-the-java-world-java-editions"><small><span class="font-weight-bold text-muted"><span>C++ to Java → The Java World →</span></span></small> <strong><span>Java editions</span></strong><span id="c-to-java-the-java-world-java-editions" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-the-java-world-java-editions" onclick="event.stopPropagation()"></a></h4>
@@ -689,7 +690,7 @@
                 <h2 id="w1-3-java-helloworld"><span class="dimmed">[W1.3]</span> <strong>Java: HelloWorld</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w1-3-java-helloworld" class="anchor"></span><a class="fa fa-anchor" href="#w1-3-java-helloworld" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless">
+            <panel type="seamless" class="algolia-no-index">
               <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
               <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=2272aac8-8865-4f83-8c18-ac0c00bec829&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
             </panel>
@@ -830,7 +831,7 @@
                       <div>
                         <span tags="m--tic2002">
                           <p>At the end of the next section, there is an exercise (<em>[Key Exercise] ByeWorld</em>) that you need to submit on <a href="http://repl.it">repl.it</a>. From this point onwards, programming exercises marked as <span class="bg-dark text-white p-1">[Key Exercise]</span> need to be submitted on repl.</p>
-                          <panel type class="embedding" minimized><template slot="_header">
+                          <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                               <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → <a href="http://Repl.it">Repl.it</a> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                             </template>
                             <div>
@@ -844,7 +845,7 @@
                                 <li>Join the <code v-pre>repl.it</code> classroom <code v-pre>tic2002-2020</code> using the link <a href="https://repl.it/classroom/invite/szXDJN4">https://repl.it/classroom/invite/szXDJN4</a>.</li>
                               </ul>
                               <p>The process of submitting exercises to repl is explained in this video (requires NUSNET login):</p>
-                              <panel type="seamless">
+                              <panel type="seamless" class="algolia-no-index">
                                 <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                                 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=5e45eb04-317d-4ff2-83fb-ac0d01085120&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                               </panel>
@@ -1356,12 +1357,12 @@
                                   <pre><code class="hljs" v-pre><span>Words given: eve, eve<br></span><span>They are the same: true<br></span></code></pre>
                                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Use the following technique to compare two <code v-pre>Strings</code>(i.e., don't use <code v-pre>==</code>). <span class="dimmed">Reason: to be covered in a later topic</span>.</p>
                                   <pre><code class="hljs java" v-pre><span>String x = <span class="hljs-string">"foo"</span>;<br></span><span><span class="hljs-keyword">boolean</span> isSame = x.equals(<span class="hljs-string">"bar"</span>) <span class="hljs-comment">// false</span><br></span><span>isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comment">// true</span><br></span></code></pre>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <ul>
                                       <li>The two command line arguments can be accessed inside the <code v-pre>main</code> method using <code v-pre>args[0]</code> and <code v-pre>args[1]</code>.</li>
                                       <li>When using multiple operators in the same expression, you might need to use parentheses to specify operator precedence. e.g., <code v-pre>&quot;foo&quot; + x == y</code> vs <code v-pre>&quot;foo&quot; + (x == y)</code></li>
                                     </ul>
-                                    <panel type="seamless"><template slot="_header">
+                                    <panel type="seamless" class="algolia-no-index"><template slot="_header">
                                         <p>partial solution</p>
                                       </template>
                                       <pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span>  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>      String first = args[<span class="hljs-number">0</span>];<br></span><span>      String second = args[<span class="hljs-number">1</span>];<br></span><span>      System.out.println(<span class="hljs-string">"Words given: "</span> + first + <span class="hljs-string">", "</span> + second);<br></span><span>      <span class="hljs-comment">// ...</span><br></span><span>  }<br></span><span>}<br></span><span><br></span></code></pre>
@@ -1449,7 +1450,7 @@
                           </template>
                           <div>
                             <div>
-                              <panel><template slot="_header">
+                              <panel class="algolia-no-index"><template slot="_header">
                                   <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Greeter</p>
                                 </template>
                                 <question>
@@ -1488,7 +1489,7 @@
                                     <smal><span class="badge badge-secondary">&gt;_</span></smal> <code v-pre>java Greeter Tan M M F</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code v-pre>Dear Tan family</code>
                                   </p>
                                   <p>You can assume that the input is always in the correct format <span class="dimmed">i.e., no need to handle invalid input cases</span>.</p>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>Partial solution:</p>
                                     <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeter</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        String first = args[<span class="hljs-number">0</span>];<br></span><span>        String second = args[<span class="hljs-number">1</span>];<br></span><span>        <span class="hljs-keyword">if</span> (args.length == <span class="hljs-number">2</span>) {<br></span><span>            <span class="hljs-keyword">if</span> (second.equals(<span class="hljs-string">"M"</span>)) {<br></span><span>                <span class="hljs-comment">// ...</span><br></span><span>            }<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            <span class="hljs-comment">// ...</span><br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   </div>
@@ -1537,7 +1538,7 @@
                                     <smal><span class="badge badge-secondary">&gt;_</span></smal> <code v-pre>java GradeHelper B</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code v-pre>CAP for grade B is 3.5</code>
                                   </p>
                                   <p>You can assume that the input is always in the correct format <span class="dimmed">i.e., no need to handle invalid input cases</span>.</p>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>Partial solution:</p>
                                     <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GradeHelper</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        String grade = args[<span class="hljs-number">0</span>];<br></span><span>        <span class="hljs-keyword">double</span> cutoff = <span class="hljs-number">0</span>;<br></span><span>        <span class="hljs-keyword">switch</span> (grade) {<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"A+"</span>:<br></span><span>            <span class="hljs-comment">// ...</span><br></span><span>        }<br></span><span>        System.out.println(<span class="hljs-string">"CAP for grade "</span> + grade + <span class="hljs-string">" is "</span> + cutoff);<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   </div>
@@ -1589,7 +1590,7 @@
                         <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                         <pre><code class="hljs" v-pre><span>Polly likes crackers<br></span><span>Polly likes crackers<br></span></code></pre>
                         <p>By convention, method names should be named in the <span trigger="click" for="modal:javaMethods_camelCase" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:javaMethods_camelCase'].show()" class="trigger-click"><em>camelCase</em></span> format.</p>
-                        <b-modal id="modal:javaMethods_camelCase" hide-footer size="lg" modal-class="mb-zoom" ref="modal:javaMethods_camelCase"><template slot="modal-title">Defintion: camelCase</template>
+                        <b-modal id="modal:javaMethods_camelCase" hide-footer size="lg" modal-class="mb-zoom" ref="modal:javaMethods_camelCase" class="algolia-no-index"><template slot="modal-title">Defintion: camelCase</template>
                           <div>
                             <blockquote>
                               <pic src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" width="200" alt="camelCase"></pic>
@@ -1686,7 +1687,7 @@
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-comment">// ADD YOUR CODE HERE</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        System.out.println(<span class="hljs-string">"A+: "</span> + getGradeCap(<span class="hljs-string">"A+"</span>));<br></span><span>        System.out.println(<span class="hljs-string">"B : "</span> + getGradeCap(<span class="hljs-string">"B"</span>));<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>A+: 5.0<br></span><span>B : 3.5<br></span></code></pre>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>Partial solution:</p>
                                     <pre><code class="hljs java" v-pre><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getGradeCap</span><span class="hljs-params">(String grade)</span> </span>{<br></span><span>        <span class="hljs-keyword">double</span> cap = <span class="hljs-number">0</span>;<br></span><span>        <span class="hljs-keyword">switch</span> (grade) {<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"A+"</span>:<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"A"</span>:<br></span><span>            cap = <span class="hljs-number">5.0</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"A-"</span>:<br></span><span>            cap = <span class="hljs-number">4.5</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"B+"</span>:<br></span><span>            cap = <span class="hljs-number">4.0</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"B"</span>:<br></span><span>            cap = <span class="hljs-number">3.5</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"B-"</span>:<br></span><span>            cap = <span class="hljs-number">3.0</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">default</span>:<br></span><span>        }<br></span><span>        <span class="hljs-keyword">return</span> cap;<br></span><span>    }<br></span></code></pre>
                                   </div>
@@ -1826,7 +1827,7 @@
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-comment">// ADD YOUR CODE HERE</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getGradeCap</span><span class="hljs-params">(String grade)</span> </span>{<br></span><span>        <span class="hljs-keyword">double</span> cap = <span class="hljs-number">0</span>;<br></span><span>        <span class="hljs-keyword">switch</span> (grade) {<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"A+"</span>:<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"A"</span>:<br></span><span>            cap = <span class="hljs-number">5.0</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"A-"</span>:<br></span><span>            cap = <span class="hljs-number">4.5</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"B+"</span>:<br></span><span>            cap = <span class="hljs-number">4.0</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"B"</span>:<br></span><span>            cap = <span class="hljs-number">3.5</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"B-"</span>:<br></span><span>            cap = <span class="hljs-number">3.0</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"C"</span>:<br></span><span>            cap = <span class="hljs-number">2.5</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">default</span>:<br></span><span>        }<br></span><span>        <span class="hljs-keyword">return</span> cap;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        String[] grades = <span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"A+"</span>, <span class="hljs-string">"A"</span>, <span class="hljs-string">"A-"</span>};<br></span><span>        <span class="hljs-keyword">double</span>[] caps = getMultipleGradeCaps(grades);<br></span><span>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; grades.length; i++) {<br></span><span>            System.out.println(grades[i] + <span class="hljs-string">":"</span> + caps[i]);<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>A+:5.0<br></span><span>A:5.0<br></span><span>A-:4.5<br></span></code></pre>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>Partial solution:</p>
                                     <pre><code class="hljs java" v-pre><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span>[] getMultipleGradeCaps(String[] grades) {<br></span><span>        <span class="hljs-keyword">double</span>[] caps = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[grades.length];<br></span><span>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; grades.length; i++) {<br></span><span>           <span class="hljs-comment">// ...</span><br></span><span>        }<br></span><span>        <span class="hljs-keyword">return</span> caps;<br></span><span>    }<br></span></code></pre>
                                   </div>
@@ -1886,7 +1887,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, Aug 10, 2020, 9:06:34 PM GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 15 Aug 2020, 19:51:17 GMT+8]</small></div>
     </footer>
   </div>
 </body>
@@ -1900,6 +1901,21 @@
   const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "7143a5096ae3b1d19f8dfa7c3ed76066",
+      indexName: "nus-tic2002-2020",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -31,7 +32,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Schedule</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Mon, Aug 10th] </span></a></li>
@@ -50,7 +51,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">**Links**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Links</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
 
           <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/forum/categories/31c136fe-0976-4368-9f4c-a10c08f7bbf3" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
 
@@ -66,7 +67,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -90,7 +91,7 @@
           <h1 id="week-2-mon-aug-10th-topics">Week 2 <small><small><span class="dimmed">[Mon, Aug 10th]</span> - Topics</small></small><span id="week-2-mon-aug-10th-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-2-mon-aug-10th-topics" onclick="event.stopPropagation()"></a></h1>
           <div>
           </div>
-          <panel type="seamless"><template slot="_header">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header">
               <p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p>
             </template>
             <span id="toc">
@@ -273,7 +274,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.1a</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="paradigms-oop-introduction-what"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Introduction →</span></span></small> <strong><span>What</span></strong><span id="paradigms-oop-introduction-what" class="anchor"></span><a class="fa fa-anchor" href="#paradigms-oop-introduction-what" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=555275b7-e203-4405-8501-ac0c00c81fbf&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -328,11 +329,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about OOP</p>
                               </template>
                               <question>
@@ -351,7 +352,7 @@
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. Java can be used to write procedural code</li>
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> d. Prolog follows the Logic Programming paradigm</li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>A) (a)(b)(c)(e)</p>
                                   <p>Explanation: While many languages support the OO paradigm, OO is not a language itself.</p>
                                   <p>B) Choose the correct statement</p>
@@ -362,7 +363,7 @@
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> procedural vs OOP</p>
                               </template>
                               <question>
@@ -371,7 +372,7 @@
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="07027" type="radio"> True</label></li>
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="07027" type="radio"> False</label></li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>True.</p>
                                   <p>Explanation: Procedural languages work at simple data structures (e.g., integers, arrays) and functions level. Because an object is an abstraction over data+related functions, OO works at a higher level.</p>
                                 </div>
@@ -395,7 +396,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.1b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="paradigms-oop-objects-what"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Objects →</span></span></small> <strong><span>What</span></strong><span id="paradigms-oop-objects-what" class="anchor"></span><a class="fa fa-anchor" href="#paradigms-oop-objects-what" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=5ab57a96-01e3-46e5-ab5a-ac0c00cb212f&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -563,12 +564,12 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
 
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Describe objects in the given scenario</p>
                               </template>
                               <question has-input="true">
@@ -584,7 +585,7 @@
                                   <li>Objects interact by sending messages.</li>
                                   <li>OOP does not demand that the virtual world object network follow the real world exactly.</li>
                                 </ol>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <blockquote>
                                     <p>[1] Object Oriented Programming (OOP) views the world as a network of interacting objects.</p>
                                   </blockquote>
@@ -711,7 +712,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.1c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="paradigms-oop-objects-objects-as-abstractions"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Objects →</span></span></small> <strong><span>Objects as abstractions</span></strong><span id="paradigms-oop-objects-objects-as-abstractions" class="anchor"></span><a class="fa fa-anchor" href="#paradigms-oop-objects-objects-as-abstractions" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=4b95c852-d083-422c-9853-ac0c00cd8074&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -726,7 +727,7 @@
                     <p></p>
                     <div>
                       <p>The concept of <strong><em>Objects</em> in OOP is an <span trigger="click" for="modal:objectsAsAbstractions-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:objectsAsAbstractions-abstraction'].show()" class="trigger-click">abstraction</span> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong> i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
-                      <b-modal id="modal:objectsAsAbstractions-abstraction" hide-footer size="lg" modal-class="mb-zoom" ref="modal:objectsAsAbstractions-abstraction"><template slot="modal-title">Definition: Abstraction</template>
+                      <b-modal id="modal:objectsAsAbstractions-abstraction" hide-footer size="lg" modal-class="mb-zoom" ref="modal:objectsAsAbstractions-abstraction" class="algolia-no-index"><template slot="modal-title">Definition: Abstraction</template>
                         <div>
                           <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                         </div>
@@ -750,7 +751,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.1d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="paradigms-oop-objects-encapsulation-of-objects"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Objects →</span></span></small> <strong><span>Encapsulation of objects</span></strong><span id="paradigms-oop-objects-encapsulation-of-objects" class="anchor"></span><a class="fa fa-anchor" href="#paradigms-oop-objects-encapsulation-of-objects" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=d9f2b2b6-35ab-436e-8eee-ac0c00d3faf1&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -773,11 +774,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Choose the correct statement.</p>
                               </template>
                               <question>
@@ -786,10 +787,10 @@
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an encapsulation because it packages data and behavior into one bundle.</li>
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an encapsulation because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</li>
                                 </ul>
-                                <div slot="hint">
+                                <div slot="hint" class="algolia-no-index">
                                   <p>Don't confuse encapsulation with abstraction.</p>
                                 </div>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>Choose the correct statement</p>
                                   <p>(a)</p>
                                   <p>Explanation: The second statement should be: An object is an <strong>abstraction</strong> <s>encapsulation</s> because it lets ...</p>
@@ -814,7 +815,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.1e</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="paradigms-oop-classes-what"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Classes →</span></span></small> <strong><span>What</span></strong><span id="paradigms-oop-classes-what" class="anchor"></span><a class="fa fa-anchor" href="#paradigms-oop-classes-what" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=bb296210-fcac-4feb-9668-ac0c00d6de6e&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -876,7 +877,7 @@
                           </template>
                           <div>
                             <div>
-                              <panel><template slot="_header">
+                              <panel class="algolia-no-index"><template slot="_header">
                                   <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Identify Classes and Objects</p>
                                 </template>
                                 <question>
@@ -884,7 +885,7 @@
                                   <box>
                                     <p>A customer (name: John) gave a cheque to the Cashier (name: Peter) to pay for the LoTR and GoT books he bought.</p>
                                   </box>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <div class="table-responsive">
                                       <table class="markbind-table table table-bordered table-striped">
                                         <thead>
@@ -918,14 +919,14 @@
                               </panel>
                             </div>
                             <div>
-                              <panel><template slot="_header">
+                              <panel class="algolia-no-index"><template slot="_header">
                                   <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Classes for CityConnect app</p>
                                 </template>
                                 <question has-input="true">
                                   <p>Assume you are writing a CLI program called <strong><code v-pre>CityConnect</code></strong> for storing and querying distances between cities. The behavior is as follows:</p>
                                   <pre><code class="hljs" v-pre><span>Welcome to CityConnect!<br></span><span><br></span><span>Enter command: addroute Clementi BuonaVista 12<br></span><span>Route from Clementi to BuonaVista with distance 12km added<br></span><span><br></span><span>Enter command: getdistance Clementi BuonaVista<br></span><span>Distance from Clementi to BuonaVista is 12<br></span><span><br></span><span>Enter command: getdistance Clementi JurongWest<br></span><span>No route exists from Clementi to JurongWest!<br></span><span><br></span><span>Enter command: addroute Clementi JurongWest 24<br></span><span>Route from Clementi to JurongWest with distance 24km added<br></span><span><br></span><span>Enter command: getdistance Clementi JurongWest<br></span><span>Distance from Clementi to JurongWest is 24<br></span><span><br></span><span>Enter command: exit<br></span><span><br></span></code></pre>
                                   <p>What classes would you have in your code if you write your program based on the OOP paradigm?</p>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>One class you can have is <code v-pre>Route</code></p>
                                   </div>
                                 </question>
@@ -968,7 +969,7 @@
                 <h2 id="w2-2-java-objects"><span class="dimmed">[W2.2]</span> <strong>Java: Objects</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w2-2-java-objects" class="anchor"></span><a class="fa fa-anchor" href="#w2-2-java-objects" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless">
+            <panel type="seamless" class="algolia-no-index">
               <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
               <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=c9dfeadd-edc1-40f9-b138-ac0e00955f54&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
             </panel>
@@ -1050,7 +1051,7 @@
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        Rectangle r;<br></span><span><br></span><span>        <span class="hljs-comment">// TODO create a Rectangle object that has the properties x=0, y=0, width=5, height=10</span><br></span><span>        <span class="hljs-comment">// assign it to r</span><br></span><span><br></span><span>        System.out.println(r);<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>java.awt.Rectangle[x=0,y=0,width=5,height=10]<br></span></code></pre>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <ul>
                                       <li>Import the <code v-pre>java.awt.Rectangle</code> class</li>
                                       <li>This is how you create the required object <code v-pre>new Rectangle(0, 0, 5, 10)</code></li>
@@ -1124,7 +1125,7 @@
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.awt.Rectangle;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        Rectangle r = <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>);<br></span><span>        System.out.println(r);<br></span><span><br></span><span>        <span class="hljs-keyword">int</span> area;<br></span><span>        <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> add a line below to calculate the area using width and height properties of r</span><br></span><span>        <span class="hljs-comment">// and assign it to the variable area</span><br></span><span><br></span><span>        System.out.println(<span class="hljs-string">"Area: "</span> + area);<br></span><span><br></span><span>        <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> add a line here to set the size of r to 8x10 (width x height)</span><br></span><span>        <span class="hljs-comment">//Recommended: use the setSize(int width, int height) method of the Rectangle object</span><br></span><span><br></span><span>        System.out.println(r);<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>java.awt.Rectangle[x=0,y=0,width=4,height=6]<br></span><span>Area: 24<br></span><span>java.awt.Rectangle[x=0,y=0,width=8,height=10]<br></span></code></pre>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <ul>
                                       <li>Area can be calculated as <code v-pre>r.width * r.height</code></li>
                                       <li>Setting the size can be done as <code v-pre>r.setSize(8, 10)</code></li>
@@ -1227,7 +1228,7 @@
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.awt.Point;<br></span><span><span class="hljs-keyword">import</span> java.awt.Rectangle;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-comment">//TODO add your method here</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        Point p1 = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>);<br></span><span>        Rectangle r1 = <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>);<br></span><span>        System.out.println(<span class="hljs-string">"arguments: "</span> + p1 + <span class="hljs-string">", "</span> + r1);<br></span><span><br></span><span>        Point p2 = move(p1, r1);<br></span><span>        System.out.println(<span class="hljs-string">"argument point after method call: "</span> + p1);<br></span><span>        System.out.println(<span class="hljs-string">"argument rectangle after method call: "</span> + r1);<br></span><span>        System.out.println(<span class="hljs-string">"returned point: "</span> + p2);<br></span><span><br></span><span>        System.out.println(move(<span class="hljs-keyword">null</span>, <span class="hljs-keyword">null</span>));<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>arguments: java.awt.Point[x=0,y=0], java.awt.Rectangle[x=2,y=3,width=5,height=6]<br></span><span>argument point after method call: java.awt.Point[x=0,y=0]<br></span><span>argument rectangle after method call: java.awt.Rectangle[x=0,y=0,width=5,height=6]<br></span><span>returned point: java.awt.Point[x=2,y=3]<br></span><span>null<br></span></code></pre>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>Partial solution:</p>
                                     <pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Point <span class="hljs-title">move</span><span class="hljs-params">(Point p, Rectangle r)</span></span>{<br></span><span>    <span class="hljs-keyword">if</span> (p == <span class="hljs-keyword">null</span> || r == <span class="hljs-keyword">null</span>){<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span>    Point newPoint = <span class="hljs-keyword">new</span> Point(r.x, r.y);<br></span><span>    r.x = p.x;<br></span><span>    <span class="hljs-comment">// ...</span><br></span><span>    <span class="hljs-keyword">return</span> newPoint;<br></span><span>}<br></span></code></pre>
                                   </div>
@@ -1299,7 +1300,7 @@
                 <h2 id="w2-3-java-classes"><span class="dimmed">[W2.3]</span> <strong>Java: Classes</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w2-3-java-classes" class="anchor"></span><a class="fa fa-anchor" href="#w2-3-java-classes" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
-            <panel type="seamless">
+            <panel type="seamless" class="algolia-no-index">
               <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
               <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=b8096405-2cef-4ef4-83a2-ac0e009b6ed3&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
             </panel>
@@ -1421,7 +1422,7 @@
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        Circle c = <span class="hljs-keyword">new</span> Circle();<br></span><span><br></span><span>        System.out.println(c.getArea());<br></span><span>        c = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>);<br></span><span>        System.out.println(c.getArea());<br></span><span><br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>0<br></span><span>78<br></span></code></pre>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <ul>
                                       <li>Put the <code v-pre>Circle</code> class in a file called <code v-pre>Circle.java</code></li>
                                     </ul>
@@ -1485,7 +1486,7 @@
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        Circle c = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>, <span class="hljs-number">5</span>);<br></span><span><br></span><span>        c.setX(<span class="hljs-number">4</span>);<br></span><span>        c.setY(<span class="hljs-number">5</span>);<br></span><span>        c.setRadius(<span class="hljs-number">6</span>);<br></span><span>        System.out.println(<span class="hljs-string">"x      : "</span> + c.getX());<br></span><span>        System.out.println(<span class="hljs-string">"y      : "</span> + c.getY());<br></span><span>        System.out.println(<span class="hljs-string">"radius : "</span> + c.getRadius());<br></span><span>        System.out.println(<span class="hljs-string">"area   : "</span> + c.getArea());<br></span><span><br></span><span>        c.setRadius(-<span class="hljs-number">5</span>);<br></span><span>        System.out.println(<span class="hljs-string">"radius : "</span> + c.getRadius());<br></span><span>        c = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, -<span class="hljs-number">4</span>);<br></span><span>        System.out.println(<span class="hljs-string">"radius : "</span> + c.getRadius());<br></span><span><br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>x      : 4<br></span><span>y      : 5<br></span><span>radius : 6.0<br></span><span>area   : 113<br></span><span>radius : 0.0<br></span><span>radius : 0.0<br></span></code></pre>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>Partial solution:</p>
                                     <pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">double</span> radius)</span></span>{<br></span><span>    setX(x);<br></span><span>    setY(y);<br></span><span>    setRadius(radius);<br></span><span>}<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRadius</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{<br></span><span>    <span class="hljs-keyword">this</span>.radius = Math.max(radius, <span class="hljs-number">0</span>);<br></span><span>}<br></span></code></pre>
                                   </div>
@@ -1537,7 +1538,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.4a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="paradigms-oop-classes-class-level-members"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Classes →</span></span></small> <strong><span>Class-level members</span></strong><span id="paradigms-oop-classes-class-level-members" class="anchor"></span><a class="fa fa-anchor" href="#paradigms-oop-classes-class-level-members" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=5bf09b86-6ec7-4b9b-82cf-ac0c00dbbb13&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -1571,11 +1572,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Suitable as a class-level variables</p>
                               </template>
                               <question>
@@ -1586,7 +1587,7 @@
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. system: ToDo manager, class: <code v-pre>Task</code>, variable: <code v-pre>totalPendingTasks</code></li>
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: <code v-pre>ArrayList</code>, variable: <code v-pre>total</code> (i.e., total items in a given <code v-pre>ArrayList</code> object)</li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>(c)</p>
                                   <p>Explanation: <code v-pre>totalPendingTasks</code> should not be managed by individual <code v-pre>Task</code> objects and therefore suitable to be maintained as a class-level variable. The other variables should be managed at instance level as their value varies from instance to instance. e.g., <code v-pre>totalStudents</code> for one <code v-pre>Course</code> object will differ from <code v-pre>totalStudents</code> of another.</p>
                                 </div>
@@ -1610,7 +1611,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.4b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="c-to-java-classes-class-level-members"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Classes →</span></span></small> <strong><span>Class-level members</span></strong><span id="c-to-java-classes-class-level-members" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-classes-class-level-members" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=73060fc7-4c2d-4a03-bb8e-ac0e00c9a8fe&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -1669,7 +1670,7 @@
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        Circle c = <span class="hljs-keyword">new</span> Circle();<br></span><span>        System.out.println(<span class="hljs-string">"max radius used so far : "</span> + Circle.getMaxRadius());<br></span><span>        c = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>);<br></span><span>        System.out.println(<span class="hljs-string">"max radius used so far : "</span> + Circle.getMaxRadius());<br></span><span>        c = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, -<span class="hljs-number">15</span>);<br></span><span>        System.out.println(<span class="hljs-string">"max radius used so far : "</span> + Circle.getMaxRadius());<br></span><span>        c.setRadius(<span class="hljs-number">12</span>);<br></span><span>        System.out.println(<span class="hljs-string">"max radius used so far : "</span> + Circle.getMaxRadius());<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>max radius used so far : 0.0<br></span><span>max radius used so far : 10.0<br></span><span>max radius used so far : 10.0<br></span><span>max radius used so far : 12.0<br></span></code></pre>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>You can use a <code v-pre>static</code> variable <code v-pre>maxRadius</code> to track the maximum value used for the <code v-pre>radius</code> attribute so far.</p>
                                     <p>Partial solution:</p>
                                     <pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRadius</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{<br></span><span>    <span class="hljs-keyword">this</span>.radius = Math.max(radius, <span class="hljs-number">0</span>);<br></span><span>    <span class="hljs-keyword">if</span> (maxRadius &lt; <span class="hljs-keyword">this</span>.radius){<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
@@ -1759,11 +1760,11 @@
                             <p>-- [adapted from <span trigger="click" for="modal:rcsWhat-bryanMercurialGuide" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:rcsWhat-bryanMercurialGuide'].show()" class="trigger-click">bryan-mercurial-guide</span></p>
                           </blockquote>
                         </tab>
-                        <tab><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
+                        <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                         </tab>
                       </tabs>
-                      <b-modal id="modal:rcsWhat-bryanMercurialGuide" hide-footer size="lg" modal-class="mb-zoom" ref="modal:rcsWhat-bryanMercurialGuide"><template slot="modal-title">Reference » Mercurial: The Definitive Guide</template>
+                      <b-modal id="modal:rcsWhat-bryanMercurialGuide" hide-footer size="lg" modal-class="mb-zoom" ref="modal:rcsWhat-bryanMercurialGuide" class="algolia-no-index"><template slot="modal-title">Reference » Mercurial: The Definitive Guide</template>
                         <div>
                           <p><a href="http://hgbook.red-bean.com/"><em><strong>Mercurial: The Definitive Guide</strong></em></a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
                         </div>
@@ -1782,34 +1783,34 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What does RCS stand for?</p>
                               </template>
                               <question has-input="true">
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>Revision Control Software</p>
                                 </div>
                               </question>
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What is a Revision?</p>
                               </template>
                               <question has-input="true">
                                 <p>In the context of RCS, what is a <em>Revision</em>? Give an example.</p>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>A <em>revision</em> (some seem to use it interchangeably with <em>version</em> while others seem to distinguish the two -- here, let us treat them as the same, for simplicity) is a state of a piece of information at a specific time that is a result of some changes to it. For example, take a file containing program code. If you modify the code and save the file, you have a new revision (or a version) of that file.</p>
                                 </div>
                               </question>
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these is not considered a benefit of a typical RCS?</p>
                               </template>
                               <question>
@@ -1821,14 +1822,14 @@
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> e. Detect when multiple developers make incompatible changes to the same file</li>
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> f. All of them are benefits of RCS</li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>f</p>
                                 </div>
                               </question>
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain RCS in a team project context</p>
                               </template>
                               <question has-input="true">
@@ -1872,18 +1873,18 @@
                           <p><strong>The <em>repository</em> is the database where the meta-data about the revision history are stored.</strong> Suppose you want to apply revision control on files in a directory called <code v-pre>ProjectFoo</code>. In that case you need to set up a <em>repo</em> (short for repository) in <code v-pre>ProjectFoo</code> directory, which is referred to as the <em>working directory</em> of the repo. For example, Git uses a hidden folder named <code v-pre>.git</code> inside the working directory.</p>
                           <p><strong>You can have multiple repos in your computer</strong>, each repo revision-controlling files of a different working directory, for examples, files of different projects.</p>
                         </tab>
-                        <tab><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
+                        <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/mLnxwlCEIb8" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                         </tab>
                       </tabs>
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is a repo?</p>
                               </template>
                               <question has-input="true">
@@ -1921,7 +1922,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.5c</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-init-getting-started"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>init</code>: Getting started</span></strong><span id="tools-git-and-github-init-getting-started" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-init-getting-started" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=b5ca72a1-8366-4971-a523-ac090090f68b&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -1930,7 +1931,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/revisionControl/repositories/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/repositories"><template slot="_header">
+                        <panel src="/website/book/revisionControl/repositories/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/repositories" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Repositories</span></p>
                           </template></panel>
                       </p>
@@ -1947,7 +1948,7 @@
                         </p>
                       </span>
                       <p></p>
-                      <panel class="non-printable"><template slot="_header">
+                      <panel class="non-printable algolia-no-index"><template slot="_header">
                           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Git Overview</span></p>
                         </template>
                         <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
@@ -1970,7 +1971,7 @@
                             <p><span aria-hidden="true" class="fab fa-windows"></span> Windows: you might have to <a href="https://www.howtogeek.com/howto/windows-vista/show-hidden-files-and-folders-in-windows-vista/">configure Windows Explorer to show hidden files</a>.</p>
                           </div>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <p>Open a Git Bash Terminal.</p>
                             <p>If you installed SourceTree, you can click the <code v-pre>Terminal</code> button to open a GitBash terminal.</p>
@@ -2032,7 +2033,7 @@
                           <p><strong><mark><em>Committing</em></mark> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
                           <p><strong>When ready to commit, you first <mark><em>stage</em></mark> the specific changes you want to commit.</strong> This intermediate step allows you to commit only some changes while saving other changes for a later commit.</p>
                         </tab>
-                        <tab><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
+                        <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/7exFDGHgQcw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                         </tab>
                       </tabs>
@@ -2052,7 +2053,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.5e</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-commit-saving-changes-to-history"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>commit</code>: Saving changes to history</span></strong><span id="tools-git-and-github-commit-saving-changes-to-history" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-commit-saving-changes-to-history" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=8f288870-1d75-4218-94fe-ac0900a026de&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -2061,7 +2062,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/gitAndGithub/init/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/init"><template slot="_header">
+                        <panel src="/website/book/gitAndGithub/init/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/init" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Git &amp; GitHub → Init</span></p>
                           </template></panel>
                       </p>
@@ -2095,7 +2096,7 @@
                             <p></p>
                           </div>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <p>You can use the <code v-pre>git status</code> command to check the status of the working directory.</p>
                             <pre><code class="hljs sh" v-pre><span>git status<br></span></code></pre>
@@ -2121,7 +2122,7 @@
                             <p></p>
                           </div>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <p>You can use the <code v-pre>stage</code> or the <code v-pre>add</code> command (they are synonyms, <code v-pre>add</code> is the more popular choice) to stage files.</p>
                             <pre><code class="hljs sh" v-pre><span>git add fruits.txt<br></span><span>git status<br></span></code></pre>
@@ -2139,7 +2140,7 @@
                             <p></p>
                           </div>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <p>Use the <code v-pre>commit</code> command to commit. The <code v-pre>-m</code> switch is used to specify the commit message.</p>
                             <pre><code class="hljs sh" v-pre><span>git commit -m <span class="hljs-string">"add fruits.txt"</span><br></span></code></pre>
@@ -2170,7 +2171,7 @@
                           <p>To see the revision graph, click on the <code v-pre>History</code> item on the menu on the right edge of SourceTree.
                           </p>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <p></p>
                           <p>The <code v-pre>gitk</code> command opens a rudimentary graphical view of the revision graph.
                           </p>
@@ -2203,7 +2204,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.5f</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-omitting-files-from-revision-control"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Omitting files from revision control</span></strong><span id="tools-git-and-github-omitting-files-from-revision-control" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-omitting-files-from-revision-control" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=47b7180e-9acb-4fc7-8ad7-ac0900a53544&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -2212,7 +2213,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/savingHistory"><template slot="_header">
+                        <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/savingHistory" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Revision Control: Saving History</p>
                           </template></panel>
                       </p>
@@ -2234,7 +2235,7 @@
                             <pre><code class="hljs" v-pre><span>temp.txt<br></span></code></pre>
                           </div>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <p>Create a file named <code v-pre>.gitignore</code> in the working directory root and add the following line in it.</p>
                             <pre><code class="hljs" v-pre><span>temp.txt<br></span></code></pre>
@@ -2337,7 +2338,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.6b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-tag-naming-commits"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>tag</code>: Naming commits</span></strong><span id="tools-git-and-github-tag-naming-commits" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-tag-naming-commits" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=9f40b219-58d7-4192-8ec8-ac0900a64410&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -2346,7 +2347,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/savingHistory"><template slot="_header">
+                        <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/savingHistory" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Saving History</span></p>
                           </template></panel>
                       </p>
@@ -2369,7 +2370,7 @@
                             <p></p>
                           </div>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <p>To add a tag to the current commit as <code v-pre>v1.0</code>,</p>
                             <pre><code class="hljs" v-pre><span>git tag –a v1.0<br></span></code></pre>
@@ -2400,7 +2401,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.6c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-diff-comparing-revisions"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>diff</code>: Comparing revisions</span></strong><span id="tools-git-and-github-diff-comparing-revisions" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-diff-comparing-revisions" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=cccc7475-1bfa-4d88-8e2f-ac0900a8dbd2&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -2409,7 +2410,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/revisionControl/usingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/usingHistory"><template slot="_header">
+                        <panel src="/website/book/revisionControl/usingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/usingHistory" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Using History</span></p>
                           </template></panel>
                       </p>
@@ -2429,7 +2430,7 @@
                             <p></p>
                           </div>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <pre><code class="hljs sh" v-pre><span>git show &lt; part-of-commit-hash &gt;<br></span></code></pre>
                             <p>Example:</p>
@@ -2451,7 +2452,7 @@
                             <p></p>
                           </div>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <p>The <code v-pre>diff</code> command can be used to view the differences between two points of the history.</p>
                             <ul>
@@ -2487,7 +2488,7 @@
                   <span class="badge badge-pill badge-light text-mute">W2.6d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-checkout-retrieving-a-specific-revision"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>checkout</code>: Retrieving a specific revision</span></strong><span id="tools-git-and-github-checkout-retrieving-a-specific-revision" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-checkout-retrieving-a-specific-revision" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=f16e2d7f-5f78-455c-830e-ac0900b7a747&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -2496,7 +2497,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/revisionControl/usingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/usingHistory"><template slot="_header">
+                        <panel src="/website/book/revisionControl/usingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/usingHistory" class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Using History</span></p>
                           </template></panel>
                       </p>
@@ -2508,7 +2509,7 @@
                     <p></p>
                     <div>
                       <p><strong>Git can load a specific version of the history to the working directory.</strong> Note that if you have uncommitted changes in the working directory, you need to <span trigger="click" for="modal:checkout-stash" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:checkout-stash'].show()" class="trigger-click">stash</span> them first to prevent them from being overwritten.</p>
-                      <b-modal id="modal:checkout-stash" hide-footer size="lg" modal-class="mb-zoom" ref="modal:checkout-stash"><template slot="modal-title">Git &amp; GitHub → Stash</template>
+                      <b-modal id="modal:checkout-stash" hide-footer size="lg" modal-class="mb-zoom" ref="modal:checkout-stash" class="algolia-no-index"><template slot="modal-title">Git &amp; GitHub → Stash</template>
                         <div>
                           <div class="indented">
                             <div></div>
@@ -2523,7 +2524,7 @@
                                 <tab><template slot="_header">Source Tree</template>
                                   <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
                                 </tab>
-                                <tab><template slot="_header">CLI</template>
+                                <tab class="algolia-no-index"><template slot="_header">CLI</template>
                                   <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
                                 </tab>
                               </tabs>
@@ -2548,7 +2549,7 @@
                             <p>To go back to the latest commit, double-click it.</p>
                           </div>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <p>Use the <code v-pre>checkout &lt;commit-identifier&gt;</code> command to change the working directory to the state it was in at a specific past commit.</p>
                             <ul>
@@ -2571,12 +2572,12 @@
               </div>
               <p><span id="W2-6e"></span></p>
               <div></div>
-              <panel type="seamless" popup-url="/website/book/gitAndGithub/stash" id="tools-git-and-github-stash-shelving-changes-temporarily">
+              <panel type="seamless" popup-url="/website/book/gitAndGithub/stash" id="tools-git-and-github-stash-shelving-changes-temporarily" class="algolia-no-index">
                 <span slot="header" class="card-title">
                   <span class="badge badge-pill badge-light text-mute">W2.6e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
                   <h4 id="tools-git-and-github-stash-shelving-changes-temporarily"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>stash</code>: Shelving changes temporarily</span></strong><span id="tools-git-and-github-stash-shelving-changes-temporarily" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-stash-shelving-changes-temporarily" onclick="event.stopPropagation()"></a></h4>
                 </span>
-                <panel type="seamless">
+                <panel type="seamless" class="algolia-no-index">
                   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
                   <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=683017df-21c8-4890-8c42-ac0900c15bf4&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
                 </panel>
@@ -2595,7 +2596,7 @@
                         <tab><template slot="_header">Source Tree</template>
                           <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
                         </tab>
-                        <tab><template slot="_header">CLI</template>
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
                         </tab>
                       </tabs>
@@ -2653,7 +2654,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, Aug 10, 2020, 9:06:34 PM GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 15 Aug 2020, 19:51:17 GMT+8]</small></div>
     </footer>
   </div>
 </body>
@@ -2667,6 +2668,21 @@
   const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "7143a5096ae3b1d19f8dfa7c3ed76066",
+      indexName: "nus-tic2002-2020",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>
