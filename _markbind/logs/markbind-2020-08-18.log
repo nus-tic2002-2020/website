@@ -1,0 +1,17 @@
+2020-08-18T15:37:27.228Z - info: Website generation (lazy) started at 11:37:20 PM
+2020-08-18T15:37:37.226Z - info: Building assets...
+2020-08-18T15:37:44.808Z - info: Assets built
+2020-08-18T15:37:44.809Z - info: Generating landing page...
+2020-08-18T15:37:47.149Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-08-18T15:37:47.292Z - info: Website generation (lazy) complete! Total build time: 26.397s
+2020-08-18T15:37:48.446Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-08-18T15:37:48.446Z - info: Press CTRL+C to stop ...
+2020-08-18T15:37:48.510Z - info: Site data built
+2020-08-18T15:42:12.900Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week2\topics as some of its dependencies were changed since the last visit
+2020-08-18T15:42:17.970Z - info: Site data built
+2020-08-18T15:42:17.976Z - info: Lazy website regeneration complete! Total build time: 5.084s
+2020-08-18T15:45:53.243Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week3\topics as some of its dependencies were changed since the last visit
+2020-08-18T15:45:55.482Z - info: Site data built
+2020-08-18T15:45:55.485Z - info: Lazy website regeneration complete! Total build time: 2.243s
+2020-08-18T15:54:51.277Z - info: Website generation started at 11:54:47 PM
+2020-08-18T15:55:01.172Z - info: Building assets...
