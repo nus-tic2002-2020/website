@@ -95,7 +95,7 @@
             </template>
             <span id="toc">
               <ul>
-                <li>[<a href="/website/schedule/week4/topics.html#W4-1">W4.1</a>] <strong>OOP: Inheritance</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                <li>[<a href="/website/schedule/week4/topics.html#W4-1">W4.1</a>] <strong>OOP + Java: Inheritance</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
               <div class="indented-level2">
                 <small>
@@ -123,7 +123,7 @@
                   </ul>
                 </small></div>
               <ul>
-                <li>[<a href="/website/schedule/week4/topics.html#W4-2">W4.2</a>] <strong>OOP: Polymorphism</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                <li>[<a href="/website/schedule/week4/topics.html#W4-2">W4.2</a>] <strong>OOP + Java: Polymorphism</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
               <div class="indented-level2">
                 <small>
@@ -152,7 +152,7 @@
                 </small></div>
               <p></p>
               <ul>
-                <li>[<a href="/website/schedule/week4/topics.html#W4-3">W4.3</a>] <strong>Testing text UIs</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                <li>[<a href="/website/schedule/week4/topics.html#W4-3">W4.3</a>] <strong>Automated Testing of Text UIs</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
               <div class="indented-level2">
                 <small>
@@ -177,7 +177,7 @@
                 </small></div>
               <p></p>
               <ul>
-                <li>[<a href="/website/schedule/week4/topics.html#W4-4">W4.4</a>] <strong>IDE: Intermediate</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
+                <li>[<a href="/website/schedule/week4/topics.html#W4-4">W4.4</a>] <strong>IDEs: Intermediate Features</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
               <div class="indented-level2">
                 <small>
@@ -211,11 +211,28 @@
             </span></panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W4-1"></span></p>
-          <div></div>
-          <panel type="seamless" no-close expandable="true" expanded id="w4-1-oop-inheritance">
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>Now that you know the basics about classes and objects, let's move to the next level. The sections below explain the third core concept of OOP (called <em>inheritance</em>) and how to use that in Java.</p>
+                    <ol>
+                      <li>abstraction <span><span aria-hidden="true" class="fas fa-check"></span></span></li>
+                      <li>encapsulation <span><span aria-hidden="true" class="fas fa-check"></span></span></li>
+                      <li><strong><em>inheritance</em></strong></li>
+                      <li>...</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w4-1-oop-java-inheritance">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="w4-1-oop-inheritance"><span class="dimmed">[W4.1]</span> <strong>OOP: Inheritance</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w4-1-oop-inheritance" class="anchor"></span><a class="fa fa-anchor" href="#w4-1-oop-inheritance" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="w4-1-oop-java-inheritance"><span class="dimmed">[W4.1]</span> <strong>OOP + Java: Inheritance</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w4-1-oop-java-inheritance" class="anchor"></span><a class="fa fa-anchor" href="#w4-1-oop-java-inheritance" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
             <div class="indented-level1">
@@ -779,11 +796,28 @@
             <div></div>
           </div>
           <p><span id="W4-2"></span></p>
-          <div></div>
-          <panel type="seamless" no-close expandable="true" expanded id="w4-2-oop-polymorphism">
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>Inheritance is even more powerful when combined with <em>polymorphism</em> (which also happens to be the fourth core concept of OOP), explained in the sections below.</p>
+                    <ol>
+                      <li>abstraction <span><span aria-hidden="true" class="fas fa-check"></span></span></li>
+                      <li>encapsulation <span><span aria-hidden="true" class="fas fa-check"></span></span></li>
+                      <li>inheritance <span><span aria-hidden="true" class="fas fa-check"></span></span></li>
+                      <li><strong><em>polymorphism</em></strong></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w4-2-oop-java-polymorphism">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="w4-2-oop-polymorphism"><span class="dimmed">[W4.2]</span> <strong>OOP: Polymorphism</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w4-2-oop-polymorphism" class="anchor"></span><a class="fa fa-anchor" href="#w4-2-oop-polymorphism" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="w4-2-oop-java-polymorphism"><span class="dimmed">[W4.2]</span> <strong>OOP + Java: Polymorphism</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w4-2-oop-java-polymorphism" class="anchor"></span><a class="fa fa-anchor" href="#w4-2-oop-java-polymorphism" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
             <div class="indented-level1">
@@ -1318,11 +1352,23 @@
           </div>
           <p></p>
           <p><span id="W4-3"></span></p>
-          <div></div>
-          <panel type="seamless" no-close expandable="true" expanded id="w4-3-testing-text-uis">
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>As you start adding features to your project iteratively, you'll need <strong>a way to detect if the new code breaks the existing code</strong>. Next, let's learn a rather simple way to do that using a certain type of testing (we'll be learning more sophisticated methods in later weeks).</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w4-3-automated-testing-of-text-uis">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="w4-3-testing-text-uis"><span class="dimmed">[W4.3]</span> <strong>Testing text UIs</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w4-3-testing-text-uis" class="anchor"></span><a class="fa fa-anchor" href="#w4-3-testing-text-uis" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="w4-3-automated-testing-of-text-uis"><span class="dimmed">[W4.3]</span> <strong>Automated Testing of Text UIs</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w4-3-automated-testing-of-text-uis" class="anchor"></span><a class="fa fa-anchor" href="#w4-3-automated-testing-of-text-uis" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
             <div class="indented-level1">
@@ -1644,11 +1690,23 @@
           </div>
           <p></p>
           <p><span id="W4-4"></span></p>
-          <div></div>
-          <panel type="seamless" no-close expandable="true" expanded id="w4-4-ide-intermediate">
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>Now that you know how to use IDE basic features, it's worth looking at even more ways of leveraging their power. In particular, <mark>the <em>debugging</em> feature can be indispensable</mark> at times.</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <panel type="seamless" no-close expandable="true" expanded id="w4-4-ides-intermediate-features">
             <span slot="header" class="card-title">
               <div>
-                <h2 id="w4-4-ide-intermediate"><span class="dimmed">[W4.4]</span> <strong>IDE: Intermediate</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w4-4-ide-intermediate" class="anchor"></span><a class="fa fa-anchor" href="#w4-4-ide-intermediate" onclick="event.stopPropagation()"></a></h2>
+                <h2 id="w4-4-ides-intermediate-features"><span class="dimmed">[W4.4]</span> <strong>IDEs: Intermediate Features</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w4-4-ides-intermediate-features" class="anchor"></span><a class="fa fa-anchor" href="#w4-4-ides-intermediate-features" onclick="event.stopPropagation()"></a></h2>
               </div>
             </span>
             <div class="indented-level1">
@@ -1772,7 +1830,18 @@
           </div>
           <p></p>
           <p><span id="W4-5"></span></p>
-          <div></div>
+          <div>
+            <div>
+              <div class="border border-success pt-0 pl-1 pb-1 pr-1 border-bottom-0 rounded-top" style="background-color: #e6fff2">
+                <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
+                <div class="indented">
+                  <div>
+                    <p>Let's learn how to create a pull request (PRs) on GitHub; you need to create one for your project this week.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <panel type="seamless" no-close expandable="true" expanded id="w4-5-rcs-creating-pull-requests">
             <span slot="header" class="card-title">
               <div>
@@ -1932,17 +2001,17 @@
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#week-4-tue-sep-1st-topics">Week 4 [Tue, Sep 1st] - Topics&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#w4-1-oop-inheritance">[W4.1] OOP: Inheritance &#x200E;</a>
+              <a class="nav-link py-1" href="#w4-1-oop-java-inheritance">[W4.1] OOP + Java: Inheritance &#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#key-exercise-inherit-the-task-class"> [Key Exercise] inherit the Task class&#x200E;</a>
                 <a class="nav-link py-1" href="#key-exercise-override-the-tostring-method"> [Key Exercise] override the toString method&#x200E;</a>
               </nav>
-              <a class="nav-link py-1" href="#w4-2-oop-polymorphism">[W4.2] OOP: Polymorphism &#x200E;</a>
+              <a class="nav-link py-1" href="#w4-2-oop-java-polymorphism">[W4.2] OOP + Java: Polymorphism &#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#key-exercise-print-shape-area"> [Key Exercise] print shape area&#x200E;</a>
               </nav>
-              <a class="nav-link py-1" href="#w4-3-testing-text-uis">[W4.3] Testing text UIs &#x200E;</a>
-              <a class="nav-link py-1" href="#w4-4-ide-intermediate">[W4.4] IDE: Intermediate &#x200E;</a>
+              <a class="nav-link py-1" href="#w4-3-automated-testing-of-text-uis">[W4.3] Automated Testing of Text UIs &#x200E;</a>
+              <a class="nav-link py-1" href="#w4-4-ides-intermediate-features">[W4.4] IDEs: Intermediate Features &#x200E;</a>
               <a class="nav-link py-1" href="#w4-5-rcs-creating-pull-requests">[W4.5] RCS: Creating Pull Requests &#x200E;</a>
             </nav>
 
@@ -1953,7 +2022,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, 1 Sep 2020, 0:40:28 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, 1 Sep 2020, 1:44:46 GMT+8]</small></div>
     </footer>
   </div>
 </body>
