@@ -1,0 +1,97 @@
+2020-08-31T16:00:00.557Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-31T16:00:00.864Z - debug:  
+2020-08-31T16:00:26.609Z - debug:  
+2020-08-31T16:00:26.611Z - debug:  
+2020-08-31T16:00:26.612Z - debug:  
+2020-08-31T16:00:26.612Z - debug:  
+2020-08-31T16:00:31.596Z - debug:  
+2020-08-31T16:00:31.597Z - debug:  
+2020-08-31T16:00:33.946Z - debug:  
+2020-08-31T16:00:41.916Z - debug:  
+2020-08-31T16:00:41.917Z - debug:  
+2020-08-31T16:00:41.917Z - debug:  
+2020-08-31T16:00:41.917Z - debug:  
+2020-08-31T16:00:51.277Z - debug:  
+2020-08-31T16:00:51.278Z - debug:  
+2020-08-31T16:00:56.156Z - debug:  
+2020-08-31T16:01:09.150Z - debug:  
+2020-08-31T16:01:09.150Z - debug:  
+2020-08-31T16:01:17.334Z - debug:  
+2020-08-31T16:01:17.335Z - debug:  
+2020-08-31T16:01:31.803Z - debug:  
+2020-08-31T16:02:00.415Z - debug:  
+2020-08-31T16:02:16.920Z - debug:  
+2020-08-31T16:02:16.921Z - debug:  
+2020-08-31T16:02:27.032Z - info: Pages built
+2020-08-31T16:02:57.013Z - info: Website generation complete! Total build time: 268.267s
+2020-08-31T16:02:57.015Z - info: Build success!
+2020-08-31T16:02:57.016Z - debug:  
+2020-08-31T16:02:57.019Z - info: Site data built
+2020-08-31T16:03:44.582Z - info: Deployed!
+2020-08-31T16:20:56.380Z - info: Website generation (lazy) started at 12:20:53 AM
+2020-08-31T16:21:04.647Z - info: Building assets...
+2020-08-31T16:21:10.303Z - info: Assets built
+2020-08-31T16:21:10.303Z - info: Generating landing page...
+2020-08-31T16:21:11.225Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-08-31T16:21:11.329Z - info: Website generation (lazy) complete! Total build time: 18.219s
+2020-08-31T16:21:12.140Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-08-31T16:21:12.141Z - info: Press CTRL+C to stop ...
+2020-08-31T16:21:12.204Z - info: Site data built
+2020-08-31T16:25:30.023Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week4\index as some of its dependencies were changed since the last visit
+2020-08-31T16:25:30.756Z - info: Site data built
+2020-08-31T16:25:30.757Z - info: Lazy website regeneration complete! Total build time: 0.745s
+2020-08-31T16:25:35.735Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week4\topics as some of its dependencies were changed since the last visit
+2020-08-31T16:25:38.085Z - info: Site data built
+2020-08-31T16:25:38.086Z - info: Lazy website regeneration complete! Total build time: 2.351s
+2020-08-31T16:28:26.858Z - info: [12:28:26 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\oop\inheritance\substitutability\text.md
+2020-08-31T16:28:27.867Z - info: Rebuilding 1 pages
+2020-08-31T16:28:30.384Z - info: Pages rebuilt
+2020-08-31T16:28:30.385Z - info: Website regeneration complete! Total build time: 2.524s
+2020-08-31T16:28:30.418Z - info: Site data built
+2020-08-31T16:30:46.621Z - info: [12:30:46 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_module-TIC2002\textbookTopics.mbdf
+2020-08-31T16:30:47.632Z - info: No pages needed to be rebuilt
+2020-08-31T16:32:29.642Z - info: [12:32:29 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\oop\inheritance\substitutability\text.md
+2020-08-31T16:32:30.648Z - info: Rebuilding 1 pages
+2020-08-31T16:32:33.801Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-31T16:32:34.284Z - info: Pages rebuilt
+2020-08-31T16:32:34.284Z - info: Website regeneration complete! Total build time: 3.638s
+2020-08-31T16:32:34.332Z - debug:  
+2020-08-31T16:32:34.353Z - info: Site data built
+2020-08-31T16:33:40.810Z - info: [12:33:40 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\oop\inheritance\substitutability\text.md
+2020-08-31T16:33:41.818Z - info: Rebuilding 1 pages
+2020-08-31T16:33:45.034Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-31T16:33:45.148Z - debug:  
+2020-08-31T16:33:45.846Z - info: Pages rebuilt
+2020-08-31T16:33:45.846Z - info: Website regeneration complete! Total build time: 4.03s
+2020-08-31T16:33:45.875Z - info: Site data built
+2020-08-31T16:34:03.169Z - info: [12:34:03 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\oop\inheritance\substitutability\text.md
+2020-08-31T16:34:04.176Z - info: Rebuilding 1 pages
+2020-08-31T16:34:06.845Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-31T16:34:07.659Z - info: Pages rebuilt
+2020-08-31T16:34:07.659Z - info: Website regeneration complete! Total build time: 3.487s
+2020-08-31T16:34:07.675Z - debug:  
+2020-08-31T16:34:07.691Z - info: Site data built
+2020-08-31T16:36:02.168Z - info: [12:36:02 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\oop\inheritance\substitutability\text.md
+2020-08-31T16:36:03.173Z - info: Rebuilding 1 pages
+2020-08-31T16:36:05.981Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-31T16:36:06.553Z - info: Pages rebuilt
+2020-08-31T16:36:06.553Z - info: Website regeneration complete! Total build time: 3.382s
+2020-08-31T16:36:06.561Z - debug:  
+2020-08-31T16:36:06.581Z - info: Site data built
+2020-08-31T16:36:46.263Z - info: [12:36:46 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\oop\inheritance\substitutability\text.md
+2020-08-31T16:36:47.276Z - info: Rebuilding 1 pages
+2020-08-31T16:36:50.113Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-08-31T16:36:50.654Z - info: Pages rebuilt
+2020-08-31T16:36:50.655Z - info: Website regeneration complete! Total build time: 3.383s
+2020-08-31T16:36:50.673Z - debug:  
+2020-08-31T16:36:50.685Z - info: Site data built
+2020-08-31T16:38:16.240Z - info: [12:38:16 AM] Reload for file deletion: C:\repos\nus-cs2103-AY2021S1\cs2103-website\book\oop\inheritance\substitutability\images\staff.png
+2020-08-31T16:38:17.260Z - info: Assets removed
+2020-08-31T16:40:14.861Z - info: Website generation started at 12:40:11 AM
+2020-08-31T16:40:23.002Z - info: Building assets...
