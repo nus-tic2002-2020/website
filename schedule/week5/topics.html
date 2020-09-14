@@ -103,7 +103,8 @@
                     <li><span class="dimmed">[<a href="/website/schedule/week5/topics.html#W5-1a">W5.1a</a>] <span>C++ to Java → Miscellaneous Topics →
                         </span></span> <span>Casting</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <ul>
                 <li>[<a href="/website/schedule/week5/topics.html#W5-2">W5.2</a>] <strong>OOP + Java: Abstract Classes</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
@@ -119,7 +120,8 @@
                           </span></span> <span>Abstract classes and methods</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <ul>
                 <li>[<a href="/website/schedule/week5/topics.html#W5-3">W5.3</a>] <strong>OOP + Java: Interfaces</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
@@ -135,7 +137,8 @@
                           </span></span> <span>Interfaces</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <p></p>
               <ul>
                 <li>[<a href="/website/schedule/week5/topics.html#W5-4">W5.4</a>] <strong>Error Handling: Exceptions</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
@@ -168,7 +171,8 @@
                           </span></span> <span>When</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <ul>
                 <li>[<a href="/website/schedule/week5/topics.html#W5-5">W5.5</a>] <strong>Code Quality: Refactoring</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
@@ -192,9 +196,11 @@
                           </span></span> <span>When</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <p></p>
-            </span></panel>
+            </span>
+          </panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W5-1"></span></p>
           <div>
@@ -386,7 +392,8 @@
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This <code v-pre>Account</code> class has been declared as abstract although it does not have any abstract methods. Attempting to instantiate <code v-pre>Account</code> objects will result in a compile error.</p>
                         <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">int</span> number;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">close</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
                         <p><code v-pre>Account a;</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span> OK to use as a type <br>
-                          <code v-pre>a = new Account();</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span> Compile error!</p>
+                          <code v-pre>a = new Account();</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span> Compile error!
+                        </p>
                       </box>
                       <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> In Java, even <strong>a class that does not have any abstract methods <em>can</em> be declared as an abstract class.</strong></p>
                       <p><strong>When an abstract class is subclassed, the subclass should provides implementations for all of the abstract methods in its superclass or else the subclass must also be declared abstract.</strong></p>
@@ -1009,11 +1016,13 @@
                                   <ol>
                                     <li>
                                       <p>Update the code of <code v-pre>printArea</code> to print an error message if <code v-pre>WIDTH</code> and/or <code v-pre>HEIGHT</code> are not numbers <span class="dimmed">e.g., <code v-pre>&quot;Ax4&quot;</code></span><br>
-                                        <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code v-pre>calculateArea</code> will throw the unchecked exception <code v-pre>NumberFormatException</code> if the code tries to parse a non-number to an integer.</p>
+                                        <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code v-pre>calculateArea</code> will throw the unchecked exception <code v-pre>NumberFormatException</code> if the code tries to parse a non-number to an integer.
+                                      </p>
                                     </li>
                                     <li>
                                       <p>Update the code of <code v-pre>printArea</code> to print an error message if the descriptor is missing <code v-pre>WIDTH</code> and/or <code v-pre>HEIGHT</code> <span class="dimmed">e.g., <code v-pre>&quot;x4&quot;</code></span><br>
-                                        <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code v-pre>calculateArea</code> will throw the unchecked exception <code v-pre>IndexOutOfBoundsException</code> if one or both dimensions are missing.</p>
+                                        <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code v-pre>calculateArea</code> will throw the unchecked exception <code v-pre>IndexOutOfBoundsException</code> if one or both dimensions are missing.
+                                      </p>
                                     </li>
                                     <li>
                                       <p>Update the code of <code v-pre>calculateArea</code> to throw the checked exception <code v-pre>IllegalShapeException</code> if there are more than 2 dimensions <span class="dimmed">e.g., <code v-pre>&quot;5x4x3&quot;</code></span> and update the <code v-pre>printArea</code> to print an error message for those cases. Here is the code for the <code v-pre>IllegalShapeException.java</code></p>
@@ -1444,7 +1453,8 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, 8 Sep 2020, 23:30:45 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 14 Sep 2020, 23:41:34 GMT+8]</small>
+      </div>
     </footer>
   </div>
 </body>

@@ -80,7 +80,8 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <code v-pre>Table</code> class shown in UML notation:</p>
                     <div class="alt-java">
-                      <img src="/website/book/uml/classDiagrams/classes/what/images/operations.png" height="150"></div>
+                      <img src="/website/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
+                    </div>
                     <div class="alt-python">
                       <pic src="/website/book/uml/classDiagrams/classes/what/7955b802860949dbd1c562a5b8913660.png"></pic>
                     </div>
@@ -98,7 +99,8 @@
                   </box>
                   <p><strong>The 'Operations' compartment and/or the 'Attributes' compartment may be omitted</strong> if such details are not important for the task at hand. 'Attributes' always appear above the 'Operations' compartment. All operations should be in one compartment rather than each operation in a separate compartment. Same goes for attributes.</p>
                   <box>
-                    <img src="/website/book/uml/classDiagrams/classes/what/images/classes.png" height="100"></box>
+                    <img src="/website/book/uml/classDiagrams/classes/what/images/classes.png" height="100">
+                  </box>
                   <p><strong>The <em>visibility</em> of attributes and operations is used to indicate the level of access allowed for each attribute or operation.</strong> The types of visibility and their exact meanings depend on the programming language used. Here are some common visibilities and how they are indicated in a class diagram:</p>
                   <ul>
                     <li><code v-pre>+</code> : public</li>
@@ -149,7 +151,8 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code v-pre>Table</code> class with visibilities shown:</p>
                     <div class="alt-java">
-                      <img src="/website/book/uml/classDiagrams/classes/what/images/operationsVisibility.png" height="150"></div>
+                      <img src="/website/book/uml/classDiagrams/classes/what/images/operationsVisibility.png" height="150">
+                    </div>
                     <div class="alt-python">
                       <pic src="/website/book/uml/classDiagrams/classes/what/a1fc57ed7b16ae0837fcdb38fa9d5653.png"></pic>
                     </div>
@@ -186,7 +189,8 @@
                   <p></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example shows an association between the <code v-pre>Admin</code> class and the <code v-pre>Student</code> class:<br>
-                      <img src="/website/book/uml/classDiagrams/associations/what/images/example.png" width="300"></p>
+                      <img src="/website/book/uml/classDiagrams/associations/what/images/example.png" width="300">
+                    </p>
                   </box>
                 </div>
               </div>
@@ -332,7 +336,37 @@
               </div>
             </div>
           </div>
-          <div class="indented-less"></div>
+          <div class="indented-less">
+            <p>
+            <div>
+              <h3 id="associations-as-attributes"><span>Associations as attributes</span><a class="fa fa-anchor" href="#associations-as-attributes" onclick="event.stopPropagation()"></a></h3>
+            </div>
+            </p>
+            <div class="indented-less">
+              <h4 id="what-5">What <span class="badge badge-light"><small><small>
+                      <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#what-5" onclick="event.stopPropagation()"></a></h4>
+              <div class="indented-less">
+                <div>
+                  <p><strong>An association can be shown as an attribute instead of a line.</strong></p>
+                  <p>Association multiplicities and the default value too can be shown as part of the attribute using the following notation. Both are optional.</p>
+                  <p><code v-pre>name: type [multiplicity] = default value</code></p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The diagram below depicts a multi-player <em>Square Game</em> being played on a board comprising of 100 squares. Each of the squares may be occupied with any number of pieces, each belonging to a certain player.</p>
+                    <p>A <code v-pre>Piece</code> may or may not be on a <code v-pre>Square</code>. Note how that association can be replaced by an <code v-pre>isOn</code> attribute of the <code v-pre>Piece</code> class. The <code v-pre>isOn</code> attribute can either be <code v-pre>null</code> or hold a reference to a <code v-pre>Square</code> object, matching the <code v-pre>0..1</code> multiplicity of the association it replaces. The default value is <code v-pre>null</code>.</p>
+                    <img src="/website/book/uml/classDiagrams/associationsAsAttributes/what/images/squareMultiplicity.png" width="600">
+                    <p></p>
+                    <p>The association that a <code v-pre>Board</code> has 100 <code v-pre>Square</code>s can be shown in either of these two ways:</p>
+                    <img src="/website/book/uml/classDiagrams/associationsAsAttributes/what/images/board.png" height="70">
+                    <p></p>
+                  </box>
+                  <p>
+                    <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Show each association as <strong>either an attribute or a line but not both</strong>. A line is preferred as it is easier to spot.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="indented-less">
             <p>
             <div>
@@ -340,9 +374,9 @@
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-5">What <span class="badge badge-light"><small><small>
+              <h4 id="what-6">What <span class="badge badge-light"><small><small>
                       <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-5" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-6" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>Notation:</p>
@@ -363,9 +397,9 @@
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-6">What <span class="badge badge-light"><small><small>
+              <h4 id="what-7">What <span class="badge badge-light"><small><small>
                       <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-6" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-7" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>In UML class diagrams, <strong>underlines denote class-level attributes and variables.</strong></p>
@@ -386,9 +420,9 @@
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-7">What <span class="badge badge-light"><small><small>
+              <h4 id="what-8">What <span class="badge badge-light"><small><small>
                       <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-7" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-8" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>UML uses a solid diamond symbol to denote composition.</strong></p>
@@ -411,9 +445,9 @@
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-8">What <span class="badge badge-light"><small><small>
+              <h4 id="what-9">What <span class="badge badge-light"><small><small>
                       <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-8" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-9" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>UML uses a hollow diamond is used to indicate an aggregation.</strong></p>
@@ -439,9 +473,9 @@
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-9">What <span class="badge badge-light"><small><small>
+              <h4 id="what-10">What <span class="badge badge-light"><small><small>
                       <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-9" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-10" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>You can use a triangle and a solid line (not to be confused with an arrow) to indicate class inheritance.</p>
@@ -464,9 +498,9 @@
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-10">What <span class="badge badge-light"><small><small>
+              <h4 id="what-11">What <span class="badge badge-light"><small><small>
                       <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-10" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-11" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>An interface is shown similar to a class with an additional keyword <code v-pre>&lt;&lt;interface&gt;&gt;</code>. When a class implements an interface, it is shown similar to class inheritance except a dashed line is used instead of a solid line.</strong></p>
@@ -486,9 +520,9 @@
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-11">What <span class="badge badge-light"><small><small>
+              <h4 id="what-12">What <span class="badge badge-light"><small><small>
                       <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-11" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-12" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>You can use <em>italics</em> or <code v-pre>{abstract}</code> (preferred) keyword to denote abstract classes/methods.</strong></p>
@@ -706,7 +740,8 @@
                     <img src="/website/book/uml/sequenceDiagrams/referenceFrames/images/playerTextLogic.png" height="250">
                     <p></p>
                     <p>Those details are shown in a separate sequence diagram given below.<br>
-                      <img src="/website/book/uml/sequenceDiagrams/referenceFrames/images/textLogic.png" height="170"></p>
+                      <img src="/website/book/uml/sequenceDiagrams/referenceFrames/images/textLogic.png" height="170">
+                    </p>
                     <p></p>
                   </box>
                 </div>
@@ -796,16 +831,17 @@
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="what-12">What <span class="badge badge-light"><small><small>
+              <h4 id="what-13">What <span class="badge badge-light"><small><small>
                       <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-12" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-13" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>A solid line indicates an association between two objects.</p>
                   <img src="/website/book/uml/objectDiagrams/associations/images/notation.png" width="300">
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example object diagram showing two associations:<br>
-                      <img src="/website/book/uml/objectDiagrams/associations/images/example.png" width="300"></p>
+                      <img src="/website/book/uml/objectDiagrams/associations/images/example.png" width="300">
+                    </p>
                   </box>
                 </div>
               </div>
@@ -876,7 +912,8 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, 8 Sep 2020, 23:30:45 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 14 Sep 2020, 23:41:34 GMT+8]</small>
+      </div>
     </footer>
   </div>
 </body>

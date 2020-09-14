@@ -122,7 +122,8 @@
                           </span></span> <span>What</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <p></p>
               <ul>
                 <li>[<a href="/website/schedule/week2/topics.html#W2-2">W2.2</a>] <strong>Java: Objects</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
@@ -147,7 +148,8 @@
                           </span></span> <span>Garbage collection</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <ul>
                 <li>[<a href="/website/schedule/week2/topics.html#W2-3">W2.3</a>] <strong>Java: Classes</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
@@ -163,7 +165,8 @@
                           </span></span> <span>Getters and setters</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <p></p>
               <ul>
                 <li>[<a href="/website/schedule/week2/topics.html#W2-4">W2.4</a>] <strong>OOP: Class-level members</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
@@ -180,7 +183,8 @@
                           </span></span> <span>Class-level members</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <p></p>
               <ul>
                 <li>[<a href="/website/schedule/week2/topics.html#W2-5">W2.5</a>] <strong>RCS: Saving History</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
@@ -213,7 +217,8 @@
                           </span></span> <span>Omitting files from revision control</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <ul>
                 <li>[<a href="/website/schedule/week2/topics.html#W2-6">W2.6</a>] <strong>RCS: Using History</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
@@ -241,9 +246,11 @@
                           </span></span> <span><code v-pre>stash</code>: Shelving changes temporarily</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <p></p>
-            </span></panel>
+            </span>
+          </panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W2-1"></span></p>
           <div>
@@ -1358,7 +1365,8 @@
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can add another constructor to the <code v-pre>Time</code> class to allow creating <code v-pre>Time</code> objects that are initialized to a specific time:</p>
                           <pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">(<span class="hljs-keyword">int</span> h, <span class="hljs-keyword">int</span> m, <span class="hljs-keyword">int</span> s)</span> </span>{<br></span><span>    hour = h;<br></span><span>    minute = m;<br></span><span>    second = s;<br></span><span>}<br></span></code></pre>
                           <p>Here's how you can invoke the new constructor:
-                            <code class="hljs inline java" v-pre>Time justBeforeMidnight = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">11</span>, <span class="hljs-number">59</span>, <span class="hljs-number">59</span>);</code></p>
+                            <code class="hljs inline java" v-pre>Time justBeforeMidnight = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">11</span>, <span class="hljs-number">59</span>, <span class="hljs-number">59</span>);</code>
+                          </p>
                         </box>
                         <p></p>
                       </div>
@@ -1415,7 +1423,8 @@
                                           Returns the area of the circle as an <code v-pre>int</code> value (not <code v-pre>double</code>). Calculated as <span class="text-monospace">Pi * (radius)<sup>2</sup></span><br>
                                           <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can convert a <code v-pre>double</code> to an <code v-pre>int</code> using <code v-pre>(int)</code> e.g., <code v-pre>x = (int)2.25</code> gives <code v-pre>x</code> the value <code v-pre>2</code>.<br>
                                           <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <code v-pre>Math.PI</code> to get the value of Pi<br>
-                                          <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <code v-pre>Math.pow()</code> to raise a number to a specific power e.g., <code v-pre>Math.pow(3, 2)</code> calculates <code v-pre>3</code><sup><code v-pre>2</code></sup></li>
+                                          <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <code v-pre>Math.pow()</code> to raise a number to a specific power e.g., <code v-pre>Math.pow(3, 2)</code> calculates <code v-pre>3</code><sup><code v-pre>2</code></sup>
+                                        </li>
                                       </ul>
                                     </li>
                                   </ul>
@@ -1636,7 +1645,8 @@
                         <p><strong><em>Class variables</em> are referenced by the class name itself</strong>, as in <code v-pre>Bicycle.numberOfBicycles</code> This makes it clear that they are class variables.</p>
                         <p>The Java programming language supports static methods as well as static variables. Static methods, which have the <code v-pre>static</code> modifier in their declarations, should be invoked with the class name, without the need for creating an instance of the class, as in <code v-pre>ClassName.methodName(args)</code></p>
                         <p><strong>The <code v-pre>static</code> modifier, in combination with the <code v-pre>final</code> modifier, is also used to define constants.</strong> The final modifier indicates that the value of this field cannot change. For example, the following variable declaration defines a constant named <code v-pre>PI</code>, whose value is an approximation of pi (the ratio of the circumference of a circle to its diameter):
-                          <code v-pre>static final double PI = 3.141592653589793;</code></p>
+                          <code v-pre>static final double PI = 3.141592653589793;</code>
+                        </p>
                         <box>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example with class-level variables and class-level methods:</p>
                           <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gear;<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;<br></span><span><br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> id;<br></span><span><br></span><span class="highlighted">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> numberOfBicycles = <span class="hljs-number">0</span>;<br></span><span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Bicycle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> startSpeed, <span class="hljs-keyword">int</span> startGear)</span> </span>{<br></span><span>        gear = startGear;<br></span><span>        speed = startSpeed;<br></span><span><br></span><span>        numberOfBicycles++;<br></span><span>        id = numberOfBicycles;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getID</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> id;<br></span><span>    }<br></span><span><br></span><span class="highlighted">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getNumberOfBicycles</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> numberOfBicycles;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getGear</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-keyword">return</span> gear;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setGear</span><span class="hljs-params">(<span class="hljs-keyword">int</span> newValue)</span> </span>{<br></span><span>        gear = newValue;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getSpeed</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> speed;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-comment">// ...</span><br></span><span><br></span><span>}<br></span></code></pre>
@@ -1709,7 +1719,8 @@
                       You are going to start your project pretty soon. As you are adding feature increments to your project, you'll need a way to keep track of all those changes too. The tool we are going to use for that is called Git.
                       <p>Let's jump in and learn how to get started using Git in your own computer.</p>
                       <p></p>
-                    </span></div>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1963,7 +1974,8 @@
                         <tab><template slot="_header">SourceTree</template>
                           <div>
                             <p><span aria-hidden="true" class="fab fa-windows"></span> Windows: Click <code v-pre>File</code> → <code v-pre>Clone/New…</code>. Click on <code v-pre>Create</code> button.<br>
-                              <span aria-hidden="true" class="fab fa-apple"></span> Mac: <code v-pre>New...</code> → <code v-pre>Create New Repository</code>.</p>
+                              <span aria-hidden="true" class="fab fa-apple"></span> Mac: <code v-pre>New...</code> → <code v-pre>Create New Repository</code>.
+                            </p>
                             <p>Enter the location of the directory (Windows version shown below) and click <code v-pre>Create</code>.</p>
                             <img src="/website/book/gitAndGithub/init/images/sourcetree_1.png" height="220">
                             <p></p>
@@ -2321,7 +2333,8 @@
                               <p><strong>RCS</strong>: <strong>Revision control software</strong> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</p>
                             </div>
                           </div>
-                        </span></div>
+                        </span>
+                      </div>
                     </div>
                     <div></div>
                   </div>
@@ -2458,7 +2471,8 @@
                             <ul>
                               <li><code v-pre>git diff</code> : shows the changes (uncommitted) since the last commit</li>
                               <li><code v-pre>git diff 0023cdd..fcd6199</code>: shows the changes between the points indicated by by commit hashes<br>
-                                <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that when using a commit hash in a Git command, you can use only the first few characters (e.g., first 7-10 chars) as that's usually enough for Git to locate the commit.</li>
+                                <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that when using a commit hash in a Git command, you can use only the first few characters (e.g., first 7-10 chars) as that's usually enough for Git to locate the commit.
+                              </li>
                               <li><code v-pre>git diff v1.0..HEAD</code>: shows changes that happened from the commit tagged as <code v-pre>v1.0</code> to the most recent commit.</li>
                             </ul>
                             <panel expanded><template slot="_header">
@@ -2654,7 +2668,8 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, 8 Sep 2020, 23:30:45 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 14 Sep 2020, 23:41:34 GMT+8]</small>
+      </div>
     </footer>
   </div>
 </body>
