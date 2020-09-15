@@ -1,0 +1,22 @@
+2020-09-15T14:53:31.859Z - info: Website generation (lazy) started at 10:53:25 PM
+2020-09-15T14:53:47.886Z - info: Building assets...
+2020-09-15T14:53:55.286Z - info: Assets built
+2020-09-15T14:53:55.287Z - info: Generating landing page...
+2020-09-15T14:53:58.351Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-09-15T14:53:58.483Z - info: Website generation (lazy) complete! Total build time: 32.684s
+2020-09-15T14:53:59.711Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-09-15T14:53:59.712Z - info: Press CTRL+C to stop ...
+2020-09-15T14:53:59.784Z - info: Site data built
+2020-09-15T14:54:54.689Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week4\index as some of its dependencies were changed since the last visit
+2020-09-15T14:54:56.336Z - info: Site data built
+2020-09-15T14:54:56.339Z - info: Lazy website regeneration complete! Total build time: 1.651s
+2020-09-15T14:55:01.781Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week4\topics as some of its dependencies were changed since the last visit
+2020-09-15T14:55:06.287Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-15T14:55:06.290Z - debug:  
+2020-09-15T14:55:06.856Z - info: Site data built
+2020-09-15T14:55:06.857Z - info: Lazy website regeneration complete! Total build time: 5.077s
+2020-09-15T14:56:20.550Z - info: [10:56:20 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\css\main.css
+2020-09-15T14:56:21.626Z - info: Assets built
+2020-09-15T14:59:30.292Z - info: Website generation started at 10:59:26 PM
+2020-09-15T14:59:42.375Z - info: Building assets...
