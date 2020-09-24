@@ -40,6 +40,9 @@
 
 <include src="tp-tasks.mbdf#milestoneCumulative" />
 </box>
+
+{{ embed_topic("tp-supervision.md#making-project-decisions", "Admin " + icon_embedding + " tP → Supervision (Extract) → **Tutor's role in making project decisions**", "3", indent="1") }}
+
 </span>
 
 {#====================================================================================================================#}
@@ -323,9 +326,9 @@ Suggested workflow:
 
 <div class="indented-level1">
 
-<box type="info" light>
+<box type="info" seamless>
 
-**Recommended procedure for updating docs**:
+**Recommended procedure for updating docs**:{.text-info}
 
 1. Divide among yourselves who will update which parts of the document(s).
 1. Update the team repo by following the recommended workflow.
@@ -338,7 +341,7 @@ Update the following pages in your project repo:
 </div>
 
 * **_AboutUs_ page**:
-  This page is used for module admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
+  This page (in the `/docs` folder) is used for module admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
   * Add your own details. Include a ==suitable photo== as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.
   * Including the the supervisor/lecturer is optional.
   * The filename of the profile photo should be `doc/images/githbub_username_in_lower_case.png` %%e.g. `docs/images/damithc.png`%%. ==If your photo is in jpg format, name the file as `.png` anyway==.
@@ -372,7 +375,7 @@ Update the following pages in your project repo:
 <span id="heading_update_the_ug">{{ icon_individual }} Update the UG</span>
 <span id="desc_update_the_ug">
 
-* Move the draft UG into the User Guide page in your repository. Update the content as necessary. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>
+* **Move the draft UG content into the User Guide page** in your repository. Update the content as necessary. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., `## Archiving contacts [coming soon]`).<br>
   As <trigger trigger="click" for="modal:v11-divideDocs">mentioned before</trigger>, while it is more convenient for one person to update the entire UG, we recommend that **each person updates their own part of the docs** so that we can easily track the contribution of each member using [RepoSense]({{ url_tp_dashboard }}).
 
 <modal large header="About Dividing Documentation Work" id="modal:v11-divideDocs">
@@ -383,8 +386,7 @@ Update the following pages in your project repo:
 <span id="heading_update_dg_user_stories_etc">{{ icon_team }} Update the DG: user stories, glossary, NFRs{% if not tic4001 %}, use cases{% endif %}</span>
 <span id="desc_update_dg_user_stories_etc">
 
-* {{ icon_important_big_red }} Do a sincere job in this task as the DG will be reviewed during this week's {{ session_name }}.
-* Update the following in the DG, based on your project notes from the previous weeks.<br>
+* **Add the following to the DG**, based on your project notes from the previous weeks.<br>
   {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide]({{ url_ab3_fork_website }}/DeveloperGuide.html#product-scope).
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.{% if not tic4001 %}
@@ -411,10 +413,20 @@ Update the following pages in your project repo:
 
 </span>
 {#====================================================================================================================#}
+<span id="heading_practice_workflow_with_sample_repo">{{ icon_team }} Practice the workflow with a sample repo</span>
+<span id="desc_practice_workflow_with_sample_repo">
+
+* We recommend that you practice the forking workflow with your team members as described in the textbook section given in the panel below.<br>
+  {{ icon_tip }} You can use your tP GitHub org for this exercise too.
+
+{{ embed_topic("../book/gitAndGithub/forkingWorkflow/text.md#body", "Textbook " + icon_embedding + " Git & GitHub → **The forking workflow**", "1", indent=2) }}
+
+</span>
+{#====================================================================================================================#}
 <span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration</span>
 <span id="desc_do_a_practice_iteration">
 
-* To get some practice of doing project iterations, do this week's tP work as if it is a project iteration that will reach a milestone `{{ version_practice }}`, as explained in the pane below.
+* To get some practice of doing project iterations, do this week's tP work (i.e., updates to various documents) as if it is a project iteration that will reach a milestone `{{ version_practice }}`, as explained in the pane below.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
 
@@ -432,13 +444,13 @@ Update the following pages in your project repo:
   * ==**Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)**== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
   * **If possible, break the iteration into two _increments_** i.e., aim to produce an even simpler but working version after one week.
   * **Avoid depth-first implementations**: "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
-    It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet i.e., go _breadth-first iterative_ not _depth-first iterative_.
+    It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet.
 * {{ icon_team }} **Divide the work among the team members** i.e., the work required for the current iteration.
 * {{ icon_individual }} **Reflect the above plan in the issue tracker** by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. %%For example, the user story pertaining to the increment `show a place holder for photo, showing a generic default image` should be assigned to Jake and to milestone `{{ version_first }}`%%<br>
   Optionally, you can define a `mid-{{ version_first }}` milestone to keep track of things to be done within the first half of the milestone.
 </span>
 {#====================================================================================================================#}
-<span id="heading_start_implementing_the_next_version">{{ icon_individual }} start implementing the next version</span>
+<span id="heading_start_implementing_the_next_version">{{ icon_individual }} Start implementing the next version</span>
 <span id="desc_start_implementing_the_next_version">
 
 * If you have time, start implementing v1.2.
