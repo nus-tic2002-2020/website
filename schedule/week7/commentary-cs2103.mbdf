@@ -20,13 +20,7 @@ Now that you know there are two kinds of 'design', also note that this module fo
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Design: Fundamentals", reuse=false) %}
-
-As you start changing the tP code, you'll have to make design decisions e.g., decide between multiple design alternatives. Let us learn three fundamental design concepts that you can use in those decisions.
-
-It is extremely important for you to know these three because **they are like the DNA of every higher-level design concept**.
-
-{% endcall %}
+{{ topic_preamble("Design: Fundamentals") }}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("IDEs: Advanced Features", reuse=false) %}
 
@@ -40,11 +34,7 @@ As you start adding new code to the tP, let's also become aware of various appro
 
 {% endcall %}
 <!-- ---------------------------------------------------------------------------- -->
-{% call topic_preamble("Project Mgt: Scheduling and Tracking", reuse=false) %}
-
-Coordinating a team project is not easy. Give below are some tools and techniques that are often used in planning, scheduling, and tracking projects.
-
-{% endcall %}
+{{ topic_preamble("Project Mgt: Scheduling and Tracking") }}
 <!-- ---------------------------------------------------------------------------- -->
 {% call topic_preamble("Project Mgt: Workflows", reuse=false) %}
 
