@@ -290,3 +290,93 @@ Missing reference in C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week7\
 2020-09-28T15:35:52.535Z - info: Lazy website regeneration complete! Total build time: 0.495s
 2020-09-28T15:38:15.129Z - info: Website generation started at 11:38:12 PM
 2020-09-28T15:38:22.771Z - info: Building assets...
+2020-09-28T15:38:28.546Z - info: Assets built
+2020-09-28T15:38:28.547Z - info: Generating pages...
+2020-09-28T15:38:45.695Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:38:45.696Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:38:48.730Z - debug:  
+2020-09-28T15:38:48.730Z - debug:  
+2020-09-28T15:38:48.730Z - debug:  
+2020-09-28T15:38:48.730Z - debug:  
+2020-09-28T15:38:48.731Z - debug:  
+2020-09-28T15:38:53.998Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:38:53.999Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:38:53.999Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:38:54.000Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:38:54.000Z - debug:  
+2020-09-28T15:38:54.000Z - debug:  
+2020-09-28T15:38:54.000Z - debug:  
+2020-09-28T15:38:54.001Z - debug:  
+2020-09-28T15:38:56.596Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:38:56.868Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:38:56.932Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:38:56.933Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:38:58.370Z - debug:  
+2020-09-28T15:38:58.370Z - debug:  
+2020-09-28T15:39:12.265Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:39:13.008Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:39:13.735Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:39:13.735Z - debug:  
+2020-09-28T15:39:16.053Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:39:16.054Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:39:17.365Z - debug:  
+2020-09-28T15:39:19.271Z - debug:  
+2020-09-28T15:39:21.046Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:39:21.046Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:39:23.150Z - debug:  
+2020-09-28T15:39:23.151Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:39:23.398Z - debug:  
+2020-09-28T15:39:26.071Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:39:26.463Z - debug:  
+2020-09-28T15:39:27.467Z - debug:  
+2020-09-28T15:39:33.409Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:39:35.581Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:39:35.863Z - debug:  
+2020-09-28T15:39:57.180Z - debug:  
+2020-09-28T15:39:57.182Z - debug:  
+2020-09-28T15:39:57.182Z - debug:  
+2020-09-28T15:39:57.182Z - debug:  
+2020-09-28T15:40:04.911Z - debug:  
+2020-09-28T15:40:04.912Z - debug:  
+2020-09-28T15:40:04.912Z - debug:  
+2020-09-28T15:40:13.249Z - debug:  
+2020-09-28T15:40:13.250Z - debug:  
+2020-09-28T15:40:13.250Z - debug:  
+2020-09-28T15:40:13.250Z - debug:  
+2020-09-28T15:40:13.250Z - debug:  
+2020-09-28T15:40:17.184Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-09-28T15:40:19.497Z - debug:  
+2020-09-28T15:40:21.394Z - debug:  
+2020-09-28T15:40:21.394Z - debug:  
+2020-09-28T15:40:26.956Z - debug:  
+2020-09-28T15:40:33.103Z - debug:  
+2020-09-28T15:40:37.977Z - debug:  
+2020-09-28T15:40:47.646Z - debug:  
+2020-09-28T15:40:47.646Z - debug:  
+2020-09-28T15:40:51.384Z - info: Pages built
+2020-09-28T15:41:13.520Z - info: Website generation complete! Total build time: 181.279s
+2020-09-28T15:41:13.523Z - info: Build success!
+2020-09-28T15:41:13.527Z - info: Site data built
+2020-09-28T15:41:51.006Z - info: Deployed!
