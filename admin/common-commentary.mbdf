@@ -36,6 +36,11 @@ The technique of _use cases_ (don't confuse with _user stories_) covered below i
 <div id="{{ slugify("Requirements: Use Cases") }}">
 Previously, you learned a number of techniques for specifying requirements. There's one more left, which we'll cover this week.
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("followup Requirements: Use Cases") }}">
+Now that you know all the different ways of specifying requirements, **here is an example that shows how all techniques of specifying requirements can work together**:
+{{ panopto("a8d7db29-d50c-4e8c-8742-ac4400ee8366", desc="Example: TeamFormer") }}
+</div>
 <!-- ==================================================================================================== -->
                                              OOP
 <!-- ==================================================================================================== -->
@@ -155,6 +160,10 @@ As you have learned the Java basic topics already, it is time to move to interme
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Packages") }}">
 As you add more and more Java classes to your project, keeping all those classes in the same directory becomes untenable. The solution is covered in the next topic.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Java: JavaDocs") }}">
+As you know, adding comments to the code is a good practice. Let's learn about a specific type of comments that you can use in Java code that can do even more than just explain the code.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Java: Access Modifiers") }}">
@@ -387,6 +396,10 @@ Previously, you learned how to write JUnit tests. **How do you know which parts 
 <div id="{{ slugify("testing-testCoverage-how") }}">
 Learn how to measure test coverage in your tP. You will be asked to demo that in the coming tutorial.
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("followup-testing-tdd-what") }}">
+You are welcome to, but not required to, follow the TDD approach in your project.
+</div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Types of Testing") }}" >
 As we approach the last part of the tP, we'll be spending more time learning about software testing. This week, we start off with an overview of different _types_ of software testing.
@@ -444,7 +457,7 @@ Now, let us take a quick look at a couple of well-known processes used in the in
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Project Mgt: Scheduling and Tracking") }}">
-Coordinating a team project is not easy. Given below are some very basic tools and techniques that are often used in planning, scheduling, and tracking projects.
+<span tags="m--cs2103 m--cs2113 m--tic4001">Coordinating a team project is not easy.</span> Given below are some very basic tools and techniques that are often used in planning, scheduling, and tracking projects.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("projectPlanning-ganttCharts") }}">
@@ -525,14 +538,34 @@ Bad news: we are going to cover an entire new diagram type in one go (reason: to
 <!-- ==================================================================================================== -->
                                    Design
 <!-- ==================================================================================================== -->
-<div id="{{ slugify("Design Principles") }}">
-As you are still in the early stage of the tP, **this is a good time to learn some design principles that you can try to apply as you evolve the tP design**.
+<div id="{{ slugify("followup-design-introduction-what") }}">
+Now that you know there are two kinds of 'design', also note that this module focuses more on the internal design rather than the external design.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Design: Fundamentals") }}">
 As you do projects, you'll have to make design decisions e.g., decide between multiple design alternatives. Let us learn three fundamental design concepts that you can use in those decisions.
 
 It is extremely important for you to know these three because **they are like the DNA of every higher-level design concept**.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Design Principles") }}">
+
+<div tags="m--cs2113">
+
+As you are still in the early stage of the project, **this is a good time to learn some design principles that you can try to apply in the internal design of your product**.
+</div>
+<div tags="m--tic2002">
+
+This week, we learn a few **design principles that you can try to apply in your project**.
+</div>
+
+These principles build on top of the design fundamentals you learned earlier (i.e., abstraction, coupling, cohesion).
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Design Principles: SoC, SRP") }}">
+As you are still in the early stage of the project, **this is a good time to learn some design principles that you can try to apply in the internal design of your product**.
+
+These principles build on top of the design fundamentals you learned earlier (i.e., abstraction, coupling, cohesion).
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("designFundamentals-abstraction-what") }}">
