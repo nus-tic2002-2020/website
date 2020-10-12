@@ -1,0 +1,13 @@
+2020-10-12T16:00:19.363Z - info: [12:00:19 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-10-12T16:00:20.381Z - info: Rebuilding 1 pages
+2020-10-12T16:00:22.350Z - info: Pages rebuilt
+2020-10-12T16:00:22.350Z - info: Website regeneration complete! Total build time: 1.97s
+2020-10-12T16:00:22.413Z - info: Site data built
+2020-10-12T16:02:50.105Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week9\admin as some of its dependencies were changed since the last visit
+2020-10-12T16:02:50.601Z - info: Site data built
+2020-10-12T16:02:50.601Z - info: Lazy website regeneration complete! Total build time: 0.497s
+2020-10-12T16:03:39.213Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week9\index as some of its dependencies were changed since the last visit
+2020-10-12T16:03:39.690Z - info: Site data built
+2020-10-12T16:03:39.691Z - info: Lazy website regeneration complete! Total build time: 0.478s
+2020-10-12T16:04:36.131Z - info: Website generation started at 12:04:32 AM
+2020-10-12T16:04:45.147Z - info: Building assets...
