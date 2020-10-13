@@ -510,6 +510,10 @@ As you start adding new code to the tP, let's also become aware of various appro
 <div id="{{ slugify("Continuous Integration/Deployment") }}">
 **Modern software projects, and your tP, make heavy use of build/CI/CD tools** The topics below give you an overview of those tools, to prepare you to start using them yourself.
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Automating the Build Process") }}">
+As your project gets bigger and changes become more frequent, it's natural to look for ways to automate the many steps involved in going from the code you write in the editor to an executable product. This is a good time to start learning about that aspect too.
+</div>
 <!-- ==================================================================================================== -->
                                     Models/UML
 <!-- ==================================================================================================== -->
@@ -572,7 +576,7 @@ Activity diagrams is the last UML diagram type you'll be learning in this module
 
 Here is an example that shows the steps of drawing an activity diagram to match a given workflow.
 
-{{ panopto("d7ac5238-7071-4ded-b0ff-ac4e00358463", desc="Activity diagram for the do-while loop") }}
+{{ panopto("1cc77229-f9d3-482e-b7e5-ac53003984e5", desc="Activity diagram for the do-while loop") }}
 </div>
 <!-- ==================================================================================================== -->
                                    Design
