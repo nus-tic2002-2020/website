@@ -1,0 +1,43 @@
+2020-10-19T16:01:14.669Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week10\topics as some of its dependencies were changed since the last visit
+2020-10-19T16:01:23.871Z - info: Site data built
+2020-10-19T16:01:23.874Z - info: Lazy website regeneration complete! Total build time: 9.21s
+2020-10-19T16:02:43.244Z - info: [12:02:43 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-10-19T16:02:43.293Z - info: [12:02:43 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week10\commentary-tic2002.mbdf
+2020-10-19T16:02:44.258Z - info: No pages needed to be rebuilt
+2020-10-19T16:03:04.450Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week10\topics as some of its dependencies were changed since the last visit
+2020-10-19T16:03:10.226Z - info: Site data built
+2020-10-19T16:03:10.227Z - info: Lazy website regeneration complete! Total build time: 5.778s
+2020-10-19T16:04:57.854Z - info: [12:04:57 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-10-19T16:04:58.884Z - info: Rebuilding 1 pages
+2020-10-19T16:05:03.299Z - info: Pages rebuilt
+2020-10-19T16:05:03.300Z - info: Website regeneration complete! Total build time: 4.423s
+2020-10-19T16:05:03.332Z - info: Site data built
+2020-10-19T16:05:35.463Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week10\admin as some of its dependencies were changed since the last visit
+2020-10-19T16:05:36.030Z - info: Site data built
+2020-10-19T16:05:36.030Z - info: Lazy website regeneration complete! Total build time: 0.567s
+2020-10-19T16:06:38.997Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\se-book-adapted\chapters\codeQuality as some of its dependencies were changed since the last visit
+2020-10-19T16:06:40.565Z - info: Site data built
+2020-10-19T16:06:40.565Z - info: Lazy website regeneration complete! Total build time: 1.569s
+2020-10-19T16:08:28.680Z - info: [12:08:28 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week10\admin-tic2002.mbdf
+2020-10-19T16:08:29.690Z - info: Rebuilding 1 pages
+2020-10-19T16:08:30.246Z - info: Pages rebuilt
+2020-10-19T16:08:30.246Z - info: Website regeneration complete! Total build time: 0.561s
+2020-10-19T16:08:30.253Z - info: Site data built
+2020-10-19T16:08:59.595Z - info: [12:08:59 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week10\admin-tic2002.mbdf
+2020-10-19T16:09:00.600Z - info: No pages needed to be rebuilt
+2020-10-19T16:09:15.406Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week11\index as some of its dependencies were changed since the last visit
+2020-10-19T16:09:15.844Z - info: Site data built
+2020-10-19T16:09:15.844Z - info: Lazy website regeneration complete! Total build time: 0.438s
+2020-10-19T16:09:19.935Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week10\index as some of its dependencies were changed since the last visit
+2020-10-19T16:09:20.580Z - info: Site data built
+2020-10-19T16:09:20.580Z - info: Lazy website regeneration complete! Total build time: 0.645s
+2020-10-19T16:09:27.418Z - info: [12:09:27 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week10\admin-tic2002.mbdf
+2020-10-19T16:09:28.424Z - info: Rebuilding 1 pages
+2020-10-19T16:09:28.967Z - info: Pages rebuilt
+2020-10-19T16:09:28.967Z - info: Website regeneration complete! Total build time: 0.546s
+2020-10-19T16:09:28.970Z - info: Site data built
+2020-10-19T16:09:56.195Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week12\index as some of its dependencies were changed since the last visit
+2020-10-19T16:09:56.735Z - info: Site data built
+2020-10-19T16:09:56.735Z - info: Lazy website regeneration complete! Total build time: 0.541s
+2020-10-19T16:10:38.096Z - info: Website generation started at 12:10:35 AM
+2020-10-19T16:10:46.854Z - info: Building assets...

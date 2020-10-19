@@ -388,8 +388,13 @@ Update the following pages in your project repo:
 <span id="heading_update_dg_user_stories_etc">{{ icon_team }} Update the DG: user stories, glossary, NFRs{% if not tic4001 %}, use cases{% endif %}</span>
 <span id="desc_update_dg_user_stories_etc">
 
+<div tags="m--tic4001" class="indented-level2">
+
+<include src="tp-tasks.mbdf#divideDocs" />
+</div>
+
 * **Add the following to the DG**, based on your project notes from the previous weeks.<br>
-  {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide]({{ url_ab3_fork_website }}/DeveloperGuide.html#product-scope).
+  {{ icon_tip }} Some examples of these can be found in the [AB3 Developer Guide](https://se-education.org/addressbook-level3/DeveloperGuide.html#product-scope).
 
   * **Target user profile**, **value proposition**, and <trigger trigger="click" for="modal:v10-userstories">**user stories**</trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.{% if not tic4001 %}
   * <trigger trigger="click" for="modal:v10-usecases">**Use cases**</trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. %%e.g. Adding a tag to a person (assume the user needs to find the person first)%%{% endif %}
@@ -656,13 +661,6 @@ In addition,
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update the DG with design details</span>
 <span id="desc_update_dg_with_design_details">
 
-<div class="indented">
-<box>
-
-{{ icon_important_big_red }} Do a sincere job in this task because this is your only chance to get feedback on the DG before it is graded at {{ version_final }} {% if has_pe %}i.e., this is your last chance to get your DG tested for free.{% endif %}
-</box>
-</div>
-
 * **Update the Developer Guide** as follows:
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
     Expected length: 1+ page per person{% if module == "CS2113" or module == "TIC4001" %}
@@ -687,13 +685,13 @@ In addition,
 </div>
 </span>
 {#====================================================================================================================#}
-<span id="heading_do_a_release">{{ icon_team }} Do a dry run of a release</span>
+<span id="heading_do_a_release">{{ icon_team }} Do a trial JAR release</span>
 <span id="desc_do_a_release">
 
-* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). You can name it something like `v1.2.1`. ==Ensure that the jar file works as expected== by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
+* {{ icon_important_big_red }} **Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">product release</tooltip>** [as described in the Developer Guide]({{ url_ab3_fork_website }}/DevOps.html#making-a-release). You can name it something like `{{ version_first }}.1` (or `{{ version_penultimate }}.trial`). ==Ensure that the jar file works as expected in an empty folder and using Java 11==, by doing some manual testing. %%Reason: You are _required_ to do a proper product release for {{ version_penultimate }}. Doing a trial at this point will help you iron out any problems in advance. It may take additional effort to get the jar working especially if you use third party libraries or additional assets such as images.%%
 </span>
 {#====================================================================================================================#}
-<span id="heading_make_code_reposense_compatible">{{ icon_individual }} Make the code RepoSense-compatible</span>
+<span id="heading_make_code_reposense_compatible">{{ icon_individual }} Ensure the code RepoSense-compatible</span>
 <span id="desc_make_code_reposense_compatible">
 
 <span id="midV13-repoSenseCompatible">
@@ -728,19 +726,19 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 1. **Download the latest version** of the CATcher executable from [https://github.com/CATcher-org/CATcher/releases](https://github.com/CATcher-org/CATcher/releases).
 1. **Launch the app.** Allow the app to run if there are security warnings %%(e.g., for Win 10, click the `More Info` link in the security warning and choose `Run anyway`)%%.<br>
    {{ icon_tip }} If the app is blocked by your virus scanner, put it in a new folder and add the folder to the _exclusions_ list of the virus scanner.<br>
-   {{ icon_info }} If you encounter other problems at the app launch, refer to the [Notes on using the CATcher Desktop App](https://github.com/CATcher-org/CATcher/blob/master/usage-notes.md).
+   {{ icon_info }} If you encounter other problems at the app launch, refer to the [Notes on using the CATcher Desktop App](https://github.com/CATcher-org/CATcher/blob/master/docs/usage-notes.md).
 1. **Login**: Choose the _session_ `{{ module }}/T Alpha Test`, and submit.
    <img src="images/catcherLogin.png" />
-1. In the next screen, submit your GitHub credentials directly or choose to the `Use GitHub login interface` to login to CATcher using your GitHub account.<br>
+1. In the next screen, login to CATcher using your GitHub account.<br>
    If the app asks for public repo access permissions, grant it (just go with the default settings).
 1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
 1. **Use the app to create 1-2 dummy bug reports**, similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
    {{ icon_tip }} you can ==copy-paste screenshots== into the bug description.<br>
    {{ icon_tip }} You can use Markdown syntax in the bug descriptions.<br>
    {{ icon_info }} The `severity` and `type` labels are compulsory.
-1. {{ icon_important_big_red }} **Being able to run CATcher is important for the PE** -- if you are unable to run it, please follow up via the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues) until you resolve the issue ASAP.
+1. **Report any problems you encounter** at the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues).
 1. **Do NOT delete the `alpha` repo** created by CATcher in your GitHub account (keep it until the end of the semester) as our scripts will look for it later to check if you have done this activity.
-
+1. **Do NOT delete the CATcher executable** you downloaded either; you will need it again.
 
 </panel>
 <p/>
@@ -774,6 +772,24 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 {{ embed_topic("tp-deliverables.md#tp-deliverables-ug", "Admin " + icon_embedding + " tP → Deliverables → User Guide", "3", indent="2") }}
 
 </div>
+{#====================================================================================================================#}
+<span id="heading_demo_penultimate_version">{{ icon_team }} Demo {{ version_penultimate }}</span>
+<span id="desc_demo_penultimate_version">
+
+<div id="demo">
+<div tags="m--cs2103 m--cs2113">
+
+* [one member] As was done in `{{ version_first }}`,
+  * Run your application using the ==JAR file== that you released for `{{ version_penultimate }}`.
+  * Take screenshots of each available feature in action (or screen-record a demo -- need not be polished).
+  * Add those screenshots (or upload the demo video somewhere and give the link) to your _collaborative project notes_ document with an appropriate heading e.g., `{{ version_penultimate }} features demo`.
+</div>
+<div tags="m--tic4001">
+
+* During the lecture, do an informal demo of your {{ version_first }} to the profs.
+</div>
+</div>
+</span>
 {#====================================================================================================================#}
 <span id="heading_add_sd_to_dg">{{ icon_individual }} Add sequence diagrams to the developer guide</span>
 <span id="desc_add_sd_to_dg">

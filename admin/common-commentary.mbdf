@@ -328,10 +328,14 @@ In case you are the type who want to become a 'power user' of IDEs (it's not a b
 <!-- ==================================================================================================== -->
                                      Code Quality
 <!-- ==================================================================================================== -->
+<div id="{{ slugify("Code Quality: Guidelines") }}">
+Next, let's learn about some guidelines that can apply to improve the quality of your code.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Code Quality: Coding Standards") }}">
 As you know, one of the objectives of the iP is to raise the quality of your code. We'll be learning about various ways to improve the code quality in the next few weeks, starting with coding standards.
 </div>
-
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("codeQuality-introduction-basic") }}">
 <div tags="m--cs2103">
 
@@ -350,6 +354,10 @@ Continuing our theme on _code quality_, given below is another aspect of it: _re
 Knowing code-quality guidelines is useful for sure, but how do we improve the code quality of existing code in a systematic and safe way? That's where the next topic comes in.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Code Quality: Refactoring (Revisited)") }}">
+The topic of _refactoring_ was covered in an ealier week. We ==repeat the topic below for your convenience== as you'll need to refactor your code when applying the code quality guidelines given above.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Code Quality: Unsafe Practices") }}">
 Another step in our journey to improve code quality: Let's learn some legit but _unsafe_ practices we should avoid.
 </div>
@@ -364,8 +372,16 @@ Another step in our journey to improve code quality: Let's learn some legit but 
 So far, your iP may have assumed a 'perfect world' e.g., user input is always in the expected format. To make the product ready for the not-so-perfect real world, the code should be able to handle error conditions. Let's learn how to do that.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Error Handling: Logging and Assertions") }}">
+Previously, you learned how to use exceptions to handle errors. Here are two more techniques that can help with the error handling aspect of programming.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Logging") }}">
 Given next are **two techniques that help you locate problems in the code**: _logging_, and _assertions_
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Defensive Programming") }}">
+You already know some techniques (e.g., exceptions, assertions) to make the code more resilient to errors. Given next is an overarching approach to coding that aims to push further in that direction.
 </div>
 <!-- ==================================================================================================== -->
                                     Documentation
@@ -431,9 +447,11 @@ _Dependency Injection_ is a technique closely related to stubs. It is not in the
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Test Case Design") }}" >
+<div id="{{ slugify("Test Cases: Intro") }}" >
 Previously, we learned how to measure test _coverage_. This week, we look into how to increase coverage with the least number of test cases.
 
 First, we take a look at test case design in general, different approaches to test case design, and few different categorization of test cases.
+</div>
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("testCaseDesign-introduction-what") }}" >
@@ -445,11 +463,15 @@ First, we take a look at test case design in general, different approaches to te
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Equivalence Partitioning") }}" >
-Our syllabus includes two specific techniques for improving test case design. This week, we cover one of them: _equivalence partitioning_.
+<div id="{{ slugify("Test Cases: Equivalence Partitioning") }}" >
+Next, a heuristic used for improving the quality of test cases.
+</div>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Boundary Value Analysis") }}" >
-Last week, we learned about _equivalence partitions_, a heuristic for improving E&E of testing. This week, let us learn another heuristic that builds on top of equivalence partitioning.
+<div id="{{ slugify("Test Cases: Boundary Value Analysis") }}" >
+Previously, you learned about _equivalence partitions_, a heuristic for dividing the possible test cases into partitions. But which test cases should we pick from each partition? Next, let us learn another heuristic which can addresses that problem.
+</div>
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Combining Multiple Test Inputs") }}" >
@@ -551,10 +573,13 @@ But first, **try this CD/OD drawing example/exercise (solution provided)**.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Sequence Diagrams: Basics") }}">
+<div tags="m--cs2113">
+
 Good news: this will the the last installment of UML notations.<br>
 Bad news: we are going to cover an entire new diagram type in one go (reason: to give you more time to use them in project documentation).
+</div>
 
-**Let us learn a UML diagram type that can be used to model a _behavioral_ aspect of software entities**; in contrast, CD/OD's that you learned in the past two weeks model _structural_ aspects.
+**Let us learn a UML diagram type that can be used to model a _behavioral_ aspect of software entities**; in contrast, class/object diagrams that you learned earlier model _structural_ aspects.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("OO Domain Models") }}">
@@ -632,7 +657,7 @@ The only examinable thing is ==the term== _SOLID principles_.
 <div id="{{ slugify("Design Patterns") }}">
 Previously, you learned:
 * Three basic design quality aspects: abstraction, coupling, cohesion
-* Two design principles that aims to improve those aspects: SRP, SoC. <span tags="m--cs2113">There are many more principles but we covered only two (to reduce workload) just to give you a taste only.</span>
+* Some design principles that aims to improve those aspects (e.g., Single Responsibility Principle). <span tags="m--cs2113">There are many more principles but we covered only two (to reduce workload) just to give you a taste only.</span>
 
 **This week, we cover _design patterns_, a concept that builds upon the above**. <span tags="m--cs2113">Again, we limit to only two of them, for similar reasons.</span>
 </div>
@@ -642,7 +667,7 @@ First, let's learn what _design patterns_ are, in general.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Singleton pattern") }}">
-Given next are **two simple design patterns**: _singleton_ and _facade_.
+Now that you know what _design pattern_ is, let's learn a few example design patterns.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Architecture") }}" >
