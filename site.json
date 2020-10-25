@@ -2,6 +2,7 @@
   "baseUrl": "/website",
   "titlePrefix": "TIC2002",
   "timeZone": "Asia/Singapore",
+  "disableHtmlBeautify": true,
   "ignore": [
     "_site/*",
     ".idea/*",
