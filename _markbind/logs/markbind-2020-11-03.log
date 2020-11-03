@@ -1,0 +1,75 @@
+2020-11-03T03:20:20.543Z - info: Website generation (lazy) started at 11:20:15 AM
+2020-11-03T03:20:35.639Z - info: Building assets...
+2020-11-03T03:20:43.514Z - info: Assets built
+2020-11-03T03:20:43.515Z - info: Generating landing page...
+2020-11-03T03:20:44.273Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-11-03T03:20:44.369Z - info: Website generation (lazy) complete! Total build time: 29.351s
+2020-11-03T03:20:45.827Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-11-03T03:20:45.827Z - info: Press CTRL+C to stop ...
+2020-11-03T03:20:45.958Z - info: Site data built
+2020-11-03T03:20:59.100Z - info: [11:20:59 AM] Reload for file add: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week12\commentary-tic2002.mbdf
+2020-11-03T03:21:00.143Z - info: File added or removed, updating list of site's pages...
+2020-11-03T03:21:05.470Z - info: Assets removed
+2020-11-03T03:21:06.622Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\index as some of its dependencies were changed since the last visit
+2020-11-03T03:21:07.092Z - info: Site data built
+2020-11-03T03:21:07.092Z - info: Lazy website regeneration complete! Total build time: 0.471s
+2020-11-03T03:21:14.455Z - info: [11:21:14 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week12\commentary-tic2002.mbdf
+2020-11-03T03:21:15.462Z - info: No pages needed to be rebuilt
+2020-11-03T03:21:18.869Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week12\index as some of its dependencies were changed since the last visit
+2020-11-03T03:21:19.543Z - info: Site data built
+2020-11-03T03:21:19.543Z - info: Lazy website regeneration complete! Total build time: 0.674s
+2020-11-03T03:21:22.525Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week12\topics as some of its dependencies were changed since the last visit
+2020-11-03T03:21:24.682Z - info: Site data built
+2020-11-03T03:21:24.684Z - info: Lazy website regeneration complete! Total build time: 2.159s
+2020-11-03T03:22:02.018Z - info: [11:22:02 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week12\commentary-tic2002.mbdf
+2020-11-03T03:22:03.029Z - info: Rebuilding 1 pages
+2020-11-03T03:22:03.772Z - error:  Error: No such segment 'quality-assurance' in file: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+Missing reference in C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week12\commentary-box.md
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:264:21)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:349:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:298:50
+    at Array.map (<anonymous>)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:298:41)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:349:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:52
+2020-11-03T03:22:06.021Z - info: Pages rebuilt
+2020-11-03T03:22:06.022Z - info: Website regeneration complete! Total build time: 2.993s
+2020-11-03T03:22:06.041Z - info: Site data built
+2020-11-03T03:22:51.355Z - info: [11:22:51 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-11-03T03:22:52.366Z - info: Rebuilding 1 pages
+2020-11-03T03:22:54.865Z - info: Pages rebuilt
+2020-11-03T03:22:54.865Z - info: Website regeneration complete! Total build time: 2.5s
+2020-11-03T03:22:54.883Z - info: Site data built
+2020-11-03T03:23:31.054Z - info: [11:23:31 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week12\commentary-tic2002.mbdf
+2020-11-03T03:23:32.074Z - info: Rebuilding 1 pages
+2020-11-03T03:23:34.405Z - info: Pages rebuilt
+2020-11-03T03:23:34.406Z - info: Website regeneration complete! Total build time: 2.337s
+2020-11-03T03:23:34.450Z - info: Site data built
+2020-11-03T03:23:58.393Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week12\admin as some of its dependencies were changed since the last visit
+2020-11-03T03:23:58.903Z - info: Site data built
+2020-11-03T03:23:58.903Z - info: Lazy website regeneration complete! Total build time: 0.511s
+2020-11-03T03:27:31.614Z - info: [11:27:31 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week12\admin-tic2002.mbdf
+2020-11-03T03:27:31.620Z - info: [11:27:31 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week11\admin-tic2002.mbdf
+2020-11-03T03:27:32.633Z - info: Rebuilding 1 pages
+2020-11-03T03:27:33.366Z - info: Pages rebuilt
+2020-11-03T03:27:33.366Z - info: Website regeneration complete! Total build time: 0.738s
+2020-11-03T03:27:33.372Z - info: Site data built
+2020-11-03T03:27:44.126Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week8\index as some of its dependencies were changed since the last visit
+2020-11-03T03:27:44.668Z - info: Site data built
+2020-11-03T03:27:44.668Z - info: Lazy website regeneration complete! Total build time: 0.542s
+2020-11-03T03:28:07.157Z - info: [11:28:07 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week13\admin-tic2002.mbdf
+2020-11-03T03:28:08.166Z - info: No pages needed to be rebuilt
+2020-11-03T03:28:11.179Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week13\index as some of its dependencies were changed since the last visit
+2020-11-03T03:28:11.375Z - info: Site data built
+2020-11-03T03:28:11.375Z - info: Lazy website regeneration complete! Total build time: 0.196s
+2020-11-03T03:28:40.274Z - info: Website generation started at 11:28:37 AM
+2020-11-03T03:28:50.126Z - info: Building assets...
