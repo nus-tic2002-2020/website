@@ -73,3 +73,160 @@ Missing reference in C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week12
 2020-11-03T03:28:11.375Z - info: Lazy website regeneration complete! Total build time: 0.196s
 2020-11-03T03:28:40.274Z - info: Website generation started at 11:28:37 AM
 2020-11-03T03:28:50.126Z - info: Building assets...
+2020-11-03T03:28:56.351Z - info: Assets built
+2020-11-03T03:28:56.352Z - info: Generating pages...
+2020-11-03T03:29:13.844Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:13.845Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:14.965Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:14.966Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:14.967Z - debug:  
+2020-11-03T03:29:14.967Z - debug:  
+2020-11-03T03:29:14.967Z - debug:  
+2020-11-03T03:29:14.967Z - debug:  
+2020-11-03T03:29:14.967Z - debug:  
+2020-11-03T03:29:19.962Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:19.962Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:19.962Z - debug:  
+2020-11-03T03:29:21.361Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:21.362Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:21.362Z - debug:  
+2020-11-03T03:29:21.665Z - debug:  
+2020-11-03T03:29:21.717Z - debug:  
+2020-11-03T03:29:21.959Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:21.960Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:25.332Z - debug:  
+2020-11-03T03:29:25.393Z - debug:  
+2020-11-03T03:29:40.068Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:40.595Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:41.722Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:41.847Z - debug:  
+2020-11-03T03:29:43.442Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:43.935Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:45.601Z - debug:  
+2020-11-03T03:29:47.515Z - debug:  
+2020-11-03T03:29:49.371Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:49.372Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:51.441Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:51.441Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:29:51.624Z - debug:  
+2020-11-03T03:29:53.542Z - debug:  
+2020-11-03T03:29:55.132Z - debug:  
+2020-11-03T03:29:55.343Z - debug:  
+2020-11-03T03:30:01.783Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:30:03.895Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:30:04.157Z - debug:  
+2020-11-03T03:30:25.783Z - debug:  
+2020-11-03T03:30:25.882Z - debug:  
+2020-11-03T03:30:25.882Z - debug:  
+2020-11-03T03:30:25.882Z - debug:  
+2020-11-03T03:30:33.221Z - debug:  
+2020-11-03T03:30:33.221Z - debug:  
+2020-11-03T03:30:33.221Z - debug:  
+2020-11-03T03:30:33.221Z - debug:  
+2020-11-03T03:30:40.309Z - debug:  
+2020-11-03T03:30:40.309Z - debug:  
+2020-11-03T03:30:40.310Z - debug:  
+2020-11-03T03:30:40.310Z - debug:  
+2020-11-03T03:30:44.781Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-11-03T03:30:46.668Z - debug:  
+2020-11-03T03:30:48.635Z - debug:  
+2020-11-03T03:30:48.635Z - debug:  
+2020-11-03T03:30:53.225Z - debug:  
+2020-11-03T03:31:05.743Z - debug:  
+2020-11-03T03:31:06.842Z - debug:  
+2020-11-03T03:31:16.981Z - debug:  
+2020-11-03T03:31:16.981Z - debug:  
+2020-11-03T03:31:20.914Z - info: Pages built
+2020-11-03T03:31:44.493Z - info: Website generation complete! Total build time: 187.39s
+2020-11-03T03:31:44.497Z - info: Build success!
+2020-11-03T03:31:44.501Z - info: Site data built
+2020-11-03T03:32:29.590Z - info: Deployed!
+2020-11-03T14:24:22.458Z - info: Website generation (lazy) started at 10:24:12 PM
+2020-11-03T14:24:35.657Z - info: Building assets...
+2020-11-03T14:24:46.072Z - info: Assets built
+2020-11-03T14:24:46.074Z - info: Generating landing page...
+2020-11-03T14:24:47.396Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-11-03T14:24:47.494Z - info: Website generation (lazy) complete! Total build time: 35.069s
+2020-11-03T14:24:48.929Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-11-03T14:24:48.930Z - info: Press CTRL+C to stop ...
+2020-11-03T14:24:49.049Z - info: Site data built
+2020-11-03T14:27:33.160Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week11\index as some of its dependencies were changed since the last visit
+2020-11-03T14:27:34.267Z - info: Site data built
+2020-11-03T14:27:34.268Z - info: Lazy website regeneration complete! Total build time: 1.111s
+2020-11-03T14:27:37.055Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week11\topics as some of its dependencies were changed since the last visit
+2020-11-03T14:27:41.916Z - info: Site data built
+2020-11-03T14:27:41.918Z - info: Lazy website regeneration complete! Total build time: 4.863s
+2020-11-03T14:27:44.827Z - debug:  
+2020-11-03T14:27:45.506Z - debug:  
+2020-11-03T14:28:29.185Z - info: [10:28:29 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-11-03T14:28:30.206Z - info: Rebuilding 1 pages
+2020-11-03T14:28:35.797Z - info: Pages rebuilt
+2020-11-03T14:28:35.798Z - info: Website regeneration complete! Total build time: 5.594s
+2020-11-03T14:28:36.091Z - info: Site data built
+2020-11-03T14:28:38.328Z - debug:  
+2020-11-03T14:28:38.388Z - debug:  
+2020-11-03T14:29:32.986Z - info: [10:29:32 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-11-03T14:29:34.000Z - info: Rebuilding 1 pages
+2020-11-03T14:29:37.978Z - info: Pages rebuilt
+2020-11-03T14:29:37.978Z - info: Website regeneration complete! Total build time: 3.983s
+2020-11-03T14:29:38.052Z - info: Site data built
+2020-11-03T14:29:39.254Z - debug:  
+2020-11-03T14:29:39.403Z - debug:  
+2020-11-03T14:29:59.355Z - info: [10:29:59 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-11-03T14:30:00.369Z - info: Rebuilding 1 pages
+2020-11-03T14:30:03.337Z - info: Pages rebuilt
+2020-11-03T14:30:03.338Z - info: Website regeneration complete! Total build time: 2.973s
+2020-11-03T14:30:03.390Z - info: Site data built
+2020-11-03T14:30:05.958Z - debug:  
+2020-11-03T14:30:06.037Z - debug:  
+2020-11-03T14:31:34.525Z - info: [10:31:34 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week8\commentary-cs2103.mbdf
+2020-11-03T14:31:35.536Z - info: No pages needed to be rebuilt
+2020-11-03T14:33:00.221Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\timeline as some of its dependencies were changed since the last visit
+2020-11-03T14:33:04.083Z - info: Site data built
+2020-11-03T14:33:04.083Z - info: Lazy website regeneration complete! Total build time: 3.863s
+2020-11-03T14:33:26.693Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week7\topics as some of its dependencies were changed since the last visit
+2020-11-03T14:33:31.922Z - info: Site data built
+2020-11-03T14:33:31.924Z - info: Lazy website regeneration complete! Total build time: 5.232s
+2020-11-03T14:33:33.699Z - debug:  
+2020-11-03T14:33:33.700Z - debug:  
+2020-11-03T14:34:36.826Z - info: [10:34:36 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-11-03T14:34:37.842Z - info: Rebuilding 1 pages
+2020-11-03T14:34:44.989Z - info: Pages rebuilt
+2020-11-03T14:34:44.990Z - info: Website regeneration complete! Total build time: 7.15s
+2020-11-03T14:34:45.070Z - info: Site data built
+2020-11-03T14:34:45.958Z - debug:  
+2020-11-03T14:34:45.958Z - debug:  
+2020-11-03T14:35:13.456Z - info: [10:35:13 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-11-03T14:35:14.465Z - info: Rebuilding 1 pages
+2020-11-03T14:35:19.719Z - info: Pages rebuilt
+2020-11-03T14:35:19.719Z - info: Website regeneration complete! Total build time: 5.258s
+2020-11-03T14:35:19.908Z - info: Site data built
+2020-11-03T14:35:20.926Z - debug:  
+2020-11-03T14:35:20.978Z - debug:  
+2020-11-03T14:37:46.369Z - info: [10:37:46 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week8\commentary-cs2103.mbdf
+2020-11-03T14:37:46.380Z - info: [10:37:46 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week8\topics.md
+2020-11-03T14:37:47.385Z - info: No pages needed to be rebuilt
+2020-11-03T14:45:56.130Z - info: Website generation started at 10:45:52 PM
+2020-11-03T14:46:11.487Z - info: Building assets...
