@@ -42,11 +42,11 @@
         "assessment": "Assessment",
         "getting-help": "Getting help",
         "exam": "Exam",
-        "early-preparations": "Early preparations",
-        "30-minutes-before-the-exam": "30 minutes before the exam",
-        "during-the-exam": "During the exam",
-        "troubleshooting-exam-problems": "Troubleshooting exam problems",
-        "format": "Format"
+        "sop-deviations-refinements": "SOP deviations/refinements",
+        "format": "Format",
+        "final-exam-part-1": "Final exam - part 1",
+        "final-exam-part-2-2": "Final exam - part 2",
+        "exam-briefing-mock-exam-practice-exam-paper": "Exam briefing, mock exam, practice exam paper"
       },
       "headingKeywords": {}
     },
