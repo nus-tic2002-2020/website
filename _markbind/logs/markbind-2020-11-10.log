@@ -1,0 +1,21 @@
+2020-11-09T16:00:30.823Z - info: [12:00:30 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\exams.md
+2020-11-09T16:00:31.851Z - info: Rebuilding 1 pages
+2020-11-09T16:00:34.005Z - info: Pages rebuilt
+2020-11-09T16:00:34.005Z - info: Website regeneration complete! Total build time: 2.156s
+2020-11-09T16:00:34.017Z - info: Site data built
+2020-11-09T16:01:11.440Z - info: [12:01:11 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\exams.md
+2020-11-09T16:01:12.447Z - info: Rebuilding 1 pages
+2020-11-09T16:01:14.532Z - info: Pages rebuilt
+2020-11-09T16:01:14.532Z - info: Website regeneration complete! Total build time: 2.087s
+2020-11-09T16:01:14.552Z - info: Site data built
+2020-11-09T16:02:01.805Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week12\admin as some of its dependencies were changed since the last visit
+2020-11-09T16:02:02.206Z - info: Site data built
+2020-11-09T16:02:02.207Z - info: Lazy website regeneration complete! Total build time: 0.403s
+2020-11-09T16:02:28.087Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week13\index as some of its dependencies were changed since the last visit
+2020-11-09T16:02:28.223Z - info: Site data built
+2020-11-09T16:02:28.223Z - info: Lazy website regeneration complete! Total build time: 0.136s
+2020-11-09T16:02:38.209Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week13\admin as some of its dependencies were changed since the last visit
+2020-11-09T16:02:38.390Z - info: Site data built
+2020-11-09T16:02:38.391Z - info: Lazy website regeneration complete! Total build time: 0.182s
+2020-11-09T16:03:10.679Z - info: Website generation started at 12:03:07 AM
+2020-11-09T16:03:20.640Z - info: Building assets...
