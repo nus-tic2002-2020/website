@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 2.15.2">
+    <meta name="generator" content="MarkBind 2.17.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TIC2002 - Week 10 - Summary</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
     <link rel="stylesheet" href="../../markbind/css/octicons.css">
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="../../markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
+    <script src="../../markbind/js/vue.min.js"></script>
+    <script src="../../markbind/js/markbind.min.js"></script>
+    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
     <link rel="stylesheet" href="/website/css/main.css">
     <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
 <body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
 <div id="app">
     <header fixed>
+<div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~tic2002">here</a> when the new semester starts.</strong></span></div>
 <navbar placement="top" type="dark" class="temp-navbar">
 <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
   <div class="nav-link temp-dropdown-placeholder">**Schedule**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
@@ -46,7 +49,7 @@
     <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
     <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
     
-    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/szXDJN4" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
+    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/szXDJN4" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code class="hljs inline no-lang" v-pre>repl.it</code> link</span></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
     
     
@@ -57,6 +60,8 @@
     <form class="navbar-form">
       <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
         
+
+
 <div id="content-wrapper">
 <div class="website-content">
 <nav>
@@ -67,7 +72,7 @@
 <li class="page-item"><a class="page-link" href="/website/schedule/week10/admin.html"><span><span><span aria-hidden="true" class="glyphicon glyphicon-check"></span></span></span> Tasks</a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week11"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
 <p></p>
-<h1 id="week-10-tue-oct-20th-summary">Week 10 <small><small><span class="dimmed">[Tue, Oct 20th]</span> - Summary</small></small><span id="week-10-tue-oct-20th-summary" class="anchor"></span><a class="fa fa-anchor" href="#week-10-tue-oct-20th-summary" onclick="event.stopPropagation()"></a></h1>
+<h1 id="week-10-tue-oct-20th-summary"><span id="week-10-tue-oct-20th-summary" class="anchor"></span>Week 10 <small><small><span class="dimmed">[Tue, Oct 20th]</span> - Summary</small></small><a class="fa fa-anchor" href="#week-10-tue-oct-20th-summary" onclick="event.stopPropagation()"></a></h1>
 <div></div>
 <span id="summary">
 <div class="container">
@@ -85,7 +90,7 @@
 <li>
 <p>[<a href="/website/schedule/week10/topics.html#W10-4">W10.4</a>] <strong>Error Handling: Logging and Assertions</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
 <p></p>
-<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Full ToC</span></p></template>
+<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span class="dimmed">Full ToC</span></p></template>
   <div>
 <ul>
 <li>[<a href="/website/schedule/week10/topics.html#W10-1">W10.1</a>] <strong>Sequence Diagrams: Basics</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
@@ -195,7 +200,7 @@
 <p><span class="dimmed">[<a href="/website/schedule/week10/topics.html#W10-3a">W10.3a</a>] <span>Implementation → Refactoring →
 </span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
-<p><span class="dimmed">[<a href="/website/schedule/week10/topics.html#W10-3b">W10.3b</a>] <span>Tools → Intellij IDEA →
+<p><span class="dimmed">[<a href="/website/schedule/week10/topics.html#W10-3b">W10.3b</a>] <span>Tools → IntelliJ IDEA →
 </span></span> <span>Refactoring</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week10/topics.html#W10-3c">W10.3c</a>] <span>Implementation → Refactoring →
@@ -235,9 +240,9 @@
 <p><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> <strong>Project:</strong></p>
 <ol>
 <li>Add individual feature 1</li>
-<li>Implement increments <code v-pre>Level-9</code>, <code v-pre>A-CodingStandard</code>, <code v-pre>A-CodeQuality</code></li></ol></div></div></div></div></span>
-<br></div></div>
-
+<li>Implement increments <code class="hljs inline no-lang" v-pre>Level-9</code>, <code class="hljs inline no-lang" v-pre>A-CodingStandard</code>, <code class="hljs inline no-lang" v-pre>A-CodeQuality</code></li></ol></div></div></div></div></span>
+<br></div>
+<p><i class="fa fa-arrow-circle-up fa-lg" id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true"></i></p></div>
         <nav id="page-nav" class="navbar navbar-light bg-transparent">
 <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -251,18 +256,13 @@
     <footer>
   
   <div class="text-center">
-    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 30 Nov 2020, 22:07:39 GMT+8]</small></div></footer></div>
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.0</a>, generated on Fri, 11 Dec 2020, 23:42:27 GMT+8]</small></div></footer></div>
 </body>
-<script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
-<script src="../../markbind/js/polyfill.min.js"></script>
-<script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  MarkBind.setupWithSearch()
 </script>
-<script src="../../markbind/js/setup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script>
     function initAlgolia() {
@@ -276,5 +276,5 @@
     }
     MarkBind.afterSetup(initAlgolia);
   </script>
-<script src="../../markbind/layouts/default/scripts.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script><script>if (MarkBind.AfterSetup) MarkBind.AfterSetup()</script>
 </html>

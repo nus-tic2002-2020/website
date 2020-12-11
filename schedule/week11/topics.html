@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 2.15.2">
+    <meta name="generator" content="MarkBind 2.17.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TIC2002 - Week 11 - Topics</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
     <link rel="stylesheet" href="../../markbind/css/octicons.css">
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="../../markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
+    <script src="../../markbind/js/vue.min.js"></script>
+    <script src="../../markbind/js/markbind.min.js"></script>
+    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
     <link rel="stylesheet" href="/website/css/main.css">
     <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
 <body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
 <div id="app">
     <header fixed>
+<div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~tic2002">here</a> when the new semester starts.</strong></span></div>
 <navbar placement="top" type="dark" class="temp-navbar">
 <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
   <div class="nav-link temp-dropdown-placeholder">**Schedule**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
@@ -46,7 +49,7 @@
     <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
     <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
     
-    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/szXDJN4" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
+    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/szXDJN4" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code class="hljs inline no-lang" v-pre>repl.it</code> link</span></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
     
     
@@ -57,6 +60,8 @@
     <form class="navbar-form">
       <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
         
+
+
 <div id="content-wrapper">
 <div class="website-content">
 <nav>
@@ -67,9 +72,9 @@
 <li class="page-item"><a class="page-link" href="/website/schedule/week11/admin.html"><span><span><span aria-hidden="true" class="glyphicon glyphicon-check"></span></span></span> Tasks</a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week12"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
 <p></p>
-<h1 id="week-11-tue-oct-27th-topics">Week 11 <small><small><span class="dimmed">[Tue, Oct 27th]</span> - Topics</small></small><span id="week-11-tue-oct-27th-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-11-tue-oct-27th-topics" onclick="event.stopPropagation()"></a></h1>
+<h1 id="week-11-tue-oct-27th-topics"><span id="week-11-tue-oct-27th-topics" class="anchor"></span>Week 11 <small><small><span class="dimmed">[Tue, Oct 27th]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-11-tue-oct-27th-topics" onclick="event.stopPropagation()"></a></h1>
 <div></div>
-<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
+<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
 <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week11/topics.html#W11-1">W11.1</a>] <strong>Sequence Diagrams: Intermediate</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
@@ -140,14 +145,14 @@
 <div>
 <p>Earlier, you learned the basic syntax used in sequence diagrams. Now, let's learn some intermediate syntax.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w11-1-sequence-diagrams-intermediate">
-<span slot="header" class="card-title"><div><h2 id="w11-1-sequence-diagrams-intermediate"><span class="dimmed">[W11.1]</span> <strong>Sequence Diagrams: Intermediate</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w11-1-sequence-diagrams-intermediate" class="anchor"></span><a class="fa fa-anchor" href="#w11-1-sequence-diagrams-intermediate" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w11-1-sequence-diagrams-intermediate"><span id="w11-1-sequence-diagrams-intermediate" class="anchor"></span><span class="dimmed">[W11.1]</span> <strong>Sequence Diagrams: Intermediate</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w11-1-sequence-diagrams-intermediate" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W11-1a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate" id="design-modelling-modelling-behaviors-sequence-diagrams-intermediate">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.1a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-modelling-modelling-behaviors-sequence-diagrams-intermediate"><small><span class="font-weight-bold text-muted"><span>Design → Modelling → Modelling Behaviors</span></span></small> <strong><span>Sequence diagrams - intermediate</span></strong><span id="design-modelling-modelling-behaviors-sequence-diagrams-intermediate" class="anchor"></span><a class="fa fa-anchor" href="#design-modelling-modelling-behaviors-sequence-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-modelling-modelling-behaviors-sequence-diagrams-intermediate"><span id="design-modelling-modelling-behaviors-sequence-diagrams-intermediate" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Modelling → Modelling Behaviors</span></span></small> <strong><span>Sequence diagrams - intermediate</span></strong><a class="fa fa-anchor" href="#design-modelling-modelling-behaviors-sequence-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=f76680f0-7375-431b-a15a-ac3000bcf7a5&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -158,56 +163,76 @@
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can draw intermediate-level sequence diagrams</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p><panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectDeletion/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Object Deletion</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Deletion</p></template></panel>
-<panel type="seamless" src="/website/book/uml/sequenceDiagrams/selfInvocation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Self-Invocation</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Self-Invocation</p></template></panel>
-<panel type="seamless" src="/website/book/uml/sequenceDiagrams/alternativePaths/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Alternative Paths</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Alternative</p></template></panel>
-<panel type="seamless" src="/website/book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Optional Paths</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Optional</p></template></panel></p>
-<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Calls to Static Methods</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/StaticMethods</p></template>
+<p><panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectDeletion/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Object Deletion</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Deletion</p></template></panel>
+<panel type="seamless" src="/website/book/uml/sequenceDiagrams/selfInvocation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Self-Invocation</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Self-Invocation</p></template></panel>
+<panel type="seamless" src="/website/book/uml/sequenceDiagrams/alternativePaths/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Alternative Paths</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Alternative</p></template></panel>
+<panel type="seamless" src="/website/book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Optional Paths</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Optional</p></template></panel></p>
+<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Calls to Static Methods</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/StaticMethods</p></template>
 <div>
 <div>
-<p>Method calls to <code v-pre>static</code> i.e., class-level method are received by the class itself, not an instance of that class. You can use the <code v-pre>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
+<p>Method calls to <code class="hljs inline no-lang" v-pre>static</code> (i.e., class-level) methods are received by the class itself, not an instance of that class. You can use <code class="hljs inline no-lang" v-pre>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code v-pre>m</code> calls the static method <code v-pre>Person.getMaxAge()</code> and also the <code v-pre>setAge()</code> method of a <code v-pre>Person</code> object <code v-pre>p</code>.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code class="hljs inline no-lang" v-pre>m</code> calls the static method <code class="hljs inline no-lang" v-pre>Person.getMaxAge()</code> and also the <code class="hljs inline no-lang" v-pre>setAge()</code> method of a <code class="hljs inline no-lang" v-pre>Person</code> object <code class="hljs inline no-lang" v-pre>p</code>.</p>
 <p><pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic></p>
 <p></p>
-<p>Here is the <code v-pre>Person</code> class, for reference:<br>
+<p>Here is the <code class="hljs inline no-lang" v-pre>Person</code> class, for reference:<br>
 <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic></p></box><p></p></div>
 <div></div></div></panel></div>
 <div>
 <div>
-<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
 <div>
-<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What’s going on here?</p></template>
+<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What’s going on here?</p></template>
 <question>
 <p>What’s going on here?</p>
 <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
 <p></p>
 <ul class="contains-task-list">
-<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. <code v-pre>Logic</code> object is executing a parallel thread.</li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. <code v-pre>Logic</code> object is executing a loop.</li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. <code v-pre>Logic</code> object  is creating another <code v-pre>Logic</code> instance.</li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code v-pre>Logic</code> object’s methods is calling another of its methods.</li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> e. <code v-pre>Minefield</code> object is calling a method of <code v-pre>Logic</code>.</li></ul>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. <code class="hljs inline no-lang" v-pre>Logic</code> object is executing a parallel thread.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. <code class="hljs inline no-lang" v-pre>Logic</code> object is executing a loop.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. <code class="hljs inline no-lang" v-pre>Logic</code> object  is creating another <code class="hljs inline no-lang" v-pre>Logic</code> instance.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code class="hljs inline no-lang" v-pre>Logic</code> object’s methods is calling another of its methods.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> e. <code class="hljs inline no-lang" v-pre>Minefield</code> object is calling a method of <code class="hljs inline no-lang" v-pre>Logic</code>.</li></ul>
 <div slot="answer" class="algolia-no-index">
 <p>(d)</p></div></question></panel></div>
 <div>
-<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram (<code v-pre>ParserFactory</code>)</p></template>
+<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram (<code class="hljs inline no-lang" v-pre>ParserFactory</code>)</p></template>
 <question>
 <p>Explain the interactions depicted in this sequence diagram.</p>
 <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
 <p></p>
 <div slot="hint" class="algolia-no-index">
-<p>First, the <code v-pre>createParser()</code> method of an existing <code v-pre>ParserFactory</code> object is called. Then, ...</p></div></question></panel></div>
+<p>First, the <code class="hljs inline no-lang" v-pre>createParser()</code> method of an existing <code class="hljs inline no-lang" v-pre>ParserFactory</code> object is called. Then, ...</p></div></question></panel></div>
 <div>
-<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw Sequence Diagram for printing a quote</p></template>
+<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw Sequence Diagram for printing a quote</p></template>
 <question>
 <p>Draw a sequence diagram to represent this code snippet.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">if</span> (isFirstPage) {<br></span><span>    <span class="hljs-keyword">new</span> Quote().print();<br></span><span>}<br></span></code></pre><p>The <code v-pre>Quote</code> class:</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{<br></span><span><br></span><span>    String q;<br></span><span><br></span><span>    Quote(){<br></span><span>        q = generate();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{<br></span><span>        System.out.println(q);<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre><div slot="hint" class="algolia-no-index">
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">if</span> (isFirstPage) {
+</span><span>    <span class="hljs-keyword">new</span> Quote().print();
+</span><span>}
+</span></code></pre><p>The <code class="hljs inline no-lang" v-pre>Quote</code> class:</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span> </span>{
+</span><span>
+</span><span>    String q;
+</span><span>
+</span><span>    Quote() {
+</span><span>        q = generate();
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span> </span>{
+</span><span>        <span class="hljs-comment">// ...</span>
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
+</span><span>        System.out.println(q);
+</span><span>    }
+</span><span>
+</span><span>}
+</span></code></pre><div slot="hint" class="algolia-no-index">
 <ul>
-<li>Show <code v-pre>new Quote().print();</code> as two method calls.</li>
-<li>As the created Quote object is not assigned to a variable, it can be considered as 'deleted' soon after its <code v-pre>print()</code> method is called.</li></ul></div></question></panel></div></div></panel></div></div></div></div></panel>
+<li>Show <code class="hljs inline no-lang" v-pre>new Quote().print();</code> as two method calls.</li>
+<li>As the created Quote object is not assigned to a variable, it can be considered as 'deleted' soon after its <code class="hljs inline no-lang" v-pre>print()</code> method is called.</li></ul></div></question></panel></div></div></panel></div></div></div></div></panel>
 <p></p>
 <div class="indented">
 <div></div></div></div></panel>
@@ -221,11 +246,11 @@
 <div>
 <p>Here is a worked example of drawing sequence diagrams (intermediate notation) to match a code snippet.</p>
 <panel type="seamless" class="algolia-no-index">
-  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing sequence diagrams (intermediate) - <code v-pre>TaskList#generateTask()</code></span></div>
+  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing sequence diagrams (intermediate) - <code class="hljs inline no-lang" v-pre>TaskList#generateTask()</code></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=3e47c3c3-60db-4e2f-a15f-ac4100ce10c4&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
 <p></p>
 <panel type="seamless" class="algolia-no-index">
-  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing sequence diagrams (intermediate) - create <code v-pre>Quote</code></span></div>
+  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing sequence diagrams (intermediate) - create <code class="hljs inline no-lang" v-pre>Quote</code></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=c4856a68-4c30-4f9c-8efa-ac6800d581f2&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
 <p></p></div></div></div></div></div></div>
 <p></p>
@@ -238,14 +263,14 @@
 <div>
 <p><strong>Streams is an advanced Java feature</strong> not required for this module. If you are still interest to learn it, some resources are given below.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w11-2-java-streams-optional">
-<span slot="header" class="card-title"><div><h2 id="w11-2-java-streams-optional"><span class="dimmed">[W11.2]</span> <strong>Java: Streams</strong> <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small><span id="w11-2-java-streams-optional" class="anchor"></span><a class="fa fa-anchor" href="#w11-2-java-streams-optional" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w11-2-java-streams-optional"><span id="w11-2-java-streams-optional" class="anchor"></span><span class="dimmed">[W11.2]</span> <strong>Java: Streams</strong> <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small><a class="fa fa-anchor" href="#w11-2-java-streams-optional" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W11-2a"></span></p>
 <div></div>
 <panel type="seamless" popup-url="/website/book/cppToJava/misc/streams" id="c-to-java-miscellaneous-topics-streams-basic" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.2a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="c-to-java-miscellaneous-topics-streams-basic"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Streams: Basic</span></strong><span id="c-to-java-miscellaneous-topics-streams-basic" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-streams-basic" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-miscellaneous-topics-streams-basic"><span id="c-to-java-miscellaneous-topics-streams-basic" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Streams: Basic</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-streams-basic" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -256,7 +281,7 @@
 <p><a href="http://winterbe.com/posts/2014/03/16/java-8-tutorial/">Here</a> is an overview of new Java 8 features <span class="dimmed">(written by Benjamin Winterberg)</span>.</p></div>
 <div>
   <div>
-<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template> 
+<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template> 
 <p><strong>Tutorials</strong>:</p>
 <tabs> 
   <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
@@ -270,7 +295,7 @@
 
 <p>A video tutorial by well-known Java coach Venkat Subramaniam</p>
 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Ee5t_EGjv0A" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-<panel type="seamless" class="algolia-no-index"><template slot="_header"><p>A a more detailed version covering similar grounds</p></template>
+<panel type="seamless" class="algolia-no-index"><template slot="header"><p>A a more detailed version covering similar grounds</p></template>
 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1OpAgZvYXLQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></panel></tab></tabs></panel></div></div></div></div></panel>
 <p></p>
 <div class="indented">
@@ -287,14 +312,14 @@
 <div>
 <p><strong>JavaFX is not required for this module</strong>. If you are still interest to learn JavaFX, given below is a link to some tutorials.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w11-3-java-javafx-optional">
-<span slot="header" class="card-title"><div><h2 id="w11-3-java-javafx-optional"><span class="dimmed">[W11.3]</span> <strong>Java: JavaFX</strong> <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small><span id="w11-3-java-javafx-optional" class="anchor"></span><a class="fa fa-anchor" href="#w11-3-java-javafx-optional" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w11-3-java-javafx-optional"><span id="w11-3-java-javafx-optional" class="anchor"></span><span class="dimmed">[W11.3]</span> <strong>Java: JavaFX</strong> <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small><a class="fa fa-anchor" href="#w11-3-java-javafx-optional" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W11-3a"></span></p>
 <div></div>
 <panel type="seamless" popup-url="/website/book/cppToJava/misc/javaFX" id="c-to-java-miscellaneous-topics-javafx" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.3a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="c-to-java-miscellaneous-topics-javafx"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>JavaFX</span></strong><span id="c-to-java-miscellaneous-topics-javafx" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-javafx" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-miscellaneous-topics-javafx"><span id="c-to-java-miscellaneous-topics-javafx" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>JavaFX</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-javafx" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -319,14 +344,14 @@
 <div>
 <p>At some point, you want to package your code as a single executable file. The next topic covers how to do that.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w11-4-java-jar-files">
-<span slot="header" class="card-title"><div><h2 id="w11-4-java-jar-files"><span class="dimmed">[W11.4]</span> <strong>Java: JAR Files</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w11-4-java-jar-files" class="anchor"></span><a class="fa fa-anchor" href="#w11-4-java-jar-files" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w11-4-java-jar-files"><span id="w11-4-java-jar-files" class="anchor"></span><span class="dimmed">[W11.4]</span> <strong>Java: JAR Files</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w11-4-java-jar-files" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W11-4a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/jar" id="c-to-java-miscellaneous-topics-using-jar-files">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.4a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="c-to-java-miscellaneous-topics-using-jar-files"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Using JAR files</span></strong><span id="c-to-java-miscellaneous-topics-using-jar-files" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-using-jar-files" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-miscellaneous-topics-using-jar-files"><span id="c-to-java-miscellaneous-topics-using-jar-files" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Using JAR files</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-using-jar-files" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -334,7 +359,7 @@
 <p></p>
 <div>
 <p><strong>Java applications are typically delivered as JAR (short for <em>Java Archive</em>) files.</strong> A JAR contains Java classes and other resources (icons, media files, etc.).</p>
-<p>An executable JAR file can be launched using the <code v-pre>java -jar</code> command e.g., <code v-pre>java -jar foo.jar</code> launches the <code v-pre>foo.jar</code> file.</p>
+<p>An executable JAR file can be launched using the <code class="hljs inline no-lang" v-pre>java -jar</code> command e.g., <code class="hljs inline no-lang" v-pre>java -jar foo.jar</code> launches the <code class="hljs inline no-lang" v-pre>foo.jar</code> file.</p>
 <p>The IDE or build tools such as Gradle can help you to package your application as a JAR file.</p>
 <p>See the tutorial <a href="https://se-education.org/guides/tutorials/jar.html"><em>Working with JAR files</em> @se-edu/guides</a> to learn how to create and use JAR files.</p></div>
 <div></div></div></div></panel>
@@ -354,17 +379,17 @@
 <div>
 <p>You've already been doing some testing in your project work. It turns out there are many ways to categorize testing. Let's learn some of the more common categorizations of testing.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w11-5-testing-types">
-<span slot="header" class="card-title"><div><h2 id="w11-5-testing-types"><span class="dimmed">[W11.5]</span> <strong>Testing: Types</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w11-5-testing-types" class="anchor"></span><a class="fa fa-anchor" href="#w11-5-testing-types" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w11-5-testing-types"><span id="w11-5-testing-types" class="anchor"></span><span class="dimmed">[W11.5]</span> <strong>Testing: Types</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w11-5-testing-types" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <br>
 <div></div>
-<h3 id="integration-testing"><span class="dimmed"><strong>Integration Testing</strong></span><span id="integration-testing" class="anchor"></span><a class="fa fa-anchor" href="#integration-testing" onclick="event.stopPropagation()"></a></h3>
+<h3 id="integration-testing"><span id="integration-testing" class="anchor"></span><span class="dimmed"><strong>Integration Testing</strong></span><a class="fa fa-anchor" href="#integration-testing" onclick="event.stopPropagation()"></a></h3>
 <p><span id="W11-5a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/integrationTesting/what" id="quality-assurance-testing-integration-testing-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="quality-assurance-testing-integration-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Integration Testing →</span></span></small> <strong><span>What</span></strong><span id="quality-assurance-testing-integration-testing-what" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-testing-integration-testing-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-testing-integration-testing-what"><span id="quality-assurance-testing-integration-testing-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Integration Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-integration-testing-what" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=8b61d981-7a3e-486d-b621-ac4400ed5393&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -372,13 +397,13 @@
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Unit Testing → What →</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Unit Testing → What →</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain integration testing</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components interact with each other. These bugs are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing.</p>
+<p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components interact with each other. These bugs are often the result of misunderstanding what the parts are supposed to do vs what the parts are actually doing.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose a class <code v-pre>Car</code> users classes <code v-pre>Engine</code> and <code v-pre>Wheel</code>. If the <code v-pre>Car</code> class assumed a <code v-pre>Wheel</code> can support 200 mph speed but the actual <code v-pre>Wheel</code> can only support 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p></box></div>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose a class <code class="hljs inline no-lang" v-pre>Car</code> uses classes <code class="hljs inline no-lang" v-pre>Engine</code> and <code class="hljs inline no-lang" v-pre>Wheel</code>. If the <code class="hljs inline no-lang" v-pre>Car</code> class assumed a <code class="hljs inline no-lang" v-pre>Wheel</code> can support a speed of up to 200 mph but the actual <code class="hljs inline no-lang" v-pre>Wheel</code> can only support a speed of up to 150 mph, it is the integration test that is supposed to uncover this discrepancy.</p></box></div>
 <div></div></div></div></panel>
 <p></p>
 <div class="indented">
@@ -388,7 +413,7 @@
 <panel type="seamless" popup-url="/website/book/testing/testingTypes/integrationTesting/how" id="quality-assurance-testing-integration-testing-how" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5b</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="quality-assurance-testing-integration-testing-how"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Integration Testing →</span></span></small> <strong><span>How</span></strong><span id="quality-assurance-testing-integration-testing-how" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-testing-integration-testing-how" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-testing-integration-testing-how"><span id="quality-assurance-testing-integration-testing-how" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Integration Testing →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-integration-testing-how" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=8b23e595-60f9-4a84-8fc5-ac4400ed25d4&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -396,36 +421,36 @@
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/testing/testingTypes/integrationTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/integrationTesting/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Integration Testing → What →</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/testing/testingTypes/integrationTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/integrationTesting/what" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Integration Testing → What →</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use integration testing</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
 <p><strong>Integration testing is not simply a case of repeating the unit test cases using the actual dependencies</strong> (instead of the stubs used in unit testing). Instead, integration tests are additional test cases that focus on the interactions between the parts.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose a class <code v-pre>Car</code> uses classes <code v-pre>Engine</code> and <code v-pre>Wheel</code>. Here is how you would go about doing pure integration tests:</p>
-<p>a) First, unit test <code v-pre>Engine</code> and <code v-pre>Wheel</code>.<br>
-b) Next, unit test <code v-pre>Car</code> in isolation of <code v-pre>Engine</code> and <code v-pre>Wheel</code>, <mark>using stubs for <code v-pre>Engine</code> and <code v-pre>Wheel</code></mark>.<br>
-c) After that, do an integration test for <code v-pre>Car</code> using it together with the <code v-pre>Engine</code> and <code v-pre>Wheel</code> classes to ensure the <code v-pre>Car</code> integrates properly with the <code v-pre>Engine</code> and the <code v-pre>Wheel</code>.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose a class <code class="hljs inline no-lang" v-pre>Car</code> uses classes <code class="hljs inline no-lang" v-pre>Engine</code> and <code class="hljs inline no-lang" v-pre>Wheel</code>. Here is how you would go about doing pure integration tests:</p>
+<p>a) First, unit test <code class="hljs inline no-lang" v-pre>Engine</code> and <code class="hljs inline no-lang" v-pre>Wheel</code>.<br>
+b) Next, unit test <code class="hljs inline no-lang" v-pre>Car</code> in isolation of <code class="hljs inline no-lang" v-pre>Engine</code> and <code class="hljs inline no-lang" v-pre>Wheel</code>, <mark>using stubs for <code class="hljs inline no-lang" v-pre>Engine</code> and <code class="hljs inline no-lang" v-pre>Wheel</code></mark>.<br>
+c) After that, do an integration test for <code class="hljs inline no-lang" v-pre>Car</code> by using it together with the <code class="hljs inline no-lang" v-pre>Engine</code> and <code class="hljs inline no-lang" v-pre>Wheel</code> classes to ensure that <code class="hljs inline no-lang" v-pre>Car</code> integrates properly with the <code class="hljs inline no-lang" v-pre>Engine</code> and the <code class="hljs inline no-lang" v-pre>Wheel</code>.</p></box>
 <p><strong>In practice, developers often use a hybrid of unit+integration tests to minimize the need for stubs.</strong></p>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's how a hybrid unit+integration approach could be applied to the same example used above:</p>
-<p>(a) First, unit test <code v-pre>Engine</code> and <code v-pre>Wheel</code>.<br>
-<s>(b) Next, unit test <code v-pre>Car</code> in isolation of <code v-pre>Engine</code> and <code v-pre>Wheel</code>, using stubs for <code v-pre>Engine</code> and <code v-pre>Wheel</code>.</s><br>
-(c) After that, do an integration test for <code v-pre>Car</code> using it together with the <code v-pre>Engine</code> and <code v-pre>Wheel</code> classes to ensure the <code v-pre>Car</code> integrates properly with the <code v-pre>Engine</code> and the <code v-pre>Wheel</code>.  <mark>This step should include test cases that are meant to test the unit <code v-pre>Car</code></mark> (i.e. test cases used in the step (b) of the example above) as well as test cases that are meant to test the integration of <code v-pre>Car</code> with <code v-pre>Wheel</code> and <code v-pre>Engine</code> (i.e. pure integration test cases used of the step (c) in the example above).</p>
-<p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that you no longer need stubs for <code v-pre>Engine</code> and <code v-pre>Wheel</code>. The downside is that <code v-pre>Car</code> is never tested in isolation of its dependencies. Given that its dependencies are already unit tested, the risk of bugs in <code v-pre>Engine</code> and <code v-pre>Wheel</code> affecting the testing of <code v-pre>Car</code> can be considered minimal.</p></box></div>
+<p>(a) First, unit test <code class="hljs inline no-lang" v-pre>Engine</code> and <code class="hljs inline no-lang" v-pre>Wheel</code>.<br>
+<s>(b) Next, unit test <code class="hljs inline no-lang" v-pre>Car</code> in isolation of <code class="hljs inline no-lang" v-pre>Engine</code> and <code class="hljs inline no-lang" v-pre>Wheel</code>, using stubs for <code class="hljs inline no-lang" v-pre>Engine</code> and <code class="hljs inline no-lang" v-pre>Wheel</code>.</s><br>
+(c) After that, do an integration test for <code class="hljs inline no-lang" v-pre>Car</code> by using it together with the <code class="hljs inline no-lang" v-pre>Engine</code> and <code class="hljs inline no-lang" v-pre>Wheel</code> classes to ensure that <code class="hljs inline no-lang" v-pre>Car</code> integrates properly with the <code class="hljs inline no-lang" v-pre>Engine</code> and the <code class="hljs inline no-lang" v-pre>Wheel</code>.  <mark>This step should include test cases that are meant to unit test <code class="hljs inline no-lang" v-pre>Car</code></mark> (i.e. test cases used in the step (b) of the example above) as well as test cases that are meant to test the integration of <code class="hljs inline no-lang" v-pre>Car</code> with <code class="hljs inline no-lang" v-pre>Wheel</code> and <code class="hljs inline no-lang" v-pre>Engine</code> (i.e. pure integration test cases used of the step (c) in the example above).</p>
+<p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that you no longer need stubs for <code class="hljs inline no-lang" v-pre>Engine</code> and <code class="hljs inline no-lang" v-pre>Wheel</code>. The downside is that <code class="hljs inline no-lang" v-pre>Car</code> is never tested in isolation of its dependencies. Given that its dependencies are already unit tested, the risk of bugs in <code class="hljs inline no-lang" v-pre>Engine</code> and <code class="hljs inline no-lang" v-pre>Wheel</code> affecting the testing of <code class="hljs inline no-lang" v-pre>Car</code> can be considered minimal.</p></box></div>
 <div></div></div></div></panel>
 <p></p>
 <div class="indented">
 <div></div></div>
 <br>
 <div></div>
-<h3 id="system-testing"><span class="dimmed"><strong>System Testing</strong></span><span id="system-testing" class="anchor"></span><a class="fa fa-anchor" href="#system-testing" onclick="event.stopPropagation()"></a></h3>
+<h3 id="system-testing"><span id="system-testing" class="anchor"></span><span class="dimmed"><strong>System Testing</strong></span><a class="fa fa-anchor" href="#system-testing" onclick="event.stopPropagation()"></a></h3>
 <p><span id="W11-5c"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/systemTesting/what" id="quality-assurance-testing-system-testing-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="quality-assurance-testing-system-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → System Testing →</span></span></small> <strong><span>What</span></strong><span id="quality-assurance-testing-system-testing-what" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-testing-system-testing-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-testing-system-testing-what"><span id="quality-assurance-testing-system-testing-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → System Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-system-testing-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -436,11 +461,14 @@ c) After that, do an integration test for <code v-pre>Car</code> using it togeth
 <div>
 <p><strong><em>System testing</em>: take the <em>whole system</em> and test it <em>against the system specification</em>.</strong></p></div></box>
 <p>System testing is typically done by a testing team (also called a QA team).</p>
-<p><strong>System test cases are based on the specified external behavior of the system.</strong> Sometimes, system tests go beyond the bounds defined in the specification. This is useful when testing that the system fails 'gracefully' having pushed beyond its limits.</p>
+<p><strong>System test cases are based on the specified external behavior of the system.</strong> Sometimes, system tests go beyond the bounds defined in the specification. This is useful when testing that the system fails 'gracefully' when pushed beyond its limits.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose the SUT is a browser supposedly capable of handling web pages containing up to 5000 characters. Given below is a test case to test if the SUT fails gracefully if pushed beyond its limits.</p>
-<pre><code class="hljs" v-pre><span>Test case: load a web page that is too big<br></span><span>* Input: load a web page containing more than 5000 characters. <br></span><span>* Expected behavior: abort the loading of the page and show a meaningful error message. <br></span></code></pre><p>This test case would fail if the browser attempted to load the large file anyway and crashed.</p></box>
-<p><strong>System testing includes testing against non-functional requirements too.</strong> Here are some examples.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose the SUT is a browser that is supposedly capable of handling web pages containing up to 5000 characters. Given below is a test case to test if the SUT fails gracefully if pushed beyond its limits.</p>
+<pre><code class="hljs" v-pre><span>Test case: load a web page that is too big
+</span><span>* Input: load a web page containing more than 5000 characters. 
+</span><span>* Expected behavior: abort the loading of the page and show a meaningful error message. 
+</span></code></pre><p>This test case would fail if the browser attempted to load the large file anyway and crashed.</p></box>
+<p><strong>System testing includes testing against non-functional requirements too.</strong> Here are some examples:</p>
 <ul>
 <li><em>Performance testing</em> –  to ensure the system responds quickly.</li>
 <li><em>Load testing</em> (also called <em>stress testing</em> or <em>scalability testing</em>) – to ensure the system can work under heavy load.</li>
@@ -454,13 +482,13 @@ c) After that, do an integration test for <code v-pre>Car</code> using it togeth
 <div></div></div>
 <br>
 <div></div>
-<h3 id="acceptance-testing"><span class="dimmed"><strong>Acceptance Testing</strong></span><span id="acceptance-testing" class="anchor"></span><a class="fa fa-anchor" href="#acceptance-testing" onclick="event.stopPropagation()"></a></h3>
+<h3 id="acceptance-testing"><span id="acceptance-testing" class="anchor"></span><span class="dimmed"><strong>Acceptance Testing</strong></span><a class="fa fa-anchor" href="#acceptance-testing" onclick="event.stopPropagation()"></a></h3>
 <p><span id="W11-5d"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/acceptanceTesting/what" id="quality-assurance-testing-acceptance-testing-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="quality-assurance-testing-acceptance-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Acceptance Testing →</span></span></small> <strong><span>What</span></strong><span id="quality-assurance-testing-acceptance-testing-what" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-testing-acceptance-testing-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-testing-acceptance-testing-what"><span id="quality-assurance-testing-acceptance-testing-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Acceptance Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-acceptance-testing-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -480,7 +508,7 @@ c) After that, do an integration test for <code v-pre>Car</code> using it togeth
 <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting" id="quality-assurance-testing-acceptance-testing-acceptance-versus-system-testing">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5e</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="quality-assurance-testing-acceptance-testing-acceptance-versus-system-testing"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Acceptance Testing →</span></span></small> <strong><span>Acceptance versus system testing</span></strong><span id="quality-assurance-testing-acceptance-testing-acceptance-versus-system-testing" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-testing-acceptance-testing-acceptance-versus-system-testing" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-testing-acceptance-testing-acceptance-versus-system-testing"><span id="quality-assurance-testing-acceptance-testing-acceptance-versus-system-testing" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Acceptance Testing →</span></span></small> <strong><span>Acceptance versus system testing</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-acceptance-testing-acceptance-versus-system-testing" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=31357df3-4a39-4922-adc1-ac4400ed257e&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -523,7 +551,7 @@ c) After that, do an integration test for <code v-pre>Car</code> using it togeth
 <td style="text-align:left">can also include details on how it will fail gracefully when pushed beyond limits, how to recover, etc. specification</td></tr>
 <tr>
 <td style="text-align:left">written in terms of problems that need to be solved (e.g. provide a method to locate an email quickly)</td>
-<td style="text-align:left">written in terms of how the system solve those problems (e.g. explain the email search feature)</td></tr>
+<td style="text-align:left">written in terms of how the system solves those problems (e.g. explain the email search feature)</td></tr>
 <tr>
 <td style="text-align:left">specifies the interface available for intended end-users</td>
 <td style="text-align:left">could contain additional APIs not available for end-users (for the use of developers/testers)</td></tr></tbody></table></div><p>However, <strong>in many cases one document serves as both a requirement specification and a system specification.</strong></p></box>
@@ -533,9 +561,9 @@ c) After that, do an integration test for <code v-pre>Car</code> using it togeth
 <li>The system might conform to the system specification but could fail to solve the problem it was supposed to solve for the user, due to flaws in the system design.</li></ul></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about system testing and acceptance testing.</p></template>
+<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about system testing and acceptance testing</p></template>
 <question>
 <p>Choose the correct statements about system testing and acceptance testing.</p>
 <ul class="contains-task-list">
@@ -555,13 +583,13 @@ c) After that, do an integration test for <code v-pre>Car</code> using it togeth
 <div></div></div>
 <br>
 <div></div>
-<h3 id="alpha-beta-testing"><span class="dimmed"><strong>Alpha/Beta Testing</strong></span><span id="alpha-beta-testing" class="anchor"></span><a class="fa fa-anchor" href="#alpha-beta-testing" onclick="event.stopPropagation()"></a></h3>
+<h3 id="alpha-beta-testing"><span id="alpha-beta-testing" class="anchor"></span><span class="dimmed"><strong>Alpha/Beta Testing</strong></span><a class="fa fa-anchor" href="#alpha-beta-testing" onclick="event.stopPropagation()"></a></h3>
 <p><span id="W11-5f"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/alphaBetaTesting/what" id="quality-assurance-testing-alpha-beta-testing-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="quality-assurance-testing-alpha-beta-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Alpha/Beta Testing →</span></span></small> <strong><span>What</span></strong><span id="quality-assurance-testing-alpha-beta-testing-what" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-testing-alpha-beta-testing-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-testing-alpha-beta-testing-what"><span id="quality-assurance-testing-alpha-beta-testing-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Alpha/Beta Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-alpha-beta-testing-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -578,8 +606,8 @@ c) After that, do an integration test for <code v-pre>Car</code> using it togeth
 <p></p>
 <div class="indented">
 <div></div></div>
-<p></p></div></div>
-
+<p></p></div>
+<p><i class="fa fa-arrow-circle-up fa-lg" id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true"></i></p></div>
         <nav id="page-nav" class="navbar navbar-light bg-transparent">
 <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -606,18 +634,13 @@ c) After that, do an integration test for <code v-pre>Car</code> using it togeth
     <footer>
   
   <div class="text-center">
-    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 30 Nov 2020, 22:07:39 GMT+8]</small></div></footer></div>
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.0</a>, generated on Fri, 11 Dec 2020, 23:42:27 GMT+8]</small></div></footer></div>
 </body>
-<script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
-<script src="../../markbind/js/polyfill.min.js"></script>
-<script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  MarkBind.setupWithSearch()
 </script>
-<script src="../../markbind/js/setup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script>
     function initAlgolia() {
@@ -631,5 +654,5 @@ c) After that, do an integration test for <code v-pre>Car</code> using it togeth
     }
     MarkBind.afterSetup(initAlgolia);
   </script>
-<script src="../../markbind/layouts/default/scripts.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script><script>if (MarkBind.AfterSetup) MarkBind.AfterSetup()</script>
 </html>

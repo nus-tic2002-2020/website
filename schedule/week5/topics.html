@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 2.15.2">
+    <meta name="generator" content="MarkBind 2.17.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TIC2002 - Week 5 - Topics</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
     <link rel="stylesheet" href="../../markbind/css/octicons.css">
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="../../markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
+    <script src="../../markbind/js/vue.min.js"></script>
+    <script src="../../markbind/js/markbind.min.js"></script>
+    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
     <link rel="stylesheet" href="/website/css/main.css">
     <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
 <body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
 <div id="app">
     <header fixed>
+<div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~tic2002">here</a> when the new semester starts.</strong></span></div>
 <navbar placement="top" type="dark" class="temp-navbar">
 <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
   <div class="nav-link temp-dropdown-placeholder">**Schedule**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
@@ -46,7 +49,7 @@
     <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
     <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
     
-    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/szXDJN4" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
+    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/szXDJN4" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code class="hljs inline no-lang" v-pre>repl.it</code> link</span></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
     
     
@@ -57,6 +60,8 @@
     <form class="navbar-form">
       <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
         
+
+
 <div id="content-wrapper">
 <div class="website-content">
 <nav>
@@ -67,9 +72,9 @@
 <li class="page-item"><a class="page-link" href="/website/schedule/week5/admin.html"><span><span><span aria-hidden="true" class="glyphicon glyphicon-check"></span></span></span> Tasks</a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week6"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
 <p></p>
-<h1 id="week-5-tue-sep-8th-topics">Week 5 <small><small><span class="dimmed">[Tue, Sep 8th]</span> - Topics</small></small><span id="week-5-tue-sep-8th-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-5-tue-sep-8th-topics" onclick="event.stopPropagation()"></a></h1>
+<h1 id="week-5-tue-sep-8th-topics"><span id="week-5-tue-sep-8th-topics" class="anchor"></span>Week 5 <small><small><span class="dimmed">[Tue, Sep 8th]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-5-tue-sep-8th-topics" onclick="event.stopPropagation()"></a></h1>
 <div></div>
-<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
+<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
 <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week5/topics.html#W5-1">W5.1</a>] <strong>Java: Casting</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
@@ -133,7 +138,7 @@
 <p><span class="dimmed">[<a href="/website/schedule/week5/topics.html#W5-5a">W5.5a</a>] <span>Implementation → Refactoring →
 </span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
-<p><span class="dimmed">[<a href="/website/schedule/week5/topics.html#W5-5b">W5.5b</a>] <span>Tools → Intellij IDEA →
+<p><span class="dimmed">[<a href="/website/schedule/week5/topics.html#W5-5b">W5.5b</a>] <span>Tools → IntelliJ IDEA →
 </span></span> <span>Refactoring</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week5/topics.html#W5-5c">W5.5c</a>] <span>Implementation → Refactoring →
@@ -152,14 +157,14 @@
 <div>
 <p>As you have learned the Java basic topics already, it is time to move to intermediate level topics. This week, we cover several such topics, starting with the one given below.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w5-1-java-casting">
-<span slot="header" class="card-title"><div><h2 id="w5-1-java-casting"><span class="dimmed">[W5.1]</span> <strong>Java: Casting</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w5-1-java-casting" class="anchor"></span><a class="fa fa-anchor" href="#w5-1-java-casting" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w5-1-java-casting"><span id="w5-1-java-casting" class="anchor"></span><span class="dimmed">[W5.1]</span> <strong>Java: Casting</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w5-1-java-casting" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W5-1a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/casting" id="c-to-java-miscellaneous-topics-casting">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.1a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="c-to-java-miscellaneous-topics-casting"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Casting</span></strong><span id="c-to-java-miscellaneous-topics-casting" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-casting" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-miscellaneous-topics-casting"><span id="c-to-java-miscellaneous-topics-casting" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Casting</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-casting" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=4ca677c1-0be5-422f-91e4-ac2f00d46391&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -170,35 +175,91 @@
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use Java casting</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p><strong><mark><em>Casting</em></mark> is the action of converting from one type to another</strong>. You can use the <code v-pre>(newType)</code> syntax to cast a value to a type named <code v-pre>newType</code>.</p>
+<p><strong><mark><em>Casting</em></mark> is the action of converting from one type to another</strong>. You can use the <code class="hljs inline no-lang" v-pre>(newType)</code> syntax to cast a value to a type named <code class="hljs inline no-lang" v-pre>newType</code>.</p>
 <p><strong>When you cast a primitive value to another type, there may be a loss of precision.</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below casts a <code v-pre>double</code> value to an <code v-pre>int</code> value and casts it back to a <code v-pre>double</code>. Note the loss of precision.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">double</span> d = <span class="hljs-number">5.3</span>;<br></span><span>System.out.println(<span class="hljs-string">"Before casting to an int: "</span> + d);<br></span><span><span class="hljs-keyword">int</span> i = (<span class="hljs-keyword">int</span>)d; <span class="hljs-comment">// cast d to an int</span><br></span><span>System.out.println(<span class="hljs-string">"After casting to an int: "</span> + i);<br></span><span>d = (<span class="hljs-keyword">double</span>)i; <span class="hljs-comment">// cast i back to a double</span><br></span><span>System.out.println(<span class="hljs-string">"After casting back a double: "</span> + d);<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-<pre><code class="hljs" v-pre><span>Before casting to an int: 5.3<br></span><span>After casting to an int: 5<br></span><span>After casting back a double: 5.0<br></span></code></pre></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below casts a <code class="hljs inline no-lang" v-pre>double</code> value to an <code class="hljs inline no-lang" v-pre>int</code> value and casts it back to a <code class="hljs inline no-lang" v-pre>double</code>. Note the loss of precision.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">double</span> d = <span class="hljs-number">5.3</span>;
+</span><span>System.out.println(<span class="hljs-string">"Before casting to an int: "</span> + d);
+</span><span><span class="hljs-keyword">int</span> i = (<span class="hljs-keyword">int</span>)d; <span class="hljs-comment">// cast d to an int</span>
+</span><span>System.out.println(<span class="hljs-string">"After casting to an int: "</span> + i);
+</span><span>d = (<span class="hljs-keyword">double</span>)i; <span class="hljs-comment">// cast i back to a double</span>
+</span><span>System.out.println(<span class="hljs-string">"After casting back a double: "</span> + d);
+</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs" v-pre><span>Before casting to an int: 5.3
+</span><span>After casting to an int: 5
+</span><span>After casting back a double: 5.0
+</span></code></pre></box>
 <p><strong><mark><em>Downcasting</em></mark> is when you cast an object reference from a superclass to a subclass.</strong></p>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Assume the following class hierarchy:</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span></span>{<br></span><span>        System.out.println(<span class="hljs-string">"I'm an animal"</span>);<br></span><span>    }<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span></span>{<br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{<br></span><span>        System.out.println(<span class="hljs-string">"I'm a Cat"</span>);<br></span><span>    }<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DomesticCat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Cat</span></span>{<br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{<br></span><span>        System.out.println(<span class="hljs-string">"I'm a DomesticCat"</span>);<br></span><span>    }<br></span><span>}<br></span></code></pre><p>The <code v-pre>foo</code> method below downcasts an <code v-pre>Animal</code> object to its subclasses.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Animal a)</span></span>{<br></span><span>    a.speak();<br></span><span>    Cat c = (Cat)a; <span class="hljs-comment">// downcast a to a Cat</span><br></span><span>    c.speak();<br></span><span>    DomesticCat dc = (DomesticCat)a; <span class="hljs-comment">// downcast a to a DomesticCat</span><br></span><span>    dc.speak();<br></span><span>}<br></span></code></pre></box>
+<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span></span>{
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span></span>{
+</span><span>        System.out.println(<span class="hljs-string">"I'm an animal"</span>);
+</span><span>    }
+</span><span>}
+</span><span>
+</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span></span>{
+</span><span>    <span class="hljs-meta">@Override</span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
+</span><span>        System.out.println(<span class="hljs-string">"I'm a Cat"</span>);
+</span><span>    }
+</span><span>}
+</span><span>
+</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DomesticCat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Cat</span></span>{
+</span><span>    <span class="hljs-meta">@Override</span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
+</span><span>        System.out.println(<span class="hljs-string">"I'm a DomesticCat"</span>);
+</span><span>    }
+</span><span>}
+</span></code></pre><p>The <code class="hljs inline no-lang" v-pre>foo</code> method below downcasts an <code class="hljs inline no-lang" v-pre>Animal</code> object to its subclasses.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Animal a)</span></span>{
+</span><span>    a.speak();
+</span><span>    Cat c = (Cat)a; <span class="hljs-comment">// downcast a to a Cat</span>
+</span><span>    c.speak();
+</span><span>    DomesticCat dc = (DomesticCat)a; <span class="hljs-comment">// downcast a to a DomesticCat</span>
+</span><span>    dc.speak();
+</span><span>}
+</span></code></pre></box>
 <p><strong><mark><em>Upcasting</em></mark> is when you cast an object reference from a subclass to a superclass.</strong> However, upcasting is done automatically by the compiler even if you do not specify it explicitly.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example upcasts a <code v-pre>Cat</code> object to its superclass <code v-pre>Animal</code>:</p>
-<pre><code class="hljs java" v-pre><span>Cat c = <span class="hljs-keyword">new</span> Cat();<br></span><span>Animal a1 = (Animal)c; <span class="hljs-comment">//upcasting c to the Animal class</span><br></span><span>Animal a2 = c; <span class="hljs-comment">//upcasting is implicit</span><br></span><span><br></span></code></pre></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example upcasts a <code class="hljs inline no-lang" v-pre>Cat</code> object to its superclass <code class="hljs inline no-lang" v-pre>Animal</code>:</p>
+<pre><code class="hljs java" v-pre><span>Cat c = <span class="hljs-keyword">new</span> Cat();
+</span><span>Animal a1 = (Animal)c; <span class="hljs-comment">//upcasting c to the Animal class</span>
+</span><span>Animal a2 = c; <span class="hljs-comment">//upcasting is implicit</span>
+</span><span>
+</span></code></pre></box>
 <p>Note that due to polymorphism, the behavior of the object will reflect the actual type of the object irrespective of the type of the variable holding a reference to it.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The call to the <code v-pre>speak()</code> method in the code below always executes the <code v-pre>speak()</code> method of the <code v-pre>DomesticCat</code> class because the actual type of the object remains <code v-pre>DomesticCat</code> although the reference to it is being downcast/upcast to various other types.</p>
-<pre><code class="hljs java" v-pre><span>Animal a = <span class="hljs-keyword">new</span> DomesticCat(); <span class="hljs-comment">//implicit upcast</span><br></span><span>a.speak();<br></span><span>Cat c = (Cat)a; <span class="hljs-comment">//downcast</span><br></span><span>c.speak();<br></span><span>DomesticCat dc = (DomesticCat)a; <span class="hljs-comment">//downcast</span><br></span><span>dc.speak();<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-<pre><code class="hljs" v-pre><span>I'm a DomesticCat<br></span><span>I'm a DomesticCat<br></span><span>I'm a DomesticCat<br></span></code></pre></box>
-<p><strong>Casting to an incompatible type can result in a <code v-pre>ClassCastException</code> at runtime.</strong></p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The call to the <code class="hljs inline no-lang" v-pre>speak()</code> method in the code below always executes the <code class="hljs inline no-lang" v-pre>speak()</code> method of the <code class="hljs inline no-lang" v-pre>DomesticCat</code> class because the actual type of the object remains <code class="hljs inline no-lang" v-pre>DomesticCat</code> although the reference to it is being downcast/upcast to various other types.</p>
+<pre><code class="hljs java" v-pre><span>Animal a = <span class="hljs-keyword">new</span> DomesticCat(); <span class="hljs-comment">//implicit upcast</span>
+</span><span>a.speak();
+</span><span>Cat c = (Cat)a; <span class="hljs-comment">//downcast</span>
+</span><span>c.speak();
+</span><span>DomesticCat dc = (DomesticCat)a; <span class="hljs-comment">//downcast</span>
+</span><span>dc.speak();
+</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs" v-pre><span>I'm a DomesticCat
+</span><span>I'm a DomesticCat
+</span><span>I'm a DomesticCat
+</span></code></pre></box>
+<p><strong>Casting to an incompatible type can result in a <code class="hljs inline no-lang" v-pre>ClassCastException</code> at runtime.</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code will cause a <code v-pre>ClassCastException</code>:</p>
-<pre><code class="hljs java" v-pre><span>Object o = <span class="hljs-keyword">new</span> Animal();<br></span><span>Integer x = (Integer)o;<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-<pre><code class="hljs" v-pre><span>Exception in thread &quot;main&quot; java.lang.ClassCastException: misc.casting.Animal cannot be<br></span><span>cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.java:14)<br></span></code></pre></box>
-<p>You can use the <code v-pre>instanceof</code> operator to check if a cast is safe to perform.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code will cause a <code class="hljs inline no-lang" v-pre>ClassCastException</code>:</p>
+<pre><code class="hljs java" v-pre><span>Object o = <span class="hljs-keyword">new</span> Animal();
+</span><span>Integer x = (Integer)o;
+</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs" v-pre><span>Exception in thread &quot;main&quot; java.lang.ClassCastException: misc.casting.Animal cannot be
+</span><span>cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.java:14)
+</span></code></pre></box>
+<p>You can use the <code class="hljs inline no-lang" v-pre>instanceof</code> operator to check if a cast is safe to perform.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code checks if the object <code v-pre>a</code> is an instance of the <code v-pre>Cat</code> class before casting it to a <code v-pre>Cat</code>.</p>
-<pre><code class="hljs java" v-pre><span>Cat c;<br></span><span><span class="hljs-keyword">if</span> (a <span class="hljs-keyword">instanceof</span> Cat){<br></span><span>    c = (Cat)a;<br></span><span>}<br></span></code></pre></box></div>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code checks if the object <code class="hljs inline no-lang" v-pre>a</code> is an instance of the <code class="hljs inline no-lang" v-pre>Cat</code> class before casting it to a <code class="hljs inline no-lang" v-pre>Cat</code>.</p>
+<pre><code class="hljs java" v-pre><span>Cat c;
+</span><span><span class="hljs-keyword">if</span> (a <span class="hljs-keyword">instanceof</span> Cat){
+</span><span>    c = (Cat)a;
+</span><span>}
+</span></code></pre></box></div>
 <div></div></div></div></panel>
 <p></p>
 <div class="indented">
@@ -215,14 +276,14 @@
 <div>
 <p>It is time to move on to some intermediate level OOP concepts. Next, let's learn about <em>abstract classes</em> and how they are implemented in Java.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w5-2-oop-java-abstract-classes">
-<span slot="header" class="card-title"><div><h2 id="w5-2-oop-java-abstract-classes"><span class="dimmed">[W5.2]</span> <strong>OOP + Java: Abstract Classes</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w5-2-oop-java-abstract-classes" class="anchor"></span><a class="fa fa-anchor" href="#w5-2-oop-java-abstract-classes" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w5-2-oop-java-abstract-classes"><span id="w5-2-oop-java-abstract-classes" class="anchor"></span><span class="dimmed">[W5.2]</span> <strong>OOP + Java: Abstract Classes</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w5-2-oop-java-abstract-classes" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W5-2a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/oop/inheritance/abstractClasses" id="paradigms-oop-inheritance-abstract-classes-and-methods">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.2a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="paradigms-oop-inheritance-abstract-classes-and-methods"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Inheritance →</span></span></small> <strong><span>Abstract classes and methods</span></strong><span id="paradigms-oop-inheritance-abstract-classes-and-methods" class="anchor"></span><a class="fa fa-anchor" href="#paradigms-oop-inheritance-abstract-classes-and-methods" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="paradigms-oop-inheritance-abstract-classes-and-methods"><span id="paradigms-oop-inheritance-abstract-classes-and-methods" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Inheritance →</span></span></small> <strong><span>Abstract classes and methods</span></strong><a class="fa fa-anchor" href="#paradigms-oop-inheritance-abstract-classes-and-methods" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -234,12 +295,12 @@
 <p><strong>Abstract class</strong>: A class declared as an <em>abstract class</em> cannot be instantiated, but it can be subclassed.</p></div></box>
 <p><strong>You can declare a class as <em>abstract</em> when a class is merely a representation of commonalities among its subclasses</strong> in which case it does not make sense to instantiate objects of that class.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>Animal</code> class that exist as a generalization of its subclasses <code v-pre>Cat</code>, <code v-pre>Dog</code>, <code v-pre>Horse</code>, <code v-pre>Tiger</code> etc. can be declared as abstract because it does not make sense to instantiate an <code v-pre>Animal</code> object.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code class="hljs inline no-lang" v-pre>Animal</code> class that exists as a generalization of its subclasses <code class="hljs inline no-lang" v-pre>Cat</code>, <code class="hljs inline no-lang" v-pre>Dog</code>, <code class="hljs inline no-lang" v-pre>Horse</code>, <code class="hljs inline no-lang" v-pre>Tiger</code> etc. can be declared as abstract because it does not make sense to instantiate an <code class="hljs inline no-lang" v-pre>Animal</code> object.</p></box>
 <box type="definition" seamless>
 <div>
 <p><strong>Abstract method</strong>: An <em>abstract method</em> is a method signature without a method implementation.</p></div></box>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>move</code> method of the <code v-pre>Animal</code> class is likely to be an abstract method as it is not possible to implement a <code v-pre>move</code> method at the <code v-pre>Animal</code> class level to fit all subclasses <span class="dimmed">because each animal type can move in a different way</span>.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code class="hljs inline no-lang" v-pre>move</code> method of the <code class="hljs inline no-lang" v-pre>Animal</code> class is likely to be an abstract method as it is not possible to implement a <code class="hljs inline no-lang" v-pre>move</code> method at the <code class="hljs inline no-lang" v-pre>Animal</code> class level to fit all subclasses <span class="dimmed">because each animal type can move in a different way</span>.</p></box>
 <p><strong>A class that has an abstract method becomes an abstract class</strong> because the class definition is incomplete (due to the missing method body) and it is not possible to create objects using an incomplete class definition.</p></div>
 <div></div></div></div></panel>
 <p></p>
@@ -250,7 +311,7 @@
 <panel type="seamless" expanded popup-url="/website/book/cppToJava/inheritance/abstractClassesAndMethods" id="c-to-java-inheritance-abstract-classes-and-methods">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.2b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="c-to-java-inheritance-abstract-classes-and-methods"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Inheritance →</span></span></small> <strong><span>Abstract classes and methods</span></strong><span id="c-to-java-inheritance-abstract-classes-and-methods" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-inheritance-abstract-classes-and-methods" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-inheritance-abstract-classes-and-methods"><span id="c-to-java-inheritance-abstract-classes-and-methods" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Inheritance →</span></span></small> <strong><span>Abstract classes and methods</span></strong><a class="fa fa-anchor" href="#c-to-java-inheritance-abstract-classes-and-methods" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=f241482f-4174-4432-a081-ac2f00d46375&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -261,45 +322,147 @@
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use abstract classes and methods</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p>In Java, <strong>an <em>abstract method</em> is declared with the keyword <code v-pre>abstract</code> and given without an implementation</strong>. If a class includes abstract methods, then the class itself must be declared abstract.</p>
+<p>In Java, <strong>an <em>abstract method</em> is declared with the keyword <code class="hljs inline no-lang" v-pre>abstract</code> and given without an implementation</strong>. If a class includes abstract methods, then the class itself must be declared abstract.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>speak</code> method in this <code v-pre>Animal</code> class is <code v-pre>abstract</code>. Note how the method signature ends with a semicolon and there is no method body. This makes sense as the implementation of the <code v-pre>speak</code> method depends on the type of the animal and it is meaningless to provide a common implementation for all animal types.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">protected</span> String name;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Animal</span><span class="hljs-params">(String name)</span></span>{<br></span><span>        <span class="hljs-keyword">this</span>.name = name;<br></span><span>    }<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre><p>As one method of the class is <code v-pre>abstract</code>, the class itself is <code v-pre>abstract</code>.</p></box>
-<p><strong>An <em>abstract class</em> is declared with the keyword <code v-pre>abstract</code>. Abstract classes can be used as reference type but cannot be instantiated.</strong></p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code class="hljs inline no-lang" v-pre>speak</code> method in this <code class="hljs inline no-lang" v-pre>Animal</code> class is <code class="hljs inline no-lang" v-pre>abstract</code>. Note how the method signature ends with a semicolon and there is no method body. This makes sense as the implementation of the <code class="hljs inline no-lang" v-pre>speak</code> method depends on the type of the animal and it is meaningless to provide a common implementation for all animal types.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-keyword">protected</span> String name;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Animal</span><span class="hljs-params">(String name)</span></span>{
+</span><span>        <span class="hljs-keyword">this</span>.name = name;
+</span><span>    }
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span></span>;
+</span><span>}
+</span></code></pre><p>As one method of the class is <code class="hljs inline no-lang" v-pre>abstract</code>, the class itself is <code class="hljs inline no-lang" v-pre>abstract</code>.</p></box>
+<p><strong>An <em>abstract class</em> is declared with the keyword <code class="hljs inline no-lang" v-pre>abstract</code>. Abstract classes can be used as reference type but cannot be instantiated.</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This <code v-pre>Account</code> class has been declared as abstract although it does not have any abstract methods. Attempting to instantiate <code v-pre>Account</code> objects will result in a compile error.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">int</span> number;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">close</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre><p><code v-pre>Account a;</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span> OK to use as a type <br>
-<code v-pre>a = new Account();</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span> Compile error!</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This <code class="hljs inline no-lang" v-pre>Account</code> class has been declared as abstract although it does not have any abstract methods. Attempting to instantiate <code class="hljs inline no-lang" v-pre>Account</code> objects will result in a compile error.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-keyword">int</span> number;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">close</span><span class="hljs-params">()</span></span>{
+</span><span>        <span class="hljs-comment">//...</span>
+</span><span>    }
+</span><span>}
+</span></code></pre><p><code class="hljs inline no-lang" v-pre>Account a;</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span> OK to use as a type <br>
+<code class="hljs inline no-lang" v-pre>a = new Account();</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span> Compile error!</p></box>
 <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> In Java, even <strong>a class that does not have any abstract methods <em>can</em> be declared as an abstract class.</strong></p>
 <p><strong>When an abstract class is subclassed, the subclass should provide implementations for all of the abstract methods in its superclass or else the subclass must also be declared abstract.</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>Feline</code> class below inherits from the abstract class <code v-pre>Animal</code> but it does not provide an implementation for the abstract method <code v-pre>speak</code>. As a result, the <code v-pre>Feline</code> class needs to be abstract too.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Feline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Feline</span><span class="hljs-params">(String name)</span> </span>{<br></span><span>        <span class="hljs-keyword">super</span>(name);<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre><p>The <code v-pre>DomesticCat</code> class inherits the abstract <code v-pre>Feline</code> class and provides the implementation for the abstract method <code v-pre>speak</code>. As a result, it need not be (but <em>can</em> be) declared as abstract.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DomesticCat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Feline</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">DomesticCat</span><span class="hljs-params">(String name)</span> </span>{<br></span><span>        <span class="hljs-keyword">super</span>(name);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Meow"</span>;<br></span><span>    }<br></span><span>}<br></span></code></pre><ul>
-<li><code class="hljs inline java" v-pre>Animal a = <span class="hljs-keyword">new</span> Feline(<span class="hljs-string">"Mittens"</span>);</code><br><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span> Compile error! <code v-pre>Feline</code> is abstract.</li>
-<li><code class="hljs inline java" v-pre>Animal a = <span class="hljs-keyword">new</span> DomesticCat(<span class="hljs-string">"Mittens"</span>);</code><br><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span> OK. <code v-pre>DomesticCat</code> can be instantiated and assigned to a variable of <code v-pre>Animal</code> type <span class="dimmed">(the assignment is allowed by polymorphism)</span>.</li></ul></box></div>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code class="hljs inline no-lang" v-pre>Feline</code> class below inherits from the abstract class <code class="hljs inline no-lang" v-pre>Animal</code> but it does not provide an implementation for the abstract method <code class="hljs inline no-lang" v-pre>speak</code>. As a result, the <code class="hljs inline no-lang" v-pre>Feline</code> class needs to be abstract too.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Feline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Feline</span><span class="hljs-params">(String name)</span> </span>{
+</span><span>        <span class="hljs-keyword">super</span>(name);
+</span><span>    }
+</span><span>
+</span><span>}
+</span></code></pre><p>The <code class="hljs inline no-lang" v-pre>DomesticCat</code> class inherits the abstract <code class="hljs inline no-lang" v-pre>Feline</code> class and provides the implementation for the abstract method <code class="hljs inline no-lang" v-pre>speak</code>. As a result, it need not be (but <em>can</em> be) declared as abstract.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DomesticCat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Feline</span> </span>{
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">DomesticCat</span><span class="hljs-params">(String name)</span> </span>{
+</span><span>        <span class="hljs-keyword">super</span>(name);
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-meta">@Override</span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
+</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Meow"</span>;
+</span><span>    }
+</span><span>}
+</span></code></pre><ul>
+<li><code class="hljs inline java" v-pre>Animal a = <span class="hljs-keyword">new</span> Feline(<span class="hljs-string">"Mittens"</span>);</code><br><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span> Compile error! <code class="hljs inline no-lang" v-pre>Feline</code> is abstract.</li>
+<li><code class="hljs inline java" v-pre>Animal a = <span class="hljs-keyword">new</span> DomesticCat(<span class="hljs-string">"Mittens"</span>);</code><br><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span> OK. <code class="hljs inline no-lang" v-pre>DomesticCat</code> can be instantiated and assigned to a variable of <code class="hljs inline no-lang" v-pre>Animal</code> type <span class="dimmed">(the assignment is allowed by polymorphism)</span>.</li></ul></box></div>
 <div>
   <div>
-<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
 <div>
 <ul>
 <li><a href="https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html">Oracle’s Java Tutorials: Abstract Methods and Classes</a></li></ul></div></panel></div>
   <div>
-<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
 <div>
-<panel type="dark" expanded id="key-exercise-print-area-with-abstract-shape"><template slot="_header"><h3 id="key-exercise-print-area-with-abstract-shape"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] print area with abstract <code v-pre>Shape</code></small></small><span id="key-exercise-print-area-with-abstract-shape" class="anchor"></span><a class="fa fa-anchor" href="#key-exercise-print-area-with-abstract-shape" onclick="event.stopPropagation()"></a></h3></template>
+<panel type="dark" expanded id="key-exercise-print-area-with-abstract-shape"><template slot="header"><h3 id="key-exercise-print-area-with-abstract-shape"><span id="key-exercise-print-area-with-abstract-shape" class="anchor"></span><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] print area with abstract <code class="hljs inline no-lang" v-pre>Shape</code></small></small><a class="fa fa-anchor" href="#key-exercise-print-area-with-abstract-shape" onclick="event.stopPropagation()"></a></h3></template>
 <question>
-<p>The <code v-pre>Main</code> class below keeps a list of <code v-pre>Circle</code> and <code v-pre>Rectangle</code> objects and prints the area (as an <code v-pre>int</code> value) of each shape when requested.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addShape</span><span class="hljs-params">(Shape s)</span></span>{<br></span><span>        shapes[shapeCount] = s;<br></span><span>        shapeCount++;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printAreas</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; shapeCount; i++){<br></span><span>            shapes[i].print();<br></span><span>        }<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        addShape(<span class="hljs-keyword">new</span> Circle(<span class="hljs-number">5</span>));<br></span><span>        addShape(<span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>));<br></span><span>        addShape(<span class="hljs-keyword">new</span> Circle(<span class="hljs-number">10</span>));<br></span><span>        addShape(<span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>));<br></span><span>        printAreas();<br></span><span>    }<br></span><span>}<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-<pre><code class="hljs" v-pre><span>Circle of area 78<br></span><span>Rectangle of area 12<br></span><span>Circle of area 314<br></span><span>Rectangle of area 16<br></span></code></pre><p><code v-pre>Circle</code> class and <code v-pre>Rectangle</code> class is given below:</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> radius;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> radius)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.radius = radius;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> (<span class="hljs-keyword">int</span>)(Math.PI * radius * radius);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{<br></span><span>        System.out.println(<span class="hljs-string">"Circle of area "</span> + area());<br></span><span>    }<br></span><span>}<br></span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> height;<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> width;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Rectangle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span></span>{<br></span><span>        <span class="hljs-keyword">this</span>.height = height;<br></span><span>        <span class="hljs-keyword">this</span>.width = width;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> height * width;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{<br></span><span>        System.out.println(<span class="hljs-string">"Rectangle of area "</span> + area());<br></span><span>    }<br></span><span>}<br></span></code></pre><p>Add the missing <code v-pre>Shape</code> class <mark>as an abstract class with two abstract methods</mark>.</p>
-<panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;<br></span><span>    <span class="hljs-comment">// ...</span><br></span><span>}<br></span></code></pre></panel></question></panel></div>
+<p>The <code class="hljs inline no-lang" v-pre>Main</code> class below keeps a list of <code class="hljs inline no-lang" v-pre>Circle</code> and <code class="hljs inline no-lang" v-pre>Rectangle</code> objects and prints the area (as an <code class="hljs inline no-lang" v-pre>int</code> value) of each shape when requested.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];
+</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addShape</span><span class="hljs-params">(Shape s)</span></span>{
+</span><span>        shapes[shapeCount] = s;
+</span><span>        shapeCount++;
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printAreas</span><span class="hljs-params">()</span></span>{
+</span><span>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; shapeCount; i++){
+</span><span>            shapes[i].print();
+</span><span>        }
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+</span><span>        addShape(<span class="hljs-keyword">new</span> Circle(<span class="hljs-number">5</span>));
+</span><span>        addShape(<span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>));
+</span><span>        addShape(<span class="hljs-keyword">new</span> Circle(<span class="hljs-number">10</span>));
+</span><span>        addShape(<span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>));
+</span><span>        printAreas();
+</span><span>    }
+</span><span>}
+</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs" v-pre><span>Circle of area 78
+</span><span>Rectangle of area 12
+</span><span>Circle of area 314
+</span><span>Rectangle of area 16
+</span></code></pre><p><code class="hljs inline no-lang" v-pre>Circle</code> class and <code class="hljs inline no-lang" v-pre>Rectangle</code> class is given below:</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> radius;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> radius)</span> </span>{
+</span><span>        <span class="hljs-keyword">this</span>.radius = radius;
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-meta">@Override</span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
+</span><span>        <span class="hljs-keyword">return</span> (<span class="hljs-keyword">int</span>)(Math.PI * radius * radius);
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-meta">@Override</span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
+</span><span>        System.out.println(<span class="hljs-string">"Circle of area "</span> + area());
+</span><span>    }
+</span><span>}
+</span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
+</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> height;
+</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> width;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Rectangle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span></span>{
+</span><span>        <span class="hljs-keyword">this</span>.height = height;
+</span><span>        <span class="hljs-keyword">this</span>.width = width;
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-meta">@Override</span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
+</span><span>        <span class="hljs-keyword">return</span> height * width;
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-meta">@Override</span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
+</span><span>        System.out.println(<span class="hljs-string">"Rectangle of area "</span> + area());
+</span><span>    }
+</span><span>}
+</span></code></pre><p>Add the missing <code class="hljs inline no-lang" v-pre>Shape</code> class <mark>as an abstract class with two abstract methods</mark>.</p>
+<panel type="seamless" class="algolia-no-index"><template slot="header"><p>Partial solution</p></template>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
+</span><span>    <span class="hljs-comment">// ...</span>
+</span><span>}
+</span></code></pre></panel></question></panel></div>
 <div>
-<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about abstract classes</p></template>
+<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about abstract classes</p></template>
 <question>
-<p>Choose the correct statements about Java abstract classes and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">classes that are not abstract</span>concrete classes</span>.</p>
+<p>Choose the correct statements about Java abstract classes and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">classes that are not abstract</span>concrete classes</span>.</p>
 <ul class="contains-task-list">
 <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. A concrete class can contain an abstract method.</li>
 <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. An abstract class can contain concrete methods.</li>
@@ -323,28 +486,28 @@
 <div>
 <p>From abstract classes, we move to another related OOP concept <em>interfaces</em>, and how they are implemented in Java.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w5-3-oop-java-interfaces">
-<span slot="header" class="card-title"><div><h2 id="w5-3-oop-java-interfaces"><span class="dimmed">[W5.3]</span> <strong>OOP + Java: Interfaces</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w5-3-oop-java-interfaces" class="anchor"></span><a class="fa fa-anchor" href="#w5-3-oop-java-interfaces" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w5-3-oop-java-interfaces"><span id="w5-3-oop-java-interfaces" class="anchor"></span><span class="dimmed">[W5.3]</span> <strong>OOP + Java: Interfaces</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w5-3-oop-java-interfaces" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W5-3a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/oop/inheritance/interfaces" id="paradigms-oop-inheritance-interfaces">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.3a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="paradigms-oop-inheritance-interfaces"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Inheritance →</span></span></small> <strong><span>Interfaces</span></strong><span id="paradigms-oop-inheritance-interfaces" class="anchor"></span><a class="fa fa-anchor" href="#paradigms-oop-inheritance-interfaces" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="paradigms-oop-inheritance-interfaces"><span id="paradigms-oop-inheritance-interfaces" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Inheritance →</span></span></small> <strong><span>Interfaces</span></strong><a class="fa fa-anchor" href="#paradigms-oop-inheritance-interfaces" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain interfaces</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p><strong>An <em>interface</em> is a behavior specification</strong> i.e. a collection of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Just the method signature without any implementation</span>method specifications</span>. If a class <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">implements all methods specified in an interface</span>implements the interface</span>, it means the class is able to support the behaviors specified by the said interface.</p>
+<p><strong>An <em>interface</em> is a behavior specification</strong> i.e. a collection of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">Just the method signature without any implementation</span>method specifications</span>. If a class <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">implements all methods specified in an interface</span>implements the interface</span>, it means the class is able to support the behaviors specified by the said interface.</p>
 <blockquote>
 <p>There are a number of situations in software engineering when it is important for disparate groups of programmers to agree to a &quot;contract&quot; that spells out how their software interacts. Each group should be able to write their code without any knowledge of how the other group's code is written. Generally speaking, interfaces are such contracts. <sub>--<a href="https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html">Oracle Docs on Java</a><sub></sub></sub></p></blockquote>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose <code v-pre>SalariedStaff</code> is an interface that contains two methods <code v-pre>setSalary(int)</code> and <code v-pre>getSalary()</code>. <code v-pre>AcademicStaff</code> can declare itself as <em>implementing</em> the <code v-pre>SalariedStaff</code> interface, which means the <code v-pre>AcademicStaff</code> class must implement all the methods specified by the <code v-pre>SalariedStaff</code> interface i.e., <code v-pre>setSalary(int)</code> and <code v-pre>getSalary()</code>.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose <code class="hljs inline no-lang" v-pre>SalariedStaff</code> is an interface that contains two methods <code class="hljs inline no-lang" v-pre>setSalary(int)</code> and <code class="hljs inline no-lang" v-pre>getSalary()</code>. <code class="hljs inline no-lang" v-pre>AcademicStaff</code> can declare itself as <em>implementing</em> the <code class="hljs inline no-lang" v-pre>SalariedStaff</code> interface, which means the <code class="hljs inline no-lang" v-pre>AcademicStaff</code> class must implement all the methods specified by the <code class="hljs inline no-lang" v-pre>SalariedStaff</code> interface i.e., <code class="hljs inline no-lang" v-pre>setSalary(int)</code> and <code class="hljs inline no-lang" v-pre>getSalary()</code>.</p></box>
 <p><strong>A class implementing an interface results in an <em>is-a</em> relationship</strong>, just like in class inheritance.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example above, <code v-pre>AcademicStaff</code> <em>is a</em> <code v-pre>SalariedStaff</code>.  An <code v-pre>AcademicStaff</code> object can be used anywhere a <code v-pre>SalariedStaff</code> object is expected e.g. <code v-pre>SalariedStaff ss = new AcademicStaff()</code>.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example above, <code class="hljs inline no-lang" v-pre>AcademicStaff</code> <em>is a</em> <code class="hljs inline no-lang" v-pre>SalariedStaff</code>.  An <code class="hljs inline no-lang" v-pre>AcademicStaff</code> object can be used anywhere a <code class="hljs inline no-lang" v-pre>SalariedStaff</code> object is expected e.g. <code class="hljs inline no-lang" v-pre>SalariedStaff ss = new AcademicStaff()</code>.</p></box>
 <p></p></div>
 <div></div></div></div></panel>
 <p></p>
@@ -355,7 +518,7 @@
 <panel type="seamless" expanded popup-url="/website/book/cppToJava/inheritance/interfaces" id="c-to-java-inheritance-interfaces">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.3b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="c-to-java-inheritance-interfaces"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Inheritance →</span></span></small> <strong><span>Interfaces</span></strong><span id="c-to-java-inheritance-interfaces" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-inheritance-interfaces" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-inheritance-interfaces"><span id="c-to-java-inheritance-interfaces" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Inheritance →</span></span></small> <strong><span>Interfaces</span></strong><a class="fa fa-anchor" href="#c-to-java-inheritance-interfaces" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=34b67b03-160b-47c3-a6e8-ac2f00d4633a&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -367,20 +530,38 @@
 <p></p>
 <div>
 <p>The text given in this section borrows some explanations and code examples from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small>.</p>
-<p>In Java, <strong>an <em>interface</em> is a reference type, similar to a class, mainly containing method signatures.</strong> Defining an interface is similar to creating a new class except it uses the keyword <code v-pre>interface</code> in place of <code v-pre>class</code>.</p>
+<p>In Java, <strong>an <em>interface</em> is a reference type, similar to a class, mainly containing method signatures.</strong> Defining an interface is similar to creating a new class except it uses the keyword <code class="hljs inline no-lang" v-pre>interface</code> in place of <code class="hljs inline no-lang" v-pre>class</code>.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an interface named <code v-pre>DrivableVehicle</code> that defines methods needed to drive a vehicle.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">DrivableVehicle</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">turn</span><span class="hljs-params">(Direction direction)</span></span>;<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">changeLanes</span><span class="hljs-params">(Direction direction)</span></span>;<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">signalTurn</span><span class="hljs-params">(Direction direction, <span class="hljs-keyword">boolean</span> signalOn)</span></span>;<br></span><span>    <span class="hljs-comment">// more method signatures</span><br></span><span>}<br></span></code></pre><p>Note that the method signatures have no braces (<code v-pre>{ }</code>) and are terminated with a semicolon.
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an interface named <code class="hljs inline no-lang" v-pre>DrivableVehicle</code> that defines methods needed to drive a vehicle.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">DrivableVehicle</span> </span>{
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">turn</span><span class="hljs-params">(Direction direction)</span></span>;
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">changeLanes</span><span class="hljs-params">(Direction direction)</span></span>;
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">signalTurn</span><span class="hljs-params">(Direction direction, <span class="hljs-keyword">boolean</span> signalOn)</span></span>;
+</span><span>    <span class="hljs-comment">// more method signatures</span>
+</span><span>}
+</span></code></pre><p>Note that the method signatures have no braces (<code class="hljs inline no-lang" v-pre>{ }</code>) and are terminated with a semicolon.
 </p></box><p></p>
-<p><strong>Interfaces cannot be instantiated—they can only be <em>implemented</em> by classes</strong>. When an instantiable class implements an interface, indicated by the keyword <code v-pre>implements</code>, it provides a method body for each of the methods declared in the interface.</p>
+<p><strong>Interfaces cannot be instantiated—they can only be <em>implemented</em> by classes</strong>. When an instantiable class implements an interface, indicated by the keyword <code class="hljs inline no-lang" v-pre>implements</code>, it provides a method body for each of the methods declared in the interface.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is how a class <code v-pre>CarModelX</code> can implement the <code v-pre>DrivableVehicle</code> interface.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CarModelX</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">DrivableVehicle</span> </span>{<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">turn</span><span class="hljs-params">(Direction direction)</span> </span>{<br></span><span>       <span class="hljs-comment">// implementation</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-comment">// implementation of other methods</span><br></span><span>}<br></span></code></pre></box>
-<p><strong>An interface can be used as a type</strong> e.g., <code class="hljs inline java" v-pre>DrivableVechile dv = <span class="hljs-keyword">new</span> CarModelX();</code>.</p>
-<p><strong>Interfaces can inherit from other interfaces</strong> using the <code v-pre>extends</code> keyword, similar to a class inheriting another.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is how a class <code class="hljs inline no-lang" v-pre>CarModelX</code> can implement the <code class="hljs inline no-lang" v-pre>DrivableVehicle</code> interface.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CarModelX</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">DrivableVehicle</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-meta">@Override</span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">turn</span><span class="hljs-params">(Direction direction)</span> </span>{
+</span><span>       <span class="hljs-comment">// implementation</span>
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-comment">// implementation of other methods</span>
+</span><span>}
+</span></code></pre></box>
+<p><strong>An interface can be used as a type</strong> e.g., <code class="hljs inline java" v-pre>DrivableVechicle dv = <span class="hljs-keyword">new</span> CarModelX();</code>.</p>
+<p><strong>Interfaces can inherit from other interfaces</strong> using the <code class="hljs inline no-lang" v-pre>extends</code> keyword, similar to a class inheriting another.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an interface named <code v-pre>SelfDrivableVehicle</code> that inherits the <code v-pre>DrivableVehicle</code> interface.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">SelfDrivableVehicle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">DrivableVehicle</span> </span>{<br></span><span>   <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">goToAutoPilotMode</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre><p>Note that the method signatures have no braces and are terminated with a semicolon.
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an interface named <code class="hljs inline no-lang" v-pre>SelfDrivableVehicle</code> that inherits the <code class="hljs inline no-lang" v-pre>DrivableVehicle</code> interface.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">SelfDrivableVehicle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">DrivableVehicle</span> </span>{
+</span><span>   <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">goToAutoPilotMode</span><span class="hljs-params">()</span></span>;
+</span><span>}
+</span></code></pre><p>Note that the method signatures have no braces and are terminated with a semicolon.
 </p></box><p></p>
 <p>Furthermore, <strong>Java allows multiple inheritance among interfaces.</strong> A Java interface can inherit multiple other interfaces. <strong>A Java class can <em>implement</em> multiple interfaces</strong> (and inherit from one class).</p>
 <box>
@@ -388,42 +569,130 @@
 <img src="/website/book/oop/inheritance/interfaces/images/studentStaff.png" height="250">
 <p></p>
 <ol>
-<li><code v-pre>Staff</code> interface inherits (note the solid lines) the interfaces <code v-pre>TaxPayer</code> and <code v-pre>Citizen</code>.</li>
-<li><code v-pre>TA</code> class implements both <code v-pre>Student</code> interface and the <code v-pre>Staff</code> interface.</li>
-<li>Because of point 1 above, <code v-pre>TA</code> class has to implement all methods in the interfaces <code v-pre>TaxPayer</code> and <code v-pre>Citizen</code>.</li>
-<li>Because of points 1,2,3, a <code v-pre>TA</code> <em>is a</em> <code v-pre>Staff</code>, <em>is a</em> <code v-pre>TaxPayer</code> and <em>is a</em> <code v-pre>Citizen</code>.</li></ol></box>
-<p><strong>Interfaces can also contain <span trigger="click" for="modal:javaInterfaces-constants" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:javaInterfaces-constants'].show()" class="trigger-click">constants</span> and static methods</strong>.</p>
+<li><code class="hljs inline no-lang" v-pre>Staff</code> interface inherits (note the solid lines) the interfaces <code class="hljs inline no-lang" v-pre>TaxPayer</code> and <code class="hljs inline no-lang" v-pre>Citizen</code>.</li>
+<li><code class="hljs inline no-lang" v-pre>TA</code> class implements both <code class="hljs inline no-lang" v-pre>Student</code> interface and the <code class="hljs inline no-lang" v-pre>Staff</code> interface.</li>
+<li>Because of point 1 above, <code class="hljs inline no-lang" v-pre>TA</code> class has to implement all methods in the interfaces <code class="hljs inline no-lang" v-pre>TaxPayer</code> and <code class="hljs inline no-lang" v-pre>Citizen</code>.</li>
+<li>Because of points 1,2,3, a <code class="hljs inline no-lang" v-pre>TA</code> <em>is a</em> <code class="hljs inline no-lang" v-pre>Staff</code>, <em>is a</em> <code class="hljs inline no-lang" v-pre>TaxPayer</code> and <em>is a</em> <code class="hljs inline no-lang" v-pre>Citizen</code>.</li></ol></box>
+<p><strong>Interfaces can also contain <trigger trigger="click" for="modal:javaInterfaces-constants">constants</trigger> and static methods</strong>.</p>
 <b-modal id="modal:javaInterfaces-constants" hide-footer size="lg" modal-class="mb-zoom" ref="modal:javaInterfaces-constants" class="algolia-no-index"><template slot="modal-title"><span class="dimmed">Textbook »</span></template>
   <div>
 <div></div><p></p>
 <p><span class="dimmed"><strong><span>C++ to Java → Miscellaneous Topics →
 </span></strong></span></p>
 <div id="title-and-body">
-<div><h4 id="constants"><span>Constants</span><span id="constants" class="anchor"></span><a class="fa fa-anchor" href="#constants" onclick="event.stopPropagation()"></a></h4></div>
+<div><h4 id="constants"><span id="constants" class="anchor"></span><span>Constants</span><a class="fa fa-anchor" href="#constants" onclick="event.stopPropagation()"></a></h4></div>
 <div id="main">
 <div>
-<p>Java does not directly support constants. The convention is to use a <code v-pre>static</code> <code v-pre>final</code> variable where a constant is needed. The <code v-pre>static</code> modifier causes the variable to be available without instantiating an object. The <code v-pre>final</code> modifier causes the variable to be unchangeable. Java constants are normally declared in ALL CAPS separated by underscores.</p>
+<p>Java does not directly support constants. The convention is to use a <code class="hljs inline no-lang" v-pre>static</code> <code class="hljs inline no-lang" v-pre>final</code> variable where a constant is needed. The <code class="hljs inline no-lang" v-pre>static</code> modifier causes the variable to be available without instantiating an object. The <code class="hljs inline no-lang" v-pre>final</code> modifier causes the variable to be unchangeable. Java constants are normally declared in ALL CAPS separated by underscores.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example of a constant named <code v-pre>MAX_BALANCE</code> which can be accessed as <code v-pre>Account.MAX_BALANCE</code>.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span></span>{<br></span><span><br></span><span>  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> MAX_BALANCE = <span class="hljs-number">1000000.0</span>;<br></span><span><br></span><span>}<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Math.html#PI"><code v-pre>Math.PI</code></a> is an example constant that comes with Java.</p></box></div>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example of a constant named <code class="hljs inline no-lang" v-pre>MAX_BALANCE</code> which can be accessed as <code class="hljs inline no-lang" v-pre>Account.MAX_BALANCE</code>.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span></span>{
+</span><span>
+</span><span>  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> MAX_BALANCE = <span class="hljs-number">1000000.0</span>;
+</span><span>
+</span><span>}
+</span></code></pre><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Math.html#PI"><code class="hljs inline no-lang" v-pre>Math.PI</code></a> is an example constant that comes with Java.</p></box></div>
 <div></div></div></div></div></b-modal>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example adds a constant <code v-pre>MAX_SPEED</code> and a static method <code v-pre>isSpeedAllowed</code> to the interface <code v-pre>DrivableVehicle</code>.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">DrivableVehicle</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">int</span> MAX_SPEED = <span class="hljs-number">150</span>;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isSpeedAllowed</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{<br></span><span>        <span class="hljs-keyword">return</span> speed &lt;= MAX_SPEED;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">turn</span><span class="hljs-params">(Direction direction)</span></span>;<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">changeLanes</span><span class="hljs-params">(Direction direction)</span></span>;<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">signalTurn</span><span class="hljs-params">(Direction direction, <span class="hljs-keyword">boolean</span> signalOn)</span></span>;<br></span><span>    <span class="hljs-comment">// more method signatures</span><br></span><span>}<br></span></code></pre></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example adds a constant <code class="hljs inline no-lang" v-pre>MAX_SPEED</code> and a static method <code class="hljs inline no-lang" v-pre>isSpeedAllowed</code> to the interface <code class="hljs inline no-lang" v-pre>DrivableVehicle</code>.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">DrivableVehicle</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-keyword">int</span> MAX_SPEED = <span class="hljs-number">150</span>;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isSpeedAllowed</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
+</span><span>        <span class="hljs-keyword">return</span> speed &lt;= MAX_SPEED;
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">turn</span><span class="hljs-params">(Direction direction)</span></span>;
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">changeLanes</span><span class="hljs-params">(Direction direction)</span></span>;
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">signalTurn</span><span class="hljs-params">(Direction direction, <span class="hljs-keyword">boolean</span> signalOn)</span></span>;
+</span><span>    <span class="hljs-comment">// more method signatures</span>
+</span><span>}
+</span></code></pre></box>
 <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Interfaces can contain <a href="https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html"><em>default</em> method implementations</a> and <em>nested types</em>. They are not covered here.</p></div>
 <div>
   <div>
-<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
 <div>
-<panel type="dark" expanded id="key-exercise-print-printable-items"><template slot="_header"><h3 id="key-exercise-print-printable-items"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] print <code v-pre>Printable</code> items</small></small><span id="key-exercise-print-printable-items" class="anchor"></span><a class="fa fa-anchor" href="#key-exercise-print-printable-items" onclick="event.stopPropagation()"></a></h3></template>
+<panel type="dark" expanded id="key-exercise-print-printable-items"><template slot="header"><h3 id="key-exercise-print-printable-items"><span id="key-exercise-print-printable-items" class="anchor"></span><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] print <code class="hljs inline no-lang" v-pre>Printable</code> items</small></small><a class="fa fa-anchor" href="#key-exercise-print-printable-items" onclick="event.stopPropagation()"></a></h3></template>
 <question>
-<p>The <code v-pre>Main</code> class below passes a list of <code v-pre>Printable</code> objects (i.e., objects that implement the <code v-pre>Printable</code> interface) for another method to be printed.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printObjects</span><span class="hljs-params">(Printable[] items)</span> </span>{<br></span><span>        <span class="hljs-keyword">for</span> (Printable p : items) {<br></span><span>            p.print();<br></span><span>        }<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        Printable[] printableItems = <span class="hljs-keyword">new</span> Printable[]{<br></span><span>                <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">5</span>),<br></span><span>                <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>),<br></span><span>                <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"James Cook"</span>)};<br></span><span><br></span><span>        printObjects(printableItems);<br></span><span>    }<br></span><span>}<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-<pre><code class="hljs" v-pre><span>Circle of area 78<br></span><span>Rectangle of area 12<br></span><span>Person of name James Cook<br></span></code></pre><p>Classes <code v-pre>Shape</code>, <code v-pre>Circle</code>, and <code v-pre>Rectangle</code> are given below:</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> radius;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> radius)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.radius = radius;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> (<span class="hljs-keyword">int</span>)(Math.PI * radius * radius);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{<br></span><span>        System.out.println(<span class="hljs-string">"Circle of area "</span> + area());<br></span><span>    }<br></span><span>}<br></span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> height;<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> width;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Rectangle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span></span>{<br></span><span>        <span class="hljs-keyword">this</span>.height = height;<br></span><span>        <span class="hljs-keyword">this</span>.width = width;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> height * width;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{<br></span><span>        System.out.println(<span class="hljs-string">"Rectangle of area "</span> + area());<br></span><span>    }<br></span><span>}<br></span></code></pre><p>Add the missing <code v-pre>Printable</code> interface. Add the missing methods of the <code v-pre>Person</code> class given below.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">private</span> String name;<br></span><span><br></span><span>    <span class="hljs-comment">// todo: add missing methods</span><br></span><span>}<br></span></code></pre><panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Printable</span> </span>{<br></span><span>    <span class="hljs-comment">//...</span><br></span><span>}<br></span></code></pre></panel></question></panel></div></div></panel></div></div></div></div></panel>
+<p>The <code class="hljs inline no-lang" v-pre>Main</code> class below passes a list of <code class="hljs inline no-lang" v-pre>Printable</code> objects (i.e., objects that implement the <code class="hljs inline no-lang" v-pre>Printable</code> interface) for another method to be printed.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printObjects</span><span class="hljs-params">(Printable[] items)</span> </span>{
+</span><span>        <span class="hljs-keyword">for</span> (Printable p : items) {
+</span><span>            p.print();
+</span><span>        }
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+</span><span>        Printable[] printableItems = <span class="hljs-keyword">new</span> Printable[]{
+</span><span>                <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">5</span>),
+</span><span>                <span class="hljs-keyword">new</span> Rectangle(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>),
+</span><span>                <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"James Cook"</span>)};
+</span><span>
+</span><span>        printObjects(printableItems);
+</span><span>    }
+</span><span>}
+</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs" v-pre><span>Circle of area 78
+</span><span>Rectangle of area 12
+</span><span>Person of name James Cook
+</span></code></pre><p>Classes <code class="hljs inline no-lang" v-pre>Shape</code>, <code class="hljs inline no-lang" v-pre>Circle</code>, and <code class="hljs inline no-lang" v-pre>Rectangle</code> are given below:</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
+</span><span>}
+</span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> radius;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> radius)</span> </span>{
+</span><span>        <span class="hljs-keyword">this</span>.radius = radius;
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-meta">@Override</span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
+</span><span>        <span class="hljs-keyword">return</span> (<span class="hljs-keyword">int</span>)(Math.PI * radius * radius);
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-meta">@Override</span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
+</span><span>        System.out.println(<span class="hljs-string">"Circle of area "</span> + area());
+</span><span>    }
+</span><span>}
+</span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{
+</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> height;
+</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> width;
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Rectangle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span></span>{
+</span><span>        <span class="hljs-keyword">this</span>.height = height;
+</span><span>        <span class="hljs-keyword">this</span>.width = width;
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-meta">@Override</span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span> </span>{
+</span><span>        <span class="hljs-keyword">return</span> height * width;
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-meta">@Override</span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
+</span><span>        System.out.println(<span class="hljs-string">"Rectangle of area "</span> + area());
+</span><span>    }
+</span><span>}
+</span></code></pre><p>Add the missing <code class="hljs inline no-lang" v-pre>Printable</code> interface. Add the missing methods of the <code class="hljs inline no-lang" v-pre>Person</code> class given below.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Printable</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-keyword">private</span> String name;
+</span><span>
+</span><span>    <span class="hljs-comment">// todo: add missing methods</span>
+</span><span>}
+</span></code></pre><panel type="seamless" class="algolia-no-index"><template slot="header"><p>Partial solution</p></template>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Printable</span> </span>{
+</span><span>    <span class="hljs-comment">//...</span>
+</span><span>}
+</span></code></pre></panel></question></panel></div></div></panel></div></div></div></div></panel>
 <p></p>
 <div class="indented">
 <div></div></div></div></panel>
@@ -440,14 +709,14 @@
 <div>
 <p>So far, your iP may have assumed a 'perfect world' e.g., user input is always in the expected format. To make the product ready for the not-so-perfect real world, the code should be able to handle error conditions. Let's learn how to do that.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w5-4-error-handling-exceptions">
-<span slot="header" class="card-title"><div><h2 id="w5-4-error-handling-exceptions"><span class="dimmed">[W5.4]</span> <strong>Error Handling: Exceptions</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w5-4-error-handling-exceptions" class="anchor"></span><a class="fa fa-anchor" href="#w5-4-error-handling-exceptions" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w5-4-error-handling-exceptions"><span id="w5-4-error-handling-exceptions" class="anchor"></span><span class="dimmed">[W5.4]</span> <strong>Error Handling: Exceptions</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w5-4-error-handling-exceptions" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W5-4a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/errorHandling/introduction/what" id="implementation-error-handling-introduction-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="implementation-error-handling-introduction-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Error Handling → Introduction →</span></span></small> <strong><span>What</span></strong><span id="implementation-error-handling-introduction-what" class="anchor"></span><a class="fa fa-anchor" href="#implementation-error-handling-introduction-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="implementation-error-handling-introduction-what"><span id="implementation-error-handling-introduction-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Implementation → Error Handling → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-error-handling-introduction-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -455,7 +724,7 @@
 <p></p>
 <div>
 <blockquote>
-<p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own. In extreme cases, the application may log the user off or shut down the system. --<sub><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">Microsoft</a></sub></p></blockquote></div>
+<p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own. In extreme cases, the application may log the user off or shut down the system. -- <sub><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">Microsoft</a></sub></p></blockquote></div>
 <div></div></div></div></panel>
 <p></p>
 <div class="indented">
@@ -465,14 +734,14 @@
 <panel type="seamless" expanded popup-url="/website/book/errorHandling/exceptions/what" id="implementation-error-handling-exceptions-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4b</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="implementation-error-handling-exceptions-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Error Handling → Exceptions →</span></span></small> <strong><span>What</span></strong><span id="implementation-error-handling-exceptions-what" class="anchor"></span><a class="fa fa-anchor" href="#implementation-error-handling-exceptions-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="implementation-error-handling-exceptions-what"><span id="implementation-error-handling-exceptions-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Implementation → Error Handling → Exceptions →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-error-handling-exceptions-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain exceptions</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at run time.</p>
+<p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at runtime.</p>
 <box type="definition" seamless>
 <div>
 <p><strong>Exception</strong>:</p>
@@ -492,7 +761,7 @@
 <panel type="seamless" expanded popup-url="/website/book/errorHandling/exceptions/how" id="implementation-error-handling-exceptions-how">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="implementation-error-handling-exceptions-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Error Handling → Exceptions →</span></span></small> <strong><span>How</span></strong><span id="implementation-error-handling-exceptions-how" class="anchor"></span><a class="fa fa-anchor" href="#implementation-error-handling-exceptions-how" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="implementation-error-handling-exceptions-how"><span id="implementation-error-handling-exceptions-how" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Implementation → Error Handling → Exceptions →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#implementation-error-handling-exceptions-how" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -503,7 +772,7 @@
 <p>The extract below from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small> (with slight adaptations) explains how exceptions are typically handled.</p>
 <div class="indented">
 <p><strong>When an error occurs at some point in the execution, the code being executed creates an <em>exception object</em> and hands it off to the runtime system.</strong> The exception object contains information about the error, including its type and the state of the program when the error occurred. Creating an exception object and handing it to the runtime system is called <em>throwing</em> an exception.</p>
-<p><strong>After a method throws an exception, the runtime system attempts to find something to handle it in the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">the ordered list of methods that had been called to get to the method where the error occurred</span><em>call stack</em></span>.</strong> The runtime system searches the call stack for a method that contains a block of code that can handle the exception. This block of code is called an <em>exception handler</em>. The search begins with the method in which the error occurred and proceeds through the call stack in the reverse order in which the methods were called. When an appropriate handler is found, the runtime system passes the exception to the handler. An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.</p>
+<p><strong>After a method throws an exception, the runtime system attempts to find something to handle it in the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">the ordered list of methods that had been called to get to the method where the error occurred</span><em>call stack</em></span>.</strong> The runtime system searches the call stack for a method that contains a block of code that can handle the exception. This block of code is called an <em>exception handler</em>. The search begins with the method in which the error occurred and proceeds through the call stack in the reverse order in which the methods were called. When an appropriate handler is found, the runtime system passes the exception to the handler. An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.</p>
 <p><strong>The exception handler chosen is said to <em>catch</em> the exception.</strong> If the runtime system exhaustively searches all the methods on the call stack without finding an appropriate exception handler, the program terminates.</p></div>
 <p>Advantages of exception handling in this way:</p>
 <ul>
@@ -511,11 +780,11 @@
 <li>The separation of code that deals with 'unusual' situations from the code that does the 'usual' work.</li></ul></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Benefit of exceptions</p></template>
+<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Benefits of exceptions</p></template>
 <question>
-<p>Which are benefits of exceptions?</p>
+<p>Which are the benefits of exceptions?</p>
 <ul class="contains-task-list">
 <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. Exceptions allow us to separate normal code from error handling code.</li>
 <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. Exceptions can prevent problems that happen in the environment.</li>
@@ -531,7 +800,7 @@
 <panel type="seamless" expanded popup-url="/website/book/cppToJava/exceptions/what" id="c-to-java-exceptions-what-are-exceptions">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="c-to-java-exceptions-what-are-exceptions"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Exceptions →</span></span></small> <strong><span>What are Exceptions?</span></strong><span id="c-to-java-exceptions-what-are-exceptions" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-exceptions-what-are-exceptions" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-exceptions-what-are-exceptions"><span id="c-to-java-exceptions-what-are-exceptions" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Exceptions →</span></span></small> <strong><span>What are Exceptions?</span></strong><a class="fa fa-anchor" href="#c-to-java-exceptions-what-are-exceptions" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -542,22 +811,22 @@
 <div class="indented">
 <p><strong>There are three basic categories of exceptions In Java:</strong></p>
 <ul>
-<li><strong><mark><em>Checked</em> exceptions</mark>: exceptional conditions that a well-written application should anticipate and recover from.</strong> All exceptions are checked exceptions, except for <code v-pre>Error</code>, <code v-pre>RuntimeException</code>, and their subclasses.</li></ul>
+<li><strong><mark><em>Checked</em> exceptions</mark>: exceptional conditions that a well-written application should anticipate and recover from.</strong> All exceptions are checked exceptions, except for <code class="hljs inline no-lang" v-pre>Error</code>, <code class="hljs inline no-lang" v-pre>RuntimeException</code>, and their subclasses.</li></ul>
 <div class="indented-level2">
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose an application prompts a user for an input file name, then opens the file by passing the name to the constructor for java.io.FileReader. Normally, the user provides the name of an existing, readable file, so the construction of the <code v-pre>FileReader</code> object succeeds, and the execution of the application proceeds normally. But sometimes the user supplies the name of a nonexistent file, and the constructor throws <code v-pre>java.io.FileNotFoundException</code>. A well-written program will catch this exception and notify the user of the mistake, possibly prompting for a corrected file name.</p></box></div>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose an application prompts a user for an input file name, then opens the file by passing the name to the constructor for java.io.FileReader. Normally, the user provides the name of an existing, readable file, so the construction of the <code class="hljs inline no-lang" v-pre>FileReader</code> object succeeds, and the execution of the application proceeds normally. But sometimes the user supplies the name of a nonexistent file, and the constructor throws <code class="hljs inline no-lang" v-pre>java.io.FileNotFoundException</code>. A well-written program will catch this exception and notify the user of the mistake, possibly prompting for a corrected file name.</p></box></div>
 <p></p>
 <ul>
-<li><strong><mark><em>Errors</em></mark>: exceptional conditions that are external to the application, and that the application usually cannot anticipate or recover from.</strong> Errors are those exceptions indicated by <code v-pre>Error</code> and its subclasses.</li></ul>
+<li><strong><mark><em>Errors</em></mark>: exceptional conditions that are external to the application, and that the application usually cannot anticipate or recover from.</strong> Errors are those exceptions indicated by <code class="hljs inline no-lang" v-pre>Error</code> and its subclasses.</li></ul>
 <div class="indented-level2">
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose that an application successfully opens a file for input, but is unable to read the file because of a hardware or system malfunction. The unsuccessful read will throw <code v-pre>java.io.IOError</code>. An application might choose to catch this exception, in order to notify the user of the problem — but it also might make sense for the program to print a stack trace and exit.</p></box></div>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose that an application successfully opens a file for input, but is unable to read the file because of a hardware or system malfunction. The unsuccessful read will throw <code class="hljs inline no-lang" v-pre>java.io.IOError</code>. An application might choose to catch this exception, in order to notify the user of the problem — but it also might make sense for the program to print a stack trace and exit.</p></box></div>
 <p></p>
 <ul>
-<li><strong><mark><em>Runtime exceptions</em></mark>: conditions that are internal to the application, and that the application usually cannot anticipate or recover from.</strong> Runtime exceptions are those indicated by <code v-pre>RuntimeException</code> and its subclasses. These usually indicate programming bugs, such as logic errors or improper use of an API.</li></ul>
+<li><strong><mark><em>Runtime exceptions</em></mark>: conditions that are internal to the application, and that the application usually cannot anticipate or recover from.</strong> Runtime exceptions are those indicated by <code class="hljs inline no-lang" v-pre>RuntimeException</code> and its subclasses. These usually indicate programming bugs, such as logic errors or improper use of an API.</li></ul>
 <div class="indented-level2">
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the application described previously that passes a file name to the constructor for FileReader. If a logic error causes a null to be passed to the constructor, the constructor will throw <code v-pre>NullPointerException</code>. The application can catch this exception, but it probably makes more sense to eliminate the bug that caused the exception to occur.</p></box></div>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the application described previously that passes a file name to the constructor for FileReader. If a logic error causes a null to be passed to the constructor, the constructor will throw <code class="hljs inline no-lang" v-pre>NullPointerException</code>. The application can catch this exception, but it probably makes more sense to eliminate the bug that caused the exception to occur.</p></box></div>
 <p></p>
 <p><strong>Errors and runtime exceptions are collectively known as <mark><em>unchecked</em> exceptions</mark>.</strong></p></div></div>
 <div></div></div></div></panel>
@@ -569,7 +838,7 @@
 <panel type="seamless" expanded popup-url="/website/book/cppToJava/exceptions/how" id="c-to-java-exceptions-how-to-use-exceptions">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4e</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="c-to-java-exceptions-how-to-use-exceptions"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Exceptions →</span></span></small> <strong><span>How to use Exceptions</span></strong><span id="c-to-java-exceptions-how-to-use-exceptions" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-exceptions-how-to-use-exceptions" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-exceptions-how-to-use-exceptions"><span id="c-to-java-exceptions-how-to-use-exceptions" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Exceptions →</span></span></small> <strong><span>How to use Exceptions</span></strong><a class="fa fa-anchor" href="#c-to-java-exceptions-how-to-use-exceptions" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=d6af2f62-5eaf-4964-bb3c-ac2f00defa15&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -581,58 +850,101 @@
 <p></p>
 <div>
 <p>The content below uses extracts from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small>, with some adaptations.</p>
-<p><strong>A program can catch exceptions by using a combination of the <code v-pre>try</code>, <code v-pre>catch</code> blocks.</strong></p>
+<p><strong>A program can catch exceptions by using a combination of the <code class="hljs inline no-lang" v-pre>try</code>, <code class="hljs inline no-lang" v-pre>catch</code> blocks.</strong></p>
 <ul>
-<li>The <code v-pre>try</code> block identifies a block of code in which an exception can occur.</li>
-<li>The <code v-pre>catch</code> block identifies a block of code, known as an exception handler, that can handle a particular type of exception.</li></ul>
+<li>The <code class="hljs inline no-lang" v-pre>try</code> block identifies a block of code in which an exception can occur.</li>
+<li>The <code class="hljs inline no-lang" v-pre>catch</code> block identifies a block of code, known as an exception handler, that can handle a particular type of exception.</li></ul>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>writeList()</code> method below calls a method <code v-pre>process()</code> that can cause two type of exceptions. It uses a try-catch construct to deal with each exception.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{<br></span><span>    print(<span class="hljs-string">"starting method"</span>);<br></span><span>    <span class="hljs-keyword">try</span> {<br></span><span>        print(<span class="hljs-string">"starting process"</span>);<br></span><span>        process();<br></span><span>        print(<span class="hljs-string">"finishing process"</span>);<br></span><span><br></span><span>    } <span class="hljs-keyword">catch</span> (IndexOutOfBoundsException e) {<br></span><span>        print(<span class="hljs-string">"caught IOOBE"</span>);<br></span><span><br></span><span>    } <span class="hljs-keyword">catch</span> (IOException e) {<br></span><span>        print(<span class="hljs-string">"caught IOE"</span>);<br></span><span><br></span><span>    }<br></span><span>    print(<span class="hljs-string">"finishing method"</span>);<br></span><span>}<br></span></code></pre><p>Some possible outputs:</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code class="hljs inline no-lang" v-pre>writeList()</code> method below calls a method <code class="hljs inline no-lang" v-pre>process()</code> that can cause two type of exceptions. It uses a try-catch construct to deal with each exception.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{
+</span><span>    print(<span class="hljs-string">"starting method"</span>);
+</span><span>    <span class="hljs-keyword">try</span> {
+</span><span>        print(<span class="hljs-string">"starting process"</span>);
+</span><span>        process();
+</span><span>        print(<span class="hljs-string">"finishing process"</span>);
+</span><span>
+</span><span>    } <span class="hljs-keyword">catch</span> (IndexOutOfBoundsException e) {
+</span><span>        print(<span class="hljs-string">"caught IOOBE"</span>);
+</span><span>
+</span><span>    } <span class="hljs-keyword">catch</span> (IOException e) {
+</span><span>        print(<span class="hljs-string">"caught IOE"</span>);
+</span><span>
+</span><span>    }
+</span><span>    print(<span class="hljs-string">"finishing method"</span>);
+</span><span>}
+</span></code></pre><p>Some possible outputs:</p>
 <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead>
 <tr>
 <th>No exceptions <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th>
-<th><code v-pre>IOException</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th>
-<th><code v-pre>IndexOutOfBoundsException</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th></tr></thead>
+<th><code class="hljs inline no-lang" v-pre>IOException</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th>
+<th><code class="hljs inline no-lang" v-pre>IndexOutOfBoundsException</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th></tr></thead>
 <tbody>
 <tr>
 <td><span class="text-monospace">starting method<br>starting process<br>finishing process<br>finishing method</span></td>
 <td><span class="text-monospace">starting method<br>starting process<br><s>finishing process</s><br><mark>caught IOE</mark><br>finishing method </span></td>
 <td><span class="text-monospace">starting method<br>starting process<br><s>finishing process</s><br><mark>caught IOOBE</mark><br>finishing method</span></td></tr></tbody></table></div></box>
-<p>You can <strong>use a <code v-pre>finally</code> block to specify code that is guaranteed to execute with or without the exception.</strong> This is the right place to close files, recover resources, and otherwise clean up after the code enclosed in the <code v-pre>try</code> block.</p>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>writeList()</code> method below has a <code v-pre>finally</code> block:</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{<br></span><span>    print(<span class="hljs-string">"starting method"</span>);<br></span><span>    <span class="hljs-keyword">try</span> {<br></span><span>        print(<span class="hljs-string">"starting process"</span>);<br></span><span>        process();<br></span><span>        print(<span class="hljs-string">"finishing process"</span>);<br></span><span><br></span><span>    } <span class="hljs-keyword">catch</span> (IndexOutOfBoundsException e) {<br></span><span>        print(<span class="hljs-string">"caught IOOBE"</span>);<br></span><span><br></span><span>    } <span class="hljs-keyword">catch</span> (IOException e) {<br></span><span>        print(<span class="hljs-string">"caught IOE"</span>);<br></span><span><br></span><span>    } <span class="hljs-keyword">finally</span> {<br></span><span>        <span class="hljs-comment">// clean up</span><br></span><span>        print(<span class="hljs-string">"cleaning up"</span>);<br></span><span>    }<br></span><span>    print(<span class="hljs-string">"finishing method"</span>);<br></span><span>}<br></span></code></pre><p>Some possible outputs:</p>
+<p>You can <strong>use a <code class="hljs inline no-lang" v-pre>finally</code> block to specify code that is guaranteed to execute with or without the exception.</strong> This is the right place to close files, recover resources, and otherwise clean up after the code enclosed in the <code class="hljs inline no-lang" v-pre>try</code> block.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code class="hljs inline no-lang" v-pre>writeList()</code> method below has a <code class="hljs inline no-lang" v-pre>finally</code> block:</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{
+</span><span>    print(<span class="hljs-string">"starting method"</span>);
+</span><span>    <span class="hljs-keyword">try</span> {
+</span><span>        print(<span class="hljs-string">"starting process"</span>);
+</span><span>        process();
+</span><span>        print(<span class="hljs-string">"finishing process"</span>);
+</span><span>
+</span><span>    } <span class="hljs-keyword">catch</span> (IndexOutOfBoundsException e) {
+</span><span>        print(<span class="hljs-string">"caught IOOBE"</span>);
+</span><span>
+</span><span>    } <span class="hljs-keyword">catch</span> (IOException e) {
+</span><span>        print(<span class="hljs-string">"caught IOE"</span>);
+</span><span>
+</span><span>    } <span class="hljs-keyword">finally</span> {
+</span><span>        <span class="hljs-comment">// clean up</span>
+</span><span>        print(<span class="hljs-string">"cleaning up"</span>);
+</span><span>    }
+</span><span>    print(<span class="hljs-string">"finishing method"</span>);
+</span><span>}
+</span></code></pre><p>Some possible outputs:</p>
 <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead>
 <tr>
 <th>No exceptions <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th>
-<th><code v-pre>IOException</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th>
-<th><code v-pre>IndexOutOfBoundsException</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th></tr></thead>
+<th><code class="hljs inline no-lang" v-pre>IOException</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th>
+<th><code class="hljs inline no-lang" v-pre>IndexOutOfBoundsException</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th></tr></thead>
 <tbody>
 <tr>
 <td><span class="text-monospace">starting method<br>starting process<br>finishing process<br><mark>cleaning up</mark><br>finishing method</span></td>
 <td><span class="text-monospace">starting method<br>starting process<br><s>finishing process</s><br>caught IOE<br><mark>cleaning up</mark><br>finishing method </span></td>
 <td><span class="text-monospace">starting method<br>starting process<br><s>finishing process</s><br>caught IOOBE<br><mark>cleaning up</mark><br>finishing method</span></td></tr></tbody></table></div><ul>
 <li>
-<p>The <code v-pre>try</code> statement should contain at least one <code v-pre>catch</code> block or a finally block and may have multiple <code v-pre>catch</code> blocks.</p></li>
+<p>The <code class="hljs inline no-lang" v-pre>try</code> statement should contain at least one <code class="hljs inline no-lang" v-pre>catch</code> block or a finally block and may have multiple <code class="hljs inline no-lang" v-pre>catch</code> blocks.</p></li>
 <li>
 <p>The class of the exception object indicates the type of exception thrown. The exception object can contain further information about the error, including an error message.</p></li></ul>
-<p><strong>You can use the <code v-pre>throw</code> statement to throw an exception.</strong> The throw statement requires a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Throwable objects are instances of any subclass of the <code v-pre>Throwable</code> class.</span>throwable</span> object as the argument.</p>
+<p><strong>You can use the <code class="hljs inline no-lang" v-pre>throw</code> statement to throw an exception.</strong> The throw statement requires a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">Throwable objects are instances of any subclass of the <code class="hljs inline no-lang" v-pre>Throwable</code> class.</span>throwable</span> object as the argument.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's an example of a <code v-pre>throw</code> statement.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {<br></span><span>    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> EmptyStackException();<br></span><span>}<br></span></code></pre></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's an example of a <code class="hljs inline no-lang" v-pre>throw</code> statement.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {
+</span><span>    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> EmptyStackException();
+</span><span>}
+</span></code></pre></box>
 <p>In Java, <strong>Checked exceptions are subject to the <em>Catch or Specify Requirement</em></strong>: code that might throw checked exceptions must be enclosed by either of the following:</p>
 <ul>
-<li>A <code v-pre>try</code> statement that catches the exception. The <code v-pre>try</code> must provide a handler for the exception.</li>
-<li>A method that specifies that it can throw the exception. The method must provide a <code v-pre>throws</code> clause that lists the exception.</li></ul>
+<li>A <code class="hljs inline no-lang" v-pre>try</code> statement that catches the exception. The <code class="hljs inline no-lang" v-pre>try</code> must provide a handler for the exception.</li>
+<li>A method that specifies that it can throw the exception. The method must provide a <code class="hljs inline no-lang" v-pre>throws</code> clause that lists the exception.</li></ul>
 <p>Unchecked exceptions are not required to follow to the <em>Catch or Specify Requirement</em> but you can apply the requirement to them too.</p>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's an example of a method specifying that it throws certain checked exceptions:</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException, IndexOutOfBoundsException </span>{<br></span><span>    print(<span class="hljs-string">"starting method"</span>);<br></span><span>    process();<br></span><span>    print(<span class="hljs-string">"finishing method"</span>);<br></span><span>}<br></span></code></pre><pre><code v-pre>Some possible outputs:
+<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException, IndexOutOfBoundsException </span>{
+</span><span>    print(<span class="hljs-string">"starting method"</span>);
+</span><span>    process();
+</span><span>    print(<span class="hljs-string">"finishing method"</span>);
+</span><span>}
+</span></code></pre><pre><code v-pre>Some possible outputs:
 </code></pre>
 <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead>
 <tr>
 <th>No exceptions <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th>
-<th><code v-pre>IOException</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th>
-<th><code v-pre>IndexOutOfBoundsException</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th></tr></thead>
+<th><code class="hljs inline no-lang" v-pre>IOException</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th>
+<th><code class="hljs inline no-lang" v-pre>IndexOutOfBoundsException</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></th></tr></thead>
 <tbody>
 <tr>
 <td><span class="text-monospace">starting method<br>finishing method</span></td>
@@ -641,28 +953,88 @@
 <p><strong>Java comes with a collection of <a href="https://www.geeksforgeeks.org/built-exceptions-java-examples/">built-in exception classes</a></strong> that you can use. When they are not enough, <strong>it is possible to <a href="https://www.javatpoint.com/custom-exception">create your own exception classes</a></strong>.</p></div>
 <div>
   <div>
-<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
 <div>
-<panel type="dark" expanded id="key-exercise-parse-rectangle-descriptor"><template slot="_header"><h3 id="key-exercise-parse-rectangle-descriptor"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] parse rectangle descriptor</small></small><span id="key-exercise-parse-rectangle-descriptor" class="anchor"></span><a class="fa fa-anchor" href="#key-exercise-parse-rectangle-descriptor" onclick="event.stopPropagation()"></a></h3></template>
+<panel type="dark" expanded id="key-exercise-parse-rectangle-descriptor"><template slot="header"><h3 id="key-exercise-parse-rectangle-descriptor"><span id="key-exercise-parse-rectangle-descriptor" class="anchor"></span><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] parse rectangle descriptor</small></small><a class="fa fa-anchor" href="#key-exercise-parse-rectangle-descriptor" onclick="event.stopPropagation()"></a></h3></template>
 <question>
-<p>The <code v-pre>Main</code> class below parses a string descriptor of a rectangle of the format <code v-pre>&quot;WIDTHxHEIGHT&quot;</code> <span class="dimmed">e.g., <code v-pre>&quot;3x4&quot;</code></span> and prints the area of the rectangle.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{<br></span><span>        <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> modify the code below</span><br></span><span>        System.out.println(descriptor + <span class="hljs-string">"="</span> + calculateArea(descriptor));<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(String descriptor)</span> </span>{<br></span><span>        <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> modify the code below</span><br></span><span>        String[] dimensions = descriptor.split(<span class="hljs-string">"x"</span>);<br></span><span>        <span class="hljs-keyword">return</span> Integer.parseInt(dimensions[<span class="hljs-number">0</span>]) * Integer.parseInt(dimensions[<span class="hljs-number">1</span>]);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        printArea(<span class="hljs-string">"3x4"</span>);<br></span><span>        printArea(<span class="hljs-string">"5x5"</span>);<br></span><span>    }<br></span><span>}<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-<pre><code class="hljs" v-pre><span>3x4=12<br></span><span>5x5=25<br></span></code></pre><ol>
+<p>The <code class="hljs inline no-lang" v-pre>Main</code> class below parses a string descriptor of a rectangle of the format <code class="hljs inline no-lang" v-pre>&quot;WIDTHxHEIGHT&quot;</code> <span class="dimmed">e.g., <code class="hljs inline no-lang" v-pre>&quot;3x4&quot;</code></span> and prints the area of the rectangle.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
+</span><span>        <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> modify the code below</span>
+</span><span>        System.out.println(descriptor + <span class="hljs-string">"="</span> + calculateArea(descriptor));
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(String descriptor)</span> </span>{
+</span><span>        <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> modify the code below</span>
+</span><span>        String[] dimensions = descriptor.split(<span class="hljs-string">"x"</span>);
+</span><span>        <span class="hljs-keyword">return</span> Integer.parseInt(dimensions[<span class="hljs-number">0</span>]) * Integer.parseInt(dimensions[<span class="hljs-number">1</span>]);
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+</span><span>        printArea(<span class="hljs-string">"3x4"</span>);
+</span><span>        printArea(<span class="hljs-string">"5x5"</span>);
+</span><span>    }
+</span><span>}
+</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs" v-pre><span>3x4=12
+</span><span>5x5=25
+</span></code></pre><ol>
 <li>
-<p>Update the code of <code v-pre>printArea</code> to print an error message if <code v-pre>WIDTH</code> and/or <code v-pre>HEIGHT</code> are not numbers <span class="dimmed">e.g., <code v-pre>&quot;Ax4&quot;</code></span><br>
-<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code v-pre>calculateArea</code> will throw the unchecked exception <code v-pre>NumberFormatException</code> if the code tries to parse a non-number to an integer.</p></li>
+<p>Update the code of <code class="hljs inline no-lang" v-pre>printArea</code> to print an error message if <code class="hljs inline no-lang" v-pre>WIDTH</code> and/or <code class="hljs inline no-lang" v-pre>HEIGHT</code> are not numbers <span class="dimmed">e.g., <code class="hljs inline no-lang" v-pre>&quot;Ax4&quot;</code></span><br>
+<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code class="hljs inline no-lang" v-pre>calculateArea</code> will throw the unchecked exception <code class="hljs inline no-lang" v-pre>NumberFormatException</code> if the code tries to parse a non-number to an integer.</p></li>
 <li>
-<p>Update the code of <code v-pre>printArea</code> to print an error message if the descriptor is missing <code v-pre>WIDTH</code> and/or <code v-pre>HEIGHT</code> <span class="dimmed">e.g., <code v-pre>&quot;x4&quot;</code></span><br>
-<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code v-pre>calculateArea</code> will throw the unchecked exception <code v-pre>IndexOutOfBoundsException</code> if one or both dimensions are missing.</p></li>
+<p>Update the code of <code class="hljs inline no-lang" v-pre>printArea</code> to print an error message if the descriptor is missing <code class="hljs inline no-lang" v-pre>WIDTH</code> and/or <code class="hljs inline no-lang" v-pre>HEIGHT</code> <span class="dimmed">e.g., <code class="hljs inline no-lang" v-pre>&quot;x4&quot;</code></span><br>
+<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code class="hljs inline no-lang" v-pre>calculateArea</code> will throw the unchecked exception <code class="hljs inline no-lang" v-pre>IndexOutOfBoundsException</code> if one or both dimensions are missing.</p></li>
 <li>
-<p>Update the code of <code v-pre>calculateArea</code> to throw the checked exception <code v-pre>IllegalShapeException</code> if there are more than 2 dimensions <span class="dimmed">e.g., <code v-pre>&quot;5x4x3&quot;</code></span> and update the <code v-pre>printArea</code> to print an error message for those cases. Here is the code for the <code v-pre>IllegalShapeException.java</code></p></li></ol>
+<p>Update the code of <code class="hljs inline no-lang" v-pre>calculateArea</code> to throw the checked exception <code class="hljs inline no-lang" v-pre>IllegalShapeException</code> if there are more than 2 dimensions <span class="dimmed">e.g., <code class="hljs inline no-lang" v-pre>&quot;5x4x3&quot;</code></span> and update the <code class="hljs inline no-lang" v-pre>printArea</code> to print an error message for those cases. Here is the code for the <code class="hljs inline no-lang" v-pre>IllegalShapeException.java</code></p></li></ol>
 <div class="indented-level2">
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IllegalShapeException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Exception</span> </span>{<br></span><span>  <span class="hljs-comment">//no other code needed</span><br></span><span>}<br></span></code></pre></div>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IllegalShapeException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Exception</span> </span>{
+</span><span>  <span class="hljs-comment">//no other code needed</span>
+</span><span>}
+</span></code></pre></div>
 <p>Here is the expected behavior after you have done the above changes:</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-comment">//...</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        printArea(<span class="hljs-string">"3x4"</span>);<br></span><span>        printArea(<span class="hljs-string">"3xy"</span>);<br></span><span>        printArea(<span class="hljs-string">"3x"</span>);<br></span><span>        printArea(<span class="hljs-string">"3"</span>);<br></span><span>        printArea(<span class="hljs-string">"3x4x5"</span>);<br></span><span>    }<br></span><span>}<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-<pre><code class="hljs" v-pre><span>3x4=12<br></span><span>WIDTH or HEIGHT is not a number: 3xy<br></span><span>WIDTH or HEIGHT is missing: 3x<br></span><span>WIDTH or HEIGHT is missing: 3<br></span><span>Too many dimensions: 3x4x5<br></span></code></pre><panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{<br></span><span>        <span class="hljs-keyword">try</span> {<br></span><span>            System.out.println(descriptor + <span class="hljs-string">"="</span> + calculateArea(descriptor));<br></span><span>        } <span class="hljs-keyword">catch</span> (NumberFormatException e) {<br></span><span>            System.out.println(<span class="hljs-string">"WIDTH or HEIGHT is not a number: "</span> + descriptor);<br></span><span>        } <span class="hljs-comment">// add more catch blocks here</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(String descriptor)</span> <span class="hljs-keyword">throws</span> IllegalShapeException </span>{<br></span><span>        String[] dimensions = descriptor.split(<span class="hljs-string">"x"</span>);<br></span><span><br></span><span>        <span class="hljs-comment">//throw IllegalShapeException here if dimensions.length &gt; 2</span><br></span><span><br></span><span>        <span class="hljs-keyword">return</span> Integer.parseInt(dimensions[<span class="hljs-number">0</span>]) * Integer.parseInt(dimensions[<span class="hljs-number">1</span>]);<br></span><span>    }<br></span><span><br></span><span><br></span><span>}<br></span></code></pre></panel></question></panel></div></div></panel></div></div></div></div></panel>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-comment">//...</span>
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+</span><span>        printArea(<span class="hljs-string">"3x4"</span>);
+</span><span>        printArea(<span class="hljs-string">"3xy"</span>);
+</span><span>        printArea(<span class="hljs-string">"3x"</span>);
+</span><span>        printArea(<span class="hljs-string">"3"</span>);
+</span><span>        printArea(<span class="hljs-string">"3x4x5"</span>);
+</span><span>    }
+</span><span>}
+</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs" v-pre><span>3x4=12
+</span><span>WIDTH or HEIGHT is not a number: 3xy
+</span><span>WIDTH or HEIGHT is missing: 3x
+</span><span>WIDTH or HEIGHT is missing: 3
+</span><span>Too many dimensions: 3x4x5
+</span></code></pre><panel type="seamless" class="algolia-no-index"><template slot="header"><p>Partial solution</p></template>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
+</span><span>        <span class="hljs-keyword">try</span> {
+</span><span>            System.out.println(descriptor + <span class="hljs-string">"="</span> + calculateArea(descriptor));
+</span><span>        } <span class="hljs-keyword">catch</span> (NumberFormatException e) {
+</span><span>            System.out.println(<span class="hljs-string">"WIDTH or HEIGHT is not a number: "</span> + descriptor);
+</span><span>        } <span class="hljs-comment">// add more catch blocks here</span>
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(String descriptor)</span> <span class="hljs-keyword">throws</span> IllegalShapeException </span>{
+</span><span>        String[] dimensions = descriptor.split(<span class="hljs-string">"x"</span>);
+</span><span>
+</span><span>        <span class="hljs-comment">//throw IllegalShapeException here if dimensions.length &gt; 2</span>
+</span><span>
+</span><span>        <span class="hljs-keyword">return</span> Integer.parseInt(dimensions[<span class="hljs-number">0</span>]) * Integer.parseInt(dimensions[<span class="hljs-number">1</span>]);
+</span><span>    }
+</span><span>
+</span><span>
+</span><span>}
+</span></code></pre></panel></question></panel></div></div></panel></div></div></div></div></panel>
 <p></p>
 <div class="indented">
 <div></div></div>
@@ -671,14 +1043,14 @@
 <panel type="seamless" expanded popup-url="/website/book/errorHandling/exceptions/when" id="implementation-error-handling-exceptions-when">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="implementation-error-handling-exceptions-when"><small><span class="font-weight-bold text-muted"><span>Implementation → Error Handling → Exceptions →</span></span></small> <strong><span>When</span></strong><span id="implementation-error-handling-exceptions-when" class="anchor"></span><a class="fa fa-anchor" href="#implementation-error-handling-exceptions-when" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="implementation-error-handling-exceptions-when"><span id="implementation-error-handling-exceptions-when" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Implementation → Error Handling → Exceptions →</span></span></small> <strong><span>When</span></strong><a class="fa fa-anchor" href="#implementation-error-handling-exceptions-when" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can avoid using exceptions to control normal workflow</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p>In general, use exceptions only for 'unusual' conditions. Use normal <code v-pre>return</code> statements to pass control to the caller for conditions that are 'normal'.</p></div>
+<p>In general, use exceptions only for 'unusual' conditions. Use normal <code class="hljs inline no-lang" v-pre>return</code> statements to pass control to the caller for conditions that are 'normal'.</p></div>
 <div></div></div></div></panel>
 <p></p>
 <div class="indented">
@@ -695,7 +1067,7 @@
 <div>
 <p>Knowing code-quality guidelines is useful for sure, but how do we improve the code quality of existing code in a systematic and safe way? That's where the next topic comes in.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w5-5-code-quality-refactoring">
-<span slot="header" class="card-title"><div><h2 id="w5-5-code-quality-refactoring"><span class="dimmed">[W5.5]</span> <strong>Code Quality: Refactoring</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w5-5-code-quality-refactoring" class="anchor"></span><a class="fa fa-anchor" href="#w5-5-code-quality-refactoring" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w5-5-code-quality-refactoring"><span id="w5-5-code-quality-refactoring" class="anchor"></span><span class="dimmed">[W5.5]</span> <strong>Code Quality: Refactoring</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w5-5-code-quality-refactoring" onclick="event.stopPropagation()"></a></h2></div></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=006255cc-d307-4c04-abbe-ac2a006129fc&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -706,7 +1078,7 @@
 <panel type="seamless" expanded popup-url="/website/book/refactoring/what" id="implementation-refactoring-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.5a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="implementation-refactoring-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Refactoring →</span></span></small> <strong><span>What</span></strong><span id="implementation-refactoring-what" class="anchor"></span><a class="fa fa-anchor" href="#implementation-refactoring-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="implementation-refactoring-what"><span id="implementation-refactoring-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Implementation → Refactoring →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-refactoring-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -722,11 +1094,11 @@
 <ul>
 <li>hidden bugs become easier to spot</li>
 <li>improve performance (sometimes, simpler code runs faster than complex code because simpler code is easier for the compiler to optimize).</li></ul></box>
-<p>Given below are two common refactorings (<span trigger="click" for="modal:refactoring-catalog-what" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:refactoring-catalog-what'].show()" class="trigger-click">more</span>).</p>
+<p>Given below are two common refactorings (<trigger trigger="click" for="modal:refactoring-catalog-what">more</trigger>).</p>
 <b-modal id="modal:refactoring-catalog-what" hide-footer size modal-class="mb-zoom" ref="modal:refactoring-catalog-what" class="algolia-no-index"><template slot="modal-title"><strong>Refactoring Catalogs</strong></template>
   <div>
 <ul>
-<li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
+<li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> -- This is a list of common refactorings maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
 <li>Python: <a href="https://refactoring.guru/refactoring/catalog">https://refactoring.guru/refactoring/catalog</a> -- A catalog of refactorings applicable to Python code.</li></ul></div></b-modal>
 <box>
 <p>Refactoring Name: <strong>Consolidate Duplicate Conditional Fragments</strong></p>
@@ -738,19 +1110,45 @@
 <table> 
 <tr>
   <td valign="top">
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">if</span> (isSpecialDeal()) {<br></span><span>    total = price * <span class="hljs-number">0.95</span>;<br></span><span>    send();<br></span><span>} <span class="hljs-keyword">else</span> {<br></span><span>    total = price * <span class="hljs-number">0.98</span>;<br></span><span>    send();<br></span><span>}<br></span></code></pre></td>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">if</span> (isSpecialDeal()) {
+</span><span>    total = price * <span class="hljs-number">0.95</span>;
+</span><span>    send();
+</span><span>} <span class="hljs-keyword">else</span> {
+</span><span>    total = price * <span class="hljs-number">0.98</span>;
+</span><span>    send();
+</span><span>}
+</span></code></pre></td>
   <td valign="center">&nbsp;→&nbsp;</td>
   <td valign="top">
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">if</span> (isSpecialDeal()){<br></span><span>    total = price * <span class="hljs-number">0.95</span>;<br></span><span>} <span class="hljs-keyword">else</span> {<br></span><span>    total = price * <span class="hljs-number">0.98</span>;<br></span><span>}<br></span><span>send();<br></span><span><br></span></code></pre></td></tr></table></div></div>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">if</span> (isSpecialDeal()) {
+</span><span>    total = price * <span class="hljs-number">0.95</span>;
+</span><span>} <span class="hljs-keyword">else</span> {
+</span><span>    total = price * <span class="hljs-number">0.98</span>;
+</span><span>}
+</span><span>send();
+</span><span>
+</span></code></pre></td></tr></table></div></div>
 <div class="alt-python">
 <div>
 <table> 
 <tr>
   <td valign="top">
-<pre><code class="hljs python" v-pre><span><span class="hljs-keyword">if</span> is_special_deal:<br></span><span>    total = price * <span class="hljs-number">0.95</span><br></span><span>    send()<br></span><span><span class="hljs-keyword">else</span>:<br></span><span>    total = price * <span class="hljs-number">0.98</span><br></span><span>    send()<br></span></code></pre></td>
+<pre><code class="hljs python" v-pre><span><span class="hljs-keyword">if</span> is_special_deal:
+</span><span>    total = price * <span class="hljs-number">0.95</span>
+</span><span>    send()
+</span><span><span class="hljs-keyword">else</span>:
+</span><span>    total = price * <span class="hljs-number">0.98</span>
+</span><span>    send()
+</span></code></pre></td>
   <td valign="center">&nbsp;→&nbsp;</td>
   <td valign="top">
-<pre><code class="hljs python" v-pre><span><span class="hljs-keyword">if</span> is_special_deal:<br></span><span>    total = price * <span class="hljs-number">0.95</span><br></span><span><span class="hljs-keyword">else</span>:<br></span><span>    total = price * <span class="hljs-number">0.98</span><br></span><span>    <br></span><span>send()<br></span></code></pre></td></tr></table></div></div></box>
+<pre><code class="hljs python" v-pre><span><span class="hljs-keyword">if</span> is_special_deal:
+</span><span>    total = price * <span class="hljs-number">0.95</span>
+</span><span><span class="hljs-keyword">else</span>:
+</span><span>    total = price * <span class="hljs-number">0.98</span>
+</span><span>    
+</span><span>send()
+</span></code></pre></td></tr></table></div></div></box>
 <box>
 <p>Refactoring Name:  <strong>Extract Method</strong></p>
 <p>Situation:  You have a code fragment that can be grouped together.</p>
@@ -758,21 +1156,50 @@
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:</p>
 <div class="alt-java">
   <div>
-<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{<br></span><span>    printBanner();<br></span><span><br></span><span>    <span class="hljs-comment">//print details</span><br></span><span>    System.out.println(<span class="hljs-string">"name:	"</span> + name);<br></span><span>    System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());<br></span><span>}<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{<br></span><span>    printBanner();<br></span><span>    printDetails(getOutstanding());<br></span><span>}<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printDetails</span> <span class="hljs-params">(<span class="hljs-keyword">double</span> outstanding)</span> </span>{<br></span><span>    System.out.println(<span class="hljs-string">"name:	"</span> + name);<br></span><span>    System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);<br></span><span>}<br></span></code></pre></div></div>
+<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+</span><span>    printBanner();
+</span><span>
+</span><span>    <span class="hljs-comment">// print details</span>
+</span><span>    System.out.println(<span class="hljs-string">"name:	"</span> + name);
+</span><span>    System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());
+</span><span>}
+</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+</span><span>    printBanner();
+</span><span>    printDetails(getOutstanding());
+</span><span>}
+</span><span>
+</span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printDetails</span><span class="hljs-params">(<span class="hljs-keyword">double</span> outstanding)</span> </span>{
+</span><span>    System.out.println(<span class="hljs-string">"name:	"</span> + name);
+</span><span>    System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);
+</span><span>}
+</span></code></pre></div></div>
 <div class="alt-python">
   <div>
-<pre><code class="hljs python" v-pre><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span><br></span><span>    print_banner()<br></span><span><br></span><span>    //<span class="hljs-keyword">print</span> details<br></span><span>    print(<span class="hljs-string">"name:	"</span> + name)<br></span><span>    print(<span class="hljs-string">"amount	"</span> + get_outstanding())<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-<pre><code class="hljs python" v-pre><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span><br></span><span>    print_banner()<br></span><span>    print_details(get_outstanding())<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_details</span><span class="hljs-params">(amount)</span>:</span><br></span><span>    print(<span class="hljs-string">"name:	"</span> + name)<br></span><span>    print(<span class="hljs-string">"amount	"</span> + amount)<br></span></code></pre></div></div></box>
-<p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Some IDEs have built in support for basic refactorings such as automatically renaming a variable/method/class in all places it has been used.</p>
+<pre><code class="hljs python" v-pre><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+</span><span>    print_banner()
+</span><span>
+</span><span>    <span class="hljs-comment"># print details</span>
+</span><span>    print(<span class="hljs-string">"name:	"</span> + name)
+</span><span>    print(<span class="hljs-string">"amount	"</span> + get_outstanding())
+</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs python" v-pre><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+</span><span>    print_banner()
+</span><span>    print_details(get_outstanding())
+</span><span>
+</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_details</span><span class="hljs-params">(amount)</span>:</span>
+</span><span>    print(<span class="hljs-string">"name:	"</span> + name)
+</span><span>    print(<span class="hljs-string">"amount	"</span> + amount)
+</span></code></pre></div></div></box>
+<p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Some IDEs have builtin support for basic refactorings such as automatically renaming a variable/method/class in all places it has been used.</p>
 <p><font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Refactoring, even if done with the aid of an IDE, may still result in regressions. Therefore, each small refactoring should be followed by regression testing.</p></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Results of Refactoring</p></template>
+<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Results of Refactoring</p></template>
 <question>
-<p>Choose the correct statements</p>
+<p>Choose the correct statements.</p>
 <ul class="contains-task-list">
 <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. Refactoring can improve understandability</li>
 <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. Refactoring can uncover bugs</li>
@@ -782,13 +1209,13 @@
 <p>a, b, c, d</p>
 <p>Explanation:</p>
 <ul>
-<li>(a, b, c) Although the primary aim of refactoring is to improve internal code structure, there are other secondary benefits.</li>
+<li>(a, b, c) Although the primary aim of refactoring is to improve the internal code structure, there are other secondary benefits.</li>
 <li>(d) Some refactorings result in adding/removing methods/classes.</li></ul></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Do you agree with the following statement? Refactoring and regression testing</p></template>
+<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Do you agree with the following statement? Refactoring and regression testing</p></template>
 <question has-input="true">
 <p>Do you agree with the following statement? Justify your answer.</p>
-<p>Statement: <code v-pre>Whenever you refactor code to fix bugs, you need not do regression testing if the bug fix was minor.</code></p>
+<p>Statement: <code class="hljs inline no-lang" v-pre>Whenever you refactor code to fix bugs, you need not do regression testing if the bug fix was minor.</code></p>
 <div slot="hint" class="algolia-no-index">
 <p>There are two flaws in the given statement.</p></div>
 <div slot="answer" class="algolia-no-index">
@@ -797,9 +1224,9 @@
 <li>Even a minor change can have major repercussions on the system. You MUST do regression testing after each change, no matter how minor it is.</li>
 <li>Fixing bugs is technically not refactoring.</li></ol></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Refactoring</p></template>
+<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Refactoring</p></template>
 <question has-input>
-<p>Explain what is refactoring and why it is not the same as rewriting, bug fixing, or adding features.</p></question></panel></div></panel></div></div></div></div></panel>
+<p>Explain what refactoring is and why it is not the same as rewriting, bug fixing, or adding features.</p></question></panel></div></panel></div></div></div></div></panel>
 <p></p>
 <div class="indented">
 <div></div></div>
@@ -808,21 +1235,21 @@
 <panel type="seamless" expanded popup-url="/website/book/intellij/refactoring" id="tools-intellij-idea-refactoring">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.5b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="tools-intellij-idea-refactoring"><small><span class="font-weight-bold text-muted"><span>Tools → Intellij IDEA →</span></span></small> <strong><span>Refactoring</span></strong><span id="tools-intellij-idea-refactoring" class="anchor"></span><a class="fa fa-anchor" href="#tools-intellij-idea-refactoring" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="tools-intellij-idea-refactoring"><span id="tools-intellij-idea-refactoring" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Tools → IntelliJ IDEA →</span></span></small> <strong><span>Refactoring</span></strong><a class="fa fa-anchor" href="#tools-intellij-idea-refactoring" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/refactoring/what" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Implementation → Refactoring → What</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/refactoring/what" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Implementation → Refactoring → What</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use automated refactoring features of the IDE</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
 <div v-closeable alt="Videos: Automated refactoring using IDE">
-<p>This video explains how to automate the 'Extract parameter' refactoring using Intellij IDEA. Most other refactorings available works similarly. i.e. <code v-pre>select the code to refactor</code> → <code v-pre>find the refactoring in the context menu</code> or <code v-pre>use the keyboard shortcut</code>.</p>
+<p>This video explains how to automate the 'Extract parameter' refactoring using IntelliJ IDEA. Most other refactorings available work similarly. i.e. <code class="hljs inline no-lang" v-pre>select the code to refactor</code> → <code class="hljs inline no-lang" v-pre>find the refactoring in the context menu</code> or <code class="hljs inline no-lang" v-pre>use the keyboard shortcut</code>.</p>
 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/fg3Q5pt4E80" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 <p>Here's another video explaining how to change a method signature as part of refactoring.</p>
 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/p6Tsw_3cXow" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div><p></p>
 <ul>
-<li><a href="https://www.jetbrains.com/help/idea/introduction-to-refactoring.html">Introduction to Refactoring (in Intellij IDEA)</a> : An article on refactorings available in Intellij IDEA.</li></ul></div>
+<li><a href="https://www.jetbrains.com/help/idea/introduction-to-refactoring.html">Introduction to Refactoring (in IntelliJ IDEA)</a>: An article on the refactorings available in IntelliJ IDEA.</li></ul></div>
 <div></div></div></div></panel>
 <p></p>
 <div class="indented">
@@ -832,18 +1259,18 @@
 <panel type="seamless" expanded popup-url="/website/book/refactoring/how" id="implementation-refactoring-how">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.5c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="implementation-refactoring-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Refactoring →</span></span></small> <strong><span>How</span></strong><span id="implementation-refactoring-how" class="anchor"></span><a class="fa fa-anchor" href="#implementation-refactoring-how" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="implementation-refactoring-how"><span id="implementation-refactoring-how" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Implementation → Refactoring →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#implementation-refactoring-how" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can apply some basic refactoring</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p>Given below are some more commonly used refactorings. A more comprehensive list is available at <span trigger="click" for="modal:refactoring-catalog-how" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:refactoring-catalog-how'].show()" class="trigger-click"> refactoring-catalog </span>.</p>
+<p>Given below are some more commonly used refactorings. A more comprehensive list is available at <trigger trigger="click" for="modal:refactoring-catalog-how">refactoring-catalog</trigger>.</p>
 <b-modal id="modal:refactoring-catalog-how" hide-footer size modal-class="mb-zoom" ref="modal:refactoring-catalog-how" class="algolia-no-index"><template slot="modal-title"><strong>Refactoring Catalog</strong></template>
   <div>
 <ul>
-<li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
+<li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> -- This is a list of common refactorings maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
 <li>Python: <a href="https://refactoring.guru/refactoring/catalog">https://refactoring.guru/refactoring/catalog</a> -- A catalog of refactorings applicable to Python code.</li></ul></div></b-modal>
 <ol>
 <li><a href="https://refactoring.com/catalog/consolidateConditionalExpression.html">Consolidate Conditional Expression</a></li>
@@ -866,7 +1293,7 @@
 <panel type="seamless" popup-url="/website/book/refactoring/when" id="implementation-refactoring-when" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.5d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="implementation-refactoring-when"><small><span class="font-weight-bold text-muted"><span>Implementation → Refactoring →</span></span></small> <strong><span>When</span></strong><span id="implementation-refactoring-when" class="anchor"></span><a class="fa fa-anchor" href="#implementation-refactoring-when" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="implementation-refactoring-when"><span id="implementation-refactoring-when" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Implementation → Refactoring →</span></span></small> <strong><span>When</span></strong><a class="fa fa-anchor" href="#implementation-refactoring-when" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -876,14 +1303,14 @@
 <p>You know that it is important to refactor frequently so as to avoid the accumulation of ‘messy’ code which might get out of control. But how much refactoring is too much refactoring? <strong>It is too much refactoring when the benefits no longer justify the cost.</strong> The costs and the benefits depend on the context. That is why some refactorings are ‘opposites’ of each other (e.g. <a href="https://refactoring.com/catalog/extractMethod.html"><em>extract method</em></a> vs <a href="https://refactoring.com/catalog/inlineMethod.html"><em>inline method</em></a>).</p></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> ‘Extract method’ and ‘Inline method’ refactorings</p></template>
+<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> ‘Extract method’ and ‘Inline method’ refactorings</p></template>
 <question>
 <p>‘Extract method’ and ‘Inline method’ refactorings</p>
 <ul radio-group="93b6b" class="radio-list">
 <li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> a. are opposites of each other.</label></li>
-<li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> b. sounds like opposites but they are not.</label></li></ul>
+<li class="radio-list-item"><label><input class="radio-list-input" name="93b6b" type="radio"> b. sound like opposites but are not.</label></li></ul>
 <div slot="answer" class="algolia-no-index">
 <p>a</p></div></question></panel></div></panel></div></div></div></div></panel>
 <p></p>
@@ -892,8 +1319,8 @@
 <p></p>
 <div class="indented">
 <div></div></div>
-<p></p></div></div>
-
+<p></p></div>
+<p><i class="fa fa-arrow-circle-up fa-lg" id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true"></i></p></div>
         <nav id="page-nav" class="navbar navbar-light bg-transparent">
 <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -923,18 +1350,13 @@
     <footer>
   
   <div class="text-center">
-    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 30 Nov 2020, 22:07:39 GMT+8]</small></div></footer></div>
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.0</a>, generated on Fri, 11 Dec 2020, 23:42:27 GMT+8]</small></div></footer></div>
 </body>
-<script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
-<script src="../../markbind/js/polyfill.min.js"></script>
-<script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  MarkBind.setupWithSearch()
 </script>
-<script src="../../markbind/js/setup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script>
     function initAlgolia() {
@@ -948,5 +1370,5 @@
     }
     MarkBind.afterSetup(initAlgolia);
   </script>
-<script src="../../markbind/layouts/default/scripts.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script><script>if (MarkBind.AfterSetup) MarkBind.AfterSetup()</script>
 </html>

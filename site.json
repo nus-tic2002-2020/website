@@ -1,6 +1,9 @@
 {
   "baseUrl": "/website",
   "titlePrefix": "TIC2002",
+  "style": {
+    "codeTheme": "light"
+  },
   "timeZone": "Asia/Singapore",
   "disableHtmlBeautify": true,
   "ignore": [

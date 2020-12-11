@@ -2,13 +2,8 @@
   "enableSearch": true,
   "pages": [
     {
-      "title": "Admin Info",
-      "header": "header.md",
-      "footer": "footer.md",
-      "head": "adminHead.md",
-      "pageNav": 2,
       "src": "admin/index.md",
-      "layout": "default",
+      "title": "Admin Info",
       "headings": {
         "tic2002-introduction-to-software-engineering": "TIC2002 Introduction to Software Engineering",
         "module-overview": "Module overview",
@@ -51,10 +46,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "About: Acknowledgements",
-      "pageNav": 3,
       "src": "book/about/acknowledgements.md",
-      "layout": "default",
+      "title": "About: Acknowledgements",
       "headings": {
         "license": "License",
         "bug-reports-suggestions": "Bug reports, suggestions",
@@ -65,26 +58,16 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "se-book-adapted-sitenav.md",
       "src": "se-book-adapted/index.md",
-      "layout": "default",
+      "title": "Textbook",
       "headings": {
         "software-engineering-for-self-directed-learners-tic2002-edition-2020": "Software Engineering for Self-Directed Learners TIC2002 edition - 2020"
       },
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Software Architecture",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/architecture.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Software Architecture",
       "headings": {
         "introduction": "Introduction",
         "architecture-diagrams": "Architecture diagrams",
@@ -112,14 +95,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Code Quality",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/codeQuality.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Code Quality",
       "headings": {
         "introduction": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise readability",
@@ -164,14 +141,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : C++ to Java",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/cppToJava.md",
-      "layout": "default",
+      "title": "Textbook Chapter : C++ to Java",
       "headings": {
         "about-this-book-chapter": "About this Book Chapter",
         "the-java-world": "The Java world",
@@ -298,14 +269,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Software Design",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/design.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Software Design",
       "headings": {
         "introduction": "Introduction",
         "what": "What",
@@ -314,14 +279,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Design Approaches",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/designApproaches.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Design Approaches",
       "headings": {
         "multi-level-design": "Multi-level design",
         "top-down-and-bottom-up-design": "Top-down and bottom-up design",
@@ -334,14 +293,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Design Fundamentals",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/designFundamentals.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Design Fundamentals",
       "headings": {
         "abstraction": "Abstraction",
         "coupling": "Coupling",
@@ -357,14 +310,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Software Design Patterns",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/designPatterns.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Software Design Patterns",
       "headings": {
         "introduction": "Introduction",
         "singleton-pattern": "Singleton pattern",
@@ -394,14 +341,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Documentation",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/documentation.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Documentation",
       "headings": {
         "introduction": "Introduction",
         "guidelines": "Guidelines",
@@ -425,14 +366,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Error Handling",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/errorHandling.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Error Handling",
       "headings": {
         "introduction": "Introduction",
         "exceptions": "Exceptions",
@@ -452,14 +387,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Gathering Requirements",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/gatheringRequirements.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Gathering Requirements",
       "headings": {
         "brainstorming": "Brainstorming",
         "user-surveys": "User Surveys",
@@ -473,14 +402,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Git and Github",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/gitAndGithub.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Git and Github",
       "headings": {
         "init-getting-started": "init: Getting started",
         "commit-saving-changes-to-history": "commit: Saving changes to history",
@@ -499,7 +422,7 @@
         "reviewing-prs": "Reviewing PRs",
         "merging-prs": "Merging PRs",
         "forking-workflow": "Forking Workflow",
-        "the-ignore-file": "The .ignore file",
+        "the-gitignore-file": "The .gitignore file",
         "working-with-multiple-remotes": "Working with multiple remotes",
         "pushing-a-branch-to-a-remote-repo": "Pushing a branch to a remote repo",
         "git-and-github": "Git and GitHub"
@@ -507,14 +430,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : IDEs",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/ides.md",
-      "layout": "default",
+      "title": "Textbook Chapter : IDEs",
       "headings": {
         "introduction": "Introduction",
         "debugging": "Debugging",
@@ -525,14 +442,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Integration",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/integration.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Integration",
       "headings": {
         "introduction": "Introduction",
         "approaches": "Approaches",
@@ -548,34 +459,22 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Intellij IDEA",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/intellij.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Intellij IDEA",
       "headings": {
         "project-setup": "Project Setup",
         "code-navigation": "Code Navigation",
         "productivity-shortcuts": "Productivity Shortcuts",
         "debugging-basic": "Debugging: Basic",
         "refactoring": "Refactoring",
-        "running-intellij-idea-for-the-first-time": "Running Intellij IDEA for the First Time",
-        "intellij-idea": "Intellij IDEA"
+        "running-intellij-idea-for-the-first-time": "Running IntelliJ IDEA for the First Time",
+        "intellij-idea": "IntelliJ IDEA"
       },
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Modeling",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/modeling.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Modeling",
       "headings": {
         "introduction": "Introduction",
         "modeling-structures": "Modeling structures",
@@ -614,14 +513,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Object-Oriented Programming",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/oop.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Object-Oriented Programming",
       "headings": {
         "introduction": "Introduction",
         "objects": "Objects",
@@ -666,14 +559,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Principles",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/principles.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Principles",
       "headings": {
         "single-responsibility-principle": "Single Responsibility Principle",
         "open-closed-principle": "Open-Closed Principle",
@@ -688,14 +575,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : SDLC Process Models",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/processModels.md",
-      "layout": "default",
+      "title": "Textbook Chapter : SDLC Process Models",
       "headings": {
         "introduction": "Introduction",
         "example-process-models": "Example process models",
@@ -715,14 +596,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Project Planning",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/projectPlanning.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Project Planning",
       "headings": {
         "work-breakdown-structure": "Work Breakdown Structure",
         "milestones": "Milestones",
@@ -735,14 +610,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Quality Assurance",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/qualityAssurance.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Quality Assurance",
       "headings": {
         "introduction": "Introduction",
         "code-reviews": "Code reviews",
@@ -758,14 +627,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Refactoring",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/refactoring.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Refactoring",
       "headings": {
         "what": "What",
         "how": "How",
@@ -775,14 +638,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Requirements",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/requirements.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Requirements",
       "headings": {
         "introduction": "Introduction",
         "non-functional-requirements": "Non-Functional Requirements",
@@ -793,14 +650,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Reuse",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/reuse.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Reuse",
       "headings": {
         "introduction": "Introduction",
         "apis": "APIs",
@@ -821,14 +672,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Revision Control",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/revisionControl.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Revision Control",
       "headings": {
         "what": "What",
         "repositories": "Repositories",
@@ -847,14 +692,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Software Engineering",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/softwareEngineering.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Software Engineering",
       "headings": {
         "introduction": "Introduction",
         "pros-and-cons": "Pros and Cons",
@@ -863,14 +702,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Specifying Requirements",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/specifyingRequirements.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Specifying Requirements",
       "headings": {
         "prose": "Prose",
         "feature-lists": "Feature lists",
@@ -892,14 +725,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Teamwork",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/teamwork.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Teamwork",
       "headings": {
         "team-structures": "Team Structures",
         "teamwork": "Teamwork"
@@ -909,19 +736,12 @@
     {
       "src": "se-book-adapted/chapters/test.md",
       "title": "",
-      "layout": "default",
       "headings": {},
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Test Case Design",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/testCaseDesign.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Test Case Design",
       "headings": {
         "introduction": "Introduction",
         "equivalence-partitions": "Equivalence partitions",
@@ -949,14 +769,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Testing",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/testing.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Testing",
       "headings": {
         "introduction": "Introduction",
         "testing-types": "Testing types",
@@ -992,14 +806,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : UML",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/uml.md",
-      "layout": "default",
+      "title": "Textbook Chapter : UML",
       "headings": {
         "class-diagrams": "Class diagrams",
         "sequence-diagrams": "Sequence diagrams",
@@ -1061,11 +869,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Definitions",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
       "src": "se-book-adapted/common/definitions.md",
-      "layout": "default",
+      "title": "Definitions",
       "headings": {
         "definitions": "Definitions",
         "a": "A",
@@ -1089,23 +894,16 @@
       "headingKeywords": {}
     },
     {
-      "title": "Combined Exercises",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
       "src": "se-book-adapted/common/exercises.md",
-      "layout": "default",
+      "title": "Combined Exercises",
       "headings": {
         "combined-exercises": "Combined Exercises"
       },
       "headingKeywords": {}
     },
     {
-      "title": "Project Duke",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
       "src": "se-book-adapted/projectDuke/index.md",
-      "layout": "default",
+      "title": "Project Duke",
       "headings": {
         "project-duke": "Project Duke",
         "levels": "Levels",
@@ -1186,10 +984,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Combined Exercises",
-      "pageNav": 3,
       "src": "book/combined/exercises.md",
-      "layout": "default",
+      "title": "Combined Exercises",
       "headings": {
         "combined-exercises": "Combined Exercises"
       },

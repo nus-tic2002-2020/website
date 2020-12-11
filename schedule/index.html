@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 2.15.2">
+    <meta name="generator" content="MarkBind 2.17.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TIC2002 - Schedule</title>
     <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
     <link rel="stylesheet" href="../markbind/css/octicons.css">
-    <link rel="stylesheet" href="../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="../markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="../markbind/css/markbind.min.css"><script src="../markbind/js/polyfill.min.js"></script>
+    <script src="../markbind/js/vue.min.js"></script>
+    <script src="../markbind/js/markbind.min.js"></script>
+    <script src="../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../markbind/layouts/default/styles.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
     <link rel="stylesheet" href="/website/css/main.css">
     <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
 <body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
 <div id="app">
     <header fixed>
+<div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~tic2002">here</a> when the new semester starts.</strong></span></div>
 <navbar placement="top" type="dark" class="temp-navbar">
 <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-danger">TIC2002 <small>2020</small></span></a>
   <div class="nav-link temp-dropdown-placeholder">**Schedule**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
@@ -46,7 +49,7 @@
     <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
     <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
     
-    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/szXDJN4" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
+    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/szXDJN4" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code class="hljs inline no-lang" v-pre>repl.it</code> link</span></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
     
     
@@ -57,145 +60,146 @@
     <form class="navbar-form">
       <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
         
+
+
 <div id="content-wrapper">
 
 <div>
 <div class="website-content">
 <nav>
-<ul class="pagination mt-2"><li class="page-item"><a class="page-link" href="/website/schedule/week11"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+<ul class="pagination mt-2"><li class="page-item disabled"><a class="page-link" href="/website/schedule/week0"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-<li class="page-item active"><a class="page-link" href="/website/schedule/week12/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
-<li class="page-item"><a class="page-link" href="/website/schedule/week12/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> Topics</a></li>
-<li class="page-item"><a class="page-link" href="/website/schedule/week12/admin.html"><span><span><span aria-hidden="true" class="glyphicon glyphicon-check"></span></span></span> Tasks</a></li>
-<li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week13"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
+<li class="page-item active"><a class="page-link" href="/website/schedule/week1/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week1/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> Topics</a></li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week1/admin.html"><span><span><span aria-hidden="true" class="glyphicon glyphicon-check"></span></span></span> Tasks</a></li>
+<li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week2"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
 <p></p>
-<h1 id="week-12-tue-nov-3rd-summary">Week 12 <small><small><span class="dimmed">[Tue, Nov 3rd]</span> - Summary</small></small><span id="week-12-tue-nov-3rd-summary" class="anchor"></span><a class="fa fa-anchor" href="#week-12-tue-nov-3rd-summary" onclick="event.stopPropagation()"></a></h1>
-<div></div>
+<h1 id="week-1-mon-aug-10th-summary"><span id="week-1-mon-aug-10th-summary" class="anchor"></span>Week 1 <small><small><span class="dimmed">[Mon, Aug 10th]</span> - Summary</small></small><a class="fa fa-anchor" href="#week-1-mon-aug-10th-summary" onclick="event.stopPropagation()"></a></h1>
+<div>
+<box type="info" dismissible>
+<ul>
+<li><strong>In this <span class="border bg-white">  Summary </span> tab</strong> you can find a summary of the week and announcements relevant to that week.<br>Click on the <a href="/website/schedule/week1/topics.html"><span class="border bg-white"> <span><span aria-hidden="true" class="fas fa-book"></span></span> Topics </span></a> and the <a href="/website/schedule/week1/admin-tic2002.html"><span class="border bg-white"> <span><span aria-hidden="true" class="glyphicon glyphicon-check"></span></span> Tasks </span></a> tabs (shown at the top of this page) to see more details of each category.
+</li></ul></box>
+
+<panel type class="embedding" expanded><template slot="header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Policies → <strong>Deadlines</strong></p></template>
+<div>
+<h3 id="deadlines"><span id="deadlines" class="anchor"></span>Deadlines<a class="fa fa-anchor" href="#deadlines" onclick="event.stopPropagation()"></a></h3>
+<ul>
+<li>Deadline for weekly tasks:
+<ul>
+<li><strong>If a specific deadline is given</strong>, adhere to that.</li>
+<li><strong>If no specific deadline is given</strong>, try to complete tasks allocated to a week by Tuesday 6.30pm of the following week (i.e., before the next lecture). In case you fail to meet that deadline, you should still do those tasks as soon as possible. There will be no penalty if a task is done within a <em>grace period</em> of one week after the deadline.</li></ul></li></ul></div></panel>
+<p></p></div>
 <span id="summary">
 <div class="container">
   <div class="row">
   <div class="col-sm border-right">
 <p><span><strong><span><span aria-hidden="true" class="fas fa-book"></span></span> Topics Summary:</strong></span></p>
 <ul>
-<li>
-<p>[<a href="/website/schedule/week12/topics.html#W12-1">W12.1</a>] <strong>Reuse</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
-<li>
-<p>[<a href="/website/schedule/week12/topics.html#W12-2">W12.2</a>] <strong>Quality Assurance</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
+<li>[<a href="/website/schedule/week1/topics.html#W1-1">W1.1</a>] <strong>SE: Intro</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
 <p></p>
 <ul>
-<li>[<a href="/website/schedule/week12/topics.html#W12-3">W12.3</a>] <strong>Other UML Models</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></li></ul>
+<li>
+<p>[<a href="/website/schedule/week1/topics.html#W1-2">W1.2</a>] <strong>Java: Intro</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p>[<a href="/website/schedule/week1/topics.html#W1-3">W1.3</a>] <strong>Java: HelloWorld</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p>[<a href="/website/schedule/week1/topics.html#W1-4">W1.4</a>] <strong>Java: Data Types</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p>[<a href="/website/schedule/week1/topics.html#W1-5">W1.5</a>] <strong>Java: Control Flow</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
 <p></p>
-<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Full ToC</span></p></template>
+<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span class="dimmed">Full ToC</span></p></template>
   <div>
 <ul>
-<li>[<a href="/website/schedule/week12/topics.html#W12-1">W12.1</a>] <strong>Reuse</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
-<div class="indented-level2">
-<small>
-<p>   <strong>Intro</strong></p>
-<ul>
-<li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-1a">W12.1a</a>] <span>Implementation → Reuse → Introduction →
-</span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
-<li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-1b">W12.1b</a>] <span>Implementation → Reuse → Introduction →
-</span></span> <span>When</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
-<p>   <strong>APIs</strong></p>
-<ul>
-<li><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-1c">W12.1c</a>] <span>Implementation → Reuse → APIs →
-</span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
-<p>   <strong>Libraries</strong></p>
-<ul>
-<li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-1d">W12.1d</a>] <span>Implementation → Reuse → Libraries →
-</span></span> <span>What</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
-<li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-1e">W12.1e</a>] <span>Implementation → Reuse → Libraries →
-</span></span> <span>How</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
-<p>   <strong>Frameworks</strong></p>
-<ul>
-<li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-1f">W12.1f</a>] <span>Implementation → Reuse → Frameworks →
-</span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
-<li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-1g">W12.1g</a>] <span>Implementation → Reuse → Frameworks →
-</span></span> <span>Frameworks versus libraries</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul>
-<p>   <strong>Platforms</strong></p>
-<ul>
-<li><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-1h">W12.1h</a>] <span>Implementation → Reuse → Platforms →
-</span></span> <span>What</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul></small></div>
-<ul>
-<li>[<a href="/website/schedule/week12/topics.html#W12-2">W12.2</a>] <strong>Quality Assurance</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
+<li>[<a href="/website/schedule/week1/topics.html#W1-1">W1.1</a>] <strong>SE: Intro</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
 <div class="indented-level2">
 <small>
 <ul>
-<li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-2a">W12.2a</a>] <span>Quality Assurance → Quality Assurance → Introduction →
-</span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
-<li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-2b">W12.2b</a>] <span>Quality Assurance → Quality Assurance → Introduction →
-</span></span> <span>Validation versus verification</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
-<li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-2c">W12.2c</a>] <span>Quality Assurance → Quality Assurance → Code Reviews →
-</span></span> <span>What</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
-<li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-2d">W12.2d</a>] <span>Quality Assurance → Quality Assurance → Static Analysis →
-</span></span> <span>What</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
-<li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-2e">W12.2e</a>] <span>Quality Assurance → Quality Assurance → Formal Verification →
-</span></span> <span>What</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
+<li><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-1a">W1.1a</a>] <span>Software Engineering → Introduction →
+</span></span> <span>Pros and cons</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul></small></div>
 <p></p>
 <ul>
-<li>[<a href="/website/schedule/week12/topics.html#W12-3">W12.3</a>] <strong>Other UML Models</strong> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></li></ul>
+<li>[<a href="/website/schedule/week1/topics.html#W1-2">W1.2</a>] <strong>Java: Intro</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
 <div class="indented-level2">
 <small>
 <ul>
 <li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3a">W12.3a</a>] <span>Design → Modelling → Modelling Structure →
-</span></span> <span>Object oriented domain models</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p></li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-2a">W1.2a</a>] <span>C++ to Java →
+</span></span> <span>About this chapter</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3b">W12.3b</a>] <span>Design → Modelling → Modelling Structure →
-</span></span> <span>Deployment diagrams</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p></li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-2b">W1.2b</a>] <span>C++ to Java → The Java World →
+</span></span> <span>What is Java?</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3c">W12.3c</a>] <span>Design → Modelling → Modelling Structure →
-</span></span> <span>Component diagrams</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p></li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-2c">W1.2c</a>] <span>C++ to Java → The Java World →
+</span></span> <span>How Java works</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3d">W12.3d</a>] <span>Design → Modelling → Modelling Structure →
-</span></span> <span>Package diagrams</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p></li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-2d">W1.2d</a>] <span>C++ to Java → The Java World →
+</span></span> <span>Java editions</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p></li></ul></small></div>
+<ul>
+<li>[<a href="/website/schedule/week1/topics.html#W1-3">W1.3</a>] <strong>Java: HelloWorld</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
+<div class="indented-level2">
+<small>
+<ul>
 <li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3e">W12.3e</a>] <span>Design → Modelling → Modelling Structure →
-</span></span> <span>Composite structure diagrams</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p></li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-3a">W1.3a</a>] <span>C++ to Java → Getting Started →
+</span></span> <span>Installation</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3f">W12.3f</a>] <span>Design → Modelling → Modelling Behaviors
-</span></span> <span>Activity diagrams - basic</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p></li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-3b">W1.3b</a>] <span>C++ to Java → Getting Started →
+</span></span> <span>HelloWorld</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3g">W12.3g</a>] <span>Design → Modelling → Modelling Behaviors
-</span></span> <span>Timing diagrams</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p></li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-3c">W1.3c</a>] <span>C++ to Java → Getting Started →
+</span></span> <span>Compiling a program</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3h">W12.3h</a>] <span>Design → Modelling → Modelling Behaviors
-</span></span> <span>Interaction overview diagrams</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p></li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-3d">W1.3d</a>] <span>C++ to Java → Getting Started →
+</span></span> <span>Running a program</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
+<ul>
+<li>[<a href="/website/schedule/week1/topics.html#W1-4">W1.4</a>] <strong>Java: Data Types</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
+<div class="indented-level2">
+<small>
+<ul>
 <li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3i">W12.3i</a>] <span>Design → Modelling → Modelling Behaviors
-</span></span> <span>Communication diagrams</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p></li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-4a">W1.4a</a>] <span>C++ to Java → Data Types →
+</span></span> <span>Primitive data types</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
-<p><span class="dimmed">[<a href="/website/schedule/week12/topics.html#W12-3j">W12.3j</a>] <span>Design → Modelling → Modelling Behaviors
-</span></span> <span>State machine diagrams</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></p></li></ul></small></div>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-4b">W1.4b</a>] <span>C++ to Java → Data Types →
+</span></span> <span>Variables</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-4c">W1.4c</a>] <span>C++ to Java → Data Types →
+</span></span> <span>Operators</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-4d">W1.4d</a>] <span>C++ to Java → Data Types →
+</span></span> <span>Arrays</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
+<ul>
+<li>[<a href="/website/schedule/week1/topics.html#W1-5">W1.5</a>] <strong>Java: Control Flow</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
+<div class="indented-level2">
+<small>
+<ul>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-5a">W1.5a</a>] <span>C++ to Java → Control Flow →
+</span></span> <span>Branching</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-5b">W1.5b</a>] <span>C++ to Java → Control Flow →
+</span></span> <span>Methods</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+<li>
+<p><span class="dimmed">[<a href="/website/schedule/week1/topics.html#W1-5c">W1.5c</a>] <span>C++ to Java → Control Flow →
+</span></span> <span>Loops</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
 <p></p></div></panel></div>
   <div class="col-sm">
 <p><span><strong><span><span aria-hidden="true" class="glyphicon glyphicon-check"></span></span> Tasks Summary:</strong></span></p>
 <div>
 <ol>
-<li>Submit the quiz</li></ol>
-<p><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> <strong>Project:</strong></p>
-<ol>
-<li>Finish up the project coding</li>
-<li>Prepare the final submission</li></ol></div></div></div></div></span>
-<br></div></div></div>
-
+<li>Install Java <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the lecture</span></span></li>
+<li>Create a GitHub account</li>
+<li>Submit the pre-module survey  <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Fri, Aug 14th 2359</span></span></li>
+<li>Attend the lecture</li>
+<li>Submit weekly exercises</li></ol></div></div></div></div></span>
+<br></div></div>
+<p><i class="fa fa-arrow-circle-up fa-lg" id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true"></i></p></div>
         <nav id="page-nav" class="navbar navbar-light bg-transparent">
 <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
 <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-<a class="nav-link py-1" href="#week-12-tue-nov-3rd-summary">Week 12 [Tue, Nov 3rd] - Summary&#x200E;</a>
+<a class="nav-link py-1" href="#week-1-mon-aug-10th-summary">Week 1 [Mon, Aug 10th] - Summary&#x200E;</a>
 
 </nav>
 </div>
@@ -204,18 +208,13 @@
     <footer>
   
   <div class="text-center">
-    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 30 Nov 2020, 22:07:39 GMT+8]</small></div></footer></div>
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.0</a>, generated on Fri, 11 Dec 2020, 23:42:27 GMT+8]</small></div></footer></div>
 </body>
-<script src="../markbind/js/vue.min.js"></script>
-<script src="../markbind/js/components.min.js"></script>
 <script src="../markbind/js/bootstrap-utility.min.js"></script>
-<script src="../markbind/js/polyfill.min.js"></script>
-<script src="../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  MarkBind.setupWithSearch()
 </script>
-<script src="../markbind/js/setup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script>
     function initAlgolia() {
@@ -229,5 +228,5 @@
     }
     MarkBind.afterSetup(initAlgolia);
   </script>
-<script src="../markbind/layouts/default/scripts.js"></script>
+<script src="../markbind/layouts/default/scripts.js"></script><script>if (MarkBind.AfterSetup) MarkBind.AfterSetup()</script>
 </html>
