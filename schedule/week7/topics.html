@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 2.17.0">
+    <meta name="generator" content="MarkBind 2.15.2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TIC2002 - Week 7 - Topics</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
     <link rel="stylesheet" href="../../markbind/css/octicons.css">
-    <link rel="stylesheet" href="../../markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
-    <script src="../../markbind/js/vue.min.js"></script>
-    <script src="../../markbind/js/markbind.min.js"></script>
-    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
     <link rel="stylesheet" href="/website/css/main.css">
     <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
 <body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
@@ -49,7 +47,7 @@
     <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
     <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
     
-    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/szXDJN4" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code class="hljs inline no-lang" v-pre>repl.it</code> link</span></a></li>
+    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/szXDJN4" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
     
     
@@ -58,10 +56,8 @@
     <li><a href="https://github.com/nus-tic2002-2020/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke repo</span></a></li></dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
-      <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
+      <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
         
-
-
 <div id="content-wrapper">
 <div class="website-content">
 <nav>
@@ -72,9 +68,9 @@
 <li class="page-item"><a class="page-link" href="/website/schedule/week7/admin.html"><span><span><span aria-hidden="true" class="glyphicon glyphicon-check"></span></span></span> Tasks</a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week8"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
 <p></p>
-<h1 id="week-7-tue-sep-29th-topics"><span id="week-7-tue-sep-29th-topics" class="anchor"></span>Week 7 <small><small><span class="dimmed">[Tue, Sep 29th]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-7-tue-sep-29th-topics" onclick="event.stopPropagation()"></a></h1>
+<h1 id="week-7-tue-sep-29th-topics">Week 7 <small><small><span class="dimmed">[Tue, Sep 29th]</span> - Topics</small></small><span id="week-7-tue-sep-29th-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-7-tue-sep-29th-topics" onclick="event.stopPropagation()"></a></h1>
 <div></div>
-<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
 <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week7/topics.html#W7-1">W7.1</a>] <strong>Java: Constants</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
@@ -158,7 +154,7 @@
 <div>
 <p>You already know how to define variables in Java code; do you know how to define constants?</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w7-1-java-constants">
-<span slot="header" class="card-title"><div><h2 id="w7-1-java-constants"><span id="w7-1-java-constants" class="anchor"></span><span class="dimmed">[W7.1]</span> <strong>Java: Constants</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w7-1-java-constants" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w7-1-java-constants"><span class="dimmed">[W7.1]</span> <strong>Java: Constants</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-1-java-constants" class="anchor"></span><a class="fa fa-anchor" href="#w7-1-java-constants" onclick="event.stopPropagation()"></a></h2></div></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=f79c815a-d8bc-41df-991f-ac4000f12cd7&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -169,22 +165,17 @@
 <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/constants" id="c-to-java-miscellaneous-topics-constants">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.1a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="c-to-java-miscellaneous-topics-constants"><span id="c-to-java-miscellaneous-topics-constants" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Constants</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-constants" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-miscellaneous-topics-constants"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Constants</span></strong><span id="c-to-java-miscellaneous-topics-constants" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-constants" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use Java constants</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p>Java does not directly support constants. The convention is to use a <code class="hljs inline no-lang" v-pre>static</code> <code class="hljs inline no-lang" v-pre>final</code> variable where a constant is needed. The <code class="hljs inline no-lang" v-pre>static</code> modifier causes the variable to be available without instantiating an object. The <code class="hljs inline no-lang" v-pre>final</code> modifier causes the variable to be unchangeable. Java constants are normally declared in ALL CAPS separated by underscores.</p>
+<p>Java does not directly support constants. The convention is to use a <code v-pre>static</code> <code v-pre>final</code> variable where a constant is needed. The <code v-pre>static</code> modifier causes the variable to be available without instantiating an object. The <code v-pre>final</code> modifier causes the variable to be unchangeable. Java constants are normally declared in ALL CAPS separated by underscores.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example of a constant named <code class="hljs inline no-lang" v-pre>MAX_BALANCE</code> which can be accessed as <code class="hljs inline no-lang" v-pre>Account.MAX_BALANCE</code>.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span></span>{
-</span><span>
-</span><span>  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> MAX_BALANCE = <span class="hljs-number">1000000.0</span>;
-</span><span>
-</span><span>}
-</span></code></pre><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Math.html#PI"><code class="hljs inline no-lang" v-pre>Math.PI</code></a> is an example constant that comes with Java.</p></box></div>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example of a constant named <code v-pre>MAX_BALANCE</code> which can be accessed as <code v-pre>Account.MAX_BALANCE</code>.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span></span>{<br></span><span><br></span><span>  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> MAX_BALANCE = <span class="hljs-number">1000000.0</span>;<br></span><span><br></span><span>}<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Math.html#PI"><code v-pre>Math.PI</code></a> is an example constant that comes with Java.</p></box></div>
 <div></div></div></div></panel>
 <p></p>
 <div class="indented">
@@ -199,9 +190,9 @@
 <p><span class="text-success"><small><strong><span aria-hidden="true" class="far fa-hand-point-down"></span></strong> Guidance for the item(s) below:</small></span><br></p>
 <div class="indented">
 <div>
-<p>An <em>enumeration</em> is something in between a primitive (e.g., <code class="hljs inline no-lang" v-pre>int</code>) and a class (e.g., <code class="hljs inline no-lang" v-pre>Person</code>). Let's learn about enumerations next.</p></div></div></div></div></div>
+<p>An <em>enumeration</em> is something in between a primitive (e.g., <code v-pre>int</code>) and a class (e.g., <code v-pre>Person</code>). Let's learn about enumerations next.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w7-2-oop-java-enumerations">
-<span slot="header" class="card-title"><div><h2 id="w7-2-oop-java-enumerations"><span id="w7-2-oop-java-enumerations" class="anchor"></span><span class="dimmed">[W7.2]</span> <strong>OOP + Java: Enumerations</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w7-2-oop-java-enumerations" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w7-2-oop-java-enumerations"><span class="dimmed">[W7.2]</span> <strong>OOP + Java: Enumerations</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-2-oop-java-enumerations" class="anchor"></span><a class="fa fa-anchor" href="#w7-2-oop-java-enumerations" onclick="event.stopPropagation()"></a></h2></div></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=b8410e78-0f56-482b-8261-ac4000f12c7f&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -212,17 +203,17 @@
 <panel type="seamless" expanded popup-url="/website/book/oop/classes/enumerations" id="paradigms-oop-classes-enumerations">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.2a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="paradigms-oop-classes-enumerations"><span id="paradigms-oop-classes-enumerations" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Classes →</span></span></small> <strong><span>Enumerations</span></strong><a class="fa fa-anchor" href="#paradigms-oop-classes-enumerations" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="paradigms-oop-classes-enumerations"><small><span class="font-weight-bold text-muted"><span>Paradigms → OOP → Classes →</span></span></small> <strong><span>Enumerations</span></strong><span id="paradigms-oop-classes-enumerations" class="anchor"></span><a class="fa fa-anchor" href="#paradigms-oop-classes-enumerations" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain the meaning of enumerations</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p><strong>An <em>Enumeration</em> is a fixed set of values that can be considered as a data type.</strong> An enumeration is often useful when using a regular data type such as <code class="hljs inline no-lang" v-pre>int</code> or <code class="hljs inline no-lang" v-pre>String</code> would allow invalid values to be assigned to a variable.</p>
+<p><strong>An <em>Enumeration</em> is a fixed set of values that can be considered as a data type.</strong> An enumeration is often useful when using a regular data type such as <code v-pre>int</code> or <code v-pre>String</code> would allow invalid values to be assigned to a variable.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose you want a variable called <code class="hljs inline no-lang" v-pre>priority</code> to store the priority of something. There are only three priority levels: high, medium, and low. You can declare the variable <code class="hljs inline no-lang" v-pre>priority</code> as of type <code class="hljs inline no-lang" v-pre>int</code> and use only values <code class="hljs inline no-lang" v-pre>2</code>, <code class="hljs inline no-lang" v-pre>1</code>, and <code class="hljs inline no-lang" v-pre>0</code> to indicate the three priority levels. However, this opens the possibility of an invalid value such as <code class="hljs inline no-lang" v-pre>9</code> being assigned to it. But if you define an enumeration type called <code class="hljs inline no-lang" v-pre>Priority</code> that has three values <code class="hljs inline no-lang" v-pre>HIGH</code>, <code class="hljs inline no-lang" v-pre>MEDIUM</code> and <code class="hljs inline no-lang" v-pre>LOW</code> only, a variable of type <code class="hljs inline no-lang" v-pre>Priority</code> will never be assigned an invalid value because the compiler is able to catch such an error.</p>
-<p><code class="hljs inline no-lang" v-pre>Priority</code>: <code class="hljs inline no-lang" v-pre>HIGH</code>, <code class="hljs inline no-lang" v-pre>MEDIUM</code>, <code class="hljs inline no-lang" v-pre>LOW</code></p></box></div>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose you want a variable called <code v-pre>priority</code> to store the priority of something. There are only three priority levels: high, medium, and low. You can declare the variable <code v-pre>priority</code> as of type <code v-pre>int</code> and use only values <code v-pre>2</code>, <code v-pre>1</code>, and <code v-pre>0</code> to indicate the three priority levels. However, this opens the possibility of an invalid value such as <code v-pre>9</code> being assigned to it. But if you define an enumeration type called <code v-pre>Priority</code> that has three values <code v-pre>HIGH</code>, <code v-pre>MEDIUM</code> and <code v-pre>LOW</code> only, a variable of type <code v-pre>Priority</code> will never be assigned an invalid value because the compiler is able to catch such an error.</p>
+<p><code v-pre>Priority</code>: <code v-pre>HIGH</code>, <code v-pre>MEDIUM</code>, <code v-pre>LOW</code></p></box></div>
 <div></div></div></div></panel>
 <p></p>
 <div class="indented">
@@ -232,73 +223,32 @@
 <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/enums" id="c-to-java-miscellaneous-topics-enumerations">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.2b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="c-to-java-miscellaneous-topics-enumerations"><span id="c-to-java-miscellaneous-topics-enumerations" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Enumerations</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-enumerations" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-miscellaneous-topics-enumerations"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Enumerations</span></strong><span id="c-to-java-miscellaneous-topics-enumerations" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-enumerations" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use Java enumerations</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p><strong>You can define an enum type by using the <code class="hljs inline no-lang" v-pre>enum</code> keyword.</strong> Because they are constants, the names of an enum type's fields are in uppercase letters e.g., <code class="hljs inline no-lang" v-pre>FLAG_SUCCESS</code> by convention.</p>
+<p><strong>You can define an enum type by using the <code v-pre>enum</code> keyword.</strong> Because they are constants, the names of an enum type's fields are in uppercase letters e.g., <code v-pre>FLAG_SUCCESS</code> by convention.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Defining an enumeration to represent days of a week (code to be put in the <code class="hljs inline no-lang" v-pre>Day.java</code> file):</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Day {
-</span><span>    SUNDAY, MONDAY, TUESDAY, WEDNESDAY,
-</span><span>    THURSDAY, FRIDAY, SATURDAY
-</span><span>}
-</span></code></pre><p>Some examples of using the <code class="hljs inline no-lang" v-pre>Day</code> enumeration defined above:</p>
-<pre><code class="hljs java" v-pre><span>Day today = Day.MONDAY;
-</span><span>Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.SUNDAY};
-</span><span>
-</span><span><span class="hljs-keyword">switch</span> (today) {
-</span><span><span class="hljs-keyword">case</span> SATURDAY:
-</span><span><span class="hljs-keyword">case</span> SUNDAY:
-</span><span>    System.out.println(<span class="hljs-string">"It's the weekend"</span>);
-</span><span>    <span class="hljs-keyword">break</span>;
-</span><span><span class="hljs-keyword">default</span>:
-</span><span>    System.out.println(<span class="hljs-string">"It's a week day"</span>);
-</span><span>}
-</span></code></pre></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Defining an enumeration to represent days of a week (code to be put in the <code v-pre>Day.java</code> file):</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Day {<br></span><span>    SUNDAY, MONDAY, TUESDAY, WEDNESDAY,<br></span><span>    THURSDAY, FRIDAY, SATURDAY<br></span><span>}<br></span></code></pre><p>Some examples of using the <code v-pre>Day</code> enumeration defined above:</p>
+<pre><code class="hljs java" v-pre><span>Day today = Day.MONDAY;<br></span><span>Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.SUNDAY};<br></span><span><br></span><span><span class="hljs-keyword">switch</span> (today) {<br></span><span><span class="hljs-keyword">case</span> SATURDAY:<br></span><span><span class="hljs-keyword">case</span> SUNDAY:<br></span><span>    System.out.println(<span class="hljs-string">"It's the weekend"</span>);<br></span><span>    <span class="hljs-keyword">break</span>;<br></span><span><span class="hljs-keyword">default</span>:<br></span><span>    System.out.println(<span class="hljs-string">"It's a week day"</span>);<br></span><span>}<br></span></code></pre></box>
 <p>Note that while enumerations are usually a simple set of fixed values, <strong>Java enumerations can have behaviors too</strong>, as explained in <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">this tutorial from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></a></p></div>
 <div>
   <div>
-<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
 <div>
-<panel type="dark" expanded id="key-exercise-show-priority-color"><template slot="header"><h3 id="key-exercise-show-priority-color"><span id="key-exercise-show-priority-color" class="anchor"></span><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] show priority color</small></small><a class="fa fa-anchor" href="#key-exercise-show-priority-color" onclick="event.stopPropagation()"></a></h3></template>
+<panel type="dark" expanded id="key-exercise-show-priority-color"><template slot="_header"><h3 id="key-exercise-show-priority-color"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] show priority color</small></small><span id="key-exercise-show-priority-color" class="anchor"></span><a class="fa fa-anchor" href="#key-exercise-show-priority-color" onclick="event.stopPropagation()"></a></h3></template>
 <question>
-<p>Define an enumeration named <code class="hljs inline no-lang" v-pre>Priority</code>. Add the missing <code class="hljs inline no-lang" v-pre>describe</code> method to the code below so that it produces the output given.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-</span><span>
-</span><span>    <span class="hljs-comment">// Add your method here</span>
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-</span><span>        describe(<span class="hljs-string">"Red"</span>, Priority.HIGH);
-</span><span>        describe(<span class="hljs-string">"Orange"</span>, Priority.MEDIUM);
-</span><span>        describe(<span class="hljs-string">"Blue"</span>, Priority.MEDIUM);
-</span><span>        describe(<span class="hljs-string">"Green"</span>, Priority.LOW);
-</span><span>    }
-</span><span>}
-</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-<pre><code class="hljs" v-pre><span>Red indicates high priority
-</span><span>Orange indicates medium priority
-</span><span>Blue indicates medium priority
-</span><span>Green indicates low priority
-</span></code></pre><div slot="hint" class="algolia-no-index">
-<p>Use a <code class="hljs inline no-lang" v-pre>switch</code> statement to select between possible values for <code class="hljs inline no-lang" v-pre>Priority</code>.</p>
-<pre><code class="hljs java" v-pre><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">describe</span><span class="hljs-params">(String color, Priority p)</span> </span>{
-</span><span>        <span class="hljs-keyword">switch</span> (p) {
-</span><span>            <span class="hljs-keyword">case</span> LOW:
-</span><span>                System.out.println(color + <span class="hljs-string">" indicates low priority"</span>);
-</span><span>                <span class="hljs-keyword">break</span>;
-</span><span>            <span class="hljs-comment">// ...</span>
-</span><span>        }
-</span><span>    }
-</span></code></pre><p>Code for the enumeration is given below:</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Priority {
-</span><span>    HIGH, MEDIUM, LOW
-</span><span>}
-</span></code></pre></div></question></panel></div></div></panel></div></div></div></div></panel>
+<p>Define an enumeration named <code v-pre>Priority</code>. Add the missing <code v-pre>describe</code> method to the code below so that it produces the output given.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-comment">// Add your method here</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        describe(<span class="hljs-string">"Red"</span>, Priority.HIGH);<br></span><span>        describe(<span class="hljs-string">"Orange"</span>, Priority.MEDIUM);<br></span><span>        describe(<span class="hljs-string">"Blue"</span>, Priority.MEDIUM);<br></span><span>        describe(<span class="hljs-string">"Green"</span>, Priority.LOW);<br></span><span>    }<br></span><span>}<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs" v-pre><span>Red indicates high priority<br></span><span>Orange indicates medium priority<br></span><span>Blue indicates medium priority<br></span><span>Green indicates low priority<br></span></code></pre><div slot="hint" class="algolia-no-index">
+<p>Use a <code v-pre>switch</code> statement to select between possible values for <code v-pre>Priority</code>.</p>
+<pre><code class="hljs java" v-pre><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">describe</span><span class="hljs-params">(String color, Priority p)</span> </span>{<br></span><span>        <span class="hljs-keyword">switch</span> (p) {<br></span><span>            <span class="hljs-keyword">case</span> LOW:<br></span><span>                System.out.println(color + <span class="hljs-string">" indicates low priority"</span>);<br></span><span>                <span class="hljs-keyword">break</span>;<br></span><span>            <span class="hljs-comment">// ...</span><br></span><span>        }<br></span><span>    }<br></span></code></pre><p>Code for the enumeration is given below:</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Priority {<br></span><span>    HIGH, MEDIUM, LOW<br></span><span>}<br></span></code></pre></div></question></panel></div></div></panel></div></div></div></div></panel>
 <p></p>
 <div class="indented">
 <div></div></div></div></panel>
@@ -314,7 +264,7 @@
 <div>
 <p>Another thing you need to do in your project soon is reading from and writing to files. Let's learn how to do that next.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w7-3-java-file-access">
-<span slot="header" class="card-title"><div><h2 id="w7-3-java-file-access"><span id="w7-3-java-file-access" class="anchor"></span><span class="dimmed">[W7.3]</span> <strong>Java: File Access</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w7-3-java-file-access" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w7-3-java-file-access"><span class="dimmed">[W7.3]</span> <strong>Java: File Access</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-3-java-file-access" class="anchor"></span><a class="fa fa-anchor" href="#w7-3-java-file-access" onclick="event.stopPropagation()"></a></h2></div></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=30a98cb4-ff66-4b68-9625-ac4000f12caf&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -325,119 +275,38 @@
 <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/fileAccess" id="c-to-java-miscellaneous-topics-file-access">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.3a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="c-to-java-miscellaneous-topics-file-access"><span id="c-to-java-miscellaneous-topics-file-access" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>File access</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-file-access" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-miscellaneous-topics-file-access"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>File access</span></strong><span id="c-to-java-miscellaneous-topics-file-access" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-file-access" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can read/write text files using Java</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p><strong>You can use the <a href="https://docs.oracle.com/javase/9/docs/api/java/io/File.html"><code class="hljs inline no-lang" v-pre>java.io.File</code></a> class to represent a file object</strong>. It can be used to access properties of the file object.</p>
+<p><strong>You can use the <a href="https://docs.oracle.com/javase/9/docs/api/java/io/File.html"><code v-pre>java.io.File</code></a> class to represent a file object</strong>. It can be used to access properties of the file object.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code creates a <code class="hljs inline no-lang" v-pre>File</code> object to represent a file <code class="hljs inline no-lang" v-pre>fruits.txt</code> that exists in the <code class="hljs inline no-lang" v-pre>data</code> directory <mark>relative to the current working directory</mark> and uses that object to print some properties of the file.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.io.File;
-</span><span>
-</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileClassDemo</span> </span>{
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-</span><span>        File f = <span class="hljs-keyword">new</span> File(<span class="hljs-string">"data/fruits.txt"</span>);
-</span><span>        System.out.println(<span class="hljs-string">"full path: "</span> + f.getAbsolutePath());
-</span><span>        System.out.println(<span class="hljs-string">"file exists?: "</span> + f.exists());
-</span><span>        System.out.println(<span class="hljs-string">"is Directory?: "</span> + f.isDirectory());
-</span><span>    }
-</span><span>
-</span><span>}
-</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-<pre><code class="hljs" v-pre><span>full path: C:\sample-code\data\fruits.txt
-</span><span>file exists?: true
-</span><span>is Directory?: false
-</span></code></pre></box>
-<p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If you use backslash to specify the file path in a Windows computer, you need to use an additional backslash as an escape character because the backslash by itself has a special meaning. e.g., use <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span><code class="hljs inline no-lang" v-pre>&quot;data\\fruits.txt&quot;</code>, not <span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span> <code class="hljs inline no-lang" v-pre>&quot;data\fruits.txt&quot;</code>. Alternatively, you can use forward slash <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span> <code class="hljs inline no-lang" v-pre>&quot;data/fruits.txt&quot;</code> (even on Windows).</p>
-<p><strong>You can read from a file using a <code class="hljs inline no-lang" v-pre>Scanner</code> object that uses a <code class="hljs inline no-lang" v-pre>File</code> object as the <em>source</em> of data.</strong></p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code creates a <code v-pre>File</code> object to represent a file <code v-pre>fruits.txt</code> that exists in the <code v-pre>data</code> directory <mark>relative to the current working directory</mark> and uses that object to print some properties of the file.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.io.File;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileClassDemo</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        File f = <span class="hljs-keyword">new</span> File(<span class="hljs-string">"data/fruits.txt"</span>);<br></span><span>        System.out.println(<span class="hljs-string">"full path: "</span> + f.getAbsolutePath());<br></span><span>        System.out.println(<span class="hljs-string">"file exists?: "</span> + f.exists());<br></span><span>        System.out.println(<span class="hljs-string">"is Directory?: "</span> + f.isDirectory());<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs" v-pre><span>full path: C:\sample-code\data\fruits.txt<br></span><span>file exists?: true<br></span><span>is Directory?: false<br></span></code></pre></box>
+<p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If you use backslash to specify the file path in a Windows computer, you need to use an additional backslash as an escape character because the backslash by itself has a special meaning. e.g., use <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span><code v-pre>&quot;data\\fruits.txt&quot;</code>, not <span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span> <code v-pre>&quot;data\fruits.txt&quot;</code>. Alternatively, you can use forward slash <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span> <code v-pre>&quot;data/fruits.txt&quot;</code> (even on Windows).</p>
+<p><strong>You can read from a file using a <code v-pre>Scanner</code> object that uses a <code v-pre>File</code> object as the <em>source</em> of data.</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code uses a <code class="hljs inline no-lang" v-pre>Scanner</code> object to read (and print) contents of a text file line-by-line:</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.io.File;
-</span><span><span class="hljs-keyword">import</span> java.io.FileNotFoundException;
-</span><span><span class="hljs-keyword">import</span> java.util.Scanner;
-</span><span>
-</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileReadingDemo</span> </span>{
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printFileContents</span><span class="hljs-params">(String filePath)</span> <span class="hljs-keyword">throws</span> FileNotFoundException </span>{
-</span><span>        File f = <span class="hljs-keyword">new</span> File(filePath); <span class="hljs-comment">// create a File for the given file path</span>
-</span><span>        Scanner s = <span class="hljs-keyword">new</span> Scanner(f); <span class="hljs-comment">// create a Scanner using the File as the source</span>
-</span><span>        <span class="hljs-keyword">while</span> (s.hasNext()) {
-</span><span>            System.out.println(s.nextLine());
-</span><span>        }
-</span><span>    }
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-</span><span>        <span class="hljs-keyword">try</span> {
-</span><span>            printFileContents(<span class="hljs-string">"data/fruits.txt"</span>);
-</span><span>        } <span class="hljs-keyword">catch</span> (FileNotFoundException e) {
-</span><span>            System.out.println(<span class="hljs-string">"File not found"</span>);
-</span><span>        }
-</span><span>    }
-</span><span>
-</span><span>}
-</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> i.e., contents of the <code class="hljs inline no-lang" v-pre>data/fruits.txt</code></p>
-<pre><code class="hljs" v-pre><span>5 Apples
-</span><span>3 Bananas
-</span><span>6 Cherries
-</span></code></pre></box>
-<p><strong>You can use a <a href="https://docs.oracle.com/javase/9/docs/api/java/io/FileWriter.html"><code class="hljs inline no-lang" v-pre>java.io.FileWriter</code></a> object to write to a file.</strong></p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code uses a <code v-pre>Scanner</code> object to read (and print) contents of a text file line-by-line:</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.io.File;<br></span><span><span class="hljs-keyword">import</span> java.io.FileNotFoundException;<br></span><span><span class="hljs-keyword">import</span> java.util.Scanner;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileReadingDemo</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printFileContents</span><span class="hljs-params">(String filePath)</span> <span class="hljs-keyword">throws</span> FileNotFoundException </span>{<br></span><span>        File f = <span class="hljs-keyword">new</span> File(filePath); <span class="hljs-comment">// create a File for the given file path</span><br></span><span>        Scanner s = <span class="hljs-keyword">new</span> Scanner(f); <span class="hljs-comment">// create a Scanner using the File as the source</span><br></span><span>        <span class="hljs-keyword">while</span> (s.hasNext()) {<br></span><span>            System.out.println(s.nextLine());<br></span><span>        }<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        <span class="hljs-keyword">try</span> {<br></span><span>            printFileContents(<span class="hljs-string">"data/fruits.txt"</span>);<br></span><span>        } <span class="hljs-keyword">catch</span> (FileNotFoundException e) {<br></span><span>            System.out.println(<span class="hljs-string">"File not found"</span>);<br></span><span>        }<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> i.e., contents of the <code v-pre>data/fruits.txt</code></p>
+<pre><code class="hljs" v-pre><span>5 Apples<br></span><span>3 Bananas<br></span><span>6 Cherries<br></span></code></pre></box>
+<p><strong>You can use a <a href="https://docs.oracle.com/javase/9/docs/api/java/io/FileWriter.html"><code v-pre>java.io.FileWriter</code></a> object to write to a file.</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code class="hljs inline no-lang" v-pre>writeToFile</code> method below uses a <code class="hljs inline no-lang" v-pre>FileWrite</code> object to write to a file. The method is being used to write two lines to the file <code class="hljs inline no-lang" v-pre>temp/lines.txt</code>.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.io.FileWriter;
-</span><span><span class="hljs-keyword">import</span> java.io.IOException;
-</span><span>
-</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileWritingDemo</span> </span>{
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeToFile</span><span class="hljs-params">(String filePath, String textToAdd)</span> <span class="hljs-keyword">throws</span> IOException </span>{
-</span><span>        FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath);
-</span><span>        fw.write(textToAdd);
-</span><span>        fw.close();
-</span><span>    }
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-</span><span>        String file2 = <span class="hljs-string">"temp/lines.txt"</span>;
-</span><span>        <span class="hljs-keyword">try</span> {
-</span><span>            writeToFile(file2, <span class="hljs-string">"first line"</span> + System.lineSeparator() + <span class="hljs-string">"second line"</span>);
-</span><span>        } <span class="hljs-keyword">catch</span> (IOException e) {
-</span><span>            System.out.println(<span class="hljs-string">"Something went wrong: "</span> + e.getMessage());
-</span><span>        }
-</span><span>    }
-</span><span>
-</span><span>}
-</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> Contents of the <code class="hljs inline no-lang" v-pre>temp/lines.txt</code>:</p>
-<pre><code class="hljs" v-pre><span>first line
-</span><span>second line
-</span></code></pre></box>
-<p>Note that you <mark>need to call the <code class="hljs inline no-lang" v-pre>close()</code> method</mark> of the <code class="hljs inline no-lang" v-pre>FileWriter</code> object for the writing operation to be completed.</p>
-<p><strong>You can create a <code class="hljs inline no-lang" v-pre>FileWriter</code> object that appends to the file</strong> (instead of overwriting the current content) by specifying an additional boolean parameter to the constructor.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>writeToFile</code> method below uses a <code v-pre>FileWrite</code> object to write to a file. The method is being used to write two lines to the file <code v-pre>temp/lines.txt</code>.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.io.FileWriter;<br></span><span><span class="hljs-keyword">import</span> java.io.IOException;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileWritingDemo</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeToFile</span><span class="hljs-params">(String filePath, String textToAdd)</span> <span class="hljs-keyword">throws</span> IOException </span>{<br></span><span>        FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath);<br></span><span>        fw.write(textToAdd);<br></span><span>        fw.close();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        String file2 = <span class="hljs-string">"temp/lines.txt"</span>;<br></span><span>        <span class="hljs-keyword">try</span> {<br></span><span>            writeToFile(file2, <span class="hljs-string">"first line"</span> + System.lineSeparator() + <span class="hljs-string">"second line"</span>);<br></span><span>        } <span class="hljs-keyword">catch</span> (IOException e) {<br></span><span>            System.out.println(<span class="hljs-string">"Something went wrong: "</span> + e.getMessage());<br></span><span>        }<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> Contents of the <code v-pre>temp/lines.txt</code>:</p>
+<pre><code class="hljs" v-pre><span>first line<br></span><span>second line<br></span></code></pre></box>
+<p>Note that you <mark>need to call the <code v-pre>close()</code> method</mark> of the <code v-pre>FileWriter</code> object for the writing operation to be completed.</p>
+<p><strong>You can create a <code v-pre>FileWriter</code> object that appends to the file</strong> (instead of overwriting the current content) by specifying an additional boolean parameter to the constructor.</p>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The method below appends to the file rather than overwrites.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">appendToFile</span><span class="hljs-params">(String filePath, String textToAppend)</span> <span class="hljs-keyword">throws</span> IOException </span>{
-</span><span>    FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath, <span class="hljs-keyword">true</span>); <span class="hljs-comment">// create a FileWriter in append mode</span>
-</span><span>    fw.write(textToAppend);
-</span><span>    fw.close();
-</span><span>}
-</span></code></pre></box>
-<p><strong>The <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html"><code class="hljs inline no-lang" v-pre>java.nio.file.Files</code></a> is a utility class that provides several useful file operations.</strong> It relies on the <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Paths.html"><code class="hljs inline no-lang" v-pre>java.nio.file.Paths</code></a> file to generate <code class="hljs inline no-lang" v-pre>Path</code> objects that represent file paths.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">appendToFile</span><span class="hljs-params">(String filePath, String textToAppend)</span> <span class="hljs-keyword">throws</span> IOException </span>{<br></span><span>    FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath, <span class="hljs-keyword">true</span>); <span class="hljs-comment">// create a FileWriter in append mode</span><br></span><span>    fw.write(textToAppend);<br></span><span>    fw.close();<br></span><span>}<br></span></code></pre></box>
+<p><strong>The <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html"><code v-pre>java.nio.file.Files</code></a> is a utility class that provides several useful file operations.</strong> It relies on the <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Paths.html"><code v-pre>java.nio.file.Paths</code></a> file to generate <code v-pre>Path</code> objects that represent file paths.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example uses the <code class="hljs inline no-lang" v-pre>Files</code> class to copy a file and delete a file.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.io.IOException;
-</span><span><span class="hljs-keyword">import</span> java.nio.file.Files;
-</span><span><span class="hljs-keyword">import</span> java.nio.file.Paths;
-</span><span>
-</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FilesClassDemo</span> </span>{
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException</span>{
-</span><span>        Files.copy(Paths.get(<span class="hljs-string">"data/fruits.txt"</span>), Paths.get(<span class="hljs-string">"temp/fruits2.txt"</span>));
-</span><span>        Files.delete(Paths.get(<span class="hljs-string">"temp/fruits2.txt"</span>));
-</span><span>    }
-</span><span>
-</span><span>}
-</span></code></pre></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example uses the <code v-pre>Files</code> class to copy a file and delete a file.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.io.IOException;<br></span><span><span class="hljs-keyword">import</span> java.nio.file.Files;<br></span><span><span class="hljs-keyword">import</span> java.nio.file.Paths;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FilesClassDemo</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException</span>{<br></span><span>        Files.copy(Paths.get(<span class="hljs-string">"data/fruits.txt"</span>), Paths.get(<span class="hljs-string">"temp/fruits2.txt"</span>));<br></span><span>        Files.delete(Paths.get(<span class="hljs-string">"temp/fruits2.txt"</span>));<br></span><span>    }<br></span><span><br></span><span>}<br></span></code></pre></box>
 <p>The techniques above are good enough to manipulate simple text files. Note that <strong>it is also possible to <a href="https://www.tutorialspoint.com/java/java_files_io.htm">perform file I/O operations using other classes</a></strong>.</p></div>
 <div></div></div></div></panel>
 <p></p>
@@ -462,7 +331,7 @@
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=88a6d3bc-7bbb-4566-a035-ac4100ce1085&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
 <p></p></div></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w7-4-class-object-diagrams-intermediate">
-<span slot="header" class="card-title"><div><h2 id="w7-4-class-object-diagrams-intermediate"><span id="w7-4-class-object-diagrams-intermediate" class="anchor"></span><span class="dimmed">[W7.4]</span> <strong>Class/Object Diagrams: Intermediate</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w7-4-class-object-diagrams-intermediate" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w7-4-class-object-diagrams-intermediate"><span class="dimmed">[W7.4]</span> <strong>Class/Object Diagrams: Intermediate</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-4-class-object-diagrams-intermediate" class="anchor"></span><a class="fa fa-anchor" href="#w7-4-class-object-diagrams-intermediate" onclick="event.stopPropagation()"></a></h2></div></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=9e6f5f1a-5596-498e-86f6-ac1b00e43a38&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -473,7 +342,7 @@
 <panel type="seamless" expanded popup-url="/website/book/uml/notes/notes" id="tools-uml-notes">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.4a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="tools-uml-notes"><span id="tools-uml-notes" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Tools → UML →</span></span></small> <strong><span>Notes</span></strong><a class="fa fa-anchor" href="#tools-uml-notes" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="tools-uml-notes"><small><span class="font-weight-bold text-muted"><span>Tools → UML →</span></span></small> <strong><span>Notes</span></strong><span id="tools-uml-notes" class="anchor"></span><a class="fa fa-anchor" href="#tools-uml-notes" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -494,11 +363,11 @@
 <panel type="seamless" popup-url="/website/book/uml/notes/constraints" id="tools-uml-constraints" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.4b</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="tools-uml-constraints"><span id="tools-uml-constraints" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Tools → UML →</span></span></small> <strong><span>Constraints</span></strong><a class="fa fa-anchor" href="#tools-uml-constraints" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="tools-uml-constraints"><small><span class="font-weight-bold text-muted"><span>Tools → UML →</span></span></small> <strong><span>Constraints</span></strong><span id="tools-uml-constraints" class="anchor"></span><a class="fa fa-anchor" href="#tools-uml-constraints" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/uml/notes/notes/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/uml/notes/notes" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Notes</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/uml/notes/notes/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/uml/notes/notes" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Notes</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can specify constraints in UML diagrams</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
@@ -516,134 +385,79 @@
 <panel type="seamless" expanded popup-url="/website/book/modeling/modelingStructures/classDiagramsIntermediate" id="design-modelling-modelling-structure-class-diagrams-intermediate">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.4c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-modelling-modelling-structure-class-diagrams-intermediate"><span id="design-modelling-modelling-structure-class-diagrams-intermediate" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Modelling → Modelling Structure →</span></span></small> <strong><span>Class diagrams - intermediate</span></strong><a class="fa fa-anchor" href="#design-modelling-modelling-structure-class-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-modelling-modelling-structure-class-diagrams-intermediate"><small><span class="font-weight-bold text-muted"><span>Design → Modelling → Modelling Structure →</span></span></small> <strong><span>Class diagrams - intermediate</span></strong><span id="design-modelling-modelling-structure-class-diagrams-intermediate" class="anchor"></span><a class="fa fa-anchor" href="#design-modelling-modelling-structure-class-diagrams-intermediate" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/modeling/modelingStructures/classDiagramsBasic" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Modeling → Class Diagrams (Basic)</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/modeling/modelingStructures/classDiagramsBasic" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Modeling → Class Diagrams (Basic)</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use intermediate-level class diagrams</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
 <p><strong>A class diagram can also show different types of relationships between classes: inheritance, compositions, aggregations, dependencies.</strong></p>
 <div class="indented">
-<h5 id="modeling-inheritance"><span id="modeling-inheritance" class="anchor"></span>Modeling inheritance<a class="fa fa-anchor" href="#modeling-inheritance" onclick="event.stopPropagation()"></a></h5>
-<p><panel type="seamless" src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Inheritance</p></template></panel>
-<panel type="seamless" src="/website/book/uml/classDiagrams/classInheritance/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Inheritance → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Inheritance</p></template></panel></p>
-<h5 id="modeling-composition"><span id="modeling-composition" class="anchor"></span>Modeling composition<a class="fa fa-anchor" href="#modeling-composition" onclick="event.stopPropagation()"></a></h5>
-<p><panel type="seamless" src="/website/book/oop/associations/composition/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Associations → Composition</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Composition</p></template></panel>
-<panel type="seamless" src="/website/book/uml/classDiagrams/composition/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Composition → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Composition</p></template></panel></p>
-<h5 id="modeling-aggregation"><span id="modeling-aggregation" class="anchor"></span>Modeling aggregation<a class="fa fa-anchor" href="#modeling-aggregation" onclick="event.stopPropagation()"></a></h5>
-<p><panel type="seamless" src="/website/book/oop/associations/aggregation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Associations → Aggregation</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Aggregation</p></template></panel>
-<panel type="seamless" src="/website/book/uml/classDiagrams/aggregation/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Aggregation → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Aggregation</p></template></panel></p>
-<h5 id="modeling-dependencies"><span id="modeling-dependencies" class="anchor"></span>Modeling dependencies<a class="fa fa-anchor" href="#modeling-dependencies" onclick="event.stopPropagation()"></a></h5>
-<p><panel type="seamless" src="/website/book/oop/associations/dependencies/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Associations → Dependencies</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Dependencies</p></template></panel>
-<panel type="seamless" src="/website/book/uml/classDiagrams/dependencies/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Dependencies → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Dependencies</p></template></panel></p></div>
+<h5 id="modeling-inheritance">Modeling inheritance<span id="modeling-inheritance" class="anchor"></span><a class="fa fa-anchor" href="#modeling-inheritance" onclick="event.stopPropagation()"></a></h5>
+<p><panel type="seamless" src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Inheritance</p></template></panel>
+<panel type="seamless" src="/website/book/uml/classDiagrams/classInheritance/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Inheritance → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Inheritance</p></template></panel></p>
+<h5 id="modeling-composition">Modeling composition<span id="modeling-composition" class="anchor"></span><a class="fa fa-anchor" href="#modeling-composition" onclick="event.stopPropagation()"></a></h5>
+<p><panel type="seamless" src="/website/book/oop/associations/composition/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Associations → Composition</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Composition</p></template></panel>
+<panel type="seamless" src="/website/book/uml/classDiagrams/composition/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Composition → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Composition</p></template></panel></p>
+<h5 id="modeling-aggregation">Modeling aggregation<span id="modeling-aggregation" class="anchor"></span><a class="fa fa-anchor" href="#modeling-aggregation" onclick="event.stopPropagation()"></a></h5>
+<p><panel type="seamless" src="/website/book/oop/associations/aggregation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Associations → Aggregation</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Aggregation</p></template></panel>
+<panel type="seamless" src="/website/book/uml/classDiagrams/aggregation/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Aggregation → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Aggregation</p></template></panel></p>
+<h5 id="modeling-dependencies">Modeling dependencies<span id="modeling-dependencies" class="anchor"></span><a class="fa fa-anchor" href="#modeling-dependencies" onclick="event.stopPropagation()"></a></h5>
+<p><panel type="seamless" src="/website/book/oop/associations/dependencies/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Associations → Dependencies</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Dependencies</p></template></panel>
+<panel type="seamless" src="/website/book/uml/classDiagrams/dependencies/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Dependencies → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Dependencies</p></template></panel></p></div>
 <p><strong>A class diagram can also show different types of class-like entities:</strong></p>
 <div class="indented">
-<h5 id="modeling-enumerations"><span id="modeling-enumerations" class="anchor"></span>Modeling enumerations<a class="fa fa-anchor" href="#modeling-enumerations" onclick="event.stopPropagation()"></a></h5>
-<p><panel type="seamless" src="/website/book/oop/classes/enumerations/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Classes → Enumerations</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Enumerations</p></template></panel>
-<panel type="seamless" src="/website/book/uml/classDiagrams/enumerations/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Enumerations → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Enumerations</p></template></panel></p>
-<h5 id="modeling-abstract-classes"><span id="modeling-abstract-classes" class="anchor"></span>Modeling abstract classes<a class="fa fa-anchor" href="#modeling-abstract-classes" onclick="event.stopPropagation()"></a></h5>
-<p><panel type="seamless" src="/website/book/oop/inheritance/abstractClasses/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → Abstract Classes</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/AbstractClasses</p></template></panel>
-<panel type="seamless" src="/website/book/uml/classDiagrams/abstractClasses/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Abstract Classes → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/AbstractClasses</p></template></panel></p>
-<h5 id="modeling-interfaces"><span id="modeling-interfaces" class="anchor"></span>Modeling interfaces<a class="fa fa-anchor" href="#modeling-interfaces" onclick="event.stopPropagation()"></a></h5>
-<p><panel type="seamless" src="/website/book/oop/inheritance/interfaces/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → Interfaces</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Interfaces</p></template></panel>
-<panel type="seamless" src="/website/book/uml/classDiagrams/interfaces/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Interfaces → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Interfaces</p></template></panel></p></div></div>
+<h5 id="modeling-enumerations">Modeling enumerations<span id="modeling-enumerations" class="anchor"></span><a class="fa fa-anchor" href="#modeling-enumerations" onclick="event.stopPropagation()"></a></h5>
+<p><panel type="seamless" src="/website/book/oop/classes/enumerations/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Classes → Enumerations</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Enumerations</p></template></panel>
+<panel type="seamless" src="/website/book/uml/classDiagrams/enumerations/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Enumerations → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Enumerations</p></template></panel></p>
+<h5 id="modeling-abstract-classes">Modeling abstract classes<span id="modeling-abstract-classes" class="anchor"></span><a class="fa fa-anchor" href="#modeling-abstract-classes" onclick="event.stopPropagation()"></a></h5>
+<p><panel type="seamless" src="/website/book/oop/inheritance/abstractClasses/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → Abstract Classes</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/AbstractClasses</p></template></panel>
+<panel type="seamless" src="/website/book/uml/classDiagrams/abstractClasses/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Abstract Classes → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/AbstractClasses</p></template></panel></p>
+<h5 id="modeling-interfaces">Modeling interfaces<span id="modeling-interfaces" class="anchor"></span><a class="fa fa-anchor" href="#modeling-interfaces" onclick="event.stopPropagation()"></a></h5>
+<p><panel type="seamless" src="/website/book/oop/inheritance/interfaces/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP → Inheritance → Interfaces</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> OOP/Interfaces</p></template></panel>
+<panel type="seamless" src="/website/book/uml/classDiagrams/interfaces/what/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML → Class Diagrams → Interfaces → What</p></template><template slot="_alt"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/Interfaces</p></template></panel></p></div></div>
 <div>
   <div>
-<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
 <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about class diagram</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about class diagram</p></template>
 <question>
 <p>Which of these statements match the class diagram?</p>
 <img src="/website/book/modeling/modelingStructures/classDiagramsIntermediate/images/mismatch.png" height="290">
 <p></p>
 <ul class="contains-task-list">
-<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. A <code class="hljs inline no-lang" v-pre>Snake</code> must belong to at least one <code class="hljs inline no-lang" v-pre>Board</code>.</li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. A <code class="hljs inline no-lang" v-pre>SnakeHeadSquare</code> can contain only one <code class="hljs inline no-lang" v-pre>Snake</code> head.</li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. A <code class="hljs inline no-lang" v-pre>Square</code> can contain a <code class="hljs inline no-lang" v-pre>Snake</code> head.</li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> d. A <code class="hljs inline no-lang" v-pre>Snake</code> head can be in more than one <code class="hljs inline no-lang" v-pre>SnakeHeadSquare</code>.</li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> e. The <code class="hljs inline no-lang" v-pre>Board</code> has exactly 5 <code class="hljs inline no-lang" v-pre>Snake</code>s.</li></ul>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. A <code v-pre>Snake</code> must belong to at least one <code v-pre>Board</code>.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. A <code v-pre>SnakeHeadSquare</code> can contain only one <code v-pre>Snake</code> head.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. A <code v-pre>Square</code> can contain a <code v-pre>Snake</code> head.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> d. A <code v-pre>Snake</code> head can be in more than one <code v-pre>SnakeHeadSquare</code>.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> e. The <code v-pre>Board</code> has exactly 5 <code v-pre>Snake</code>s.</li></ul>
 <div slot="answer" class="algolia-no-index">
 <p><s>(a)</s>(b)(c)(d)(e)</p>
 <p>Explanation:</p>
-<p>(a) does not match because a <code class="hljs inline no-lang" v-pre>Snake</code> may or may not belong to a <code class="hljs inline no-lang" v-pre>Board</code> (multiplicity is <code class="hljs inline no-lang" v-pre>0..1</code>)<br>
-(b) matches the diagram because the multiplicity given is <code class="hljs inline no-lang" v-pre>1</code><br>
-(c) matches the diagram because <code class="hljs inline no-lang" v-pre>SnakeHeadSquare</code> is a <code class="hljs inline no-lang" v-pre>Square</code> (due to inheritance)<br>
-(d) matches the diagram because the multiplicity given is <code class="hljs inline no-lang" v-pre>*</code><br>
-(e) matches the diagram because the multiplicity given is <code class="hljs inline no-lang" v-pre>5</code><br></p></div></question></panel></div>
+<p>(a) does not match because a <code v-pre>Snake</code> may or may not belong to a <code v-pre>Board</code> (multiplicity is <code v-pre>0..1</code>)<br>
+(b) matches the diagram because the multiplicity given is <code v-pre>1</code><br>
+(c) matches the diagram because <code v-pre>SnakeHeadSquare</code> is a <code v-pre>Square</code> (due to inheritance)<br>
+(d) matches the diagram because the multiplicity given is <code v-pre>*</code><br>
+(e) matches the diagram because the multiplicity given is <code v-pre>5</code><br></p></div></question></panel></div>
 <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain notations in the class diagram</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain notations in the class diagram</p></template>
 <question>
 <p>Explain the meaning of various class diagram notations in the following class diagram:</p>
 <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="750"></question></panel></div>
 <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Class Diagram for the code (<code class="hljs inline no-lang" v-pre>StockItem</code>, <code class="hljs inline no-lang" v-pre>Inventory</code>, <code class="hljs inline no-lang" v-pre>Review</code>, etc.)</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Class Diagram for the code (<code v-pre>StockItem</code>, <code v-pre>Inventory</code>, <code v-pre>Review</code>, etc.)</p></template>
 <question>
 <p>Consider the code below:</p>
 <div class="row">
   <div class="col-sm-6">
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;
-</span><span>}
-</span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span>
-</span><span><span class="hljs-class">         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;
-</span><span>}
-</span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
-</span><span>    <span class="hljs-keyword">private</span> Review review;
-</span><span>    <span class="hljs-keyword">private</span> String name;
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(</span></span>
-</span><span><span class="hljs-function"><span class="hljs-params">        String name, Rating rating)</span> </span>{
-</span><span>
-</span><span>        <span class="hljs-keyword">this</span>.name = name;
-</span><span>        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);
-</span><span>    }
-</span><span>
-</span><span>    <span class="hljs-meta">@Override</span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
-</span><span>        <span class="hljs-comment">//...</span>
-</span><span>    }
-</span><span>
-</span><span>    <span class="hljs-meta">@Override</span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{
-</span><span>        <span class="hljs-comment">//...</span>
-</span><span>    }
-</span><span>}
-</span></code></pre></div>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span><br></span><span><span class="hljs-class">         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> Review review;<br></span><span>    <span class="hljs-keyword">private</span> String name;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(</span></span><br></span><span><span class="hljs-function"><span class="hljs-params">        String name, Rating rating)</span> </span>{<br></span><span><br></span><span>        <span class="hljs-keyword">this</span>.name = name;<br></span><span>        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre></div>
   <div class="col-sm-6">
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
-</span><span>    GOOD, OK, POOR
-</span><span>}
-</span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
-</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{
-</span><span>        <span class="hljs-keyword">this</span>.rating = rating;
-</span><span>    }
-</span><span>}
-</span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.util.List;
-</span><span>
-</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{
-</span><span>    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span> </span>{
-</span><span>        <span class="hljs-keyword">return</span> items.size();
-</span><span>    }
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span> </span>{
-</span><span>        <span class="hljs-comment">// ...</span>
-</span><span>    }
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Item s)</span> </span>{
-</span><span>        items.add(s);
-</span><span>    }
-</span><span>}
-</span></code></pre></div></div>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {<br></span><span>    GOOD, OK, POOR<br></span><span>}<br></span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.rating = rating;<br></span><span>    }<br></span><span>}<br></span></code></pre><pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.util.List;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> items.size();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span> </span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Item s)</span> </span>{<br></span><span>        items.add(s);<br></span><span>    }<br></span><span>}<br></span></code></pre></div></div>
 <p>(a) Draw a class diagram to represent the code. Show all attributes, methods, associations, navigabilities, visibilities, known multiplicities, and association roles. Show associations as lines.<br>
-(b) Draw an object diagram to represent the situation where the inventory has one item named <code class="hljs inline no-lang" v-pre>spanner</code> and a review of <code class="hljs inline no-lang" v-pre>POOR</code> rating<br>
+(b) Draw an object diagram to represent the situation where the inventory has one item named <code v-pre>spanner</code> and a review of <code v-pre>POOR</code> rating<br>
 i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span> Inventory().add(<span class="hljs-keyword">new</span> StockItem(<span class="hljs-string">"spanner"</span>, <span class="hljs-keyword">new</span> Review(Rating.POOR)))</code>.</p></question></panel></div></div></panel></div></div></div></div></panel>
 <p></p>
 <div class="indented">
@@ -658,15 +472,15 @@ i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span>
 <div>
 <p>Now, you can try these worked examples:</p>
 <panel type="seamless" class="algolia-no-index">
-  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code class="hljs inline no-lang" v-pre>Action</code>, <code class="hljs inline no-lang" v-pre>Task</code>, <code class="hljs inline no-lang" v-pre>History</code></span></div>
+  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code v-pre>Action</code>, <code v-pre>Task</code>, <code v-pre>History</code></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=052aa055-c89f-4dbf-af24-ac4000f175e0&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
 <p></p>
 <panel type="seamless" class="algolia-no-index">
-  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code class="hljs inline no-lang" v-pre>Person</code>, <code class="hljs inline no-lang" v-pre>Inbox</code>, <code class="hljs inline no-lang" v-pre>Message</code></span></div>
+  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code v-pre>Person</code>, <code v-pre>Inbox</code>, <code v-pre>Message</code></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=f4f7e1f2-60a4-4d18-b70a-ac4000f17608&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
 <p></p>
 <panel type="seamless" class="algolia-no-index">
-  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code class="hljs inline no-lang" v-pre>Person</code>, <code class="hljs inline no-lang" v-pre>Project</code>, <code class="hljs inline no-lang" v-pre>Task</code></span></div>
+  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code v-pre>Person</code>, <code v-pre>Project</code>, <code v-pre>Task</code></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=e05845ed-8c70-47d9-a4d0-ac6800d58224&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
 <p></p></div></div></div></div></div></div>
 <p><span id="W7-5"></span></p>
@@ -679,7 +493,7 @@ i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span>
 <p>As you do projects, you'll have to make design decisions e.g., decide between multiple design alternatives. Let us learn three fundamental design concepts that you can use in those decisions.</p>
 <p>It is extremely important for you to know these three because <strong>they are like the DNA of every higher-level design concept</strong>.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w7-5-design-fundamentals">
-<span slot="header" class="card-title"><div><h2 id="w7-5-design-fundamentals"><span id="w7-5-design-fundamentals" class="anchor"></span><span class="dimmed">[W7.5]</span> <strong>Design: Fundamentals</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w7-5-design-fundamentals" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w7-5-design-fundamentals"><span class="dimmed">[W7.5]</span> <strong>Design: Fundamentals</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-5-design-fundamentals" class="anchor"></span><a class="fa fa-anchor" href="#w7-5-design-fundamentals" onclick="event.stopPropagation()"></a></h2></div></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=9c7ce7f2-2b96-4e86-a9b1-ac3700bab81c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -687,13 +501,13 @@ i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span>
 <div class="indented-level1">
 <br>
 <div></div>
-<h3 id="abstraction"><span id="abstraction" class="anchor"></span><span class="dimmed"><strong>Abstraction</strong></span><a class="fa fa-anchor" href="#abstraction" onclick="event.stopPropagation()"></a></h3>
+<h3 id="abstraction"><span class="dimmed"><strong>Abstraction</strong></span><span id="abstraction" class="anchor"></span><a class="fa fa-anchor" href="#abstraction" onclick="event.stopPropagation()"></a></h3>
 <p><span id="W7-5a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/design/introduction/what" id="design-introduction-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.5a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-introduction-what"><span id="design-introduction-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-introduction-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-introduction-what"><small><span class="font-weight-bold text-muted"><span>Design → Introduction →</span></span></small> <strong><span>What</span></strong><span id="design-introduction-what" class="anchor"></span><a class="fa fa-anchor" href="#design-introduction-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -715,7 +529,7 @@ i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span>
 <panel type="seamless" expanded popup-url="/website/book/designFundamentals/abstraction/what" id="design-design-fundamentals-abstraction-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.5b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-design-fundamentals-abstraction-what"><span id="design-design-fundamentals-abstraction-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Abstraction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-abstraction-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-design-fundamentals-abstraction-what"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Abstraction →</span></span></small> <strong><span>What</span></strong><span id="design-design-fundamentals-abstraction-what" class="anchor"></span><a class="fa fa-anchor" href="#design-design-fundamentals-abstraction-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -731,11 +545,11 @@ i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Within a certain software component, you might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p></box>
 <p><strong><mark><em>Control abstraction</em></mark>: abstracting away details of the actual control flow to focus on tasks at a higher level</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code class="hljs inline no-lang" v-pre>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code v-pre>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p></box>
 <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstraction</em>.</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of data abstraction: a <code class="hljs inline no-lang" v-pre>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of control abstraction: <code class="hljs inline no-lang" v-pre>execute(Game)</code> is at a higher level than <code class="hljs inline no-lang" v-pre>print(Char)</code> which is at a higher level than an Assembly language instruction <code class="hljs inline no-lang" v-pre>MOV</code>.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of data abstraction: a <code v-pre>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of control abstraction: <code v-pre>execute(Game)</code> is at a higher level than <code v-pre>print(Char)</code> which is at a higher level than an Assembly language instruction <code v-pre>MOV</code>.</p></box>
 <p><strong>Abstraction is a general concept that is not limited to just data or control abstractions.</strong></p>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some more general examples of abstraction:</p>
@@ -749,13 +563,13 @@ i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span>
 <div></div></div>
 <br>
 <div></div>
-<h3 id="coupling"><span id="coupling" class="anchor"></span><span class="dimmed"><strong>Coupling</strong></span><a class="fa fa-anchor" href="#coupling" onclick="event.stopPropagation()"></a></h3>
+<h3 id="coupling"><span class="dimmed"><strong>Coupling</strong></span><span id="coupling" class="anchor"></span><a class="fa fa-anchor" href="#coupling" onclick="event.stopPropagation()"></a></h3>
 <p><span id="W7-5c"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/designFundamentals/coupling/what" id="design-design-fundamentals-coupling-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.5c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-design-fundamentals-coupling-what"><span id="design-design-fundamentals-coupling-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-design-fundamentals-coupling-what"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>What</span></strong><span id="design-design-fundamentals-coupling-what" class="anchor"></span><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -768,35 +582,35 @@ i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span>
 <li><strong>Integration is harder</strong> because multiple components coupled with each other have to be integrated at the same time.</li>
 <li><strong>Testing and reuse of the module is harder</strong> due to its dependence on other modules.</li></ul>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, design <code class="hljs inline no-lang" v-pre>A</code> appears to have more coupling between the components than design <code class="hljs inline no-lang" v-pre>B</code>.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, design <code v-pre>A</code> appears to have more coupling between the components than design <code v-pre>B</code>.</p>
 <img src="/website/book/designFundamentals/coupling/what/images/playerPuzzleManager.png" height="220">
 <p></p></box></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
 <question has-input="true">
 <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
 <box>
 <img src="/website/book/designFundamentals/coupling/what/images/alternativeDesigns.png" height="180">
 <p></p></box>
 <div slot="answer" class="algolia-no-index">
-<p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may be stronger than the others.). However, in <em>x</em>, <code class="hljs inline no-lang" v-pre>A</code> is highly-coupled to the rest of the system while <code class="hljs inline no-lang" v-pre>B</code>, <code class="hljs inline no-lang" v-pre>C</code>, <code class="hljs inline no-lang" v-pre>D</code>, and <code class="hljs inline no-lang" v-pre>E</code> are standalone (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code class="hljs inline no-lang" v-pre>A</code> of <em>x</em>. However, only <code class="hljs inline no-lang" v-pre>D</code> and <code class="hljs inline no-lang" v-pre>E</code> are standalone.</p></div></question></panel></div>
+<p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may be stronger than the others.). However, in <em>x</em>, <code v-pre>A</code> is highly-coupled to the rest of the system while <code v-pre>B</code>, <code v-pre>C</code>, <code v-pre>D</code>, and <code v-pre>E</code> are standalone (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code v-pre>A</code> of <em>x</em>. However, only <code v-pre>D</code> and <code v-pre>E</code> are standalone.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Regressions and coupling</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Regressions and coupling</p></template>
 <question has-input="true">
 <p>Explain the link (if any) between regressions and coupling.</p>
 <div slot="answer" class="algolia-no-index">
-<p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed">e.g. when component <code class="hljs inline no-lang" v-pre>A</code> is modified, all components ‘coupled’ to component <code class="hljs inline no-lang" v-pre>A</code> risk ‘unintended behavioral changes’</span>.</p></div></question></panel></div>
+<p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed">e.g. when component <code v-pre>A</code> is modified, all components ‘coupled’ to component <code v-pre>A</code> risk ‘unintended behavioral changes’</span>.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
 <question has-input="true">
-<p>Discuss the relationship between coupling and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">a measure of how easily a given component can be tested</span>testability</span>.</p>
+<p>Discuss the relationship between coupling and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a measure of how easily a given component can be tested</span>testability</span>.</p>
 <div slot="answer" class="algolia-no-index">
-<p>Coupling decreases testability because if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">Software Under Test</span>SUT</span> is coupled to many other components, it becomes difficult to test the SUT in isolation of its dependencies.</p></div></question></panel></div>
+<p>Coupling decreases testability because if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span> is coupled to many other components, it becomes difficult to test the SUT in isolation of its dependencies.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
 <question>
 <p>Choose the correct statements.</p>
 <ul class="contains-task-list">
@@ -816,48 +630,33 @@ i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span>
 <panel type="seamless" expanded popup-url="/website/book/designFundamentals/coupling/how" id="design-design-fundamentals-coupling-how">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.5d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-design-fundamentals-coupling-how"><span id="design-design-fundamentals-coupling-how" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-how" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-design-fundamentals-coupling-how"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>How</span></strong><span id="design-design-fundamentals-coupling-how" class="anchor"></span><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-how" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Coupling → What</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Coupling → What</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can reduce coupling</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
 <p><strong>X is <em>coupled</em> to Y if a change to Y can <mark>potentially</mark> require a change in X</strong>.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the <code class="hljs inline no-lang" v-pre>Foo</code> class calls the method <code class="hljs inline no-lang" v-pre>Bar#read()</code>, <code class="hljs inline no-lang" v-pre>Foo</code> is coupled to <code class="hljs inline no-lang" v-pre>Bar</code> because a change to <code class="hljs inline no-lang" v-pre>Bar</code> can potentially (but not always) require a change in the <code class="hljs inline no-lang" v-pre>Foo</code> class <span class="dimmed">e.g. if the signature of <code class="hljs inline no-lang" v-pre>Bar#read()</code> is changed, <code class="hljs inline no-lang" v-pre>Foo</code> needs to change as well, but a change to the <code class="hljs inline no-lang" v-pre>Bar#write()</code> method may not require a change in the <code class="hljs inline no-lang" v-pre>Foo</code> class because <code class="hljs inline no-lang" v-pre>Foo</code> does not call <code class="hljs inline no-lang" v-pre>Bar#write()</code></span>.</p>
-<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span class="dimmed">code for the above example</span></p></template>
-<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
-</span><span>    ...
-</span><span>    <span class="hljs-keyword">new</span> Bar().read();
-</span><span>    ...
-</span><span>}
-</span><span>
-</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span> </span>{
-</span><span>        ...
-</span><span>    }
-</span><span>    
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">()</span> </span>{
-</span><span>        ...
-</span><span>    }
-</span><span>}
-</span></code></pre></panel></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the <code v-pre>Foo</code> class calls the method <code v-pre>Bar#read()</code>, <code v-pre>Foo</code> is coupled to <code v-pre>Bar</code> because a change to <code v-pre>Bar</code> can potentially (but not always) require a change in the <code v-pre>Foo</code> class <span class="dimmed">e.g. if the signature of <code v-pre>Bar#read()</code> is changed, <code v-pre>Foo</code> needs to change as well, but a change to the <code v-pre>Bar#write()</code> method may not require a change in the <code v-pre>Foo</code> class because <code v-pre>Foo</code> does not call <code v-pre>Bar#write()</code></span>.</p>
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">code for the above example</span></p></template>
+<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{<br></span><span>    ...<br></span><span>    <span class="hljs-keyword">new</span> Bar().read();<br></span><span>    ...<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span> </span>{<br></span><span>        ...<br></span><span>    }<br></span><span>    <br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">()</span> </span>{<br></span><span>        ...<br></span><span>    }<br></span><span>}<br></span></code></pre></panel></box>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of coupling: <code class="hljs inline no-lang" v-pre>A</code> is coupled to <code class="hljs inline no-lang" v-pre>B</code> if,</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of coupling: <code v-pre>A</code> is coupled to <code v-pre>B</code> if,</p>
 <ul>
-<li><code class="hljs inline no-lang" v-pre>A</code> has access to the internal structure of <code class="hljs inline no-lang" v-pre>B</code> (this results in a very high level of coupling)</li>
-<li><code class="hljs inline no-lang" v-pre>A</code> and <code class="hljs inline no-lang" v-pre>B</code> depend on the same global variable</li>
-<li><code class="hljs inline no-lang" v-pre>A</code> calls <code class="hljs inline no-lang" v-pre>B</code></li>
-<li><code class="hljs inline no-lang" v-pre>A</code> receives an object of <code class="hljs inline no-lang" v-pre>B</code> as a parameter or a return value</li>
-<li><code class="hljs inline no-lang" v-pre>A</code> inherits from <code class="hljs inline no-lang" v-pre>B</code></li>
-<li><code class="hljs inline no-lang" v-pre>A</code> and <code class="hljs inline no-lang" v-pre>B</code> are required to follow the same data format or communication protocol</li></ul></box></div>
+<li><code v-pre>A</code> has access to the internal structure of <code v-pre>B</code> (this results in a very high level of coupling)</li>
+<li><code v-pre>A</code> and <code v-pre>B</code> depend on the same global variable</li>
+<li><code v-pre>A</code> calls <code v-pre>B</code></li>
+<li><code v-pre>A</code> receives an object of <code v-pre>B</code> as a parameter or a return value</li>
+<li><code v-pre>A</code> inherits from <code v-pre>B</code></li>
+<li><code v-pre>A</code> and <code v-pre>B</code> are required to follow the same data format or communication protocol</li></ul></box></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which indicate coupling?</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which indicate coupling?</p></template>
 <question>
 <p>Which of these indicate coupling between components A and B?</p>
 <ul class="contains-task-list">
@@ -878,11 +677,11 @@ i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span>
 <panel type="seamless" popup-url="/website/book/designFundamentals/coupling/types" id="design-design-fundamentals-coupling-types-of-coupling" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.5e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="design-design-fundamentals-coupling-types-of-coupling"><span id="design-design-fundamentals-coupling-types-of-coupling" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>Types of coupling</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-types-of-coupling" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-design-fundamentals-coupling-types-of-coupling"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>Types of coupling</span></strong><span id="design-design-fundamentals-coupling-types-of-coupling" class="anchor"></span><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-types-of-coupling" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Coupling → What</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Coupling → What</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can identify types of coupling</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
@@ -901,13 +700,13 @@ i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span>
 <div></div></div>
 <br>
 <div></div>
-<h3 id="cohesion"><span id="cohesion" class="anchor"></span><span class="dimmed"><strong>Cohesion</strong></span><a class="fa fa-anchor" href="#cohesion" onclick="event.stopPropagation()"></a></h3>
+<h3 id="cohesion"><span class="dimmed"><strong>Cohesion</strong></span><span id="cohesion" class="anchor"></span><a class="fa fa-anchor" href="#cohesion" onclick="event.stopPropagation()"></a></h3>
 <p><span id="W7-5f"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/designFundamentals/cohesion/what" id="design-design-fundamentals-cohesion-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.5f</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-design-fundamentals-cohesion-what"><span id="design-design-fundamentals-cohesion-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Cohesion →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-cohesion-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-design-fundamentals-cohesion-what"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Cohesion →</span></span></small> <strong><span>What</span></strong><span id="design-design-fundamentals-cohesion-what" class="anchor"></span><a class="fa fa-anchor" href="#design-design-fundamentals-cohesion-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -929,69 +728,30 @@ i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span>
 <panel type="seamless" expanded popup-url="/website/book/designFundamentals/cohesion/how" id="design-design-fundamentals-cohesion-how">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.5g</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-design-fundamentals-cohesion-how"><span id="design-design-fundamentals-cohesion-how" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Cohesion →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-cohesion-how" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-design-fundamentals-cohesion-how"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Cohesion →</span></span></small> <strong><span>How</span></strong><span id="design-design-fundamentals-cohesion-how" class="anchor"></span><a class="fa fa-anchor" href="#design-design-fundamentals-cohesion-how" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/designFundamentals/cohesion/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Cohesion →
+<p><panel src="/website/book/designFundamentals/cohesion/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Cohesion →
 What</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can increase cohesion</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
 <p><strong>Cohesion can be present in many forms</strong>. Some examples:</p>
 <ul>
-<li>Code related to a single concept is kept together, e.g. the <code class="hljs inline no-lang" v-pre>Student</code> component handles everything related to students.</li>
+<li>Code related to a single concept is kept together, e.g. the <code v-pre>Student</code> component handles everything related to students.</li>
 <li>Code that is invoked close together in time is kept together, e.g. all code related to initializing the system is kept together.</li>
-<li>Code that manipulates the same data structure is kept together, e.g. the <code class="hljs inline no-lang" v-pre>GameArchive</code> component handles everything related to the storage and retrieval of game sessions.</li></ul>
+<li>Code that manipulates the same data structure is kept together, e.g. the <code v-pre>GameArchive</code> component handles everything related to the storage and retrieval of game sessions.</li></ul>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span>  Suppose a Payroll application contains a class that deals with writing data to the database. If the class includes some code to show an error dialog to the user if the database is unreachable, that class is not cohesive because it seems to be interacting with the user as well as the database.</p></box></div>
 <div>
   <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which class is more cohesive?</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which class is more cohesive?</p></template>
 <question has-input="true">
-<p>Compare the cohesion of the following two versions of the <code class="hljs inline no-lang" v-pre>EmailMessage</code> class. Which one is more cohesive and why?</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-comment">// version-1</span>
-</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{
-</span><span>    <span class="hljs-keyword">private</span> String sendTo;
-</span><span>    <span class="hljs-keyword">private</span> String subject;
-</span><span>    <span class="hljs-keyword">private</span> String message;
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{
-</span><span>        <span class="hljs-keyword">this</span>.sendTo = sendTo;
-</span><span>        <span class="hljs-keyword">this</span>.subject = subject;
-</span><span>        <span class="hljs-keyword">this</span>.message = message;
-</span><span>    }
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{
-</span><span>        <span class="hljs-comment">// sends message using sendTo, subject and message</span>
-</span><span>    }
-</span><span>}
-</span><span>
-</span><span><span class="hljs-comment">// version-2</span>
-</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{
-</span><span>    <span class="hljs-keyword">private</span> String sendTo;
-</span><span>    <span class="hljs-keyword">private</span> String subject;
-</span><span>    <span class="hljs-keyword">private</span> String message;
-</span><span>    <span class="hljs-keyword">private</span> String username;
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{
-</span><span>        <span class="hljs-keyword">this</span>.sendTo = sendTo;
-</span><span>        <span class="hljs-keyword">this</span>.subject = subject;
-</span><span>        <span class="hljs-keyword">this</span>.message = message;
-</span><span>    }
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{
-</span><span>        <span class="hljs-comment">// sends message using sendTo, subject and message</span>
-</span><span>    }
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">login</span><span class="hljs-params">(String username, String password)</span> </span>{
-</span><span>        <span class="hljs-keyword">this</span>.username = username;
-</span><span>        <span class="hljs-comment">// code to login</span>
-</span><span>    }
-</span><span>}
-</span></code></pre><div slot="answer" class="algolia-no-index">
+<p>Compare the cohesion of the following two versions of the <code v-pre>EmailMessage</code> class. Which one is more cohesive and why?</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-comment">// version-1</span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> String sendTo;<br></span><span>    <span class="hljs-keyword">private</span> String subject;<br></span><span>    <span class="hljs-keyword">private</span> String message;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.sendTo = sendTo;<br></span><span>        <span class="hljs-keyword">this</span>.subject = subject;<br></span><span>        <span class="hljs-keyword">this</span>.message = message;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">// sends message using sendTo, subject and message</span><br></span><span>    }<br></span><span>}<br></span><span><br></span><span><span class="hljs-comment">// version-2</span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> String sendTo;<br></span><span>    <span class="hljs-keyword">private</span> String subject;<br></span><span>    <span class="hljs-keyword">private</span> String message;<br></span><span>    <span class="hljs-keyword">private</span> String username;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.sendTo = sendTo;<br></span><span>        <span class="hljs-keyword">this</span>.subject = subject;<br></span><span>        <span class="hljs-keyword">this</span>.message = message;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">// sends message using sendTo, subject and message</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">login</span><span class="hljs-params">(String username, String password)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.username = username;<br></span><span>        <span class="hljs-comment">// code to login</span><br></span><span>    }<br></span><span>}<br></span></code></pre><div slot="answer" class="algolia-no-index">
 <p>Version 2 is less cohesive.</p>
 <p>Explanation: Version 2 is handling functionality related to login, which is not directly related to the concept of ‘email message’ that the class is supposed to represent. On a related note, you can improve the cohesion of both versions by removing the sendMessage functionality. Although sending messages is related to emails, this class is supposed to represent an email message, not an email server.</p></div></question></panel></div></panel></div></div></div></div></panel>
 <p></p>
@@ -1000,8 +760,8 @@ What</span></p></template></panel></p></div><p></p>
 <p></p>
 <div class="indented">
 <div></div></div>
-<p></p></div>
-<p><i class="fa fa-arrow-circle-up fa-lg" id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true"></i></p></div>
+<p></p></div></div>
+
         <nav id="page-nav" class="navbar navbar-light bg-transparent">
 <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -1030,13 +790,18 @@ What</span></p></template></panel></p></div><p></p>
     <footer>
   
   <div class="text-center">
-    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.0</a>, generated on Fri, 11 Dec 2020, 23:42:27 GMT+8]</small></div></footer></div>
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 14 Dec 2020, 23:34:10 GMT+8]</small></div></footer></div>
 </body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  MarkBind.setupWithSearch()
+  const enableSearch = true
 </script>
+<script src="../../markbind/js/setup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script>
     function initAlgolia() {
@@ -1050,5 +815,5 @@ What</span></p></template></panel></p></div><p></p>
     }
     MarkBind.afterSetup(initAlgolia);
   </script>
-<script src="../../markbind/layouts/default/scripts.js"></script><script>if (MarkBind.AfterSetup) MarkBind.AfterSetup()</script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

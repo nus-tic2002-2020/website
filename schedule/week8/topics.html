@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 2.17.0">
+    <meta name="generator" content="MarkBind 2.15.2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TIC2002 - Week 8 - Topics</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
     <link rel="stylesheet" href="../../markbind/css/octicons.css">
-    <link rel="stylesheet" href="../../markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
-    <script src="../../markbind/js/vue.min.js"></script>
-    <script src="../../markbind/js/markbind.min.js"></script>
-    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
     <link rel="stylesheet" href="/website/css/main.css">
     <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
 <body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
@@ -49,7 +47,7 @@
     <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
     <li><a href="https://luminus.nus.edu.sg/modules/a4532068-9c00-48cf-888f-9b3030221747/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
     
-    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/szXDJN4" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code class="hljs inline no-lang" v-pre>repl.it</code> link</span></a></li>
+    <li tags="m--cs2113 m--tic2002 m--te3201"><a href="https://repl.it/classroom/invite/szXDJN4" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> <code v-pre>repl.it</code> link</span></a></li>
     <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
     
     
@@ -58,10 +56,8 @@
     <li><a href="https://github.com/nus-tic2002-2020/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke repo</span></a></li></dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
-      <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
+      <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
         
-
-
 <div id="content-wrapper">
 <div class="website-content">
 <nav>
@@ -72,7 +68,7 @@
 <li class="page-item"><a class="page-link" href="/website/schedule/week8/admin.html"><span><span><span aria-hidden="true" class="glyphicon glyphicon-check"></span></span></span> Tasks</a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week9"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
 <p></p>
-<h1 id="week-8-tue-oct-6th-topics"><span id="week-8-tue-oct-6th-topics" class="anchor"></span>Week 8 <small><small><span class="dimmed">[Tue, Oct 6th]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-8-tue-oct-6th-topics" onclick="event.stopPropagation()"></a></h1>
+<h1 id="week-8-tue-oct-6th-topics">Week 8 <small><small><span class="dimmed">[Tue, Oct 6th]</span> - Topics</small></small><span id="week-8-tue-oct-6th-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-8-tue-oct-6th-topics" onclick="event.stopPropagation()"></a></h1>
 <div>
 <div tags="m--tic2002">
 <box type="info">
@@ -80,18 +76,18 @@
 1. Do <em>Part 1</em> of this week's quiz (which covers the same area).<br>
 2. Watch the worked examples in the following videos to learn the process of drawing intermediate-level class diagrams to match code.</p>
 <panel type="seamless" class="algolia-no-index">
-  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code class="hljs inline no-lang" v-pre>Action</code>, <code class="hljs inline no-lang" v-pre>Task</code>, <code class="hljs inline no-lang" v-pre>History</code></span></div>
+  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code v-pre>Action</code>, <code v-pre>Task</code>, <code v-pre>History</code></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=052aa055-c89f-4dbf-af24-ac4000f175e0&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
 <p></p>
 <panel type="seamless" class="algolia-no-index">
-  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code class="hljs inline no-lang" v-pre>Person</code>, <code class="hljs inline no-lang" v-pre>Inbox</code>, <code class="hljs inline no-lang" v-pre>Message</code></span></div>
+  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code v-pre>Person</code>, <code v-pre>Inbox</code>, <code v-pre>Message</code></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=f4f7e1f2-60a4-4d18-b70a-ac4000f17608&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
 <p></p>
 <panel type="seamless" class="algolia-no-index">
-  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code class="hljs inline no-lang" v-pre>Person</code>, <code class="hljs inline no-lang" v-pre>Project</code>, <code class="hljs inline no-lang" v-pre>Task</code></span></div>
+  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code v-pre>Person</code>, <code v-pre>Project</code>, <code v-pre>Task</code></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=e05845ed-8c70-47d9-a4d0-ac6800d58224&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
 <p></p></box></div></div>
-<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
 <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week8/topics.html#W8-1">W8.1</a>] <strong>Design Principles</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
@@ -145,7 +141,7 @@
 </span></span> <span>Branching</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-5b">W8.5b</a>] <span>Tools → Git and GitHub →
-</span></span> <span><code class="hljs inline no-lang" v-pre>branch</code>: Doing multiple parallel changes</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
+</span></span> <span><code v-pre>branch</code>: Doing multiple parallel changes</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li>
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week8/topics.html#W8-5c">W8.5c</a>] <span>Tools → Git and GitHub →
 </span></span> <span>Dealing with merge conflicts</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
@@ -186,14 +182,14 @@
 <p>This week, we learn a few <strong>design principles that you can try to apply in your project</strong>.</p></div>
 <p>These principles build on top of the design fundamentals you learned earlier (i.e., abstraction, coupling, cohesion).</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w8-1-design-principles">
-<span slot="header" class="card-title"><div><h2 id="w8-1-design-principles"><span id="w8-1-design-principles" class="anchor"></span><span class="dimmed">[W8.1]</span> <strong>Design Principles</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w8-1-design-principles" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w8-1-design-principles"><span class="dimmed">[W8.1]</span> <strong>Design Principles</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w8-1-design-principles" class="anchor"></span><a class="fa fa-anchor" href="#w8-1-design-principles" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W8-1a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/principles/separationOfConcernsPrinciple" id="principles-separation-of-concerns-principle">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.1a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="principles-separation-of-concerns-principle"><span id="principles-separation-of-concerns-principle" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Separation of concerns principle</span></strong><a class="fa fa-anchor" href="#principles-separation-of-concerns-principle" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="principles-separation-of-concerns-principle"><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Separation of concerns principle</span></strong><span id="principles-separation-of-concerns-principle" class="anchor"></span><a class="fa fa-anchor" href="#principles-separation-of-concerns-principle" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=e2b68479-4455-4c13-a154-ac4400f03453&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -211,15 +207,15 @@
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples for <em>concerns</em>:</p>
 <ul>
-<li>A specific feature, such as the code related to the <code class="hljs inline no-lang" v-pre>add employee</code> feature</li>
-<li>A specific aspect, such as the code related to <code class="hljs inline no-lang" v-pre>persistence</code> or <code class="hljs inline no-lang" v-pre>security</code></li>
-<li>A specific entity, such as the code related to the <code class="hljs inline no-lang" v-pre>Employee</code> entity</li></ul></box>
-<p><strong>Applying <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">Separation of Concerns</span>SoC</span> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
+<li>A specific feature, such as the code related to the <code v-pre>add employee</code> feature</li>
+<li>A specific aspect, such as the code related to <code v-pre>persistence</code> or <code v-pre>security</code></li>
+<li>A specific entity, such as the code related to the <code v-pre>Employee</code> entity</li></ul></box>
+<p><strong>Applying <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Separation of Concerns</span>SoC</span> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the code related to <em>persistence</em> is separated from the code related to <em>security</em>, a change to how the data are persisted will not need changes to how the security is implemented.</p></box>
 <p><strong>This principle can be applied at the class level, as well as at higher levels.</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <trigger trigger="click" for="modal:soc-nTier">n-tier architecture</trigger> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <span trigger="click" for="modal:soc-nTier" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:soc-nTier'].show()" class="trigger-click">n-tier architecture</span> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p></box>
 <b-modal id="modal:soc-nTier" hide-footer size modal-class="mb-zoom" ref="modal:soc-nTier" class="algolia-no-index"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
   <div>
 <div class="indented">
@@ -234,7 +230,7 @@
 <img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p></box>
 <p></p></div>
 <div></div></div></div></b-modal>
-<p><strong>This principle should lead to higher <trigger trigger="click" for="soc-cohesion">cohesion</trigger> and lower <trigger trigger="click" for="soc-coupling">coupling</trigger>.</strong></p>
+<p><strong>This principle should lead to higher <span trigger="click" for="soc-cohesion" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['soc-cohesion'].show()" class="trigger-click">cohesion</span> and lower <span trigger="click" for="soc-coupling" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['soc-coupling'].show()" class="trigger-click">coupling</span>.</strong></p>
 <b-modal id="soc-coupling" hide-footer size modal-class="mb-zoom" ref="soc-coupling" class="algolia-no-index"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
   <div>
 <div class="indented">
@@ -248,35 +244,35 @@
 <li><strong>Integration is harder</strong> because multiple components coupled with each other have to be integrated at the same time.</li>
 <li><strong>Testing and reuse of the module is harder</strong> due to its dependence on other modules.</li></ul>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, design <code class="hljs inline no-lang" v-pre>A</code> appears to have more coupling between the components than design <code class="hljs inline no-lang" v-pre>B</code>.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, design <code v-pre>A</code> appears to have more coupling between the components than design <code v-pre>B</code>.</p>
 <img src="/website/book/designFundamentals/coupling/what/images/playerPuzzleManager.png" height="220">
 <p></p></box></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
 <question has-input="true">
 <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
 <box>
 <img src="/website/book/designFundamentals/coupling/what/images/alternativeDesigns.png" height="180">
 <p></p></box>
 <div slot="answer" class="algolia-no-index">
-<p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may be stronger than the others.). However, in <em>x</em>, <code class="hljs inline no-lang" v-pre>A</code> is highly-coupled to the rest of the system while <code class="hljs inline no-lang" v-pre>B</code>, <code class="hljs inline no-lang" v-pre>C</code>, <code class="hljs inline no-lang" v-pre>D</code>, and <code class="hljs inline no-lang" v-pre>E</code> are standalone (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code class="hljs inline no-lang" v-pre>A</code> of <em>x</em>. However, only <code class="hljs inline no-lang" v-pre>D</code> and <code class="hljs inline no-lang" v-pre>E</code> are standalone.</p></div></question></panel></div>
+<p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may be stronger than the others.). However, in <em>x</em>, <code v-pre>A</code> is highly-coupled to the rest of the system while <code v-pre>B</code>, <code v-pre>C</code>, <code v-pre>D</code>, and <code v-pre>E</code> are standalone (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code v-pre>A</code> of <em>x</em>. However, only <code v-pre>D</code> and <code v-pre>E</code> are standalone.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Regressions and coupling</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Regressions and coupling</p></template>
 <question has-input="true">
 <p>Explain the link (if any) between regressions and coupling.</p>
 <div slot="answer" class="algolia-no-index">
-<p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed">e.g. when component <code class="hljs inline no-lang" v-pre>A</code> is modified, all components ‘coupled’ to component <code class="hljs inline no-lang" v-pre>A</code> risk ‘unintended behavioral changes’</span>.</p></div></question></panel></div>
+<p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed">e.g. when component <code v-pre>A</code> is modified, all components ‘coupled’ to component <code v-pre>A</code> risk ‘unintended behavioral changes’</span>.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
 <question has-input="true">
-<p>Discuss the relationship between coupling and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">a measure of how easily a given component can be tested</span>testability</span>.</p>
+<p>Discuss the relationship between coupling and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a measure of how easily a given component can be tested</span>testability</span>.</p>
 <div slot="answer" class="algolia-no-index">
-<p>Coupling decreases testability because if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">Software Under Test</span>SUT</span> is coupled to many other components, it becomes difficult to test the SUT in isolation of its dependencies.</p></div></question></panel></div>
+<p>Coupling decreases testability because if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span> is coupled to many other components, it becomes difficult to test the SUT in isolation of its dependencies.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
 <question>
 <p>Choose the correct statements.</p>
 <ul class="contains-task-list">
@@ -304,9 +300,9 @@
 <div></div></div></div></b-modal></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Correct statements about SoC</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Correct statements about SoC</p></template>
 <question>
 <p>“Only the GUI class should interact with the user. The GUI class should only concern itself with user interactions”. This statement follows from,</p>
 <ul class="contains-task-list">
@@ -324,7 +320,7 @@
 <panel type="seamless" expanded popup-url="/website/book/principles/singleResponsibilityPrinciple" id="principles-single-responsibility-principle">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.1b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="principles-single-responsibility-principle"><span id="principles-single-responsibility-principle" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Single responsibility principle</span></strong><a class="fa fa-anchor" href="#principles-single-responsibility-principle" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="principles-single-responsibility-principle"><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Single responsibility principle</span></strong><span id="principles-single-responsibility-principle" class="anchor"></span><a class="fa fa-anchor" href="#principles-single-responsibility-principle" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=f7d3b1a6-89f3-4781-80e6-ac4400f03413&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -340,12 +336,12 @@
 <p><strong>Single responsibility principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p></div></box>
 <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider a <code class="hljs inline no-lang" v-pre>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider a <code v-pre>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p></box>
 <blockquote>
 <p><span aria-hidden="true" class="fas fa-quote-left"></span> Gather together the things that change for the same reasons. Separate those things that change for different reasons. <span aria-hidden="true" class="fas fa-quote-right"></span> <sub>―- <em>Agile Software Development, Principles, Patterns, and Practices</em> by Robert C. Martin</sub></p></blockquote></div>
 <div>
 <div>
-<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span>  Resources</p></template>
+<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span>  Resources</p></template>
 <ul>
 <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
 <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a>
@@ -359,7 +355,7 @@ by Patkos Csaba</li>
 <panel type="seamless" popup-url="/website/book/principles/liskovSubstitutionPrinciple" id="principles-liskov-substitution-principle" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.1c</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="principles-liskov-substitution-principle"><span id="principles-liskov-substitution-principle" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Liskov substitution principle</span></strong><a class="fa fa-anchor" href="#principles-liskov-substitution-principle" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="principles-liskov-substitution-principle"><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Liskov substitution principle</span></strong><span id="principles-liskov-substitution-principle" class="anchor"></span><a class="fa fa-anchor" href="#principles-liskov-substitution-principle" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=1b7551c5-f5b5-44f5-9c47-ac4500f1bc09&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -373,73 +369,48 @@ by Patkos Csaba</li>
 <box type="definition" seamless>
   <div>
 <p><strong>Liskov substitution principle (LSP)</strong>: Derived classes must be substitutable for their base classes. <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Barbara_Liskov">Barbara Liskov</a></sub></p></div></box>
-<p>LSP sounds the same as <trigger large trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As you know, Java has language support for substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
+<p>LSP sounds the same as <span large trigger="click" for="modal:lsp-substitutability" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:lsp-substitutability'].show()" class="trigger-click">substitutability</span> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As you know, Java has language support for substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
 <b-modal id="modal:lsp-substitutability" hide-footer size="lg" modal-class="mb-zoom" ref="modal:lsp-substitutability" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
   <div>
 <div>
-<p><panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/oop/inheritance/what" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Paradigms → Object Oriented Programming → Inheritance → What</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/oop/inheritance/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Paradigms → Object Oriented Programming → Inheritance → What</span></p></template></panel></p></div><p></p>
 <p><span class="dimmed"><strong><span>Paradigms → OOP → Inheritance →
 </span></strong></span></p>
 <div id="title-and-body">
-<div><h4 id="substitutability"><span id="substitutability" class="anchor"></span><span>Substitutability</span><a class="fa fa-anchor" href="#substitutability" onclick="event.stopPropagation()"></a></h4></div>
+<div><h4 id="substitutability"><span>Substitutability</span><span id="substitutability" class="anchor"></span><a class="fa fa-anchor" href="#substitutability" onclick="event.stopPropagation()"></a></h4></div>
 <div id="main">
 <div>
 <p><strong>Every instance of a subclass is an instance of the superclass, but not vice-versa.</strong> As a result, inheritance allows <em>substitutability</em>: the ability to substitute a child class object where a parent class object is expected.</p>
 <box>
 <p><pic src="/website/book/oop/inheritance/substitutability/67968c10181cfb0e3ad27fd3dc6425ae.png"></pic></p>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An <code class="hljs inline no-lang" v-pre>AcademicStaff</code> is an instance of a <code class="hljs inline no-lang" v-pre>Staff</code>, but a <code class="hljs inline no-lang" v-pre>Staff</code> is not necessarily an instance of an <code class="hljs inline no-lang" v-pre>AcademicStaff</code>. i.e. wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
-<p>The following code is valid because an <code class="hljs inline no-lang" v-pre>AcademicStaff</code> object is substitutable as a <code class="hljs inline no-lang" v-pre>Staff</code> object.</p>
-<pre><code class="hljs java" v-pre><span>Staff staff = <span class="hljs-keyword">new</span> AcademicStaff(); <span class="hljs-comment">// OK</span>
-</span></code></pre><p>But the following code is not valid <span class="dimmed">because <code class="hljs inline no-lang" v-pre>staff</code> is declared as a <code class="hljs inline no-lang" v-pre>Staff</code> type and therefore its value may or may not be of  type <code class="hljs inline no-lang" v-pre>AcademicStaff</code>, which is the type expected by variable <code class="hljs inline no-lang" v-pre>academicStaff</code>.</span></p>
-<pre><code class="hljs java" v-pre><span>Staff staff;
-</span><span>...
-</span><span>AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
-</span></code></pre></box></div>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An <code v-pre>AcademicStaff</code> is an instance of a <code v-pre>Staff</code>, but a <code v-pre>Staff</code> is not necessarily an instance of an <code v-pre>AcademicStaff</code>. i.e. wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
+<p>The following code is valid because an <code v-pre>AcademicStaff</code> object is substitutable as a <code v-pre>Staff</code> object.</p>
+<pre><code class="hljs java" v-pre><span>Staff staff = <span class="hljs-keyword">new</span> AcademicStaff(); <span class="hljs-comment">// OK</span><br></span></code></pre><p>But the following code is not valid <span class="dimmed">because <code v-pre>staff</code> is declared as a <code v-pre>Staff</code> type and therefore its value may or may not be of  type <code v-pre>AcademicStaff</code>, which is the type expected by variable <code v-pre>academicStaff</code>.</span></p>
+<pre><code class="hljs java" v-pre><span>Staff staff;<br></span><span>...<br></span><span>AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span><br></span></code></pre></box></div>
 <div></div></div></div></div></b-modal> 
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose the <code class="hljs inline no-lang" v-pre>Payroll</code> class depends on the <code class="hljs inline no-lang" v-pre>adjustMySalary(int percent)</code> method of the <code class="hljs inline no-lang" v-pre>Staff</code> class. Furthermore, the <code class="hljs inline no-lang" v-pre>Staff</code> class states that the <code class="hljs inline no-lang" v-pre>adjustMySalary</code> method will work for all positive percent values. Both the <code class="hljs inline no-lang" v-pre>Admin</code> and <code class="hljs inline no-lang" v-pre>Academic</code> classes override the <code class="hljs inline no-lang" v-pre>adjustMySalary</code> method.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose the <code v-pre>Payroll</code> class depends on the <code v-pre>adjustMySalary(int percent)</code> method of the <code v-pre>Staff</code> class. Furthermore, the <code v-pre>Staff</code> class states that the <code v-pre>adjustMySalary</code> method will work for all positive percent values. Both the <code v-pre>Admin</code> and <code v-pre>Academic</code> classes override the <code v-pre>adjustMySalary</code> method.</p>
 <img src="/website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
 <p></p>
 <p>Now consider the following:</p>
 <ul>
-<li>The <code class="hljs inline no-lang" v-pre>Admin#adjustMySalary</code> method works for both negative and positive percent values.</li>
-<li>The <code class="hljs inline no-lang" v-pre>Academic#adjustMySalary</code> method works for percent values <code class="hljs inline no-lang" v-pre>1..100</code> only.</li></ul>
+<li>The <code v-pre>Admin#adjustMySalary</code> method works for both negative and positive percent values.</li>
+<li>The <code v-pre>Academic#adjustMySalary</code> method works for percent values <code v-pre>1..100</code> only.</li></ul>
 <p>In the above scenario,</p>
 <ul>
-<li>The <code class="hljs inline no-lang" v-pre>Admin</code> class follows LSP because it fulfills <code class="hljs inline no-lang" v-pre>Payroll</code>’s expectation of <code class="hljs inline no-lang" v-pre>Staff</code> objects (i.e. it works for all positive values). Substituting <code class="hljs inline no-lang" v-pre>Admin</code> objects for <code class="hljs inline no-lang" v-pre>Staff</code> objects will not break the <code class="hljs inline no-lang" v-pre>Payroll</code> class functionality.</li>
-<li>The <code class="hljs inline no-lang" v-pre>Academic</code> class violates LSP because it will not work for percent values over <code class="hljs inline no-lang" v-pre>100</code> as expected by the <code class="hljs inline no-lang" v-pre>Payroll</code> class. Substituting <code class="hljs inline no-lang" v-pre>Academic</code> objects for <code class="hljs inline no-lang" v-pre>Staff</code> objects can potentially break the <code class="hljs inline no-lang" v-pre>Payroll</code> class functionality.</li></ul>
-<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span class="dimmed">Another example</span></p></template>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code class="hljs inline no-lang" v-pre>Rectangle#resize()</code> method can take any integers for <code class="hljs inline no-lang" v-pre>height</code> and <code class="hljs inline no-lang" v-pre>width</code>. This contract is violated by the subclass <code class="hljs inline no-lang" v-pre>Square#resize()</code> because it does not accept a <code class="hljs inline no-lang" v-pre>height</code> that is different from the <code class="hljs inline no-lang" v-pre>width</code>.</p>
+<li>The <code v-pre>Admin</code> class follows LSP because it fulfills <code v-pre>Payroll</code>’s expectation of <code v-pre>Staff</code> objects (i.e. it works for all positive values). Substituting <code v-pre>Admin</code> objects for <code v-pre>Staff</code> objects will not break the <code v-pre>Payroll</code> class functionality.</li>
+<li>The <code v-pre>Academic</code> class violates LSP because it will not work for percent values over <code v-pre>100</code> as expected by the <code v-pre>Payroll</code> class. Substituting <code v-pre>Academic</code> objects for <code v-pre>Staff</code> objects can potentially break the <code v-pre>Payroll</code> class functionality.</li></ul>
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Another example</span></p></template>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>Rectangle#resize()</code> method can take any integers for <code v-pre>height</code> and <code v-pre>width</code>. This contract is violated by the subclass <code v-pre>Square#resize()</code> because it does not accept a <code v-pre>height</code> that is different from the <code v-pre>width</code>.</p>
 <img src="/website/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
 <p></p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
-</span><span>    ...
-</span><span>    <span class="hljs-comment">/** sets the size to the given height and width*/</span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">resize</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span> </span>{
-</span><span>        ...
-</span><span>    }
-</span><span>}
-</span><span>
-</span><span>
-</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Square</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Rectangle</span> </span>{
-</span><span>    
-</span><span>    <span class="hljs-meta">@Override</span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">resize</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span> </span>{
-</span><span>        <span class="hljs-keyword">if</span> (height != width) {
-</span><span>            <span class="hljs-comment">//error</span>
-</span><span>       }
-</span><span>    }
-</span><span>}
-</span></code></pre><p>Now consider the following method that is written to work with the <code class="hljs inline no-lang" v-pre>Rectangle</code> class.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">makeSameSize</span><span class="hljs-params">(Rectangle original, Rectangle toResize)</span> </span>{
-</span><span>    toResize.resize(original.getHeight(), original.getWidth());
-</span><span>}
-</span></code></pre><p>This code will fail if it is called as <code class="hljs inline no-lang" v-pre>makeSameSize(new Rectangle(12, 8), new Square(4, 4))</code>. That is, the <code class="hljs inline no-lang" v-pre>Square</code> class is not substitutable for the <code class="hljs inline no-lang" v-pre>Rectangle</code> class.</p></panel></box></div>
+<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{<br></span><span>    ...<br></span><span>    <span class="hljs-comment">/** sets the size to the given height and width*/</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">resize</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span> </span>{<br></span><span>        ...<br></span><span>    }<br></span><span>}<br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Square</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Rectangle</span> </span>{<br></span><span>    <br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">resize</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span> (height != width) {<br></span><span>            <span class="hljs-comment">//error</span><br></span><span>       }<br></span><span>    }<br></span><span>}<br></span></code></pre><p>Now consider the following method that is written to work with the <code v-pre>Rectangle</code> class.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">makeSameSize</span><span class="hljs-params">(Rectangle original, Rectangle toResize)</span> </span>{<br></span><span>    toResize.resize(original.getHeight(), original.getWidth());<br></span><span>}<br></span></code></pre><p>This code will fail if it is called as <code v-pre>makeSameSize(new Rectangle(12, 8), new Square(4, 4))</code>. That is, the <code v-pre>Square</code> class is not substitutable for the <code v-pre>Rectangle</code> class.</p></panel></box></div>
 <div>
   <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Is this LSP?</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Is this LSP?</p></template>
 <question>
 <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
 <ul radio-group="55ada" class="radio-list">
@@ -456,7 +427,7 @@ by Patkos Csaba</li>
 <panel type="seamless" popup-url="/website/book/principles/openClosedPrinciple" id="principles-open-closed-principle" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.1d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="principles-open-closed-principle"><span id="principles-open-closed-principle" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Open-closed principle</span></strong><a class="fa fa-anchor" href="#principles-open-closed-principle" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="principles-open-closed-principle"><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Open-closed principle</span></strong><span id="principles-open-closed-principle" class="anchor"></span><a class="fa fa-anchor" href="#principles-open-closed-principle" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=2800d0f5-b932-424e-8f35-ac4b00d05b03&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -473,19 +444,17 @@ by Patkos Csaba</li>
 <p><strong>Open-closed principle (OCP)</strong>: A module should be <em>open</em> for extension but <em>closed</em> for modification. That is, modules should be written so that they can be extended, without requiring them to be modified. <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Bertrand_Meyer">Bertrand Meyer</a></sub></p></div></box>
 <p>In object-oriented programming, OCP can be achieved in various ways. This often requires separating the <em>specification (i.e. interface)</em> of a module from its <em>implementation</em>.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the design given below, the behavior of the <code class="hljs inline no-lang" v-pre>CommandQueue</code> class can be altered by adding more concrete <code class="hljs inline no-lang" v-pre>Command</code> subclasses. For example, by including a <code class="hljs inline no-lang" v-pre>Delete</code> class alongside <code class="hljs inline no-lang" v-pre>List</code>, <code class="hljs inline no-lang" v-pre>Sort</code>, and <code class="hljs inline no-lang" v-pre>Reset</code>, the <code class="hljs inline no-lang" v-pre>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without having to modify its code. Hence, it is open to extensions, but closed to modification.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the design given below, the behavior of the <code v-pre>CommandQueue</code> class can be altered by adding more concrete <code v-pre>Command</code> subclasses. For example, by including a <code v-pre>Delete</code> class alongside <code v-pre>List</code>, <code v-pre>Sort</code>, and <code v-pre>Reset</code>, the <code v-pre>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without having to modify its code. Hence, it is open to extensions, but closed to modification.</p>
 <img src="/website/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
 <p></p></box>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code class="hljs inline no-lang" v-pre>ArrayList</code> class behaves as a container of <code class="hljs inline no-lang" v-pre>Students</code> in one instance and as a container of <code class="hljs inline no-lang" v-pre>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code class="hljs inline no-lang" v-pre>ArrayList</code> class is extended without modifying its code.</p>
-<pre><code class="hljs java" v-pre><span>ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt;Student&gt;();
-</span><span>ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt;Admin&gt;();
-</span></code></pre></box></div>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code v-pre>ArrayList</code> class behaves as a container of <code v-pre>Students</code> in one instance and as a container of <code v-pre>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code v-pre>ArrayList</code> class is extended without modifying its code.</p>
+<pre><code class="hljs java" v-pre><span>ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt;Student&gt;();<br></span><span>ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt;Admin&gt;();<br></span></code></pre></box></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Meaning of OCP</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Meaning of OCP</p></template>
 <question>
 <p>Which of these is closest to the meaning of the open-closed principle?</p>
 <ul radio-group="6906e" class="radio-list">
@@ -504,7 +473,7 @@ by Patkos Csaba</li>
 <panel type="seamless" popup-url="/website/book/principles/lawOfDemeter" id="principles-law-of-demeter" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.1e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="principles-law-of-demeter"><span id="principles-law-of-demeter" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Law of Demeter</span></strong><a class="fa fa-anchor" href="#principles-law-of-demeter" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="principles-law-of-demeter"><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Law of Demeter</span></strong><span id="principles-law-of-demeter" class="anchor"></span><a class="fa fa-anchor" href="#principles-law-of-demeter" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=5869b622-fee9-4dba-b912-ac4500f1bc32&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -525,54 +494,46 @@ by Patkos Csaba</li>
 <ul>
 <li>Don’t talk to strangers.</li>
 <li>Principle of least knowledge</li></ul></div></box>
-<p>More concretely, a method <code class="hljs inline no-lang" v-pre>m</code> of an object <code class="hljs inline no-lang" v-pre>O</code> should invoke only the methods of the following kinds of objects:</p>
+<p>More concretely, a method <code v-pre>m</code> of an object <code v-pre>O</code> should invoke only the methods of the following kinds of objects:</p>
 <ul>
-<li>The object <code class="hljs inline no-lang" v-pre>O</code> itself</li>
-<li>Objects passed as parameters of <code class="hljs inline no-lang" v-pre>m</code></li>
-<li>Objects created/instantiated in <code class="hljs inline no-lang" v-pre>m</code> (directly or indirectly)</li>
-<li>Objects from the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">objects that are held by instance variables of</span>direct association of</span> <code class="hljs inline no-lang" v-pre>O</code></li></ul>
+<li>The object <code v-pre>O</code> itself</li>
+<li>Objects passed as parameters of <code v-pre>m</code></li>
+<li>Objects created/instantiated in <code v-pre>m</code> (directly or indirectly)</li>
+<li>Objects from the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">objects that are held by instance variables of</span>direct association of</span> <code v-pre>O</code></li></ul>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The following code fragment violates LoD due to the following reason: while <code class="hljs inline no-lang" v-pre>b</code> is a ‘friend’ of <code class="hljs inline no-lang" v-pre>foo</code> (because it receives it as a parameter), <code class="hljs inline no-lang" v-pre>g</code> is a ‘friend of a friend’ (which should be considered a ‘stranger’), and <code class="hljs inline no-lang" v-pre>g.doSomething()</code> is analogous to ‘talking to a stranger’.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
-</span><span>    Goo g = b.getGoo();
-</span><span>    g.doSomething();
-</span><span>}
-</span></code></pre></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The following code fragment violates LoD due to the following reason: while <code v-pre>b</code> is a ‘friend’ of <code v-pre>foo</code> (because it receives it as a parameter), <code v-pre>g</code> is a ‘friend of a friend’ (which should be considered a ‘stranger’), and <code v-pre>g.doSomething()</code> is analogous to ‘talking to a stranger’.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{<br></span><span>    Goo g = b.getGoo();<br></span><span>    g.doSomething();<br></span><span>}<br></span></code></pre></box>
 <p><strong>LoD aims to prevent objects from navigating the internal structures of other objects.</strong></p>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An analogy for LoD can be drawn from Facebook. If Facebook followed LoD, you would not be allowed to see posts of friends of friends, unless they are your friends as well. If Jake is your friend and Adam is Jake’s friend, you should not be allowed to see Adam’s posts unless Adam is a friend of yours as well.</p></box></div>
 <div>
   <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Examples for LoD</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Examples for LoD</p></template>
 <question has-input="true">
 <p>Explain the Law of Demeter using code examples. You are to make up your own code examples. Take Minesweeper as the basis for your code examples.</p>
 <div slot="answer" class="algolia-no-index">
-<p>Let us take the <code class="hljs inline no-lang" v-pre>Logic</code> class as an example.  Assume that it has the following operation.</p>
-<p><code class="hljs inline no-lang" v-pre>setMinefield(Minefield mf): void</code></p>
+<p>Let us take the <code v-pre>Logic</code> class as an example.  Assume that it has the following operation.</p>
+<p><code v-pre>setMinefield(Minefield mf): void</code></p>
 <p>Consider the following that can happen inside this operation:</p>
 <ul>
-<li><code class="hljs inline no-lang" v-pre>mf.init();</code>: this does not violate LoD since LoD allows calling operations of parameters received.</li>
-<li><code class="hljs inline no-lang" v-pre>mf.getCell(1, 3).clear();</code>: this violates LoD because <code class="hljs inline no-lang" v-pre>Logic</code> is handling <code class="hljs inline no-lang" v-pre>Cell</code> objects deep inside <code class="hljs inline no-lang" v-pre>Minefield</code>. Instead, it should be <code class="hljs inline no-lang" v-pre>mf.clearCellAt(1, 3);</code>.</li>
-<li><code class="hljs inline no-lang" v-pre>timer.start();</code>: this does not violate LoD because <code class="hljs inline no-lang" v-pre>timer</code> appears to be an internal component (i.e. a variable) of <code class="hljs inline no-lang" v-pre>Logic</code> itself.</li>
-<li><code class="hljs inline no-lang" v-pre>Cell c = new Cell();</code> <code class="hljs inline no-lang" v-pre>c.init();</code>: this does not violate LoD because <code class="hljs inline no-lang" v-pre>c</code> was created inside the operation.</li></ul></div></question></panel></div>
+<li><code v-pre>mf.init();</code>: this does not violate LoD since LoD allows calling operations of parameters received.</li>
+<li><code v-pre>mf.getCell(1, 3).clear();</code>: this violates LoD because <code v-pre>Logic</code> is handling <code v-pre>Cell</code> objects deep inside <code v-pre>Minefield</code>. Instead, it should be <code v-pre>mf.clearCellAt(1, 3);</code>.</li>
+<li><code v-pre>timer.start();</code>: this does not violate LoD because <code v-pre>timer</code> appears to be an internal component (i.e. a variable) of <code v-pre>Logic</code> itself.</li>
+<li><code v-pre>Cell c = new Cell();</code> <code v-pre>c.init();</code>: this does not violate LoD because <code v-pre>c</code> was created inside the operation.</li></ul></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> LoD violation?</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> LoD violation?</p></template>
 <question>
 <p>This violates the Law of Demeter.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
-</span><span>    Goo g = <span class="hljs-keyword">new</span> Goo();
-</span><span>    g.doSomething();
-</span><span>}
-</span></code></pre><ul radio-group="b573e" class="radio-list">
+<pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{<br></span><span>    Goo g = <span class="hljs-keyword">new</span> Goo();<br></span><span>    g.doSomething();<br></span><span>}<br></span></code></pre><ul radio-group="b573e" class="radio-list">
 <li class="radio-list-item"><label><input class="radio-list-input" name="b573e" type="radio"> True</label></li>
 <li class="radio-list-item"><label><input class="radio-list-input" name="b573e" type="radio"> False</label></li></ul>
 <div slot="answer" class="algolia-no-index">
 <p>False</p>
-<p>Explanation: The line <code class="hljs inline no-lang" v-pre>g.doSomething()</code> does not violate LoD because it is OK to invoke methods of objects created within a method.</p></div></question></panel></div>
+<p>Explanation: The line <code v-pre>g.doSomething()</code> does not violate LoD because it is OK to invoke methods of objects created within a method.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Odd one out</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Odd one out</p></template>
 <question>
 <p>Pick the odd one out.</p>
 <ul class="contains-task-list">
@@ -600,14 +561,14 @@ by Patkos Csaba</li>
 <div>
 <p>As you add more and more Java classes to your project, keeping all those classes in the same directory becomes untenable. The solution is covered in the next topic.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w8-2-java-packages">
-<span slot="header" class="card-title"><div><h2 id="w8-2-java-packages"><span id="w8-2-java-packages" class="anchor"></span><span class="dimmed">[W8.2]</span> <strong>Java: Packages</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w8-2-java-packages" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w8-2-java-packages"><span class="dimmed">[W8.2]</span> <strong>Java: Packages</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w8-2-java-packages" class="anchor"></span><a class="fa fa-anchor" href="#w8-2-java-packages" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W8-2a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/packages" id="c-to-java-miscellaneous-topics-packages">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.2a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="c-to-java-miscellaneous-topics-packages"><span id="c-to-java-miscellaneous-topics-packages" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Packages</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-packages" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-miscellaneous-topics-packages"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Packages</span></strong><span id="c-to-java-miscellaneous-topics-packages" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-packages" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=3e42d282-438a-4470-a6a3-ac4400efe9e0&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -619,95 +580,44 @@ by Patkos Csaba</li>
 <p></p>
 <div>
 <p><strong>You can organize your <em>types</em> (i.e., classes, interfaces, enumerations, etc.) into <em>packages</em></strong> for easier management (among <a href="https://www.tutorialspoint.com/Advantages-of-using-packages-in-Java">other benefits</a>).</p>
-<p><strong>To create a package, you put a package statement at the very top of every source file in that package.</strong> The package statement must be the first line in the source file and there can be no more than one package statement in each source file. Furthermore, <strong>the package of a type should match the folder path of the source file.</strong> Similarly, the compiler will put the <code class="hljs inline no-lang" v-pre>.class</code> files in a folder structure that matches the package names.</p>
+<p><strong>To create a package, you put a package statement at the very top of every source file in that package.</strong> The package statement must be the first line in the source file and there can be no more than one package statement in each source file. Furthermore, <strong>the package of a type should match the folder path of the source file.</strong> Similarly, the compiler will put the <code v-pre>.class</code> files in a folder structure that matches the package names.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code class="hljs inline no-lang" v-pre>Formatter</code> class below (in <code class="hljs inline no-lang" v-pre>&lt;source folder&gt;/seedu/tojava/util/Formatter.java</code> file) is in the package <code class="hljs inline no-lang" v-pre>seedu.tojava.util</code>. When it is compiled, the <code class="hljs inline no-lang" v-pre>Formatter.class</code> file will be in the location <code class="hljs inline no-lang" v-pre>&lt;compiler output folder&gt;/seedu/tojava/util</code>:</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">package</span> seedu.tojava.util;
-</span><span>
-</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
-</span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">format</span><span class="hljs-params">(String s)</span></span>{
-</span><span>        <span class="hljs-keyword">return</span> PREFIX + s;
-</span><span>    }
-</span><span>}
-</span></code></pre></box>
-<p><strong>Package names are written in all lower case</strong> (not camelCase), using the dot as a separator. Packages in the Java language itself begin with <code class="hljs inline no-lang" v-pre>java</code>. or <code class="hljs inline no-lang" v-pre>javax</code>. Companies use their reversed Internet domain name to begin their package names.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>Formatter</code> class below (in <code v-pre>&lt;source folder&gt;/seedu/tojava/util/Formatter.java</code> file) is in the package <code v-pre>seedu.tojava.util</code>. When it is compiled, the <code v-pre>Formatter.class</code> file will be in the location <code v-pre>&lt;compiler output folder&gt;/seedu/tojava/util</code>:</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">package</span> seedu.tojava.util;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">format</span><span class="hljs-params">(String s)</span></span>{<br></span><span>        <span class="hljs-keyword">return</span> PREFIX + s;<br></span><span>    }<br></span><span>}<br></span></code></pre></box>
+<p><strong>Package names are written in all lower case</strong> (not camelCase), using the dot as a separator. Packages in the Java language itself begin with <code v-pre>java</code>. or <code v-pre>javax</code>. Companies use their reversed Internet domain name to begin their package names.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, <code class="hljs inline no-lang" v-pre>com.foobar.doohickey.util</code> can be the name of a package created by a company with a domain name <code class="hljs inline no-lang" v-pre>foobar.com</code></p></box>
-<p><strong>To use a public <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">types contained in the package</span>package member</span> from outside its package, you must do one of the following:</strong></p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, <code v-pre>com.foobar.doohickey.util</code> can be the name of a package created by a company with a domain name <code v-pre>foobar.com</code></p></box>
+<p><strong>To use a public <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">types contained in the package</span>package member</span> from outside its package, you must do one of the following:</strong></p>
 <ol>
-<li><strong>Use the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">type name prefixed by the package name e.g., <code class="hljs inline no-lang" v-pre>java.io.IOException</code></span>fully qualified name</span></strong> to refer to the member</li>
+<li><strong>Use the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">type name prefixed by the package name e.g., <code v-pre>java.io.IOException</code></span>fully qualified name</span></strong> to refer to the member</li>
 <li><strong>Import</strong> the package or the specific package member</li></ol>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code class="hljs inline no-lang" v-pre>Main</code> class below has two import statements:</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>Main</code> class below has two import statements:</p>
 <ul>
-<li><code class="hljs inline no-lang" v-pre>import seedu.tojava.util.StringParser</code>: imports the class <code class="hljs inline no-lang" v-pre>StringParser</code> in the <code class="hljs inline no-lang" v-pre>seedu.tojava.util</code> package</li>
-<li><code class="hljs inline no-lang" v-pre>import seedu.tojava.frontend.*</code>: imports all the classes in the <code class="hljs inline no-lang" v-pre>seedu.tojava.frontend</code> package</li></ul>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">package</span> seedu.tojava;
-</span><span>
-</span><span><span class="hljs-keyword">import</span> seedu.tojava.util.StringParser;
-</span><span><span class="hljs-keyword">import</span> seedu.tojava.frontend.*;
-</span><span>
-</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-</span><span>
-</span><span>        <span class="hljs-comment">// Using the fully qualified name to access the Processor class</span>
-</span><span>        String status = seedu.tojava.logic.Processor.getStatus();
-</span><span>
-</span><span>        <span class="hljs-comment">// Using the StringParser previously imported</span>
-</span><span>        StringParser sp = <span class="hljs-keyword">new</span> StringParser();
-</span><span>
-</span><span>        <span class="hljs-comment">// Using classes from the tojava.frontend package</span>
-</span><span>        Ui ui = <span class="hljs-keyword">new</span> Ui();
-</span><span>        Message m = <span class="hljs-keyword">new</span> Message();
-</span><span>
-</span><span>    }
-</span><span>}
-</span></code></pre><p>Note how the class can still use the <code class="hljs inline no-lang" v-pre>Processor</code> without importing it first, by using its fully qualified name <code class="hljs inline no-lang" v-pre>seedu.tojava.logic.Processor</code></p></box>
+<li><code v-pre>import seedu.tojava.util.StringParser</code>: imports the class <code v-pre>StringParser</code> in the <code v-pre>seedu.tojava.util</code> package</li>
+<li><code v-pre>import seedu.tojava.frontend.*</code>: imports all the classes in the <code v-pre>seedu.tojava.frontend</code> package</li></ul>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">package</span> seedu.tojava;<br></span><span><br></span><span><span class="hljs-keyword">import</span> seedu.tojava.util.StringParser;<br></span><span><span class="hljs-keyword">import</span> seedu.tojava.frontend.*;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span><br></span><span>        <span class="hljs-comment">// Using the fully qualified name to access the Processor class</span><br></span><span>        String status = seedu.tojava.logic.Processor.getStatus();<br></span><span><br></span><span>        <span class="hljs-comment">// Using the StringParser previously imported</span><br></span><span>        StringParser sp = <span class="hljs-keyword">new</span> StringParser();<br></span><span><br></span><span>        <span class="hljs-comment">// Using classes from the tojava.frontend package</span><br></span><span>        Ui ui = <span class="hljs-keyword">new</span> Ui();<br></span><span>        Message m = <span class="hljs-keyword">new</span> Message();<br></span><span><br></span><span>    }<br></span><span>}<br></span></code></pre><p>Note how the class can still use the <code v-pre>Processor</code> without importing it first, by using its fully qualified name <code v-pre>seedu.tojava.logic.Processor</code></p></box>
 <p><strong>Importing a package does not import its sub-packages</strong>, as packages do not behave as hierarchies despite appearances.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code class="hljs inline no-lang" v-pre>import seedu.tojava.frontend.*</code> does not import the classes in the sub-package <code class="hljs inline no-lang" v-pre>seedu.tojava.frontend.widget</code>.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code v-pre>import seedu.tojava.frontend.*</code> does not import the classes in the sub-package <code v-pre>seedu.tojava.frontend.widget</code>.</p></box>
 <p><strong>If you do not use a package statement, your type doesn't have a package</strong> -- a practice not recommended (except for small code examples) as it is not possible for a type in a package to import a type that is not in a package.</p>
 <p><strong>Optionally, a <em>static import</em> can be used to import static members of a type</strong> so that the imported members can be used without specifying the type name.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The class below uses static imports to import the constant <code class="hljs inline no-lang" v-pre>PREFIX</code> and the method <code class="hljs inline no-lang" v-pre>format()</code> from the <code class="hljs inline no-lang" v-pre>seedu.tojava.util.Formatter</code> class.</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;
-</span><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.format;
-</span><span>
-</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-</span><span>
-</span><span>        String formatted = format(<span class="hljs-string">"Hello"</span>);
-</span><span>        <span class="hljs-keyword">boolean</span> isFormatted = formatted.startsWith(PREFIX);
-</span><span>        System.out.println(formatted);
-</span><span>    }
-</span><span>}
-</span></code></pre><panel type="seamless" class="algolia-no-index"><template slot="header"><p><code class="hljs inline no-lang" v-pre>Formatter</code> class</p></template>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">package</span> seedu.tojava.util;
-</span><span>
-</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
-</span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">format</span><span class="hljs-params">(String s)</span></span>{
-</span><span>        <span class="hljs-keyword">return</span> PREFIX + s;
-</span><span>    }
-</span><span>}
-</span></code></pre></panel>
-<p>Note how the class can use <code class="hljs inline no-lang" v-pre>PREFIX</code> and <code class="hljs inline no-lang" v-pre>format()</code> (instead of <code class="hljs inline no-lang" v-pre>Formatter.PREFIX</code> and <code class="hljs inline no-lang" v-pre>Formatter.format()</code>).</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The class below uses static imports to import the constant <code v-pre>PREFIX</code> and the method <code v-pre>format()</code> from the <code v-pre>seedu.tojava.util.Formatter</code> class.</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;<br></span><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.format;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span><br></span><span>        String formatted = format(<span class="hljs-string">"Hello"</span>);<br></span><span>        <span class="hljs-keyword">boolean</span> isFormatted = formatted.startsWith(PREFIX);<br></span><span>        System.out.println(formatted);<br></span><span>    }<br></span><span>}<br></span></code></pre><panel type="seamless" class="algolia-no-index"><template slot="_header"><p><code v-pre>Formatter</code> class</p></template>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">package</span> seedu.tojava.util;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">format</span><span class="hljs-params">(String s)</span></span>{<br></span><span>        <span class="hljs-keyword">return</span> PREFIX + s;<br></span><span>    }<br></span><span>}<br></span></code></pre></panel>
+<p>Note how the class can use <code v-pre>PREFIX</code> and <code v-pre>format()</code> (instead of <code v-pre>Formatter.PREFIX</code> and <code v-pre>Formatter.format()</code>).</p></box>
 <p><strong>When using the commandline to compile/run Java, you should take the package into account.</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the <code class="hljs inline no-lang" v-pre>seedu.tojava.Main</code> class is defined in the file <code class="hljs inline no-lang" v-pre>Main.java</code>,</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the <code v-pre>seedu.tojava.Main</code> class is defined in the file <code v-pre>Main.java</code>,</p>
 <ul>
-<li>when compiling from the <code class="hljs inline no-lang" v-pre>&lt;source folder&gt;</code>, the command is:<br>
-<code class="hljs inline no-lang" v-pre>javac seedu/tojava/Main.java</code></li>
-<li>when running it from the <code class="hljs inline no-lang" v-pre>&lt;compiler output folder&gt;</code>, the command is:<br>
-<code class="hljs inline no-lang" v-pre>java seedu.tojava.Main</code></li></ul></box></div>
+<li>when compiling from the <code v-pre>&lt;source folder&gt;</code>, the command is:<br>
+<code v-pre>javac seedu/tojava/Main.java</code></li>
+<li>when running it from the <code v-pre>&lt;compiler output folder&gt;</code>, the command is:<br>
+<code v-pre>java seedu.tojava.Main</code></li></ul></box></div>
 <div>
   <div>
-<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
 <div>
 <ul>
 <li>Oracle's tutorial on packages: [<a href="https://docs.oracle.com/javase/tutorial/java/concepts/package.html">What is a Package?</a>] [<a href="https://docs.oracle.com/javase/tutorial/java/package/index.html">Creating and Using Packages</a>]</li></ul></div></panel></div></div></div></div></panel>
@@ -726,14 +636,14 @@ by Patkos Csaba</li>
 <div>
 <p>As the size of your Java code base grows, every class being able to access every member of every other class can be problematic. Hence, there should be a way to control the access to our Java classes and their members. The solution is given in the topic below.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w8-3-java-access-modifiers">
-<span slot="header" class="card-title"><div><h2 id="w8-3-java-access-modifiers"><span id="w8-3-java-access-modifiers" class="anchor"></span><span class="dimmed">[W8.3]</span> <strong>Java: Access Modifiers</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w8-3-java-access-modifiers" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w8-3-java-access-modifiers"><span class="dimmed">[W8.3]</span> <strong>Java: Access Modifiers</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w8-3-java-access-modifiers" class="anchor"></span><a class="fa fa-anchor" href="#w8-3-java-access-modifiers" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W8-3a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/accessModifiers" id="c-to-java-miscellaneous-topics-access-modifiers">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.3a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="c-to-java-miscellaneous-topics-access-modifiers"><span id="c-to-java-miscellaneous-topics-access-modifiers" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Access modifiers</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-access-modifiers" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-miscellaneous-topics-access-modifiers"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Access modifiers</span></strong><span id="c-to-java-miscellaneous-topics-access-modifiers" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-access-modifiers" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -746,32 +656,32 @@ by Patkos Csaba</li>
 <li>
 <p><strong>At the class level</strong>:</p>
 <ul>
-<li><strong><code class="hljs inline no-lang" v-pre>public</code></strong>: the class is visible to all classes everywhere</li>
+<li><strong><code v-pre>public</code></strong>: the class is visible to all classes everywhere</li>
 <li><strong>no modifier (the default, also known as <em>package-private</em>)</strong>: it is visible only within its own package<br><br></li></ul></li>
 <li>
 <p><strong>At the member level</strong>:</p>
 <ul>
-<li><strong><code class="hljs inline no-lang" v-pre>public</code></strong> or <strong>no modifier (<em>package-private</em>)</strong>: same meaning as when used with top-level classes</li>
-<li><strong><code class="hljs inline no-lang" v-pre>private</code></strong>: the member can only be accessed in its own class</li>
-<li><strong><code class="hljs inline no-lang" v-pre>protected</code></strong>: the member can only be accessed within its own package (as with package-private) and, in addition, by a subclass of its class in another package</li></ul></li></ol>
+<li><strong><code v-pre>public</code></strong> or <strong>no modifier (<em>package-private</em>)</strong>: same meaning as when used with top-level classes</li>
+<li><strong><code v-pre>private</code></strong>: the member can only be accessed in its own class</li>
+<li><strong><code v-pre>protected</code></strong>: the member can only be accessed within its own package (as with package-private) and, in addition, by a subclass of its class in another package</li></ul></li></ol>
 <p>The following table shows the access to members permitted by each modifier.</p>
 <div class="indented">
 <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead>
 <tr>
 <th>Modifier</th>
-<th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">whether the class itself has access to the member defined by the access level</span>Class</span></th>
-<th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">whether classes in the same package as the class (regardless of their parentage) have access to the member</span>Package</span></th>
-<th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">whether subclasses of the class declared outside this package have access to the member</span>Subclass</span></th>
-<th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">whether all classes have access to the member</span>World</span></th></tr></thead>
+<th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">whether the class itself has access to the member defined by the access level</span>Class</span></th>
+<th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">whether classes in the same package as the class (regardless of their parentage) have access to the member</span>Package</span></th>
+<th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">whether subclasses of the class declared outside this package have access to the member</span>Subclass</span></th>
+<th><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">whether all classes have access to the member</span>World</span></th></tr></thead>
 <tbody>
 <tr>
-<td><code class="hljs inline no-lang" v-pre>public</code></td>
+<td><code v-pre>public</code></td>
 <td><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span></td>
 <td><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span></td>
 <td><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span></td>
 <td><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span></td></tr>
 <tr>
-<td><code class="hljs inline no-lang" v-pre>protected</code></td>
+<td><code v-pre>protected</code></td>
 <td><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span></td>
 <td><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span></td>
 <td><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span></td>
@@ -783,7 +693,7 @@ by Patkos Csaba</li>
 <td><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span></td>
 <td><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span></td></tr>
 <tr>
-<td><code class="hljs inline no-lang" v-pre>private</code></td>
+<td><code v-pre>private</code></td>
 <td><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span></span></td>
 <td><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span></td>
 <td><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span></span></td>
@@ -808,14 +718,14 @@ by Patkos Csaba</li>
 <div>
 <p>As you know, adding comments to the code is a good practice. Let's learn about a specific type of comments that you can use in Java code that can do even more than just explain the code.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w8-4-java-javadocs">
-<span slot="header" class="card-title"><div><h2 id="w8-4-java-javadocs"><span id="w8-4-java-javadocs" class="anchor"></span><span class="dimmed">[W8.4]</span> <strong>Java: JavaDocs</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w8-4-java-javadocs" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w8-4-java-javadocs"><span class="dimmed">[W8.4]</span> <strong>Java: JavaDocs</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w8-4-java-javadocs" class="anchor"></span><a class="fa fa-anchor" href="#w8-4-java-javadocs" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W8-4a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/what" id="implementation-documentation-tools-javadoc-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.4a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="implementation-documentation-tools-javadoc-what"><span id="implementation-documentation-tools-javadoc-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="implementation-documentation-tools-javadoc-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>What</span></strong><span id="implementation-documentation-tools-javadoc-what" class="anchor"></span><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-what" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=46becd1e-d2bb-4a4a-ae74-ac0e00cf9d99&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -829,29 +739,7 @@ by Patkos Csaba</li>
 <p><strong>JavaDoc is a tool for generating API documentation in HTML format from comments in the source code.</strong> In addition, modern IDEs use JavaDoc comments to generate explanatory tooltips.</p>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example method header comment in JavaDoc format (adapted from <a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">Oracle's Java documentation</a>)</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-comment">/**</span>
-</span><span><span class="hljs-comment"> * Returns an Image object that can then be painted on the screen.</span>
-</span><span><span class="hljs-comment"> * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name</span>
-</span><span><span class="hljs-comment"> * argument is a specifier that is relative to the url argument.</span>
-</span><span><span class="hljs-comment"> * &lt;p&gt;</span>
-</span><span><span class="hljs-comment"> * This method always returns immediately, whether or not the</span>
-</span><span><span class="hljs-comment"> * image exists. When this applet attempts to draw the image on</span>
-</span><span><span class="hljs-comment"> * the screen, the data will be loaded. The graphics primitives</span>
-</span><span><span class="hljs-comment"> * that draw the image will incrementally paint on the screen.</span>
-</span><span><span class="hljs-comment"> *</span>
-</span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> url an absolute URL giving the base location of the image</span>
-</span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> name the location of the image, relative to the url argument</span>
-</span><span><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> the image at the specified URL</span>
-</span><span><span class="hljs-comment"> * <span class="hljs-doctag">@see</span> Image</span>
-</span><span><span class="hljs-comment"> */</span>
-</span><span><span class="hljs-function"><span class="hljs-keyword">public</span> Image <span class="hljs-title">getImage</span><span class="hljs-params">(URL url, String name)</span> </span>{
-</span><span>    <span class="hljs-keyword">try</span> {
-</span><span>        <span class="hljs-keyword">return</span> getImage(<span class="hljs-keyword">new</span> URL(url, name));
-</span><span>    } <span class="hljs-keyword">catch</span> (MalformedURLException e) {
-</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
-</span><span>    }
-</span><span>}
-</span></code></pre><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Generated HTML documentation:</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment"> * Returns an Image object that can then be painted on the screen.</span><br></span><span><span class="hljs-comment"> * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name</span><br></span><span><span class="hljs-comment"> * argument is a specifier that is relative to the url argument.</span><br></span><span><span class="hljs-comment"> * &lt;p&gt;</span><br></span><span><span class="hljs-comment"> * This method always returns immediately, whether or not the</span><br></span><span><span class="hljs-comment"> * image exists. When this applet attempts to draw the image on</span><br></span><span><span class="hljs-comment"> * the screen, the data will be loaded. The graphics primitives</span><br></span><span><span class="hljs-comment"> * that draw the image will incrementally paint on the screen.</span><br></span><span><span class="hljs-comment"> *</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> url an absolute URL giving the base location of the image</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> name the location of the image, relative to the url argument</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> the image at the specified URL</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@see</span> Image</span><br></span><span><span class="hljs-comment"> */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> Image <span class="hljs-title">getImage</span><span class="hljs-params">(URL url, String name)</span> </span>{<br></span><span>    <span class="hljs-keyword">try</span> {<br></span><span>        <span class="hljs-keyword">return</span> getImage(<span class="hljs-keyword">new</span> URL(url, name));<br></span><span>    } <span class="hljs-keyword">catch</span> (MalformedURLException e) {<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;<br></span><span>    }<br></span><span>}<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Generated HTML documentation:</p>
 <p><a href="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" target="_self"><img src="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" alt class="img-fluid"></a></p>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Tooltip generated by Intellij IDE:</p>
 <p><img src="/website/book/documentation/tools/javaDoc/what/images/intellijTooltip.png"></p><p></p><p></p></box></div>
@@ -864,7 +752,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/how" id="implementation-documentation-tools-javadoc-how">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.4b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="implementation-documentation-tools-javadoc-how"><span id="implementation-documentation-tools-javadoc-how" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-how" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="implementation-documentation-tools-javadoc-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>How</span></strong><span id="implementation-documentation-tools-javadoc-how" class="anchor"></span><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-how" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -873,36 +761,11 @@ by Patkos Csaba</li>
 <div>
 <p>In the absence of more extensive guidelines (e.g., given in a coding standard adopted by your project), you can follow the two examples below in your code.</p>
 <p><strong>A minimal JavaDoc comment example for methods:</strong></p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-comment">/**</span>
-</span><span><span class="hljs-comment"> * Returns lateral location of the specified position.</span>
-</span><span><span class="hljs-comment"> * If the position is unset, NaN is returned.</span>
-</span><span><span class="hljs-comment"> *</span>
-</span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> x X coordinate of position.</span>
-</span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> y Y coordinate of position.</span>
-</span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> zone Zone of position.</span>
-</span><span><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> Lateral location.</span>
-</span><span><span class="hljs-comment"> * <span class="hljs-doctag">@throws</span> IllegalArgumentException If zone is &lt;= 0.</span>
-</span><span><span class="hljs-comment"> */</span>
-</span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">computeLocation</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y, <span class="hljs-keyword">int</span> zone)</span></span>
-</span><span><span class="hljs-function">    <span class="hljs-keyword">throws</span> IllegalArgumentException </span>{
-</span><span>    <span class="hljs-comment">// ...</span>
-</span><span>}
-</span></code></pre><p><strong>A minimal JavaDoc comment example for classes:</strong></p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">package</span> ...
-</span><span>
-</span><span><span class="hljs-keyword">import</span> ...
-</span><span>
-</span><span><span class="hljs-comment">/**</span>
-</span><span><span class="hljs-comment"> * Represents a location in a 2D space. A &lt;code&gt;Point&lt;/code&gt; object corresponds to</span>
-</span><span><span class="hljs-comment"> * a coordinate represented by two integers e.g., &lt;code&gt;3,6&lt;/code&gt;</span>
-</span><span><span class="hljs-comment"> */</span>
-</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{
-</span><span>    <span class="hljs-comment">// ...</span>
-</span><span>}
-</span></code></pre></div>
+<pre><code class="hljs java" v-pre><span><span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment"> * Returns lateral location of the specified position.</span><br></span><span><span class="hljs-comment"> * If the position is unset, NaN is returned.</span><br></span><span><span class="hljs-comment"> *</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> x X coordinate of position.</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> y Y coordinate of position.</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> zone Zone of position.</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> Lateral location.</span><br></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@throws</span> IllegalArgumentException If zone is &lt;= 0.</span><br></span><span><span class="hljs-comment"> */</span><br></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">computeLocation</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y, <span class="hljs-keyword">int</span> zone)</span></span><br></span><span><span class="hljs-function">    <span class="hljs-keyword">throws</span> IllegalArgumentException </span>{<br></span><span>    <span class="hljs-comment">// ...</span><br></span><span>}<br></span></code></pre><p><strong>A minimal JavaDoc comment example for classes:</strong></p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-keyword">package</span> ...<br></span><span><br></span><span><span class="hljs-keyword">import</span> ...<br></span><span><br></span><span><span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment"> * Represents a location in a 2D space. A &lt;code&gt;Point&lt;/code&gt; object corresponds to</span><br></span><span><span class="hljs-comment"> * a coordinate represented by two integers e.g., &lt;code&gt;3,6&lt;/code&gt;</span><br></span><span><span class="hljs-comment"> */</span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{<br></span><span>    <span class="hljs-comment">// ...</span><br></span><span>}<br></span></code></pre></div>
 <div>
   <div>
-<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
 <div>
 <ul>
 <li><a href="https://www.tutorialspoint.com/java/java_documentation.htm">A short tutorial on writing JavaDoc comments</a> <span class="dimmed">-- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></span></li>
@@ -923,14 +786,14 @@ by Patkos Csaba</li>
 <div>
 <p>Let's learn about a few more Git techniques, starting with branching. Although these techniques are not really needed for the iP, we force you to use them in the iP so that you have more time to practice them before they are really needed in the tP.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w8-5-rcs-branching">
-<span slot="header" class="card-title"><div><h2 id="w8-5-rcs-branching"><span id="w8-5-rcs-branching" class="anchor"></span><span class="dimmed">[W8.5]</span> <strong>RCS: Branching</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w8-5-rcs-branching" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w8-5-rcs-branching"><span class="dimmed">[W8.5]</span> <strong>RCS: Branching</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w8-5-rcs-branching" class="anchor"></span><a class="fa fa-anchor" href="#w8-5-rcs-branching" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W8-5a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/revisionControl/branching" id="project-management-revision-control-branching">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.5a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-revision-control-branching"><span id="project-management-revision-control-branching" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Branching</span></strong><a class="fa fa-anchor" href="#project-management-revision-control-branching" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-revision-control-branching"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Branching</span></strong><span id="project-management-revision-control-branching" class="anchor"></span><a class="fa fa-anchor" href="#project-management-revision-control-branching" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=c1688fb0-ff95-462c-a736-ac0e00c93e04&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -941,20 +804,20 @@ by Patkos Csaba</li>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain branching</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p><strong><mark><em>Branching</em></mark> is the process of evolving multiple versions of the software in parallel.</strong> For example, one team member can create a new branch and add an experimental feature to it while the rest of the team keeps working on another branch. Branches can be given names e.g. <code class="hljs inline no-lang" v-pre>master</code>, <code class="hljs inline no-lang" v-pre>release</code>, <code class="hljs inline no-lang" v-pre>dev</code>.</p>
+<p><strong><mark><em>Branching</em></mark> is the process of evolving multiple versions of the software in parallel.</strong> For example, one team member can create a new branch and add an experimental feature to it while the rest of the team keeps working on another branch. Branches can be given names e.g. <code v-pre>master</code>, <code v-pre>release</code>, <code v-pre>dev</code>.</p>
 <p><strong>A branch can be <mark><em>merged</em></mark> into another branch.</strong> Merging usually results in a new commit that represents the changes done in the branch being merged.</p>
 <pic src="/website/book/revisionControl/branching/images/diagram.png" height="180">
   <strong>Branching and merging</strong></pic>
-<p><strong><mark><em>Merge conflicts</em></mark> happen when you try to merge two branches that had changed the same part of the code</strong> and the <trigger for="pop:rcs">RCS</trigger> cannot decide which changes to keep. In those cases, you have to ‘resolve’ the conflicts manually.</p></div>
+<p><strong><mark><em>Merge conflicts</em></mark> happen when you try to merge two branches that had changed the same part of the code</strong> and the <span for="pop:rcs" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:rcs'].show()" class="trigger">RCS</span> cannot decide which changes to keep. In those cases, you have to ‘resolve’ the conflicts manually.</p></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is branching?</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is branching?</p></template>
 <question has-input="true">
 <p>In the context of RCS, what is <em>branching</em>? What is the need for branching?</p></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is merging?</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is merging?</p></template>
 <question has-input="true">
 <p>In the context of RCS, what does <em>merging</em> branches mean? How can it lead to <em>merge conflicts</em>?</p></question></panel></div></panel></div></div></div></div></panel>
 <p></p>
@@ -965,7 +828,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/branch" id="tools-git-and-github-branch-doing-multiple-parallel-changes">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.5b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="tools-git-and-github-branch-doing-multiple-parallel-changes"><span id="tools-git-and-github-branch-doing-multiple-parallel-changes" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code class="hljs inline no-lang" v-pre>branch</code>: Doing multiple parallel changes</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-branch-doing-multiple-parallel-changes" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="tools-git-and-github-branch-doing-multiple-parallel-changes"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>branch</code>: Doing multiple parallel changes</span></strong><span id="tools-git-and-github-branch-doing-multiple-parallel-changes" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-branch-doing-multiple-parallel-changes" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=2580eb90-e6c1-42ab-9b5b-ac0e00c93de0&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -973,27 +836,27 @@ by Patkos Csaba</li>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/revisionControl/branching/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/branching" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Branching</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/revisionControl/branching/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/branching" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Branching</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use Git branching</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
 <p><strong>Git supports branching</strong>, which allows you to do multiple parallel changes to the content of a repository.</p>
-<p><strong>A Git branch is simply a <em>named label</em> pointing to a commit. The <code class="hljs inline no-lang" v-pre>HEAD</code> label indicates which branch you are on.</strong> Git creates a branch named <code class="hljs inline no-lang" v-pre>master</code> by default. When you add a commit, it goes into the branch you are currently on, and the branch label (together with the <code class="hljs inline no-lang" v-pre>HEAD</code> label) moves to the new commit.</p>
+<p><strong>A Git branch is simply a <em>named label</em> pointing to a commit. The <code v-pre>HEAD</code> label indicates which branch you are on.</strong> Git creates a branch named <code v-pre>master</code> by default. When you add a commit, it goes into the branch you are currently on, and the branch label (together with the <code v-pre>HEAD</code> label) moves to the new commit.</p>
 <p>Given below is an illustration of how branch labels move as branches evolve.</p>
 <p><pic src="/website/book/gitAndGithub/branch/images/branchesAsLabels1.png" width="650"></pic></p>
 <ol>
-<li>There is only one branch (i.e., <code class="hljs inline no-lang" v-pre>master</code>) and there is only one commit on it.</li>
-<li>A new commit has been added. The <code class="hljs inline no-lang" v-pre>master</code> and the <code class="hljs inline no-lang" v-pre>HEAD</code> labels have moved to the new commit.</li>
-<li>A new branch <code class="hljs inline no-lang" v-pre>fix1</code> has been added. The repo has switched to the new branch too (hence, the <code class="hljs inline no-lang" v-pre>HEAD</code> label is attached to the <code class="hljs inline no-lang" v-pre>fix1</code> branch).</li>
-<li>A new commit (<code class="hljs inline no-lang" v-pre>c</code>) has been added. The current branch label <code class="hljs inline no-lang" v-pre>fix1</code> moves to the new commit, together with the <code class="hljs inline no-lang" v-pre>HEAD</code> label.</li>
-<li>The repo has switched back to the <code class="hljs inline no-lang" v-pre>master</code> branch.</li></ol>
+<li>There is only one branch (i.e., <code v-pre>master</code>) and there is only one commit on it.</li>
+<li>A new commit has been added. The <code v-pre>master</code> and the <code v-pre>HEAD</code> labels have moved to the new commit.</li>
+<li>A new branch <code v-pre>fix1</code> has been added. The repo has switched to the new branch too (hence, the <code v-pre>HEAD</code> label is attached to the <code v-pre>fix1</code> branch).</li>
+<li>A new commit (<code v-pre>c</code>) has been added. The current branch label <code v-pre>fix1</code> moves to the new commit, together with the <code v-pre>HEAD</code> label.</li>
+<li>The repo has switched back to the <code v-pre>master</code> branch.</li></ol>
 <p><pic src="/website/book/gitAndGithub/branch/images/branchesAsLabels2.png" width="600"></pic></p>
 <ol start="6">
-<li>A new commit (<code class="hljs inline no-lang" v-pre>d</code>) has been added. The <code class="hljs inline no-lang" v-pre>master</code> label has moved to that commit.</li>
-<li>The repo has switched back to the <code class="hljs inline no-lang" v-pre>fix1</code> branch and added a new commit (<code class="hljs inline no-lang" v-pre>e</code>) to it.</li>
-<li>The repo has switched to the <code class="hljs inline no-lang" v-pre>master</code> branch and the <code class="hljs inline no-lang" v-pre>fix1</code> branch has been merged into the <code class="hljs inline no-lang" v-pre>master</code> branch, creating a <em>merge commit</em> <code class="hljs inline no-lang" v-pre>f</code>. The repo is currently on the <code class="hljs inline no-lang" v-pre>master</code> branch.</li></ol>
+<li>A new commit (<code v-pre>d</code>) has been added. The <code v-pre>master</code> label has moved to that commit.</li>
+<li>The repo has switched back to the <code v-pre>fix1</code> branch and added a new commit (<code v-pre>e</code>) to it.</li>
+<li>The repo has switched to the <code v-pre>master</code> branch and the <code v-pre>fix1</code> branch has been merged into the <code v-pre>master</code> branch, creating a <em>merge commit</em> <code v-pre>f</code>. The repo is currently on the <code v-pre>master</code> branch.</li></ol>
 <p>Follow the steps below to learn how to work with branches. You can use any repo you have on your computer (e.g. a clone of the <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a>) for this.</p>
-<p><strong>0. Observe that you are normally in the branch called <code class="hljs inline no-lang" v-pre>master</code>.</strong></p>
+<p><strong>0. Observe that you are normally in the branch called <code v-pre>master</code>.</strong></p>
 <tabs>
   <tab><template slot="_header">SourceTree</template>
     <div>
@@ -1001,86 +864,78 @@ by Patkos Csaba</li>
 <p></p></div></tab>
   <tab class="algolia-no-index"><template slot="_header">CLI</template>
     <div>
-<pre><code class="hljs" v-pre><span>git status
-</span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-<pre><code class="hljs" v-pre><span>on branch master
-</span></code></pre></div></tab></tabs>
-<p><strong>1. Start a branch named <code class="hljs inline no-lang" v-pre>feature1</code> and switch to the new branch.</strong></p>
+<pre><code class="hljs" v-pre><span>git status<br></span></code></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs" v-pre><span>on branch master<br></span></code></pre></div></tab></tabs>
+<p><strong>1. Start a branch named <code v-pre>feature1</code> and switch to the new branch.</strong></p>
 <tabs>
   <tab><template slot="_header">SourceTree</template>
     <div>
-<p>Click on the <code class="hljs inline no-lang" v-pre>Branch</code> button on the main menu. In the next dialog, enter the branch name and click <code class="hljs inline no-lang" v-pre>Create Branch</code>.</p>
+<p>Click on the <code v-pre>Branch</code> button on the main menu. In the next dialog, enter the branch name and click <code v-pre>Create Branch</code>.</p>
 <img src="/website/book/gitAndGithub/branch/images/sourcetree_1.png" height="150">
 <p></p>
-<p>Note how the <code class="hljs inline no-lang" v-pre>feature1</code> is indicated as the current branch.</p>
+<p>Note how the <code v-pre>feature1</code> is indicated as the current branch.</p>
 <img src="/website/book/gitAndGithub/branch/images/sourcetree_2.png" height="150">
 <p></p></div></tab>
   <tab class="algolia-no-index"><template slot="_header">CLI</template>
     <div>
-<p>You can use the <code class="hljs inline no-lang" v-pre>branch</code> command to create a new branch and the <code class="hljs inline no-lang" v-pre>checkout</code> command to switch to a specific branch.</p>
-<pre><code class="hljs" v-pre><span>git branch feature1
-</span><span>git checkout feature1
-</span></code></pre><p>One-step shortcut to create a branch and switch to it at the same time:</p>
-<pre><code class="hljs" v-pre><span>git checkout –b feature1
-</span></code></pre></div></tab></tabs>
+<p>You can use the <code v-pre>branch</code> command to create a new branch and the <code v-pre>checkout</code> command to switch to a specific branch.</p>
+<pre><code class="hljs" v-pre><span>git branch feature1<br></span><span>git checkout feature1<br></span></code></pre><p>One-step shortcut to create a branch and switch to it at the same time:</p>
+<pre><code class="hljs" v-pre><span>git checkout –b feature1<br></span></code></pre></div></tab></tabs>
 <p><strong>2. Create some commits in the new branch.</strong> <span class="dimmed">Just commit as per normal. Commits you add while on a certain branch will become part of that branch.</span><br>
-Note how the <code class="hljs inline no-lang" v-pre>master</code> label and the <code class="hljs inline no-lang" v-pre>HEAD</code> label moves to the new commit (The <code class="hljs inline no-lang" v-pre>HEAD</code> label of the local repo is represented as <span aria-hidden="true" class="fas fa-dot-circle"></span> in SourceTree).</p>
-<p><strong>3. Switch to the <code class="hljs inline no-lang" v-pre>master</code> branch.</strong> Note how the changes you did in the <code class="hljs inline no-lang" v-pre>feature1</code> branch are no longer in the working directory.</p>
+Note how the <code v-pre>master</code> label and the <code v-pre>HEAD</code> label moves to the new commit (The <code v-pre>HEAD</code> label of the local repo is represented as <span aria-hidden="true" class="fas fa-dot-circle"></span> in SourceTree).</p>
+<p><strong>3. Switch to the <code v-pre>master</code> branch.</strong> Note how the changes you did in the <code v-pre>feature1</code> branch are no longer in the working directory.</p>
 <tabs>
   <tab><template slot="_header">SourceTree</template>
     <div>
-<p>Double-click the <code class="hljs inline no-lang" v-pre>master</code> branch.</p>
+<p>Double-click the <code v-pre>master</code> branch.</p>
 <img src="/website/book/gitAndGithub/branch/images/sourcetree_3.png" height="150">
 <p></p></div></tab>
   <tab class="algolia-no-index"><template slot="_header">CLI</template>
     <div>
-<pre><code class="hljs" v-pre><span>git checkout master
-</span></code></pre></div></tab></tabs>
+<pre><code class="hljs" v-pre><span>git checkout master<br></span></code></pre></div></tab></tabs>
 <p><strong>4. Add a commit to the master branch.</strong> Let’s imagine it’s a bug fix.<br>
-To keep things simple for the time being, this commit should <mark>not involve the same content that you changed in the <code class="hljs inline no-lang" v-pre>feature1</code> branch</mark>. To be on the safe side, this commit can change an entirely different file.</p>
+To keep things simple for the time being, this commit should <mark>not involve the same content that you changed in the <code v-pre>feature1</code> branch</mark>. To be on the safe side, this commit can change an entirely different file.</p>
 <img src="/website/book/gitAndGithub/branch/images/sourcetree_4.png" height="100">
 <p></p>
-<p><strong>5. Switch back to the <code class="hljs inline no-lang" v-pre>feature1</code> branch</strong> <span class="dimmed">(similar to step 3)</span>.</p>
-<p><strong>6. Merge the <code class="hljs inline no-lang" v-pre>master</code> branch to the <code class="hljs inline no-lang" v-pre>feature1</code> branch</strong>, giving an end-result like the following. Also note how Git has created a <em>merge commit</em>.</p>
+<p><strong>5. Switch back to the <code v-pre>feature1</code> branch</strong> <span class="dimmed">(similar to step 3)</span>.</p>
+<p><strong>6. Merge the <code v-pre>master</code> branch to the <code v-pre>feature1</code> branch</strong>, giving an end-result like the following. Also note how Git has created a <em>merge commit</em>.</p>
 <img src="/website/book/gitAndGithub/branch/images/sourcetree_5.png" height="120">
 <p></p>
 <tabs>
   <tab><template slot="_header">SourceTree</template>
     <div>
-<p>Right-click on the <code class="hljs inline no-lang" v-pre>master</code> branch and choose <code class="hljs inline no-lang" v-pre>merge master into the current branch</code>. Click <code class="hljs inline no-lang" v-pre>OK</code> in the next dialog.</p></div></tab>
+<p>Right-click on the <code v-pre>master</code> branch and choose <code v-pre>merge master into the current branch</code>. Click <code v-pre>OK</code> in the next dialog.</p></div></tab>
   <tab class="algolia-no-index"><template slot="_header">CLI</template>
     <div>
-<pre><code class="hljs" v-pre><span>git merge master
-</span></code></pre></div></tab></tabs>
-<p>The objective of that merge was to <em>sync</em> the <code class="hljs inline no-lang" v-pre>feature1</code> branch with the <code class="hljs inline no-lang" v-pre>master</code> branch. Observe how the changes you did in the <code class="hljs inline no-lang" v-pre>master</code> branch (i.e. the imaginary bug fix) is now available even when you are in the <code class="hljs inline no-lang" v-pre>feature1</code> branch.</p>
+<pre><code class="hljs" v-pre><span>git merge master<br></span></code></pre></div></tab></tabs>
+<p>The objective of that merge was to <em>sync</em> the <code v-pre>feature1</code> branch with the <code v-pre>master</code> branch. Observe how the changes you did in the <code v-pre>master</code> branch (i.e. the imaginary bug fix) is now available even when you are in the <code v-pre>feature1</code> branch.</p>
 <box type="info" seamless>
-<p>Instead of merging <code class="hljs inline no-lang" v-pre>master</code> to <code class="hljs inline no-lang" v-pre>feature1</code>, an alternative is to <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing"><em>rebase</em></a> the <code class="hljs inline no-lang" v-pre>feature1</code> branch. However, rebasing is an advanced feature that requires modifying past commits. If you modify past commits that have been pushed to a remote repository, you'll have to <a href="https://www.datree.io/resources/git-push-force"><em>force-push</em></a> the modified commit to the remote repo in order to update the commits in it.
+<p>Instead of merging <code v-pre>master</code> to <code v-pre>feature1</code>, an alternative is to <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing"><em>rebase</em></a> the <code v-pre>feature1</code> branch. However, rebasing is an advanced feature that requires modifying past commits. If you modify past commits that have been pushed to a remote repository, you'll have to <a href="https://www.datree.io/resources/git-push-force"><em>force-push</em></a> the modified commit to the remote repo in order to update the commits in it.
 </p></box><p></p>
-<p><strong>7. Add another commit to the <code class="hljs inline no-lang" v-pre>feature1</code> branch.</strong></p>
-<p><strong>8. Switch to the <code class="hljs inline no-lang" v-pre>master</code> branch and add one more commit.</strong></p>
-<p><strong>9. Merge <code class="hljs inline no-lang" v-pre>feature1</code> to the master branch</strong>, giving and end-result like this:</p>
+<p><strong>7. Add another commit to the <code v-pre>feature1</code> branch.</strong></p>
+<p><strong>8. Switch to the <code v-pre>master</code> branch and add one more commit.</strong></p>
+<p><strong>9. Merge <code v-pre>feature1</code> to the master branch</strong>, giving and end-result like this:</p>
 <img src="/website/book/gitAndGithub/branch/images/sourcetree_6.png" height="150">
 <p></p>
 <tabs>
   <tab><template slot="_header">SourceTree</template>
-<p>Right-click on the <code class="hljs inline no-lang" v-pre>feature1</code> branch and choose <code class="hljs inline no-lang" v-pre>Merge...</code>.</p></tab>
+<p>Right-click on the <code v-pre>feature1</code> branch and choose <code v-pre>Merge...</code>.</p></tab>
   <tab class="algolia-no-index"><template slot="_header">CLI</template>
-<pre><code class="hljs" v-pre><span>git merge feature1
-</span></code></pre></tab></tabs>
-<p><strong>10. Create a new branch called <code class="hljs inline no-lang" v-pre>add-countries</code>, switch to it, and add some commits to it</strong> <span class="dimmed">(similar to steps 1-2 above)</span>. You should have something like this now:</p>
+<pre><code class="hljs" v-pre><span>git merge feature1<br></span></code></pre></tab></tabs>
+<p><strong>10. Create a new branch called <code v-pre>add-countries</code>, switch to it, and add some commits to it</strong> <span class="dimmed">(similar to steps 1-2 above)</span>. You should have something like this now:</p>
 <img src="/website/book/gitAndGithub/branch/images/addCountriesBranchBeforeMerging.png" height="80">
 <p></p>
 <box type="wrong" seamless>
 <p><strong class="text-danger">Avoid this common rookie mistake!</strong></p>
-<p><mark>Always remember to switch back to the <code class="hljs inline no-lang" v-pre>master</code> branch before creating a new branch.</mark> If not, your new branch will be created on top of the current branch.
+<p><mark>Always remember to switch back to the <code v-pre>master</code> branch before creating a new branch.</mark> If not, your new branch will be created on top of the current branch.
 </p></box><p></p>
-<p><strong>11. Go back to the <code class="hljs inline no-lang" v-pre>master</code> branch and merge the <code class="hljs inline no-lang" v-pre>add-countries</code> branch onto the <code class="hljs inline no-lang" v-pre>master</code> branch</strong> <span class="dimmed">(similar to steps 8-9 above)</span>. While you might expect to see something like the following,</p>
+<p><strong>11. Go back to the <code v-pre>master</code> branch and merge the <code v-pre>add-countries</code> branch onto the <code v-pre>master</code> branch</strong> <span class="dimmed">(similar to steps 8-9 above)</span>. While you might expect to see something like the following,</p>
 <img src="/website/book/gitAndGithub/branch/images/addCountriesBranchNoFastForward.png" height="100">
 <p></p>
 <p>... you are likely to see something like this instead:</p>
 <img src="/website/book/gitAndGithub/branch/images/addCountriesBranchAfterMerging.png" height="80">
 <p></p>
-<p>That is because <strong>Git does a <mark><em>fast forward</em> merge</mark> if possible</strong>. Seeing that the <code class="hljs inline no-lang" v-pre>master</code> branch has not changed since you started the <code class="hljs inline no-lang" v-pre>add-countries</code> branch, Git has decided it is simpler to just put the commits of the <code class="hljs inline no-lang" v-pre>add-countries</code> branch in front of the <code class="hljs inline no-lang" v-pre>master</code> branch, without going into the trouble of creating an extra merge commit.</p>
+<p>That is because <strong>Git does a <mark><em>fast forward</em> merge</mark> if possible</strong>. Seeing that the <code v-pre>master</code> branch has not changed since you started the <code v-pre>add-countries</code> branch, Git has decided it is simpler to just put the commits of the <code v-pre>add-countries</code> branch in front of the <code v-pre>master</code> branch, without going into the trouble of creating an extra merge commit.</p>
 <p><strong>It is possible to force Git to create a merge commit even if fast forwarding is possible.</strong></p>
 <tabs>
   <tab><template slot="_header">SourceTree</template>
@@ -1090,26 +945,25 @@ To keep things simple for the time being, this commit should <mark>not involve t
 <p></p></div></tab>
   <tab class="algolia-no-index"><template slot="_header">CLI</template>
     <div>
-<p>Use the <code class="hljs inline no-lang" v-pre>--no-ff</code> switch (short for <em>no fast forward</em>):</p>
-<pre><code class="hljs" v-pre><span>git merge --no-ff add-countries
-</span></code></pre></div></tab></tabs>
+<p>Use the <code v-pre>--no-ff</code> switch (short for <em>no fast forward</em>):</p>
+<pre><code class="hljs" v-pre><span>git merge --no-ff add-countries<br></span></code></pre></div></tab></tabs>
 <box>
 <div id="pushing-a-branch">
-<h5 id="pushing-a-branch-to-a-remote-repo"><span id="pushing-a-branch-to-a-remote-repo" class="anchor"></span>Pushing a branch to a remote repo<a class="fa fa-anchor" href="#pushing-a-branch-to-a-remote-repo" onclick="event.stopPropagation()"></a></h5>
+<h5 id="pushing-a-branch-to-a-remote-repo">Pushing a branch to a remote repo<span id="pushing-a-branch-to-a-remote-repo" class="anchor"></span><a class="fa fa-anchor" href="#pushing-a-branch-to-a-remote-repo" onclick="event.stopPropagation()"></a></h5>
 <p>Here's how to push a branch to a remote repo:</p>
 <tabs>
   <tab><template slot="_header">SourceTree</template>
-<p>Here's how to push a branch named <code class="hljs inline no-lang" v-pre>add-intro</code> to your own fork of a repo named <code class="hljs inline no-lang" v-pre>samplerepo-pr-practice</code>:</p>
+<p>Here's how to push a branch named <code v-pre>add-intro</code> to your own fork of a repo named <code v-pre>samplerepo-pr-practice</code>:</p>
 <img src="/website/book/gitAndGithub/branch/images/pushBranchToFork.png" height="300">
 <p></p></tab>
   <tab class="algolia-no-index"><template slot="_header">CLI</template>
-<p>Normally: <code class="hljs inline no-lang" v-pre>git push {remote repository} {branch}</code>. Examples:<br></p>
+<p>Normally: <code v-pre>git push {remote repository} {branch}</code>. Examples:<br></p>
 <ul>
-<li><code class="hljs inline no-lang" v-pre>git push origin master</code> pushes the <code class="hljs inline no-lang" v-pre>master</code> branch to the repo named <code class="hljs inline no-lang" v-pre>origin</code> (i.e., the repo you cloned from)</li>
-<li><code class="hljs inline no-lang" v-pre>git push upstream-repo add-intro</code> pushes the <code class="hljs inline no-lang" v-pre>add-intro</code> branch to the repo named <code class="hljs inline no-lang" v-pre>upstream-repo</code></li></ul>
-<p><strong>If pushing a branch you created locally to the remote for the <em>first time</em></strong>, add the <code class="hljs inline no-lang" v-pre>-u</code> flag to get the local branch to track the new upstream branch:<br>
-e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code></p>
-<p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> See <a href="https://git-scm.com/docs/git-push">git-scm.com/docs/git-push</a> for details of the <code class="hljs inline no-lang" v-pre>push</code> command.</p></tab></tabs>
+<li><code v-pre>git push origin master</code> pushes the <code v-pre>master</code> branch to the repo named <code v-pre>origin</code> (i.e., the repo you cloned from)</li>
+<li><code v-pre>git push upstream-repo add-intro</code> pushes the <code v-pre>add-intro</code> branch to the repo named <code v-pre>upstream-repo</code></li></ul>
+<p><strong>If pushing a branch you created locally to the remote for the <em>first time</em></strong>, add the <code v-pre>-u</code> flag to get the local branch to track the new upstream branch:<br>
+e.g., <code v-pre>git push -u origin add-intro</code></p>
+<p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> See <a href="https://git-scm.com/docs/git-push">git-scm.com/docs/git-push</a> for details of the <code v-pre>push</code> command.</p></tab></tabs>
 <p></p></div></box></div>
 <div></div></div></div></panel>
 <p></p>
@@ -1120,7 +974,7 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
 <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/mergeConflicts" id="tools-git-and-github-dealing-with-merge-conflicts">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.5c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="tools-git-and-github-dealing-with-merge-conflicts"><span id="tools-git-and-github-dealing-with-merge-conflicts" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Dealing with merge conflicts</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-dealing-with-merge-conflicts" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="tools-git-and-github-dealing-with-merge-conflicts"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Dealing with merge conflicts</span></strong><span id="tools-git-and-github-dealing-with-merge-conflicts" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-dealing-with-merge-conflicts" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=6de3f8b2-af7b-403a-a34f-ac0e00c97328&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -1134,47 +988,16 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
 <p><strong>Merge conflicts happen when you try to combine two incompatible versions</strong> (e.g., merging a branch to another but each branch changed the same part of the code in a different way).</p>
 <p>Here are the steps to simulate a merge conflict and use it to learn how to resolve merge conflicts.</p>
 <p><strong>0. Create an empty repo or clone an existing repo</strong>, to be used for this activity.</p>
-<p><strong>1. Start a branch named <code class="hljs inline no-lang" v-pre>fix1</code> in the repo. Create a commit</strong> that adds a line with some text to one of the files.</p>
-<p><strong>2. Switch back to <code class="hljs inline no-lang" v-pre>master</code> branch. Create a commit with a conflicting change</strong> i.e. it adds a line with some different text in the exact location the previous line was added.</p>
+<p><strong>1. Start a branch named <code v-pre>fix1</code> in the repo. Create a commit</strong> that adds a line with some text to one of the files.</p>
+<p><strong>2. Switch back to <code v-pre>master</code> branch. Create a commit with a conflicting change</strong> i.e. it adds a line with some different text in the exact location the previous line was added.</p>
 <img src="/website/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png" height="350">
 <p></p>
-<p><strong>3. Try to merge the <code class="hljs inline no-lang" v-pre>fix1</code> branch onto the <code class="hljs inline no-lang" v-pre>master</code> branch.</strong> Git will pause mid-way during the merge and report a merge conflict. If you open the conflicted file, you will see something like this:</p>
-<pre><code class="hljs" v-pre><span>COLORS
-</span><span>------
-</span><span>blue
-</span><span><span class="highlighted">&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
-</span><span>black
-</span><span><span class="highlighted">=======</span>
-</span><span>green
-</span><span><span class="highlighted">&gt;&gt;&gt;&gt;&gt;&gt; fix1</span>
-</span><span>red
-</span><span>white
-</span></code></pre><p><strong>4. Observe how the conflicted part is marked</strong> between a line starting with <code class="hljs inline no-lang" v-pre>&lt;&lt;&lt;&lt;&lt;&lt; </code> and a line starting with <code class="hljs inline no-lang" v-pre>&gt;&gt;&gt;&gt;&gt;&gt;</code>, separated by another line starting with <code class="hljs inline no-lang" v-pre>=======</code>.</p>
-<p>Highlighted below is the conflicting part that is coming from the <code class="hljs inline no-lang" v-pre>master</code> branch:</p>
-<pre><code style="counter-reset: line 2;" class="hljs" v-pre><span>blue
-</span><span>&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-</span><span><span class="highlighted">black</span>
-</span><span>=======
-</span><span>green
-</span><span>&gt;&gt;&gt;&gt;&gt;&gt; fix1
-</span><span>red
-</span></code></pre><p>This is the conflicting part that is coming from the <code class="hljs inline no-lang" v-pre>fix1</code> branch:</p>
-<pre><code style="counter-reset: line 2;" class="hljs" v-pre><span>blue
-</span><span>&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-</span><span>black
-</span><span>=======
-</span><span><span class="highlighted">green</span>
-</span><span>&gt;&gt;&gt;&gt;&gt;&gt; fix1
-</span><span>red
-</span></code></pre><p><strong>5. Resolve the conflict by editing the file</strong>. Let us assume you want to keep both lines in the merged version. You can modify the file to be like this:</p>
-<pre><code class="hljs" v-pre><span>COLORS
-</span><span>------
-</span><span>blue
-</span><span><span class="highlighted">black</span>
-</span><span><span class="highlighted">green</span>
-</span><span>red
-</span><span>white
-</span></code></pre><p><strong>6. Stage the changes, and commit.</strong></p></div>
+<p><strong>3. Try to merge the <code v-pre>fix1</code> branch onto the <code v-pre>master</code> branch.</strong> Git will pause mid-way during the merge and report a merge conflict. If you open the conflicted file, you will see something like this:</p>
+<pre><code class="hljs" v-pre><span>COLORS<br></span><span>------<br></span><span>blue<br></span><span class="highlighted">&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br></span><span>black<br></span><span class="highlighted">=======<br></span><span>green<br></span><span class="highlighted">&gt;&gt;&gt;&gt;&gt;&gt; fix1<br></span><span>red<br></span><span>white<br></span></code></pre><p><strong>4. Observe how the conflicted part is marked</strong> between a line starting with <code v-pre>&lt;&lt;&lt;&lt;&lt;&lt; </code> and a line starting with <code v-pre>&gt;&gt;&gt;&gt;&gt;&gt;</code>, separated by another line starting with <code v-pre>=======</code>.</p>
+<p>Highlighted below is the conflicting part that is coming from the <code v-pre>master</code> branch:</p>
+<pre><code style="counter-reset: line 2;" class="hljs" v-pre><span>blue<br></span><span>&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br></span><span class="highlighted">black<br></span><span>=======<br></span><span>green<br></span><span>&gt;&gt;&gt;&gt;&gt;&gt; fix1<br></span><span>red<br></span></code></pre><p>This is the conflicting part that is coming from the <code v-pre>fix1</code> branch:</p>
+<pre><code style="counter-reset: line 2;" class="hljs" v-pre><span>blue<br></span><span>&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br></span><span>black<br></span><span>=======<br></span><span class="highlighted">green<br></span><span>&gt;&gt;&gt;&gt;&gt;&gt; fix1<br></span><span>red<br></span></code></pre><p><strong>5. Resolve the conflict by editing the file</strong>. Let us assume you want to keep both lines in the merged version. You can modify the file to be like this:</p>
+<pre><code class="hljs" v-pre><span>COLORS<br></span><span>------<br></span><span>blue<br></span><span class="highlighted">black<br></span><span class="highlighted">green<br></span><span>red<br></span><span>white<br></span></code></pre><p><strong>6. Stage the changes, and commit.</strong></p></div>
 <div></div></div></div></panel>
 <p></p>
 <div class="indented">
@@ -1191,7 +1014,7 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
 <div>
 <p> Given below are some very basic tools and techniques that are often used in planning, scheduling, and tracking projects.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w8-6-project-mgt-scheduling-and-tracking">
-<span slot="header" class="card-title"><div><h2 id="w8-6-project-mgt-scheduling-and-tracking"><span id="w8-6-project-mgt-scheduling-and-tracking" class="anchor"></span><span class="dimmed">[W8.6]</span> <strong>Project Mgt: Scheduling and Tracking</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w8-6-project-mgt-scheduling-and-tracking" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w8-6-project-mgt-scheduling-and-tracking"><span class="dimmed">[W8.6]</span> <strong>Project Mgt: Scheduling and Tracking</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w8-6-project-mgt-scheduling-and-tracking" class="anchor"></span><a class="fa fa-anchor" href="#w8-6-project-mgt-scheduling-and-tracking" onclick="event.stopPropagation()"></a></h2></div></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=e4bdedb1-34a1-4da1-9b57-ac390047588e&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -1202,7 +1025,7 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
 <panel type="seamless" expanded popup-url="/website/book/projectPlanning/milestones" id="project-management-project-planning-milestones">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.6a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-project-planning-milestones"><span id="project-management-project-planning-milestones" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Milestones</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-milestones" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-project-planning-milestones"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Milestones</span></strong><span id="project-management-project-planning-milestones" class="anchor"></span><a class="fa fa-anchor" href="#project-management-project-planning-milestones" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1238,7 +1061,7 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
 <panel type="seamless" expanded popup-url="/website/book/projectPlanning/buffers" id="project-management-project-planning-buffers">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.6b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-project-planning-buffers"><span id="project-management-project-planning-buffers" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Buffers</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-buffers" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-project-planning-buffers"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Buffers</span></strong><span id="project-management-project-planning-buffers" class="anchor"></span><a class="fa fa-anchor" href="#project-management-project-planning-buffers" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1256,7 +1079,7 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
 <panel type="seamless" expanded popup-url="/website/book/projectPlanning/issueTrackers" id="project-management-project-planning-issue-trackers">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.6c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-project-planning-issue-trackers"><span id="project-management-project-planning-issue-trackers" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Issue trackers</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-issue-trackers" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-project-planning-issue-trackers"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Issue trackers</span></strong><span id="project-management-project-planning-issue-trackers" class="anchor"></span><a class="fa fa-anchor" href="#project-management-project-planning-issue-trackers" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1279,7 +1102,7 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
 <panel type="seamless" expanded popup-url="/website/book/projectPlanning/workBreakdownStructure" id="project-management-project-planning-work-breakdown-structure">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.6d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-project-planning-work-breakdown-structure"><span id="project-management-project-planning-work-breakdown-structure" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Work breakdown structure</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-work-breakdown-structure" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-project-planning-work-breakdown-structure"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Work breakdown structure</span></strong><span id="project-management-project-planning-work-breakdown-structure" class="anchor"></span><a class="fa fa-anchor" href="#project-management-project-planning-work-breakdown-structure" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1398,9 +1221,9 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
 <td>find a suitable tool for testing the UI</td></tr></tbody></table></div></div></box></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which one is not a well-defined task?</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which one is not a well-defined task?</p></template>
 <question>
 <p>Which one these project tasks is not well-defined?</p>
 <ul radio-group="9211e" class="radio-list">
@@ -1420,7 +1243,7 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
 <panel type="seamless" popup-url="/website/book/projectPlanning/ganttCharts" id="project-management-project-planning-gantt-charts" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.6e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="project-management-project-planning-gantt-charts"><span id="project-management-project-planning-gantt-charts" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Gantt charts</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-gantt-charts" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-project-planning-gantt-charts"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Gantt charts</span></strong><span id="project-management-project-planning-gantt-charts" class="anchor"></span><a class="fa fa-anchor" href="#project-management-project-planning-gantt-charts" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1442,7 +1265,7 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
 <panel type="seamless" popup-url="/website/book/projectPlanning/pertCharts" id="project-management-project-planning-pert-charts" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.6f</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="project-management-project-planning-pert-charts"><span id="project-management-project-planning-pert-charts" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>PERT charts</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-pert-charts" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-project-planning-pert-charts"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>PERT charts</span></strong><span id="project-management-project-planning-pert-charts" class="anchor"></span><a class="fa fa-anchor" href="#project-management-project-planning-pert-charts" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1456,11 +1279,11 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example PERT chart for a simple software project</p>
 <p><img src="/website/book/projectPlanning/pertCharts/images/pert.jpg" height="320"><br>
-<code class="hljs inline no-lang" v-pre>md</code> = man days</p></box>
+<code v-pre>md</code> = man days</p></box>
 <p>A PERT chart can help determine the following important information:</p>
 <ul>
-<li>The order of tasks. <span class="dimmed">In the example above, <code class="hljs inline no-lang" v-pre>Final Testing</code> cannot begin until all coding of individual subsystems have been completed.</span></li>
-<li>Which tasks can be done concurrently. <span class="dimmed">In the example above, the various subsystem designs can start independently once the <code class="hljs inline no-lang" v-pre>High level design</code> is completed.</span></li>
+<li>The order of tasks. <span class="dimmed">In the example above, <code v-pre>Final Testing</code> cannot begin until all coding of individual subsystems have been completed.</span></li>
+<li>Which tasks can be done concurrently. <span class="dimmed">In the example above, the various subsystem designs can start independently once the <code v-pre>High level design</code> is completed.</span></li>
 <li>The shortest possible completion time. <span class="dimmed">In the example above, there is a path (indicated by the shaded boxes) from start to end that determines the shortest possible completion time.</span></li>
 <li>The Critical Path. <span class="dimmed">In the example above, the shortest possible path is also the critical path</span>.</li></ul>
 <box type="definition" seamless>
@@ -1480,18 +1303,18 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
 1. Do <em>Part 1</em> of this week's quiz (which covers the same area).<br>
 2. Watch the worked examples in the following videos to learn the process of drawing intermediate-level class diagrams to match code.</p>
 <panel type="seamless" class="algolia-no-index">
-  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code class="hljs inline no-lang" v-pre>Action</code>, <code class="hljs inline no-lang" v-pre>Task</code>, <code class="hljs inline no-lang" v-pre>History</code></span></div>
+  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code v-pre>Action</code>, <code v-pre>Task</code>, <code v-pre>History</code></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=052aa055-c89f-4dbf-af24-ac4000f175e0&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
 <p></p>
 <panel type="seamless" class="algolia-no-index">
-  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code class="hljs inline no-lang" v-pre>Person</code>, <code class="hljs inline no-lang" v-pre>Inbox</code>, <code class="hljs inline no-lang" v-pre>Message</code></span></div>
+  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code v-pre>Person</code>, <code v-pre>Inbox</code>, <code v-pre>Message</code></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=f4f7e1f2-60a4-4d18-b70a-ac4000f17608&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
 <p></p>
 <panel type="seamless" class="algolia-no-index">
-  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code class="hljs inline no-lang" v-pre>Person</code>, <code class="hljs inline no-lang" v-pre>Project</code>, <code class="hljs inline no-lang" v-pre>Task</code></span></div>
+  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span>Drawing class/object diagrams (intermediate) - <code v-pre>Person</code>, <code v-pre>Project</code>, <code v-pre>Task</code></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=e05845ed-8c70-47d9-a4d0-ac6800d58224&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
-<p></p></box></div></div>
-<p><i class="fa fa-arrow-circle-up fa-lg" id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true"></i></p></div>
+<p></p></box></div></div></div>
+
         <nav id="page-nav" class="navbar navbar-light bg-transparent">
 <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -1513,13 +1336,18 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
     <footer>
   
   <div class="text-center">
-    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.0</a>, generated on Fri, 11 Dec 2020, 23:42:27 GMT+8]</small></div></footer></div>
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 14 Dec 2020, 23:34:10 GMT+8]</small></div></footer></div>
 </body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  MarkBind.setupWithSearch()
+  const enableSearch = true
 </script>
+<script src="../../markbind/js/setup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script>
     function initAlgolia() {
@@ -1533,5 +1361,5 @@ e.g., <code class="hljs inline no-lang" v-pre>git push -u origin add-intro</code
     }
     MarkBind.afterSetup(initAlgolia);
   </script>
-<script src="../../markbind/layouts/default/scripts.js"></script><script>if (MarkBind.AfterSetup) MarkBind.AfterSetup()</script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
 </html>
